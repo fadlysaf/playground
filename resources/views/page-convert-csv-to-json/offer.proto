@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package offers;
+
+message TimeOfDay {
+  int32 hours = 1;
+  int32 minutes = 2;
+  int32 seconds = 3;
+}
+
+message Offer {
+  string offer_id = 1;
+  repeated string entity_ids = 2;
+  int32 offer_source = 3;
+  int32 action_type = 4;
+  repeated int32 offer_modes = 5;
+  int32 offer_category = 6;
+  string offer_display_text = 7;
+  string currency_code = 8;
+  int64 discount_units = 9;
+  int32 discount_nanos = 10;
+  bool combinable_with_other_offers = 11;
+  repeated int32 combinable_offer_categories = 12;"
+  bool restricted_to_certain_users = 13;
+  string terms_and_conditions = 14;
+  string valid_from_time = 15;
+  string valid_through_time = 16;
+  TimeOfDay weekday_open_time = 17;
+  TimeOfDay weekday_close_time = 18;
+  repeated int32 weekday_days = 19;
+  TimeOfDay weekend_open_time = 20;
+  TimeOfDay weekend_close_time = 21;
+  repeated int32 weekend_days = 22;
+  string offer_url = 23;
+  string image_url = 24;
+}
+
+message OfferList {
+  repeated Offer offers = 1;
+}

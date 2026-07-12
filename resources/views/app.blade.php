@@ -9,6 +9,8 @@
     @if (isset($pageCSS))
         <link rel="stylesheet" href="{{ asset($pageCSS) }}">
     @endif
+
+    @stack('style')
 </head>
 
 <body>

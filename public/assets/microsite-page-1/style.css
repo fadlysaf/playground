@@ -18,7 +18,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 250px 30px;
+    padding: 75px 30px;
 }
 
 .row {
@@ -58,8 +58,8 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    /* margin: 0 auto; */
+    padding: 250px 20px;
 }
 
 .title-banner {
@@ -176,7 +176,7 @@ body {
     overflow: hidden;
     border: 1px solid #e5e7eb;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 50px 40px;
 }
 
@@ -283,4 +283,25 @@ body {
 .bg-danger {
     background-color: #ef4444;
     color: #ffffff;
+}
+
+#footer-section {
+    position: relative;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 20px 20px;
+    text-align: center;
 }

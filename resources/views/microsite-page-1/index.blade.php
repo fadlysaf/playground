@@ -110,4 +110,20 @@
             </div>
         </div>
     </section>
+    <section id="footer-section">
+        <div class="footer-layout">
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+        </div>
+    </section>
 @endsection

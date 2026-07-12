@@ -27,3 +27,24 @@ Route::get('/convert-csv-to-json', function () {
         ]);
 });
 
+Route::get('/tracking-request-website', function () {
+    return view('page-tracking-request-website.index',[
+        'pageCSS' => 'assets/page-tracking-request-website/style.css',
+        'title' => 'Tracking Request Website',
+        ]);
+});
+
+Route::get('/tracking-request-website-table', function () {
+    return view('page-tracking-request-website.table',[
+        'pageCSS' => 'assets/page-tracking-request-website/style.css',
+        'title' => 'Tracking Request Website Table',
+        ]);
+});
+
+Route::get('/tracking-request-website-form', function () {
+    return view('page-tracking-request-website.form',[
+        'pageCSS' => 'assets/page-tracking-request-website/style.css',
+        'title' => 'Tracking Request Website Form',
+        ]);
+});
+

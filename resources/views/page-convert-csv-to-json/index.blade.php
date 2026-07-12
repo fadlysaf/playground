@@ -8,13 +8,7 @@
                 <label for="csv-input">CSV Input:</label>
                 <input class="form-control" type="file" id="csv-input" accept=".csv">
                 <button id="convert-btn" type="submit" disabled>Convert</button>
-                <button id="download-btn" type="button" disabled>Download JSON</button>
             </form>
-
-            <textarea id="csvTextarea" rows="8"
-                style="width:100%; font-family: monospace; font-size:13px; padding:8px; box-sizing:border-box; margin-top:6px;"
-                placeholder="entity_id,name,location.latitude&#10;dining-1,Sample Eatery 1,37.404570"></textarea>
-
             <h2>JSON Output:</h2>
             <pre id="json-output"></pre>
         </div>
@@ -22,9 +16,9 @@
 @endsection
 
 @push('script')
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs/dist/protobuf.min.js"></script>
     <script>
         const fileInput = document.getElementById('csv-input');
-        const csvTextarea = document.getElementById('csvTextarea');
         const convertbtn = document.getElementById('convert-btn');
         const downloadBtn = document.getElementById('download-btn');
         const jsonOutput = document.getElementById('json-output');
@@ -37,21 +31,6 @@
             if (trimmed.toLowerCase() === 'true') return true;
             if (trimmed.toLowerCase() === 'false') return false;
             if (!isNaN(trimmed) && trimmed !== '') return Number(trimmed);
-        }
-
-        function setNestedValue(obj, path, value) {
-            const keys = path.split('.');
-            let current = obj;
-
-            for (let i = 0; i < keys.length - 1; i++) {
-                const key = keys[i];
-                if (!current[key]) {
-                    current[key] = {};
-                }
-                current = current[key];
-            }
-
-            current[keys[keys.length - 1]] = value;
         }
 
         function csvToJson(csvText) {
@@ -124,6 +103,5 @@
 
             URL.revokeObjectURL(url);
         });
-        
     </script>
 @endpush
