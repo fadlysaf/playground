@@ -1,0 +1,129 @@
+@extends('app')
+
+@section('content')
+    <section id="hero-section">
+        <img class="hero-bg-image"
+            src="https://images.unsplash.com/photo-1783418851968-244eed34233c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="title-banner">
+                    <h1>Welcome to the Hero Section</h1>
+                    <p>This is a simple hero section.</p>
+                </div>
+
+                <div class="image-banner">
+                    {{-- <img src="https://images.unsplash.com/photo-1783418851968-244eed34233c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""> --}}
+                </div>
+            </div>
+        </div>
+        <div class="card-floating-wrapper">
+            <div class="container container-cards">
+                <div class="card-item">
+                    <h3>Card Title</h3>
+                    <p>Card description</p>
+                </div>
+                <div class="card-item">
+                    <h3>Card Title</h3>
+                    <p>Card description</p>
+                </div>
+                <div class="card-item">
+                    <h3>Card Title</h3>
+                    <p>Card description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content-section">
+        <div class="container">
+            <div class="box-product">
+                <div class="product-header">
+                    <h2>Product Title</h2>
+                    <p class="header-desc">This is the header description for the product.</p>
+                </div>
+                <div class="product-content">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop"
+                                alt="content image">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Kartu Custom Nyala Global Debit</h3>
+                            <p class="product-text">Dapatkan kartu debit OCBC dengan foto anabul Anda, dengan klik button di
+                                bawah.</p>
+                            <a href="#" class="btn-product-cta bg-primary">Buka Sekarang</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop"
+                                alt="content image">
+                        </div>
+                        <div class="product-body">
+                            <h3 class="product-title">Kartu Kredit OCBC Platinum for Pet Lovers</h3>
+                            <p class="product-text">Miliki kartu kredit edisi spesial, dan wujudkan gaya hidup pet parent
+                                sejati.</p>
+                            <a href="#" class="btn-product-cta bg-danger">Apply Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="content image" class="">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Content Title</h1>
+                            <p class="card-text">This is a simple content section.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="content image" class="">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Content Title</h1>
+                            <p class="card-text">This is a simple content section.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="content image" class="">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Content Title</h1>
+                            <p class="card-text">This is a simple content section.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-section">
+        <div class="footer-layout">
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+            <div class="footer-content">
+                <h1>Footer Section</h1>
+                <p>This is a simple footer section.</p>
+            </div>
+        </div>
+    </section>
+@endsection

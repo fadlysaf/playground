@@ -48,3 +48,19 @@ Route::get('/tracking-request-website-form', function () {
         ]);
 });
 
+Route::get('/kartuliburan-cloning', function () {
+    return view('page-kartuliburan-ocbc.index',[
+        'pageCSS' => 'assets/kartuliburan-clone/style.css',
+        'title' => 'Kartu Liburan Cloning',
+        'isOCBC' => true,
+        ]);
+});
+
+Route::get('/kartuliburan-ocbc', function () {
+    return view('page-kartuliburan-ocbc.index',[
+        'pageCSS' => 'assets/kartuliburan-clone/style.css',
+        'title' => 'Kartu Liburan OCBC',
+        'isOCBC' => true,
+        ]);
+});
+
