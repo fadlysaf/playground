@@ -5,25 +5,46 @@
 @section('content')
     <section id="hero-section">
         <div class="hero-bg-image">
-            <img src="https://images.unsplash.com/photo-1782771115010-b287a78d2b4e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img src="https://images.unsplash.com/photo-1718427778421-ad719f965738?q=80&w=1511&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="">
+        </div>
+        <div class="badge-banner-layout">
+            <div class="badge-banner-promo badge-pos-top-left">
+                <div class="card-badge-promo">
+                    <span class="badge-icon">🔥</span>
+                    <p>Promo Spesial #KartuWajibLiburan</p>
+                </div>
+            </div>
+            <div class="badge-banner-promo badge-pos-top-right">
+                <div class="card-badge-promo">
+                    <span class="badge-icon">🔥</span>
+                    <p>Promo Spesial #KartuWajibLiburan</p>
+                </div>
+            </div>
+
+            <div class="badge-banner-promo badge-pos-bottom-left">
+                <div class="card-badge-promo">
+                    <span class="badge-icon">✈️</span>
+                    <p>Diskon Tiket hingga 50%</p>
+                </div>
+            </div>
+
+            <div class="badge-banner-promo badge-pos-bottom-right">
+                <div class="card-badge-promo">
+                    <span class="badge-icon">🏨</span>
+                    <p>Cashback Hotel Hingga Rp500 Ribu</p>
+                </div>
+            </div>
         </div>
         <div class="hero-content">
             <div class="title-banner">
-                <h1>OCBC #KartuWajibLiburan</h1>
+                <h1>OCBC <span class="higlight-banner">#KartuWajibLiburan</span></h1>
             </div>
-            <div class="product-banner">
-                <div class="product-item">
-                    <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/nyala_5bb25c225e.png"
-                        alt="OCBC Nyala Global Debit" class="card-img">
-                    <a href="#" class="btn-cc btn-red">Buka Nyala</a>
-                </div>
-                <div class="product-item">
-                    <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/90n_187803c4e9.png"
-                        alt="OCBC 90°N Credit Card" class="card-img">
-                    <a href="#" class="btn-cc btn-red">Apply Kartu Kredit</a>
-                </div>
-            </div>
+            <p class="desc-banner">
+                Nikmati berbagai promo eksklusif di destinasi favorit dunia.
+                Bayar dengan OCBC Nyala Global Debit atau Kartu Kredit 90°N
+                untuk pengalaman liburan yang lebih nyaman dan menguntungkan.
+            </p>
         </div>
     </section>
 
@@ -34,29 +55,126 @@
                     pakai <span class="higlight">#KartuWajibLiburan</span>
                     transaksi beres liburan berasa bebasnya</h2>
             </div>
+
+            <div class="box-product">
+                <div class="product-content">
+                    <div class="product-header">
+                        <h3 class="product-title"><span class="highlight-text">Nyala Global</span> Debit</h3>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Nyala_da93cfa5b4.svg"
+                                alt="content image">
+                        </div>
+                        <div class="product-body">
+                            <div class="highlight-card">
+                                <h3>Transaksi bebas biaya konversi</h3>
+                                <p>Tinggal Tap #KartuWajibLiburan OCBC Nyala Global Debit langsung siap
+                                    transaksi dalam
+                                    berbagai mata uang.</p>
+                            </div>
+
+                            <div id="accordion-collapse" data-accordion="collapse"
+                                class="rounded-base border border-default overflow-hidden shadow-xs">
+                                <h2 id="accordion-collapse-heading-1">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-default hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                                        data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                        aria-controls="accordion-collapse-body-1">
+                                        <span>What is Flowbite?</span>
+                                        <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m5 15 7-7 7 7" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-1"
+                                    class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+                                    aria-labelledby="accordion-collapse-heading-1">
+                                    <div class="p-4 md:p-5">
+                                        <p class="mb-2 text-body">Flowbite is an open-source library of interactive
+                                            components built on top of Tailwind CSS including buttons, dropdowns, modals,
+                                            navbars, and more.</p>
+                                        <p class="text-body">Check out this guide to learn how to <a
+                                                href="/docs/getting-started/introduction/"
+                                                class="text-fg-brand hover:underline">get started</a> and start developing
+                                            websites even faster with components on top of Tailwind CSS.</p>
+                                    </div>
+                                </div>
+                                <h2 id="accordion-collapse-heading-2">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                                        data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                        aria-controls="accordion-collapse-body-2">
+                                        <span>Is there a Figma file available?</span>
+                                        <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m5 15 7-7 7 7" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-2"
+                                    class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+                                    aria-labelledby="accordion-collapse-heading-2">
+                                    <div class="p-4 md:p-5">
+                                        <p class="mb-2 text-body">Flowbite is first conceptualized and designed using the
+                                            Figma software so everything you see in the library has a design equivalent in
+                                            our Figma file.</p>
+                                        <p class="text-body">Check out the <a href="https://flowbite.com/figma/"
+                                                class="text-fg-brand hover:underline">Figma design system</a> based on the
+                                            utility classes from Tailwind CSS and components from Flowbite.</p>
+                                    </div>
+                                </div>
+                                <h2 id="accordion-collapse-heading-3">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                                        data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                        aria-controls="accordion-collapse-body-3">
+                                        <span>What are the differences between Flowbite and Tailwind UI?</span>
+                                        <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m5 15 7-7 7 7" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-3" class="hidden"
+                                    aria-labelledby="accordion-collapse-heading-3">
+                                    <div class="p-4 md:p-5 border border-t-default border-b-0 border-x-0">
+                                        <p class="mb-2 text-body">The main difference is that the core components from
+                                            Flowbite are open source under the MIT license, whereas Tailwind UI is a paid
+                                            product. Another difference is that Flowbite relies on smaller and standalone
+                                            components, whereas Tailwind UI offers sections of pages.</p>
+                                        <p class="mb-2 text-body">However, we actually recommend using both Flowbite,
+                                            Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you
+                                            from using the best of two worlds.</p>
+                                        <p class="mb-2 text-body">Learn more about these technologies:</p>
+                                        <ul class="ps-5 text-body list-disc">
+                                            <li><a href="https://flowbite.com/pro/"
+                                                    class="text-fg-brand hover:underline">Flowbite Pro</a></li>
+                                            <li><a href="https://tailwindui.com/" rel="nofollow"
+                                                    class="text-fg-brand hover:underline">Tailwind UI</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-cta-layout">
+                                <a href="#" class="btn-product-cta bg-primary">Info Lengkap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="cta-content">
                 <p>Cek beragam promo untuk persiapan traveling di sini!</p>
                 <a href="" class="cta-button">Learn More</a>
             </div>
-            {{-- <div class="campaign-content">
-                <div class="campaign-card">
-                    <div class="campaign-image">
-                        <img src="https://images.unsplash.com/photo-1783273234637-540c3bf66d6d?q=80&w=687&auto=format&fit=crop"
-                            alt="content image">
-                    </div>
-                    <div class="campaign-body">
-                        <h3 class="campaign-title">Kartu Custom Nyala Global Debit</h3>
-                        <p class="campaign-text">Dapatkan kartu debit OCBC dengan foto anabul Anda, dengan klik button di
-                            bawah.</p>
-                        <a href="#" class="btn-campaign-cta bg-primary">Buka Sekarang</a>
-                    </div>
-                </div>
-
-                <div class="campaign-card">
-                    <div class="campaign-image">
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </section>
 
@@ -65,184 +183,121 @@
             <h2>Beda negara, beda lifestyle</h2>
             <p class="region-desc">Temukan lokasi kantor cabang OCBC terdekat di kota Anda.</p>
         </div>
+        <div class="region-carousel">
+            <button class="region-arrow prev" type="button" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="region-arrow next" type="button" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
-        <div class="region-content">
-            <div class="region-card" data-country="england">
-                <div class="region-image">
-                    <img alt="Inggris"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/england_652338d6b2.png" />
-                </div>
-                <p class="region-title">Inggris</p>
-            </div>
-            <div class="region-card" data-country="swiss">
-                <div class="region-image">
-                    <img alt="Swiss"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/swiss_159558bb0e.png" />
-                </div>
-                <p class="region-title">Swiss</p>
-            </div>
-            <div class="region-card" data-country="jp">
-                <div class="region-image">
-                    <img alt="Jepang"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/jp_42227e3f2a.png" />
-                </div>
-                <p class="region-title">Jepang</p>
-            </div>
-            <div class="region-card" data-country="cn">
-                <div class="region-image">
-                    <img alt="China"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cn_e3bf55a879.png" />
-                </div>
-                <p class="region-title">China</p>
-            </div>
-            <div class="region-card" data-country="canada">
-                <div class="region-image">
-                    <img alt="Kanada"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/canada_c2382d0b5f.png" />
-                </div>
-                <p class="region-title">Kanada</p>
-            </div>
-            <div class="region-card" data-country="sg">
-                <div class="region-image">
-                    <img alt="Singapura"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/sg_2dc0e9566c.png" />
-                </div>
-                <p class="region-title">Singapura</p>
-            </div>
-            <div class="region-card" data-country="aus">
-                <div class="region-image">
-                    <img alt="Australia"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/aus_0bbfc19f4a.png" />
-                </div>
-                <p class="region-title">Australia</p>
-            </div>
-            <div class="region-card" data-country="nz">
-                <div class="region-image">
-                    <img alt="New Zealand"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/nz_8d40801ff4.png" />
-                </div>
-                <p class="region-title">New Zealand</p>
-            </div>
-            <div class="region-card" data-country="eu">
-                <div class="region-image">
-                    <img alt="Eropa"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/eu_4d8a51bbf2.png" />
-                </div>
-                <p class="region-title">Eropa</p>
-            </div>
-            <div class="region-card" data-country="hk">
-                <div class="region-image">
-                    <img alt="Hong Kong"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/hk_93c2754f22.png" />
-                </div>
-                <p class="region-title">Hong Kong</p>
-            </div>
-            <div class="region-card" data-country="us">
-                <div class="region-image">
-                    <img alt="Amerika Serikat"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/us_f30f16e065.png" />
-                </div>
-                <p class="region-title">Amerika Serikat</p>
-            </div>
-        </div>
-    </section>
-    <section id="display-card">
-        <div class="container">
-            <div class="box-product">
-                <div class="product-content">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Nyala_da93cfa5b4.svg"
-                                alt="content image">
+            <div class="region-content" id="region-content">
+
+                <div class="region-card" data-country="england">
+                    <div class="region-card-inner">
+                        <div class="region-card-front">
+                            <div class="region-image">
+                                <img alt="Inggris"
+                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/england_652338d6b2.png" />
+                            </div>
+                            <p class="region-title">Inggris</p>
                         </div>
-                        <div class="product-body">
-                            <h3 class="product-title"><span class="highlight-text">Nyala Global</span> Debit</h3>
-                            <div class="highlight-card">
-                                <h3>Transaksi bebas biaya konversi</h3>
-                                <p>Tinggal Tap #KartuWajibLiburan OCBC Nyala Global Debit langsung siap
-                                    transaksi dalam
-                                    berbagai mata uang.</p>
+                        <div class="region-card-back">
+                            <div class="region-information">
+                                <img alt="Inggris"
+                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/insight_en_0566940490.png" />
                             </div>
-                            <div class="product-text">
-                                <p class="bold">• Transaksi online & offline di dalam & luar negeri</p>
-                                <p>Langsung debit dari belasan mata uang (IDR, USD, AUD, SGD, JPY, EUR, HKD, CHF, NZD, CAD,
-                                    GBP, CNH, AED, SAR, KRW) bebas biaya konversi. Segera hadir untuk mata uang THB.
-                                    Dapatkan promo menarik di web.obcd.id/everydaywin</p>
-                            </div>
-                            <div class="product-text">
-                                <p class="bold">• Praktis dengan fitur contactless</p>
-                                <p>Mulai dari belanja hingga keluar masuk MRT* di luar negeri tinggal tap / dip kartu</p>
-                                <p><small>*Berlaku di negara dan perusahaan transportasi yang menerima pembayaran dengan
-                                        kartu bank berlogo Mastercard dan contactless</small></p>
-                            </div>
-
-                            <div class="product-text">
-                                <p class="bold">• Bebas Biaya Tarik Tunai di ATM</p>
-                                <p>Bebas biaya tarik tunai di seluruh jaringan ATM OCBC di Singapura, Malaysia dan Hong
-                                    Kong untuk Nasabah dengan layanan Nyala</p>
-                            </div>
-
-                            <div class="product-text">
-                                <p class="bold">• Mudah Atur Kartu Debit di OCBC mobile</p>
-                                <p>Kemudahan aktivasi, atur limit belanja hingga blokir kartu tinggal klik di OCBC mobile
-                                </p>
-                            </div>
-
-                            <a href="#" class="btn-product-cta bg-primary">Info Lengkap</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/90_N_479674c321.svg"
-                                alt="content image">
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Kartu Kredit <span class="highlight-text">90°N</span></h3>
-                            <div class="highlight-card">
-                                <h3>Bebas aja liburan dari satu trip ke trip lainnya</h3>
-                                <p>Pakai <span style="color: #ffffff; font-weight: bold;">#KartuWajibLiburan Kartu Kredit
-                                        OCBC 90°N</span>,
-                                    kumpulin
-                                    miles lebih cepat bikin liburan
-                                    lebih hemat!.</p>
-                            </div>
-                            <div class="product-text">
-                                <p class="bold">• Travel Miles untuk setiap transaksi</p>
-                                <p>Gunakan selalu Kartu Kredit OCBC 90°N dan dapatkan 1 Travel Miles untuk setiap transaksi
-                                    senilai Rp12.000 (domestik) dan Rp10.000 (luar negeri).</p>
-                            </div>
-                            <div class="product-text">
-                                <p class="bold">• Penukaran Travel Miles</p>
-                                <p>Tukarkan Travel Miles Anda menjadi berbagai pilihan:</p>
-                                <ul>
-                                    <li class="bold">Airline Miles</li>
-                                    <li>1 Travel Miles = 1,05 GarudaMiles/1 KrisFlyer/1 AirAsia points</li>
-                                </ul>
-                                <ul>
-                                    <li class="bold">Poinseru</li>
-                                    <li>1.000 Travel Miles = 3.000 Poinseru yang dapat Anda tukarkan menjadi berbagai hadiah
-                                        menarik, mulai dari e-Voucher, e-Wallet, produk pilihan, hingga pengisian saldo
-                                        token listrik serta telepon genggam</li>
-                                </ul>
-                                <ul>
-                                    <li class="bold">Rebate</li>
-                                    <li>2.500 Travel Miles = Rp100.000 untuk mengurangi transaksi pada tagihan Anda</li>
-                                </ul>
-                            </div>
-
-                            <div class="product-text">
-                                <p class="bold">• Komplimen Akses Airport Lounge</p>
-                                <p>Nikmati akses Complimentary Airport Lounge 2 kali per tahun di Plaza Premium lounge,
-                                    Terminal 3 International dan dapatkan akses fasilitas lebih dari 1.300 airport lounge di
-                                    lebih dari 130 negara via aplikasi DragonPass (berlaku untuk Kartu Utama & Kartu
-                                    Tambahan).</p>
-                            </div>
-
-                            <a href="#" class="btn-product-cta bg-primary">Info Lengkap</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="region-card" data-country="england">
+                    <div class="region-card-inner">
+                        <div class="region-card-front">
+                            <div class="region-image">
+                                <img alt="Inggris"
+                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/england_652338d6b2.png" />
+                            </div>
+                            <p class="region-title">Inggris</p>
+                        </div>
+                        <div class="region-card-back">
+                            <div class="region-information">
+                                <img alt="Inggris"
+                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/insight_en_0566940490.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="region-card" data-country="swiss">
+                    <div class="region-image">
+                        <img alt="Swiss"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/swiss_159558bb0e.png" />
+                    </div>
+                    <p class="region-title">Swiss</p>
+                </div>
+                <div class="region-card" data-country="jp">
+                    <div class="region-image">
+                        <img alt="Jepang"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/jp_42227e3f2a.png" />
+                    </div>
+                    <p class="region-title">Jepang</p>
+                </div>
+                <div class="region-card" data-country="cn">
+                    <div class="region-image">
+                        <img alt="China"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cn_e3bf55a879.png" />
+                    </div>
+                    <p class="region-title">China</p>
+                </div>
+                <div class="region-card" data-country="canada">
+                    <div class="region-image">
+                        <img alt="Kanada"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/canada_c2382d0b5f.png" />
+                    </div>
+                    <p class="region-title">Kanada</p>
+                </div>
+                <div class="region-card" data-country="sg">
+                    <div class="region-image">
+                        <img alt="Singapura"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/sg_2dc0e9566c.png" />
+                    </div>
+                    <p class="region-title">Singapura</p>
+                </div>
+                <div class="region-card" data-country="aus">
+                    <div class="region-image">
+                        <img alt="Australia"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/aus_0bbfc19f4a.png" />
+                    </div>
+                    <p class="region-title">Australia</p>
+                </div>
+                <div class="region-card" data-country="nz">
+                    <div class="region-image">
+                        <img alt="New Zealand"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/nz_8d40801ff4.png" />
+                    </div>
+                    <p class="region-title">New Zealand</p>
+                </div>
+                <div class="region-card" data-country="eu">
+                    <div class="region-image">
+                        <img alt="Eropa"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/eu_4d8a51bbf2.png" />
+                    </div>
+                    <p class="region-title">Eropa</p>
+                </div>
+                <div class="region-card" data-country="hk">
+                    <div class="region-image">
+                        <img alt="Hong Kong"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/hk_93c2754f22.png" />
+                    </div>
+                    <p class="region-title">Hong Kong</p>
+                </div>
+                <div class="region-card" data-country="us">
+                    <div class="region-image">
+                        <img alt="Amerika Serikat"
+                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/us_f30f16e065.png" />
+                    </div>
+                    <p class="region-title">Amerika Serikat</p>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -366,7 +421,6 @@
 
             <div class="promo-panel" id="panel-90n" role="tabpanel">
                 <div class="promo-content">
-                    <!-- Card 1: Club Wyndham Asia -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/wyndham_logo_32e953a0c8.webp"
@@ -377,7 +431,6 @@
                             <p class="brand-text">Club Wyndham Asia</p>
                         </div>
                     </div>
-                    <!-- Card 2: The Legian Bali -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/the_legian_logo_0342d4540d.webp"
@@ -388,7 +441,6 @@
                             <p class="brand-text">The Legian Bali</p>
                         </div>
                     </div>
-                    <!-- Card 3: Anantara Vacation Club -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/anatara_logo_4ae10deb75.webp"
@@ -399,7 +451,6 @@
                             <p class="brand-text">Anantara Vacation Club</p>
                         </div>
                     </div>
-                    <!-- Card 4: Millennium Hotels and Resorts -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/millenium_logo_8954211579.webp"
@@ -410,7 +461,6 @@
                             <p class="brand-text">Millennium Hotels and Resorts</p>
                         </div>
                     </div>
-                    <!-- Card 5: Ascott -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/ascot_logo_35fc3e4393.webp"
@@ -421,7 +471,6 @@
                             <p class="brand-text">Ascott</p>
                         </div>
                     </div>
-                    <!-- Card 6: The Westin Resort Nusa Dua Bali -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/the_westin_logo_045e4275fe.webp"
@@ -432,7 +481,6 @@
                             <p class="brand-text">The Westin Resort Nusa Dua Bali</p>
                         </div>
                     </div>
-                    <!-- Card 7: Intercontinental Bali Sanur Resort -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/intercon_logo_8f5a97d9f8.webp"
@@ -443,7 +491,6 @@
                             <p class="brand-text">Intercontinental Bali Sanur Resort</p>
                         </div>
                     </div>
-                    <!-- Card 8: Swiss-belhotel International -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/swissbel_logo_269b93cc6a.webp"
@@ -454,7 +501,6 @@
                             <p class="brand-text">Swiss-belhotel International</p>
                         </div>
                     </div>
-                    <!-- Card 9: Le Meridien Bali jimbaran -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/le_meridien_logo_ec0d1f9bc5.webp"
@@ -465,7 +511,6 @@
                             <p class="brand-text">Le Meridien Bali jimbaran</p>
                         </div>
                     </div>
-                    <!-- Card 10: Mandarin Oriental Jakarta -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/mo_logo_b8435165ba.webp"
@@ -476,7 +521,6 @@
                             <p class="brand-text">Mandarin Oriental Jakarta</p>
                         </div>
                     </div>
-                    <!-- Card 11: Klook -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/klook_logo_dfbd0feeca.webp"
@@ -487,7 +531,6 @@
                             <p class="brand-text">Klook</p>
                         </div>
                     </div>
-                    <!-- Card 12: TWG Tea -->
                     <div class="promo-card">
                         <div class="promo-image">
                             <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/twg_logo_93001ff77f.webp"
@@ -548,6 +591,46 @@
                     tab.setAttribute('aria-selected', 'true');
                     document.getElementById(tab.dataset.target).classList.add('active-panel');
                 });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var content = document.getElementById('region-content');
+            var cards = document.querySelectorAll('.region-card');
+            var prevBtn = document.querySelector('.region-arrow.prev');
+            var nextBtn = document.querySelector('.region-arrow.next');
+            var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
+            if (isTouch) {
+                cards.forEach(function(card) {
+                    card.addEventListener('click', function(e) {
+                        if (e.target.closest('.region-btn')) return;
+                        var flipped = card.classList.contains('is-flipped');
+                        cards.forEach(function(c) {
+                            c.classList.remove('is-flipped');
+                        });
+                        if (!flipped) card.classList.add('is-flipped');
+                    });
+                });
+            }
+
+            function scrollByCard(dir) {
+                var card = content.querySelector('.region-card');
+                var gap = 20;
+                var distance = (card.offsetWidth + gap) * dir;
+                content.scrollBy({
+                    left: distance,
+                    behavior: 'smooth'
+                });
+            }
+
+            prevBtn.addEventListener('click', function() {
+                scrollByCard(-1);
+            });
+            nextBtn.addEventListener('click', function() {
+                scrollByCard(1);
             });
         });
     </script>
