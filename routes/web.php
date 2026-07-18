@@ -64,3 +64,12 @@ Route::get('/kartuliburan-ocbc', function () {
         ]);
 });
 
+
+Route::get('/biller-ocbc', function () {
+    return view('page-biller-ocbc.index',[
+        'pageCSS' => 'assets/biller-ocbc/style.css',
+        'title' => 'Biller OCBC',
+        'isOCBC' => true,
+        ]);
+});
+

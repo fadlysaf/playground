@@ -41,7 +41,7 @@
 
     @if ($showOCBC)
         <!-- Include Header Component -->
-        @include('partials-ocbc.header')
+        @include('partials-ocbc.header-transparent')
     @endif
 
     <!-- Main Content Area -->

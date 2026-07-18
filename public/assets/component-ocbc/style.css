@@ -49,18 +49,36 @@
 }
 
 /* --- MAIN HEADER --- */
-.main-header {
-    background-color: #ffffff;
+/* .main-header {
+    background-color: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Setup relative for mobile positioning */
+    position: relative;
+} */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container img {
-    height: 38px; /* Sesuaikan tinggi logo Anda */
+    height: 48px;
+    width: auto;
     display: block;
 }
 
@@ -220,7 +238,7 @@
         left: 0;
         width: 100%;
         background-color: #ffffff;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
         border-top: 1px solid #f3f4f6;
         flex-direction: column;
         align-items: stretch;
