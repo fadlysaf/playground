@@ -1,0 +1,21 @@
+:root {
+    --espresso: #2e2118;
+    --amber: #b9791f;
+    --cream: #fbf7f0;
+    --sage: #5e7a5c;
+    --line: #e4dacb;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background: var(--cream);
+    color: var(--espresso);
+}
+.font-display {
+    font-family: "Fraunces", serif;
+}
+.ring-stain {
+    position: absolute;
+    border: 2px solid var(--amber);
+    border-radius: 9999px;
+    opacity: 0.25;
+}

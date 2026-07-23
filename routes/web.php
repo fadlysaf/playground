@@ -53,6 +53,8 @@ Route::get('/kartuliburan-cloning', function () {
         'pageCSS' => 'assets/kartuliburan-clone/style.css',
         'title' => 'Kartu Liburan Cloning',
         'isOCBC' => true,
+        'headerType' => 'header-transparent',
+        'footerType' => 'footer',
         ]);
 });
 
@@ -61,6 +63,8 @@ Route::get('/kartuliburan-ocbc', function () {
         'pageCSS' => 'assets/kartuliburan-clone/style.css',
         'title' => 'Kartu Liburan OCBC',
         'isOCBC' => true,
+        'headerType' => 'header-transparent',
+        'footerType' => 'footer',
         ]);
 });
 
@@ -70,6 +74,18 @@ Route::get('/biller-ocbc', function () {
         'pageCSS' => 'assets/biller-ocbc/style.css',
         'title' => 'Biller OCBC',
         'isOCBC' => true,
+        'headerType' => 'header',
+        'footerType' => 'footer',
+        ]);
+});
+
+Route::get('/microsite-tailwind-1', function () {
+    return view('microsite-page-tailwind-1.index',[
+        'pageCSS' => 'assets/microsite-page-tailwind-1/style.css',
+        'title' => 'Microsite Tailwind 1',
+        'partialsFolder' => 'partials-microsite-tailwind',
+        'headerType' => 'header',
+        'footerType' => 'footer',
         ]);
 });
 

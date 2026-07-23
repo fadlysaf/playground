@@ -6,6 +6,9 @@
             View::hasSection('isOCBC')) &&
         !(isset($noOCBC) && $noOCBC) &&
         !View::hasSection('noOCBC');
+
+    // Menentukan folder partials secara dinamis
+    $partialsFolder = $partialsFolder ?? ($showOCBC ? 'partials-ocbc' : null);
 @endphp
 <!DOCTYPE html>
 <html lang="id">
@@ -39,9 +42,15 @@
 
 <body>
 
-    @if ($showOCBC)
+    @if ($partialsFolder)
         <!-- Include Header Component -->
-        @include('partials-ocbc.header-transparent')
+        @php
+            $defaultHeader = ($partialsFolder === 'partials-ocbc') ? 'header-transparent' : 'header';
+            $headerName = $headerType ?? ($header ?? $defaultHeader);
+        @endphp
+        @if ($headerName !== 'none')
+            @include($partialsFolder . '.' . $headerName)
+        @endif
     @endif
 
     <!-- Main Content Area -->
@@ -49,9 +58,14 @@
         @yield('content')
     </main>
 
-    @if ($showOCBC)
+    @if ($partialsFolder)
         <!-- Include Footer Component -->
-        @include('partials-ocbc.footer')
+        @php
+            $footerName = $footerType ?? ($footer ?? 'footer');
+        @endphp
+        @if ($footerName !== 'none')
+            @include($partialsFolder . '.' . $footerName)
+        @endif
     @endif
 
     @stack('script')
