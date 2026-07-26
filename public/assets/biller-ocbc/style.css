@@ -576,6 +576,47 @@ body {
     }
 }
 
+.step-download-pdf {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(225, 29, 46, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pdf-download-btn:hover {
+    background-color: #c81325;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(225, 29, 46, 0.3);
+}
+
+.pdf-download-btn i {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .pdf-download-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
 #app-banner {
     position: relative;
     background-color: #ff0000;
@@ -713,32 +754,60 @@ body {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         justify-content: flex-start;
-        gap: 12px;
+        gap: 10px;
         margin-top: 20px;
-        padding: 0 20px 10px;
+        padding: 5px 20px 15px;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
     }
 
     .promo-tabs::-webkit-scrollbar {
-        display: none;
+        display: none; /* Chrome, Safari and Opera */
     }
 
     .btn-tab {
         flex: 0 0 auto;
-        width: 130px;
-        height: 160px;
-        padding: 10px;
-        margin-bottom: 20px;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 30px;
+        margin-bottom: 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e5e7eb;
     }
 
     .tab-icon-wrapper {
-        width: 90px;
-        height: 90px;
+        width: 20px;
+        height: 20px;
+        margin: 0;
     }
 
     .floating-label {
-        font-size: 11px;
-        padding: 3px 10px;
-        margin-top: 8px;
+        font-size: 13px;
+        padding: 0;
+        background-color: transparent;
+        color: #4b5563;
+        margin-top: 0;
+        font-weight: 600;
+    }
+
+    .active-tab {
+        background-color: #ff0000;
+        border-color: #ff0000;
+        box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    }
+
+    .active-tab .floating-label {
+        background-color: transparent;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+    .active-tab .tab-icon-wrapper img {
+        filter: brightness(0) invert(1);
     }
 
     .step-container {
@@ -779,16 +848,6 @@ body {
 
     .promo-header h1 {
         font-size: 20px;
-    }
-
-    .btn-tab {
-        width: 110px;
-        height: 140px;
-    }
-
-    .tab-icon-wrapper {
-        width: 75px;
-        height: 75px;
     }
 
     .app-title {

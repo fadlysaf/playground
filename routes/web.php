@@ -74,7 +74,7 @@ Route::get('/biller-ocbc', function () {
         'pageCSS' => 'assets/biller-ocbc/style.css',
         'title' => 'Biller OCBC',
         'isOCBC' => true,
-        'headerType' => 'header',
+        'headerType' => 'header-transparent',
         'footerType' => 'footer',
         ]);
 });
