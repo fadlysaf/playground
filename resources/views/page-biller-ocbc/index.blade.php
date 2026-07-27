@@ -31,7 +31,7 @@
                 <h1>Nikmati Promo Bayar Tagihan OCBC mobile</h1>
                 <p class="promo-desc">Dapatkan promo menarik untuk persiapan liburan Anda dengan kartu OCBC.</p>
             </div>
-            <div class="promo-tabs" role="tablist">
+            <div class="promo-tabs overflow-hidden" role="tablist">
                 <button class="btn-tab active-tab" role="tab" aria-selected="true" data-target="panel-topup">
                     <div class="tab-icon-wrapper">
                         <img src="https://www.svgrepo.com/show/333812/credit-card.svg" alt="Global Kredit">

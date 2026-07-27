@@ -227,11 +227,25 @@ body {
     margin-top: 12px;
 }
 
+.promo-tabs-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.promo-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 .promo-tabs {
     display: flex;
+    width: 100%;
+    max-width: 1130px;
+    margin: 30px auto 0;
     justify-content: center;
     gap: 20px;
-    margin-top: 30px;
     position: relative;
     z-index: 30;
 }
@@ -242,7 +256,8 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: flex-start;
-    width: 210px;
+    width: 100%;
+    max-width: 210px;
     height: 240px;
     padding: 15px;
     border: 2px solid transparent;
@@ -260,9 +275,10 @@ body {
 }
 
 .tab-icon-wrapper {
-    width: 160px;
-    height: 160px;
-    margin-top: 0 auto;
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
 }
 
 .tab-icon-wrapper img {
