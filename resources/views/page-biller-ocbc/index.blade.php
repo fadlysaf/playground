@@ -4,23 +4,25 @@
 
 @section('content')
     <section id="hero-section">
-        <div class="hero-content">
-            <div class="title-banner">
-                <h1>Nikmati Beragam Promo <span class="higlight-banner">Bayar Tagihan</span> di <span
-                        class="higlight-banner">OCBC mobile</span></h1>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="title-banner">
+                    <h1>Nikmati Beragam Promo <span class="higlight-banner">Bayar Tagihan</span> di <span
+                            class="higlight-banner">OCBC mobile</span></h1>
+                </div>
+
+                <p class="desc-banner">
+                    Bayar tagihan jadi lebih hemat dengan berbagai promo menarik. Mulai dari listrik, air, internet, hingga
+                    tagihan lainnya, semuanya lebih praktis dalam satu aplikasi.
+                </p>
+
+                <a href="" class="cta-button">
+                    Download OCBC mobile
+                </a>
             </div>
-
-            <p class="desc-banner">
-                Bayar tagihan jadi lebih hemat dengan berbagai promo menarik. Mulai dari listrik, air, internet, hingga
-                tagihan lainnya, semuanya lebih praktis dalam satu aplikasi.
-            </p>
-
-            <a href="" class="cta-button">
-                Download OCBC mobile
-            </a>
         </div>
 
-        <div class="hero-image-panel hero-bg-image">
+        <div class="hero-image-panel">
             <img src="https://images.unsplash.com/photo-1586637383694-3ab1a6c70714?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="OCBC mobile app">
         </div>
@@ -31,7 +33,7 @@
                 <h1>Nikmati Promo Bayar Tagihan OCBC mobile</h1>
                 <p class="promo-desc">Dapatkan promo menarik untuk persiapan liburan Anda dengan kartu OCBC.</p>
             </div>
-            <div class="promo-tabs overflow-hidden" role="tablist">
+            <div class="promo-tabs" role="tablist">
                 <button class="btn-tab active-tab" role="tab" aria-selected="true" data-target="panel-topup">
                     <div class="tab-icon-wrapper">
                         <img src="https://www.svgrepo.com/show/333812/credit-card.svg" alt="Global Kredit">
@@ -66,6 +68,18 @@
 
             <div class="promo-panel active-panel" id="panel-topup" role="tabpanel">
                 <div class="promo-content">
+                    <div class="promo-card">
+                        <div class="promo-image">
+                            <span class="promo-badge">NEW PROMO</span>
+                            <img src="https://plus.unsplash.com/premium_vector-1780758604115-896ef3fe9aac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Cashback Shell">
+                        </div>
+                        <div class="promo-body">
+                            <small class="promo-category">Promo 1</small>
+                            <h3 class="promo-title">Promo 1</h3>
+                            <p class="promo-date">Shell</p>
+                        </div>
+                    </div>
                     <div class="promo-card">
                         <div class="promo-image">
                             <span class="promo-badge">NEW PROMO</span>
@@ -220,6 +234,23 @@
                 </div>
 
                         </div>
+        </div>
+    </section>
+
+    <section id="magazine-cta-section">
+        <div class="cta-content">
+            <p>Cek beragam promo untuk persiapan traveling kamu di sini!</p>
+            <a href="" class="btn-magazine">
+                <span class="btn-magazine-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 2H14L19 7V20C19 21.1046 18.1046 22 17 22H6C4.89543 22 4 21.1046 4 20V4C4 2.89543 4.89543 2 6 2Z"
+                            fill="#ffffff" fill-opacity="0.25" stroke="#ffffff" stroke-width="1.5" />
+                        <path d="M14 2V7H19" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+                        <text x="12" y="17" text-anchor="middle" font-size="6.5" font-weight="700" fill="#ffffff">PDF</text>
+                    </svg>
+                </span>
+                OCBC Magazine Holiday
+            </a>
         </div>
     </section>
 @endsection

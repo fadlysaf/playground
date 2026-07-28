@@ -17,6 +17,21 @@ body {
     padding: 75px 30px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+
+.col {
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+/* =========================================================
+   HEADER (versi transparent — overlay di atas hero)
+   ========================================================= */
 header {
     position: absolute;
     top: 0;
@@ -25,6 +40,57 @@ header {
     width: 100%;
 }
 
+/* --- Top header (bar bahasa & menu kontak) --- */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+.lang-switcher {
+    display: flex;
+    padding: 2px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+}
+
+.lang-btn {
+    padding: 4px 10px;
+    color: #6b7280;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+    color: #ffffff;
+    background-color: #1f2937;
+}
+
+.top-right-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.top-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #374151;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.top-menu-item i {
+    font-size: 16px;
+}
+
+/* --- Main header / navbar (transparent, menimpa hero) --- */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -40,7 +106,78 @@ header {
     width: auto;
 }
 
+.menu-toggle {
+    display: none;
+    padding: 8px;
+    font-size: 22px;
+    color: #1f2937;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.menu-toggle:hover {
+    color: #c00000;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #c00000;
+    /* Warna merah OCBC */
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #1f2937;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-member {
+    padding: 10px 22px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #cc0000 0%, #a00000 100%);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(204, 0, 0, 0.2);
+    transition: opacity 0.2s;
+}
+
+.btn-member:hover {
+    opacity: 0.9;
+}
+
 @media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -72,25 +209,31 @@ header {
         gap: 12px;
         margin-top: 8px;
     }
+
+    .search-btn {
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .btn-member {
+        text-align: center;
+        border-radius: 8px;
+    }
 }
 
+/* =========================================================
+   HERO SECTION (#hero-section)
+   ========================================================= */
 #hero-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-.hero-container {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    min-height: inherit;
-    height: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -102,7 +245,7 @@ header {
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
-    padding: 60px 20px;
+    padding: 60px 60px;
     text-align: left;
     background-color: transparent;
 }
@@ -138,9 +281,7 @@ header {
     background-color: #ff0000;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition:
-        background-color 0.2s,
-        transform 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .cta-button:hover {
@@ -150,8 +291,8 @@ header {
 
 .hero-image-panel {
     position: absolute;
-    inset: 0;
-    width: 100%;
+    inset: 0 0 0 auto;
+    width: 55%;
     overflow: hidden;
 }
 
@@ -165,8 +306,9 @@ header {
     content: "";
     position: absolute;
     inset: 0;
+    background: url("../email-pattern.png") repeat;
     background-size: 180px;
-    opacity: 0.5;
+    opacity: .50;
     pointer-events: none;
     z-index: 2;
 }
@@ -174,36 +316,26 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        90deg,
-        #fff 0%,
-        rgba(255, 255, 255, 0.95)45%,
-        rgba(255, 255, 255, 0) 75%
-    );
+    background: linear-gradient(90deg,
+            #fff 0%,
+            rgba(255, 255, 255, .95) 12%,
+            rgba(255, 255, 255, 0) 60%);
     pointer-events: none;
     z-index: 3;
 }
 
 @media (max-width: 768px) {
     #hero-section {
-        display: flex;
         flex-direction: column;
         min-height: auto;
     }
 
-    .hero-container {
-        display: block;
-        width: 100%;
-        order: 2;
-    }
-
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        flex: none;
+        order: 2;
         padding: 30px 20px;
         text-align: center;
+        align-items: center;
         background-color: #ffffff;
     }
 
@@ -225,11 +357,9 @@ header {
     }
 
     .hero-image-panel::after {
-        background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0) 60%,
-            #ffffff 100%
-        );
+        background: linear-gradient(to bottom,
+                rgba(255, 255, 255, 0) 60%,
+                #ffffff 100%);
     }
 
     .cta-button {
@@ -248,9 +378,15 @@ header {
     }
 }
 
+/* =========================================================
+   PROMO SECTION (#promo-section)
+   ========================================================= */
 #promo-section {
     position: relative;
+    display: flex;
+    align-items: stretch;
     width: 100%;
+    min-height: 100vh;
     background-color: #f9fafb;
     overflow: hidden;
 }
@@ -339,8 +475,7 @@ header {
 
 .promo-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 290px));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     max-width: 1250px;
     margin: 0 auto;
     padding: 20px 0;
@@ -394,6 +529,12 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+.promo-badge.badge-left {
+    right: auto;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+
 .promo-body {
     display: flex;
     flex-direction: column;
@@ -436,21 +577,22 @@ header {
     }
 
     .promo-tabs {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        justify-content: flex-start !important;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         gap: 10px;
         margin-top: 20px;
         padding: 5px 20px 15px;
-        overflow-x: auto !important;
-        width: 100% !important;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: none;
+        /* IE and Edge */
         scrollbar-width: none;
+        /* Firefox */
     }
 
     .promo-tabs::-webkit-scrollbar {
         display: none;
+        /* Chrome, Safari and Opera */
     }
 
     .btn-tab {
@@ -500,29 +642,31 @@ header {
 
     .promo-content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-        max-width: 660px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        max-height: 50%;
         margin: 0 auto;
-        padding: 20px 10px;
+        padding: 20px 0;
         grid-gap: 20px;
+        justify-content: center;
+        align-items: stretch;
     }
 
     .promo-card {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        max-width: 320px;
         height: 100%;
+        max-width: 100%;
     }
 
     .promo-image {
-        height: 180px;
+        height: 200px;
     }
 }
 
+/* =========================================================
+   STEP BY STEP SECTION (#step-by-step)
+   ========================================================= */
 #step-by-step {
     position: relative;
 }
@@ -683,6 +827,37 @@ header {
     font-weight: 700;
 }
 
+.step-download-pdf {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ff0000;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(225, 29, 46, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pdf-download-btn:hover {
+    background-color: #c81325;
+    box-shadow: 0 6px 16px rgba(225, 29, 46, 0.3);
+    transform: translateY(-2px);
+}
+
+.pdf-download-btn i {
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
     .step-layout {
         grid-template-columns: 1fr;
@@ -725,6 +900,9 @@ header {
     }
 }
 
+/* =========================================================
+   FOOTER
+   ========================================================= */
 .main-footer {
     margin-top: 40px;
     padding: 20px 5%;
@@ -808,7 +986,7 @@ header {
 
     #promo-section {
         min-height: auto;
-        /* padding: 40px 0; */
+        padding: 40px 0;
     }
 
     .footer-container {
@@ -821,6 +999,14 @@ header {
     }
 }
 
+/* =========================================================
+   BELUM DIPAKAI DI HALAMAN INI
+   (class berikut tidak ada di index.html saat ini — kemungkinan
+   dipakai di halaman/partial lain. Tetap disimpan agar tidak
+   merusak halaman lain yang mungkin memakainya.)
+   ========================================================= */
+
+/* --- App banner (mis. banner download app di halaman lain) --- */
 #app-banner {
     position: relative;
     display: flex;
@@ -937,6 +1123,38 @@ header {
     }
 }
 
+/* --- Region/product card (mis. halaman region lain) --- */
+@media (max-width: 768px) {
+    .highlight-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-product-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-desc {
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+
+/* CTA Content Section matching the second screenshot */
 .cta-content {
     display: flex;
     flex-direction: column;
@@ -967,65 +1185,5 @@ header {
 
     .cta-content p {
         font-size: 14px;
-    }
-}
-
-.btn-magazine {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 26px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    background-color: #ff0000;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition:
-        background-color 0.2s,
-        transform 0.2s;
-    white-space: nowrap;
-}
-
-.btn-magazine:hover {
-    background-color: #e00000;
-    transform: translateY(-4px);
-}
-
-.btn-magazine-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-}
-
-.btn-magazine-icon svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .btn-magazine {
-        padding: 10px 20px;
-        font-size: 13px;
-        gap: 8px;
-    }
-
-    .btn-magazine-icon {
-        width: 17px;
-        height: 17px;
-    }
-}
-
-@media (max-width: 480px) {
-    .btn-magazine {
-        width: 100%;
-        justify-content: center;
-        padding: 12px 16px;
     }
 }
