@@ -41,15 +41,34 @@
 </head>
 
 <body>
-    @include('ocbc-outlook.header')
+
+    @if ($partialsFolder)
+        <!-- Include Header Component -->
+        @php
+            $defaultHeader = ($partialsFolder === 'partials-ocbc') ? 'header-transparent' : 'header';
+            $headerName = $headerType ?? ($header ?? $defaultHeader);
+        @endphp
+        @if ($headerName !== 'none')
+            @include($partialsFolder . '.' . $headerName)
+        @endif
+    @endif
+
     <!-- Main Content Area -->
     <main>
         @yield('content')
     </main>
 
+    @if ($partialsFolder)
+        <!-- Include Footer Component -->
+        @php
+            $footerName = $footerType ?? ($footer ?? 'footer');
+        @endphp
+        @if ($footerName !== 'none')
+            @include($partialsFolder . '.' . $footerName)
+        @endif
+    @endif
+
     @stack('script')
-    
-    @include('ocbc-outlook.footer')
 </body>
 
 </html>

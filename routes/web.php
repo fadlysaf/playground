@@ -89,3 +89,10 @@ Route::get('/microsite-tailwind-1', function () {
         ]);
 });
 
+Route::get('/ocbc-outlook', function () {
+    return view('ocbc-outlook.index',[
+        'pageCSS' => 'assets/ocbc-outlook/style.css',
+        'title' => 'OCBC Outlook',
+        ]);
+});
+
