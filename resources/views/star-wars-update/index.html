@@ -1,0 +1,2230 @@
+<!doctype html>
+<html class="no-js on-reset-style" lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kartu Kredit OCBC Star Wars Platinum</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link
+            href="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/styles_08f42bb097.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link
+            href="https://cdn2.ocbc.id/asset/media/OCBC/Favicon/favicon.ico"
+            rel="shortcut icon"
+        />
+
+        <script
+            defer
+            src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+        ></script>
+    </head>
+    <body class="default-device bodyclass">
+        <div class="popup-overlay" id="eventPopup">
+            <div
+                class="popup-content"
+                style="box-shadow: rgb(105, 18, 18) 0px 20px 30px -10px"
+            >
+                <button class="popup-close" id="closePopup">
+                    <svg fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        ></path>
+                    </svg>
+                </button>
+
+                <h2 class="popup-title">
+                    Photo Competition Challenge <br />
+                    <span>Menangkan total Hadiah Rp 10 Juta</span>
+                </h2>
+
+                <div class="popup-info-box">
+                    <div class="popup-info-item">
+                        <svg
+                            fill="none"
+                            stroke="currentColor"
+                            viewbox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                            ></path>
+                        </svg>
+                        <span>Halte Bus Star Wars</span>
+                    </div>
+                    <div class="popup-info-item">
+                        <svg
+                            fill="none"
+                            stroke="currentColor"
+                            viewbox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            ></path>
+                        </svg>
+                        <span>3 Agustus - 30 September 2026</span>
+                    </div>
+                </div>
+
+                <button class="popup-btn" id="exploreBtn">
+                    Lihat Detail Event
+                </button>
+            </div>
+        </div>
+
+        <section id="hero-section">
+            <div class="max-width-container text-center relative">
+                <h1 class="mb-4 leading-none opacity-0 scroll-animation-down">
+                    RELEASE THE <span class="text-red-600">FORCE,</span><br />
+                    UNLOCK THE <span class="text-red-600">REWARDS</span>
+                </h1>
+                <img
+                    alt=""
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/ocbc_card_lenticular_daecaea52e.gif"
+                    class="mx-auto opacity-0 scroll-animation-up"
+                    id="hero-lenticular-img"
+                />
+                <img
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/ocbc_logo_white_150f2d7e12.png"
+                    alt="Star Wars Logo"
+                    class="absolute top-0 right-0 m-4 opacity-0 scroll-animation-left"
+                    id="ocbc-logo-img"
+                />
+                <img
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/starwars_logo_b090af74b5.png"
+                    alt="Star Wars Logo"
+                    class="absolute top-0 left-0 m-4 opacity-0 scroll-animation-right"
+                    id="starwars-logo"
+                />
+                <img
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/lucasfilm_97e3fb6fbe.png"
+                    alt="Star Wars Logo"
+                    class="absolute bottom-0 right-0 m-4 opacity-0 scroll-animation-right"
+                    id="lucas-img"
+                />
+            </div>
+        </section>
+
+        <section id="history-section">
+            <div class="max-width-container text-center">
+                <h2>Hidup adalah tentang Pilihan..</h2>
+                <br />
+                <p id="typing-text">&nbsp;</p>
+            </div>
+        </section>
+
+        <section id="intro-section">
+            <div id="intro-inner-content" class="max-width-container">
+                <div class="grid grid-cols-1 items-center lg:grid-cols-2">
+                    <div
+                        id="parallax-section"
+                        class="parallax-container mb-4 lg:mb-0 opacity-0 scroll-animation-up"
+                    >
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/intro_img_03fba85515.png"
+                                        alt="Darth Vader"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/intro_img_2_b9816e6f15.png"
+                                        alt="Another Image"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h2
+                            class="mb-2 font-extrabold leading-none opacity-0 scroll-animation-down"
+                        >
+                            RELEASE THE
+                            <span class="text-red-600">FORCE,</span><br />
+                            UNLOCK THE <span class="text-red-600">REWARDS</span>
+                        </h2>
+                        <h6 class="mb-2 font-normal opacity-0 scroll-animation">
+                            Setiap transaksi punya kekuatan. Gunakan Kartu
+                            Kredit OCBC Star Wars Platinum dengan desain dual
+                            sisi untuk dapatkan Poinseru di setiap transaksi dan
+                            berbagai promo lain untuk maksimalkan transaksi
+                            harianmu.
+                        </h6>
+                        <div
+                            class="flex flex-col space-x-2 space-y-2 sm:flex-row sm:justify-center sm:space-y-0"
+                        >
+                            <a
+                                href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBC_WebCorp-Other&utm_medium=microsite&utm_campaignid=&utm_campaign=PreBookStarWars_ACQ_20250325_OCBCxDisney-EA&utm_content=ButtonCTA&promo_referal=&force="
+                                target="_blank"
+                                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-600 hover:bg-yellow-starwars-hover focus:ring-4 focus:white opacity-0 scroll-animation-left"
+                            >
+                                <svg
+                                    class="mr-2 w-5 h-5"
+                                    fill="currentColor"
+                                    viewbox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 5C2 3.9 2.9 3 4 3H20C21.1 3 22 3.9 22 5V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V5ZM4 7V5H20V7H4ZM4 10V19H20V10H4ZM6 17H10V15H6V17ZM12 17H14V15H12V17Z"
+                                    ></path>
+                                </svg>
+                                Apply Now
+                            </a>
+                            <a
+                                href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/syarat-ketentuan-prebooking-kartu-kredit-ocbc-platinum-star-wars"
+                                target="_blank"
+                                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border-2 hover:bg-yellow-starwars-hover focus:ring-4 focus:white opacity-0 scroll-animation-left"
+                            >
+                                <svg
+                                    class="mr-2 w-5 h-5"
+                                    fill="currentColor"
+                                    viewbox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 5C2 3.9 2.9 3 4 3H20C21.1 3 22 3.9 22 5V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V5ZM4 7V5H20V7H4ZM4 10V19H20V10H4ZM6 17H10V15H6V17ZM12 17H14V15H12V17Z"
+                                    ></path>
+                                </svg>
+                                Syarat &amp; Ketentuan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section">
+            <div class="w-full max-width-container">
+                <div class="mx-auto" style="max-width: 1150px">
+                    <header class="hero">
+                        <div class="hero-image">
+                            <img
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_SW_PP_f3f4254075.webp"
+                                alt="Pacific Place Jakarta"
+                            />
+                            <div class="hero-image-content">
+                                <span class="badge">Special Event</span>
+                                <h2
+                                    style="
+                                        color: white;
+                                        font-size: 1.5rem;
+                                        font-weight: 800;
+                                    "
+                                >
+                                    Pacific Place Jakarta
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="hero-content">
+                            <h1 class="text-gray-700">
+                                Celebrate <span>May The 4<sup>th</sup></span
+                                ><br />with
+                                <span>OCBC</span>
+                            </h1>
+                            <div class="event-meta text-gray-700">
+                                <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewbox="0 0 24 24"
+                                    style="margin-right: 8px"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                Pacific Place Mall, Jakarta
+                            </div>
+                            <div class="event-meta text-gray-700">
+                                <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewbox="0 0 24 24"
+                                    style="margin-right: 8px"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    ></path>
+                                </svg>
+                                8 Mei - 7 Juni 2026
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="promo-grid">
+                        <section
+                            class="card card-white"
+                            style="
+                                box-shadow: rgb(26, 156, 48) 0px 20px 30px -10px;
+                            "
+                        >
+                            <div class="card-header">
+                                <div class="icon-box">
+                                    <svg
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewbox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3>
+                                    Penawaran spesial untuk Nasabah Setia OCBC:
+                                </h3>
+                            </div>
+                            <div class="divider"></div>
+
+                            <ul class="promo-list">
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>Spin The Wheel</h4>
+                                        <p>
+                                            Transaksi min.
+                                            <span class="highlight"
+                                                >Rp3,5 Juta</span
+                                            >
+                                            di Pacific Place pakai Kartu Kredit
+                                            OCBC dan dapatkan hadiah hingga
+                                            <span class="highlight"
+                                                >Rp2 Juta</span
+                                            >.
+                                        </p>
+                                        <a
+                                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/05/08/syarat-dan-ketentuan-spin-the-wheel"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                style="
+                                                    font-size: 16px;
+                                                    margin-top: 5px;
+                                                "
+                                                class="bg-red-500 text-white px-4 py-2 rounded-lg"
+                                            >
+                                                Lihat Detail TnC
+                                            </button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>Poinseru</h4>
+                                        <p>
+                                            Tukar Poinseru dengan berbagai
+                                            eVoucher untuk belanja di Pacific
+                                            Place.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>Promo Spesial di Pacific Place</h4>
+                                        <p>
+                                            Hemat hingga
+                                            <span class="highlight">15%</span> &
+                                            Cicilan
+                                            <span class="highlight">0%</span>
+                                            hingga 12 Bulan di merchant Pacific
+                                            Place pilihan.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section
+                            class="card card-dark"
+                            style="
+                                box-shadow: rgb(160, 32, 32) 0px 20px 30px -10px;
+                            "
+                        >
+                            <div class="card-header">
+                                <div class="icon-box">
+                                    <svg
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewbox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3>
+                                    Penawaran Spesial untuk Nasabah Baru OCBC:
+                                </h3>
+                            </div>
+                            <div class="divider"></div>
+
+                            <ul class="promo-list">
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>
+                                            Spesial! Nikmati biaya iuran tahunan
+                                            pertama sebesar Rp200 Ribu
+                                        </h4>
+                                        <p>
+                                            Khusus untuk pengajuan Tabungan
+                                            bundling Kartu Kredit OCBC Star Wars
+                                            Platinum di booth OCBC Pacific Place
+                                            Mall Kode promo: SW-PP
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>
+                                            Dapatkan Sticker Star Wars: The
+                                            Mandaloan and Grogu
+                                        </h4>
+                                        <p>
+                                            Untuk setiap Nasabah yang mengajukan
+                                            Kartu Kredit OCBC Star Wars
+                                            Platinum<br />
+                                            <em
+                                                ><small
+                                                    >*untuk 600 orang
+                                                    pertama</small
+                                                ></em
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="promo-item">
+                                    <span class="bullet">•</span>
+                                    <div class="promo-info">
+                                        <h4>Koper Premium + Sticker</h4>
+                                        <p>
+                                            Tebus murah Koper Premium senilai
+                                            Rp388 ribu plus stiker Star Wars<br /><em
+                                                ><small
+                                                    >*belum termasuk ongkos
+                                                    kirim</small
+                                                ></em
+                                            >
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-section">
+            <div class="max-width-container">
+                <div class="mb-2 lg:mb-4 grid grid-cols-12">
+                    <div
+                        class="col-span-12 text-center lg:col-span-10 lg:text-left"
+                    >
+                        <h2
+                            class="mb-1 tracking-wider leading-none font-extrabold text-white"
+                        >
+                            Promo Eksklusif Kartu Kredit OCBC Star Wars Platinum
+                        </h2>
+                        <p class="text-gray-300">
+                            Manfaatkan berbagai penawaran spesial dari Kartu
+                            Kredit OCBC Star Wars Platinum yang dapat membantu
+                            kamu untuk mengatur pengeluaranmu dengan bijak
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div
+                    class="grid grid-cols-12 md:grid-cols-2"
+                    style="gap: 20px; max-width: 1000px; margin: 0 auto"
+                >
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                        style="
+                            background:
+                                radial-gradient(
+                                    circle at 50% 20%,
+                                    rgba(255, 255, 255, 0.04),
+                                    transparent 60%
+                                ),
+                                linear-gradient(180deg, #1e1c1b, #201e1d);
+                            border-radius: 10px;
+                            padding: 30px;
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            box-shadow: #a11b1b 0px 15px 25px -10px;
+                        "
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kartu_starwars_lenticular_83781445aa.png"
+                                width="350px"
+                            />
+                        </div>
+                        <h4>Kartu Ekslusif Star Wars</h4>
+                        <p>
+                            Dapatkan Kartu Ekslusif berdesain Lentikular Star
+                            Wars dengan 2 sisi Darth Vader vs Yoda
+                        </p>
+                    </div>
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                        style="
+                            background:
+                                radial-gradient(
+                                    circle at 80% 10%,
+                                    rgba(255, 0, 0, 0.05),
+                                    transparent 40%
+                                ),
+                                linear-gradient(180deg, #e7e7e7, #f7dede);
+                            border-radius: 10px;
+                            padding: 30px;
+                            color: black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            box-shadow: #13a11a 0px 15px 25px -10px;
+                        "
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/program_koper_and_sticker_f989a20bf4.png"
+                                width="200px"
+                            />
+                        </div>
+                        <h4>Tebus Murah Koper Premium</h4>
+                        <p>
+                            Tebus murah Koper Premium plus stiker Star Wars
+                            dengan harga spesial Rp388 ribu*<br />
+                            <em><small>*Belum termasuk ongkos kirim</small></em>
+                        </p>
+                        <div class="mt-2">
+                            <a
+                                href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/syarat-ketentuan-tebus-murah-koper-premium-sticker-star-wars"
+                                target="_blank"
+                            >
+                                <button
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm text-center justify-center"
+                                >
+                                    Info Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-12 md:grid-cols-4 gap-4 second-cc-feature-section"
+                >
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_1_img_276335bb74.png"
+                                class="cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="text-white">Cinema Duo Promo</h4>
+                        <p class="text-white">
+                            Beli 1 Bonus 2 Tiket film pilihan Disney, Pixar,
+                            Marvel, Star Wars, 20ᵗʰ Century Studios selama
+                            periode tayang<br />
+                            <em
+                                ><small
+                                    >*berlaku untuk pembelian melalui
+                                    m.tix</small
+                                ></em
+                            >
+                        </p>
+                        <div class="mt-2">
+                            <a
+                                href="https://ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/syarat-ketentuan-cinema-duo-promo"
+                                target="_blank"
+                            >
+                                <button
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm text-center justify-center"
+                                >
+                                    Info Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_disney_new_2e33106fe3.png"
+                                class="cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="text-white leading-none">Disney+ Promo</h4>
+                        <p class="text-white">
+                            Hemat hingga 20% untuk berlangganan Disney+
+                        </p>
+                        <div class="mt-2">
+                            <a
+                                href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/syarat-ketentuan-disney-promo"
+                                target="_blank"
+                            >
+                                <button
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm text-center justify-center"
+                                >
+                                    Info Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_3_img_08da0b2594.png"
+                                class="cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="text-white">Poinseru</h4>
+                        <p class="text-white">
+                            Tukarkan Poinseru dengan beragam hadiah menarik
+                            melalui OCBC mobile
+                        </p>
+                    </div>
+                    <div
+                        class="col-span-12 text-center lg:col-span-3 lg:text-left"
+                    >
+                        <div class="flex justify-center lg:justify-start">
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_1_img_276335bb74.png"
+                                class="cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="text-white">Cinema Promo</h4>
+                        <p class="text-white">
+                            Hemat 50% pembelian tiket nonton melalui m.tix untuk
+                            semua film di Cinema XXI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other-feature-section">
+            <div class="max-width-container">
+                <div class="mb-2 lg:mb-4">
+                    <h2 class="tracking-wider font-extrabold text-white">
+                        Fitur Kartu Kredit Lainnya
+                    </h2>
+                </div>
+                <div
+                    class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4-fix md:space-y-0"
+                >
+                    <div class="light-speed-bg p-4 rounded-lg">
+                        <div
+                            class="flex justify-center items-center rounded-full bg-primary-100 lg:h-12 lg:w-12 other-feature-img"
+                        >
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/poinseru_icon_594749102a.png"
+                                class="other-cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="font-bold text-red-500 leading-none">
+                            Poinseru Setiap Transaksi
+                        </h4>
+                        <p class="text-gray-700">
+                            Setiap transaksi Rp10,000 mendapat 1 Poinseru
+                        </p>
+                    </div>
+                    <div class="light-speed-bg p-4 rounded-lg transform">
+                        <div
+                            class="flex justify-center items-center rounded-full bg-primary-100 lg:h-12 lg:w-12 other-feature-img"
+                        >
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kemudahan_transaksi_icon_8387b26f71.png"
+                                class="other-cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="font-bold text-red-500 leading-none">
+                            Serba Digital di OCBC mobile
+                        </h4>
+                        <p class="text-gray-700">
+                            Pembuatan Kartu Digital yang Mudah mulai dari
+                            pengajuan, aktivasi, transaksi, cicilan, blokir/buka
+                            blokir, hingga pembayaran tagihan
+                        </p>
+                    </div>
+                    <div class="light-speed-bg p-4 rounded-lg">
+                        <div
+                            class="flex justify-center items-center rounded-full bg-primary-100 lg:h-12 lg:w-12 other-feature-img"
+                        >
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cicilan_cc_icon_ef1e27b5da.png"
+                                class="other-cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="font-bold text-red-500 leading-none">
+                            Cicilan Kartu Fleksibel
+                        </h4>
+                        <p class="text-gray-700">
+                            Cicilan mulai 0% atau bunga ringan hingga 36 bulan
+                            melalui OCBC mobile
+                        </p>
+                    </div>
+                    <div class="light-speed-bg p-4 rounded-lg">
+                        <div
+                            class="flex justify-center items-center rounded-full bg-primary-100 lg:h-12 lg:w-12 other-feature-img"
+                        >
+                            <img
+                                alt=""
+                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/merchant_rekanan_icon_ceedae55f8.png"
+                                class="other-cc-feature-img"
+                            />
+                        </div>
+                        <h4 class="font-bold text-red-500 leading-none">
+                            Penawaran di Merchant Rekanan
+                        </h4>
+                        <p class="text-gray-700">
+                            Penawaran spesial di lebih dari 500 merchant favorit
+                            mulai dari promo di restoran, e-commerce,
+                            supermarket dan masih banyak lagi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="card-section">
+            <div class="max-width-container">
+                <div class="mb-2 lg:mb-4">
+                    <h2 class="tracking-wider font-extrabold text-white">
+                        Apply Kartu Kredit OCBC Star Wars Platinum
+                    </h2>
+                </div>
+                <div class="col-span-12 lg:col-span-8">
+                    <img
+                        alt=""
+                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/koper_9369358216.png"
+                        class="mx-auto"
+                    />
+                    <div class="grid grid-c">&nbsp;</div>
+                    <div
+                        class="mt-8 p-8 rounded-lg border border-width-4 bg-dark-gray-starwars text-white text-center"
+                        style="border: 3px solid #e9e9e9"
+                    >
+                        <h3>
+                            <em>Apply</em> sekarang untuk bisa tebus murah Koper
+                            Premium dengan harga spesial Rp388 ribu* plus stiker
+                            Star Wars
+                        </h3>
+                        <p class="small-info-text mb-4">
+                            <em>*Belum termasuk ongkos kirim</em>
+                        </p>
+                        <div class="flex justify-center mt-2">
+                            <a
+                                href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBC_WebCorp-Other&utm_medium=microsite&utm_campaignid=&utm_campaign=PreBookStarWars_ACQ_20250325_OCBCxDisney-EA&utm_content=ButtonCTA&promo_referal=&force="
+                                target="_blank"
+                            >
+                                <button
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm text-center justify-center"
+                                >
+                                    Apply Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promo-section">
+            <div class="max-width-container">
+                <div class="mb-2 lg:mb-4">
+                    <h2 class="tracking-wider font-extrabold text-white">
+                        Promo
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/07/07/hero-promo-optik-seis.jpg?h=480&w=800&rev=90f9223458d54163a3a4ce1c7793a39c"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Optik Seis
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2020/08/19/optik-seis"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border text-red-600 border border-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/04/27/hero-promo-twgtea.webp?h=480&w=808&rev=6f89a2aac4b8472c8ba830e77e14da64"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    TWG Tea
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2026/04/27/twg-tea-salon-boutique"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border text-red-600 border border-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/08/15/hero-promo-samsungzs25edge.jpg?h=480&w=800&rev=c4f4b2b55e8a4453b4b8fcfd7b1000d7"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Samsung
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2021/11/24/samsung"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/09/26/hero-promo-dyson.jpg?h=480&w=808&rev=fb323cbac43f4db7ab700faf1892400a"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Dyson
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2024/09/26/dyson"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/10/02/hero-promo-panorama.jpg?h=480&w=808&rev=0934f5df7b7047e2909b4e1d423324c7"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Panorama JTB
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2024/09/30/panoramajtb"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/06/03/hero-promo-digimap.jpg?h=480&w=808&rev=-1"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Digimap
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2024/06/03/digimap"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/11/11/hero-promo-kartu-debit-online.webp?h=480&w=808&rev=09a5b858ca92430abad5cc0c60c9ba83"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Blibli, Shopee, Tokped
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2022/10/31/promo-digital-utilities-blibli-shopee-tokped"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/05/10/hero-promo-grab.webp?h=480&w=808&rev=4b9534ebcffb4565bcc6feb26d66a15f"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Grab
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2021/11/15/grab"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="max-w-sm bg-white rounded-lg shadow-sm">
+                            <img
+                                alt=""
+                                class="rounded-t-lg"
+                                src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Promo/Thumbnail/expired-promo.jpg?h=480&w=808&rev=-1"
+                            />
+                            <div
+                                class="p-5 bg-linear-gray-starwars rounded-b-lg"
+                            >
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-black promo-content-desc"
+                                >
+                                    Zalora
+                                </h5>
+                                <a
+                                    href="https://www.ocbc.id/id/promo/2020/08/19/zalora"
+                                    target="_blank"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center border border-red-600 text-red-600 rounded-lg"
+                                >
+                                    Info Selengkapnya
+                                    <svg
+                                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewbox="0 0 14 10"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <a
+                        href="https://www.ocbc.id/promo"
+                        target="_blank"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                    >
+                        Lihat Promo Lainnya
+                        <svg
+                            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewbox="0 0 14 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sku-riplay-section">
+            <div class="max-width-container">
+                <div class="mb-2 lg:mb-4">
+                    <h2 class="tracking-wider font-extrabold text-white">
+                        Informasi dan Ringkasan Umum Produk
+                    </h2>
+                </div>
+                <div
+                    class="space-y-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4-fix md:space-y-0"
+                >
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Persyaratan Umum
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/persyaratan-kartu-kredit-ocbc-platinum-star-wars"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Fitur dan Informasi Lainnya
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/fitur-dan-informasi-lainnya"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Fasilitas
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/fasilitas-kartu-kredit-ocbc-platinum-star-wars"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            PIN Kartu Kredit
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/langkah-mudah-buat-personal-identification-number"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Kartu Kredit Anda
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/kartu-kredit-anda-star-wars"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Informasi Dalam Lembar Tagihan
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/informasi-dalam-lembar-tagihan-kartu-cc-star-wars"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Syarat dan Ketentuan Umum Kartu Kredit OCBC
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/feature/pdf/kartu-transaksi/id-syarat-ketentuan-umum-kartu-kredit"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-linear-gray-star-wars p-4 rounded-lg tnc-card-small-2"
+                    >
+                        <h5 class="mb-2 text-xl font-bold text-gray-700">
+                            Ringkasan Informasi Produk
+                        </h5>
+                        <a
+                            href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2025/03/24/riplay-star-wars"
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-starwars rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300"
+                        >
+                            Lihat Detail
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section">
+            <div class="max-width-container">
+                <div class="mb-4">
+                    <h2 class="tracking-wider font-extrabold text-white">
+                        Pertanyaan Populer Tentang Kartu Kredit OCBC Star Wars
+                        Platinum
+                    </h2>
+                </div>
+                <ul class="flex flex-col">
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(2)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Apa yang perlu dilakukan nasabah jika kartu
+                                belum diterima dan nasabah ingin menggunakan
+                                untuk transaksi?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Hal yang pertama harus dilakukan adalah dengan
+                                mengaktifkan Kartu Kredit secara online via OCBC
+                                mobile dengan 5 langkah berikut :
+                            </p>
+                            <ol class="list-decimal pl-10">
+                                <li>Login OCBC mobile dan pilih Finansial</li>
+                                <li>
+                                    Pilih Pinjaman lalu pilih Kartu Kredit yang
+                                    belum aktif
+                                </li>
+                                <li>Pilih Aktifkan Kartu Sekarang</li>
+                                <li>
+                                    Tentukan kondisi kartu kredit yang ingin
+                                    diaktivasi berdasarkan status penerima kartu
+                                </li>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Apabila kartu kredit fisik belum
+                                        diterima, pilih : Belum Terima
+                                    </li>
+                                    <li>
+                                        Apabila kartu kredit sudah diterima,
+                                        pilih : Sudah Terima
+                                    </li>
+                                </ul>
+                                <li>
+                                    Ikuti langkah selanjutnya di OCBC Mobile
+                                    termasuk pembuatan PIN Kartu Kredit
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(3)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara nasabah melihat nomor CVV dan
+                                Masa Berlaku pada kartu kredit secara
+                                online?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Berikut 5 langkah mudah melihat CVV dan Masa
+                                Berlaku via OCBC mobile :
+                            </p>
+                            <ol class="list-decimal pl-10">
+                                <li>Login OCBC mobile dan pilih Finansial</li>
+                                <li>
+                                    Pilih Pinjaman lalu pilih Kartu Kredit yang
+                                    di inginkan
+                                </li>
+                                <li>Pilih CVV &amp; Masa Berlaku</li>
+                                <li>Masukkan PIN Transaksi</li>
+                                <li>
+                                    CVV dan Masa Berlaku sudah bisa Anda lihat
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(4)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana caranya saya bertransaksi tanpa
+                                menggunakan Kartu Kredit fisik?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Setelah Kartu Kredit Platinum aktif, Nasabah
+                                dapat bertransaksi secara online di toko online
+                                favorit. Caranya dengan memasukkan nomor Kartu
+                                Kredit ketika bertransaksi di toko online dan
+                                memasukkan nomor CVV dan Tanggal kadaluarsa.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(5)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana caranya jika saya ingin mengajukan
+                                kenaikan limit untuk Kartu Kredit yang
+                                dimiliki?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <br />
+                            <ol class="list-decimal pl-10">
+                                <li>Login OCBC mobile</li>
+                                <li>Klik Finansial dan pilih Pinjaman</li>
+                                <li>
+                                    Pilih kartu kredit yang akan diajukan
+                                    kenaikan limitnya
+                                </li>
+                                <li>Klik Increase limit</li>
+                                <li>
+                                    Sesuaikan nominal yang ingin anda ajukan
+                                </li>
+                                <li>Masukan pin transaksi</li>
+                                <li>Selesai</li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(6)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Apakah ada biaya yang dikenakan terhadap
+                                cicilan Kartu Kredit yang diajukan?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Biaya yang dikenakan untuk pengajuan cicilan
+                                adalah sebesar Rp25.000 per pengajuan.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(7)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Apakah syarat mendapatkan Kartu Kredit OCBC
+                                Star Wars Platinum?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <br />
+                            <table class="w-full border border-gray-300">
+                                <tbody>
+                                    <tr class="bg-gray-200">
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Ketentuan
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            Kartu Kredit OCBC Star Wars Platinum
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Umur
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            <ul class="list-disc pl-10">
+                                                <li>
+                                                    Pemegang Kartu Utama berusia
+                                                    21 - 65 Tahun
+                                                </li>
+                                                <li>
+                                                    Pemegang Kartu Tambahan
+                                                    minimum 17 tahun (Maximum 3
+                                                    orang)
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Kewarganegaraan
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            WNI dan WNA
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Penghasilan
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            Min. pendapatan: Rp36.000.000 per
+                                            tahun
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Dokumen Identitas Diri
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            <ul class="list-disc pl-10">
+                                                <li>Fotokopi KTP atau</li>
+                                                <li>
+                                                    Fotokopi Paspor/KIMS/KITAS
+                                                    (Khusus WNA) atau
+                                                </li>
+                                                <li>
+                                                    Fotokopi Kartu Kredit Bank
+                                                    Lain (Khusus Nasabah Bank
+                                                    Lain)
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="border px-4 py-2 font-semibold"
+                                        >
+                                            Dokumen Penghasilan
+                                        </td>
+                                        <td class="border px-4 py-2">
+                                            <ul class="list-disc pl-10">
+                                                <li>
+                                                    Slip Gaji Asli bulan
+                                                    terakhir/Surat Keterangan
+                                                    Berpenghasilan (Khusus
+                                                    Karyawan dan WNA) atau
+                                                </li>
+                                                <li>
+                                                    Fotokopi SIUP/ Akte
+                                                    Pendirian Perusahaan
+                                                </li>
+                                                <li>
+                                                    Rekening Koran/Tabungan 3
+                                                    bulan terakhir (Khusus
+                                                    Pengusaha) atau
+                                                </li>
+                                                <li>
+                                                    Rekening Koran/Tabungan 3
+                                                    bulan terakhir, Fotokopi
+                                                    Ijin Praktek dan Fotokopi
+                                                    SPT (Khusus Profesional)
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(8)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara mendapatkan Poin Reward Kartu
+                                Kredit OCBC Star Wars Platinum?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Setiap transaksi Rp 10.000 mendapat 1 Poin
+                                Reward berlaku kelipatan
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(10)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara menukarkan Poinseru yang
+                                dimiliki?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                <strong
+                                    >Cara penukaran Poinseru via OCBC
+                                    mobile:</strong
+                                >
+                            </p>
+                            <ol class="list-decimal pl-10">
+                                <li>Buka OCBC mobile</li>
+                                <li>
+                                    Pilih menu Rewards Page yang berada
+                                    disamping QRIS
+                                </li>
+                                <li>
+                                    Klik menu
+                                    <strong
+                                        >&lsquo;Tukar Poinseru&rsquo;</strong
+                                    >
+                                </li>
+                                <li>Pilih kategori hadiah yang diinginkan</li>
+                                <li>Pilih produk yang ingin ditukarkan</li>
+                                <li>
+                                    Ketuk
+                                    <strong
+                                        >&lsquo; Tukarkan
+                                        Sekarang&rsquo;.</strong
+                                    >
+                                </li>
+                                <li>
+                                    Pastikan transaksi sudah benar, lalu klik
+                                    centang sudah membaca syarat dan ketentuan
+                                    kemudian ketik
+                                    <strong>&lsquo;Konfirmasi&rsquo;</strong>
+                                </li>
+                                <li>
+                                    Masukkan 6 digit pin transaksi OCBC mobile
+                                </li>
+                                <li>
+                                    Penukaran Poinseru diproses! Cek email untuk
+                                    melihat bukti penukaran
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(11)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Berapakah biaya iuran tahunan Kartu Kredit OCBC
+                                Star Wars Platinum?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Kartu Utama Rp600.000 per tahun, Kartu Tambahan:
+                                Rp300.000 per tahun (Rp200.000 untuk biaya tahun
+                                pertama)
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(12)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara mengajukan keberatan atau
+                                ketidaksesuaian transaksi pada Kartu Kredit
+                                OCBC?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Mengajukan keberatan karena ketidaksesuaian
+                                transaksi, paling lambat 45 hari kalender sejak
+                                tanggal Billing Statement dikirimkan. Silakan
+                                mengajukan keberatan Anda ke Tanya OCBC 1500-999
+                                atau +62-21-26506300 (dari luar negeri)
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(13)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara memiliki PIN 6 digit pada Kartu
+                                Kredit OCBC?</span
+                            >
+                            <svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <br />
+                            <ul class="list-disc pl-10">
+                                <li>
+                                    <p><strong>Aplikasi OCBC mobile</strong></p>
+                                    <p>
+                                        Unduh versi terkini Aplikasi OCBC mobile
+                                        dan ikuti langkah berikut:
+                                    </p>
+                                    <ol class="list-decimal pl-10">
+                                        <li>
+                                            Masuk dengan USER ID dan Password
+                                            OCBC mobile Anda
+                                        </li>
+                                        <li>
+                                            Klik &ldquo;Kewajiban Anda&rdquo;
+                                        </li>
+                                        <li>
+                                            Pilih Kartu Kredit yang akan Anda
+                                            atur PIN-nya
+                                        </li>
+                                        <li>
+                                            Klik &ldquo;BUAT/UBAH PIN&rdquo;
+                                        </li>
+                                        <li>
+                                            Atur PIN yang Anda inginkan dan
+                                            konfirmasi ulang
+                                        </li>
+                                        <li>PIN berhasil dibuat</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong
+                                            >Kirim SMS ke 86477 dengan
+                                            format:</strong
+                                        >
+                                    </p>
+                                    <p>
+                                        OCBC[spasi]SETPINCC[spasi]4 Digit Akhir
+                                        KK[#]Tgl Lahir DDMMYYYY[#]6DigitPIN yang
+                                        diinginkan
+                                    </p>
+                                    <p>
+                                        Contoh: OCBC SETPINCC
+                                        1234#14121990#180690
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li
+                        id="accordion-li"
+                        class="my-2 shadow-lg rounded-lg"
+                        x-data="accordion(14)"
+                    >
+                        <h6
+                            @click="handleClick()"
+                            class="flex flex-row justify-between items-center font-semibold cursor-pointer"
+                        >
+                            <span
+                                >Bagaimana cara memblokir Kartu Kredit jika
+                                hilang atau dicuri?</span
+                            ><svg
+                                :class="handleRotate()"
+                                class="fill-current text-white h-6 w-6 transform transition-transform duration-500"
+                                viewbox="0 0 20 20"
+                            >
+                                <path
+                                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                                ></path>
+                            </svg>
+                        </h6>
+
+                        <div
+                            class="border-l-4 border-yellow-300 bg-gray-200 text-black-fix overflow-hidden max-h-0-fix duration-500 transition-all"
+                            x-ref="tab"
+                            :style="handleToggle()"
+                        >
+                            <p class="p-3">
+                                Pemegang Kartu kredit cukup menghubungi Tanya
+                                OCBC 1500-999 atau +62-21-26506300 (dari luar
+                                negeri) untuk proses pemblokiran Kartu Kredit
+                                yang hilang dan mengajukan penggantian kartu
+                                kredit dengan biaya Rp 200.000 untuk Kartu
+                                Kredit OCBC 1st, Platinum, dan Nyala Platinum
+                                dan biaya Rp 1.000.000 untuk Kartu Kredit OCBC
+                                Voyage.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="site-footer-section" class="shadow-xl">
+            <div class="site-footer-grid">
+                <div class="site-footer-content">
+                    <p>
+                        PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas
+                        Jasa Keuangan &amp; Bank Indonesia, serta merupakan
+                        peserta penjaminan LPS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="floating-footer"
+            class="fixed bottom-0 left-0 w-full bg-white shadow-lg p-4 flex items-center justify-between transition-all duration-500 ease-in-out transform translate-y-full opacity-0"
+        >
+            <div class="flex items-center space-x-2">
+                <img
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/ocbc_card_lenticular_daecaea52e.gif"
+                    alt="Credit Card"
+                    class="hidden md:block w-16 h-10"
+                />
+                <p class="font-bold text-black text-lg">
+                    Kartu Kredit yang memberikan Poinseru untuk setiap transaksi
+                </p>
+            </div>
+            <div class="flex space-x-2">
+                <a
+                    href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBC_WebCorp-Other&utm_medium=microsite&utm_campaignid=&utm_campaign=PreBookStarWars_ACQ_20250325_OCBCxDisney-EA&utm_content=ButtonCTA&promo_referal=&force="
+                    target="_blank"
+                >
+                    <button
+                        class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm"
+                    >
+                        Apply Now
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                const popup = document.getElementById("eventPopup");
+                const closeBtn = document.getElementById("closePopup");
+                const exploreBtn = document.getElementById("exploreBtn");
+                const eventSection =
+                    document.getElementById("timeline-section");
+
+                setTimeout(() => {
+                    popup.style.display = "flex";
+                    document.body.style.overflow = "hidden";
+                }, 0);
+
+                const hidePopup = () => {
+                    popup.style.display = "none";
+                    document.body.style.overflow = "auto";
+                };
+
+                closeBtn.onclick = hidePopup;
+                exploreBtn.onclick = () => {
+                    hidePopup();
+                    eventSection.scrollIntoView({ behavior: "smooth" });
+                };
+
+                window.onclick = (event) => {
+                    if (event.target == popup) {
+                        hidePopup();
+                    }
+                };
+            });
+
+            function handleRegistration() {
+                console.log("Mengarahkan ke form pendaftaran...");
+            }
+        </script>
+        <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/entry_Animation_36da73da45.js"></script>
+        <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/accordion_8f423ec095.js"></script>
+        <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/floating_CTA_8bceb81269.js"></script>
+        <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/walking_Text_a9835f7034.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                new Swiper(".mySwiper", {
+                    effect: "fade",
+                    fadeEffect: { crossFade: true },
+                    loop: true,
+                    speed: 1000,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                });
+            });
+        </script>
+    </body>
+</html>
