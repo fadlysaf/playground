@@ -1,22 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>OCBC Indonesia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCBC Outlook</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tabler Icons (used for ti-arrow-up-right) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-white">
+
+    <!-- ============================== -->
+    <!-- HEADER -->
+    <!-- ============================== -->
     <header class="bg-white text-gray-900 shadow-sm">
         <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
             <div class="flex lg:flex-1">
@@ -27,13 +37,13 @@
                 </a>
             </div>
             <div class="flex lg:hidden">
-                <button type="button" command="show-modal" commandfor="mobile-menu"
+                <button type="button" onclick="document.getElementById('mobile-menu').showModal()"
                     class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-500 hover:text-[#DA291C]">
                     <span class="sr-only">Open main menu</span>
-                    <i class="fa-solid fa-bars size-6"></i>
+                    <i class="fa-solid fa-bars fa-lg"></i>
                 </button>
             </div>
-            <el-popover-group class="hidden lg:flex lg:gap-x-12">
+            <div class="hidden lg:flex lg:gap-x-12">
                 <a href="#"
                     class="text-sm/6 font-semibold text-gray-800 hover:text-[#DA291C] transition-colors">Product</a>
                 <a href="#"
@@ -42,7 +52,7 @@
                     class="text-sm/6 font-semibold text-gray-800 hover:text-[#DA291C] transition-colors">Marketplace</a>
                 <a href="#"
                     class="text-sm/6 font-semibold text-gray-800 hover:text-[#DA291C] transition-colors">Company</a>
-            </el-popover-group>
+            </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="#"
                     class="text-sm/6 font-semibold text-white bg-[#DA291C] hover:bg-[#B91F14] px-4 py-2 rounded-full transition-colors">
@@ -50,74 +60,75 @@
                 </a>
             </div>
         </nav>
-        <el-dialog>
-            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-                <div tabindex="0" class="fixed inset-0 focus:outline-none">
-                    <el-dialog-panel
-                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-200">
-                        <div class="flex items-center justify-between">
-                            <a href="#" class="-m-1.5 p-1.5">
-                                <span class="sr-only">Your Company</span>
-                                <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
-                                    alt="OCBC Logo" class="h-8 w-auto" />
-                            </a>
-                            <button type="button" command="close" commandfor="mobile-menu"
-                                class="-m-2.5 rounded-md p-2.5 text-gray-500 hover:text-[#DA291C]">
-                                <span class="sr-only">Close menu</span>
-                                <i class="fa-solid fa-xmark size-6"></i>
-                            </button>
-                        </div>
-                        <div class="mt-6 flow-root">
-                            <div class="-my-6 divide-y divide-gray-200">
-                                <div class="space-y-2 py-6">
-                                    <div class="-mx-3">
-                                        <button type="button" command="--toggle" commandfor="products"
-                                            class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Product
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </button>
-                                        <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Analytics</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Engagement</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Security</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Integrations</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Automations</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Watch
-                                                demo</a>
-                                            <a href="#"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Contact
-                                                sales</a>
-                                        </el-disclosure>
+
+        <!-- Mobile menu -->
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden p-0 m-0 max-w-none max-h-none w-full h-full">
+            <div class="fixed inset-0 focus:outline-none">
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-200">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
+                                alt="OCBC Logo" class="h-8 w-auto" />
+                        </a>
+                        <button type="button" onclick="document.getElementById('mobile-menu').close()"
+                            class="-m-2.5 rounded-md p-2.5 text-gray-500 hover:text-[#DA291C]">
+                            <span class="sr-only">Close menu</span>
+                            <i class="fa-solid fa-xmark fa-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-200">
+                            <div class="space-y-2 py-6">
+                                <div class="-mx-3">
+                                    <button type="button"
+                                        onclick="document.getElementById('products').classList.toggle('hidden')"
+                                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Product
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div id="products" class="hidden mt-2 space-y-2">
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Analytics</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Engagement</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Security</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Integrations</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Automations</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Watch
+                                            demo</a>
+                                        <a href="#"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#DA291C]">Contact
+                                            sales</a>
                                     </div>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Features</a>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Marketplace</a>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Company</a>
                                 </div>
-                                <div class="py-6">
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white bg-[#DA291C] hover:bg-[#B91F14] text-center">Log
-                                        in</a>
-                                </div>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Features</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Marketplace</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Company</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white bg-[#DA291C] hover:bg-[#B91F14] text-center">Log
+                                    in</a>
                             </div>
                         </div>
-                    </el-dialog-panel>
+                    </div>
                 </div>
-            </dialog>
-        </el-dialog>
+            </div>
+        </dialog>
     </header>
 
-    {{-- ============================== --}}
-    {{-- HERO SECTION --}}
-    {{-- ============================== --}}
+    <!-- ============================== -->
+    <!-- HERO SECTION -->
+    <!-- ============================== -->
     <section id="hero-section" class="bg-white relative overflow-hidden">
         <div
             class="max-w-[100rem] mx-auto px-6 lg:px-5 flex items-center justify-center flex-col gap-8 min-h-dvh py-24 lg:py-12">
@@ -126,7 +137,7 @@
 
                 <div class="flex flex-col gap-6">
 
-                    {{-- Highlight card --}}
+                    <!-- Highlight card -->
                     <div
                         class="bg-[#DA291C] rounded-3xl px-6 md:px-8 py-6 md:py-8 min-h-[220px] sm:min-h-[260px] md:min-h-[320px] flex flex-col justify-between text-white">
                         <div class="flex flex-col gap-3">
@@ -149,7 +160,7 @@
 
                     <div class="grid grid-cols-2 gap-4 sm:gap-6">
 
-                        {{-- Article preview card --}}
+                        <!-- Article preview card -->
                         <div
                             class="bg-gray-100 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                             <div class="mb-4">
@@ -164,7 +175,7 @@
                             </div>
                         </div>
 
-                        {{-- Countdown card --}}
+                        <!-- Countdown card -->
                         <div
                             class="bg-gray-100 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
 
@@ -202,7 +213,7 @@
                     </div>
                 </div>
 
-                {{-- Hero image --}}
+                <!-- Hero image -->
                 <div class="relative rounded-3xl overflow-hidden min-h-[300px] sm:min-h-[400px] lg:min-h-0">
                     <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Runner ready at start line" class="w-full h-full object-cover" />
@@ -221,13 +232,13 @@
     </section>
 
 
-    {{-- ============================== --}}
-    {{-- AGENDA SECTION --}}
-    {{-- ============================== --}}
+    <!-- ============================== -->
+    <!-- AGENDA SECTION -->
+    <!-- ============================== -->
     <section id="agenda-section" class="bg-white relative overflow-hidden py-16 lg:py-15">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
 
-            {{-- Header --}}
+            <!-- Header -->
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-10">
                 <div class="flex flex-col gap-3">
                     <span
@@ -239,15 +250,9 @@
                         Agenda Overview
                     </h2>
                 </div>
-
-                {{-- <a href="#full-schedule"
-                    class="inline-flex items-center gap-2 bg-[#DA291C] text-white font-semibold text-sm px-5 py-3 rounded-full hover:bg-[#B91F14] transition-all duration-200 w-fit">
-                    View Full Schedule
-                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                </a> --}}
             </div>
 
-            {{-- Agenda list --}}
+            <!-- Agenda list -->
             <div class="bg-gray-400 overflow-hidden shadow-sm border border-gray-100 divide-y divide-gray-100">
                 <div
                     class="flex items-center gap-4 sm:gap-8 px-5 sm:px-8 py-5 sm:py-6 bg-white hover:bg-gray-50 transition-colors">
@@ -268,10 +273,6 @@
                             <p class="text-[10px] uppercase text-gray-400">Speaker</p>
                             <p class="text-xs font-semibold text-gray-900">Sarah Chen</p>
                         </div>
-                        {{-- <button
-                            class="w-6 h-6 rounded-full bg-[#DA291C] text-white flex items-center justify-center text-xs font-bold">
-                            +
-                        </button> --}}
                     </div>
                 </div>
                 <div
@@ -293,34 +294,21 @@
                             <p class="text-[10px] uppercase text-gray-400">Speaker</p>
                             <p class="text-xs font-semibold text-gray-900">Sarah Chen</p>
                         </div>
-                        {{-- <button
-                            class="w-6 h-6 rounded-full bg-[#DA291C] text-white flex items-center justify-center text-xs font-bold">
-                            +
-                        </button> --}}
                     </div>
                 </div>
             </div>
-
-            {{-- CTA --}}
-            {{-- <div class="flex justify-center mt-10">
-                <a href="#register"
-                    class="inline-flex items-center gap-2 bg-[#DA291C] text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-[#B91F14] transition-all duration-200">
-                    Register for Devesign
-                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                </a>
-            </div> --}}
 
         </div>
     </section>
 
 
-    {{-- ============================== --}}
-    {{-- SPEAKERS SECTION --}}
-    {{-- ============================== --}}
+    <!-- ============================== -->
+    <!-- SPEAKERS SECTION -->
+    <!-- ============================== -->
     <section id="speakers" class="bg-white relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
 
-            {{-- Header --}}
+            <!-- Header -->
             <div class="flex flex-col items-center text-center gap-6 mb-10">
                 <div class="flex flex-col gap-3">
                     <span
@@ -334,7 +322,7 @@
                 </div>
             </div>
 
-            {{-- Speaker Cards --}}
+            <!-- Speaker Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
                 <div
@@ -382,26 +370,26 @@
     </section>
 
 
-    {{-- ============================== --}}
-    {{-- VENUE SECTION --}}
-    {{-- ============================== --}}
+    <!-- ============================== -->
+    <!-- VENUE SECTION -->
+    <!-- ============================== -->
     <section id="venue" class="bg-white relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
             <div class="grid lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-14 items-stretch">
 
-                {{-- Photo panel --}}
+                <!-- Photo panel -->
                 <div class="relative rounded-[2rem] overflow-hidden min-h-[360px] lg:min-h-[520px]">
                     <img src="https://images.unsplash.com/photo-1785062959365-a1b26b7af046?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="The Conference Venue" class="absolute inset-0 w-full h-full object-cover" />
 
-                    {{-- Corner tab (signature element, replaces the dot badge) --}}
+                    <!-- Corner tab -->
                     <div
                         class="absolute top-0 left-0 bg-[#DA291C] text-white text-xs font-bold uppercase tracking-widest px-5 py-3 rounded-br-2xl">
                         San Francisco Hub
                     </div>
                 </div>
 
-                {{-- Content panel --}}
+                <!-- Content panel -->
                 <div class="flex flex-col justify-center gap-8 py-4">
 
                     <div class="flex flex-col gap-4">
@@ -414,7 +402,7 @@
                         </p>
                     </div>
 
-                    {{-- Info rows: label / value, no icons --}}
+                    <!-- Info rows -->
                     <div class="border-y border-gray-100 divide-y divide-gray-100">
                         <div class="flex items-start justify-between gap-4 py-4">
                             <span
@@ -434,7 +422,7 @@
                         </div>
                     </div>
 
-                    {{-- CTA --}}
+                    <!-- CTA -->
                     <a href="#"
                         class="inline-flex items-center gap-2 bg-[#DA291C] hover:bg-[#B91F14] text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors duration-200 w-fit">
                         Get Directions
@@ -446,34 +434,34 @@
         </div>
     </section>
 
-    {{-- ============================== --}}
-    {{-- CTA SECTION (BOOK CONSULTATION) --}}
-    {{-- ============================== --}}
+    <!-- ============================== -->
+    <!-- CTA SECTION (BOOK CONSULTATION) -->
+    <!-- ============================== -->
     <section id="cta-section" class="bg-white relative overflow-hidden h-fit">
         <div class="max-w-full mx-auto px-6 lg:px-0">
 
             <div class="relative overflow-hidden bg-gray-100 border border-gray-100">
                 <div class="relative flex flex-col items-center text-center px-6 py-16 sm:py-20">
 
-                    {{-- Eyebrow --}}
+                    <!-- Eyebrow -->
                     <span
                         class="inline-flex items-center gap-2 text-[#DA291C] text-xs font-bold uppercase tracking-widest mb-5">
                         <span class="w-1.5 h-1.5 rounded-full bg-[#DA291C]"></span>
                         Exclusive Access
                     </span>
 
-                    {{-- Heading --}}
+                    <!-- Heading -->
                     <h2 class="font-serif italic text-4xl sm:text-5xl text-gray-900 leading-tight max-w-xl">
                         Ready for Your One-on-One Session?
                     </h2>
 
-                    {{-- Subtext --}}
+                    <!-- Subtext -->
                     <p class="text-gray-500 text-sm sm:text-base mt-5 max-w-md leading-relaxed">
                         Spots are limited. Reserve your consultation before the
                         seminar to secure your preferred speaker and time.
                     </p>
 
-                    {{-- Buttons --}}
+                    <!-- Buttons -->
                     <div class="flex flex-col sm:flex-row items-center gap-3 mt-8">
                         <a href="#book-consultation"
                             class="bg-[#DA291C] hover:bg-[#B91F14] text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors duration-200">
@@ -494,7 +482,7 @@
     <section id="sponsored" class="bg-white relative overflow-hidden py-12 lg:py-15">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
 
-            {{-- Header --}}
+            <!-- Header -->
             <div class="flex flex-col items-center text-center gap-6 mb-10">
                 <div class="flex flex-col gap-3">
                     <span
@@ -513,49 +501,44 @@
                 </div>
             </div>
 
-            {{-- Sponsor Logos --}}
+            <!-- Sponsor Logos -->
             <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-1.png" alt="Sponsor 1"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-2.png" alt="Sponsor 2"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-3.png" alt="Sponsor 3"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-4.png" alt="Sponsor 4"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
-                    <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
-                        class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
-                </div>
-                <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
@@ -569,49 +552,44 @@
                 </div>
             </div>
 
-            {{-- Sponsor Logos --}}
+            <!-- Sponsor Logos -->
             <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-1.png" alt="Sponsor 1"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-2.png" alt="Sponsor 2"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-3.png" alt="Sponsor 3"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
 
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-4.png" alt="Sponsor 4"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
                 <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
-                    <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
-                        class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
-                </div>
-                <div class="flex items-center justify-center bg-gray-100 rounded-2xl h-24 sm:h-28 border border-gray-100 hover:border-gray-200 transition-colors
-                            w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
+                    w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]">
                     <img src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
                         class="max-h-8 sm:max-h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-200" />
                 </div>
@@ -619,9 +597,10 @@
 
         </div>
     </section>
+
     <section id="gallery" class="bg-white relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
-            {{-- Header --}}
+            <!-- Header -->
             <div class="flex flex-col items-center text-center gap-6 mb-10">
                 <div class="flex flex-col gap-3">
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-400">
@@ -630,104 +609,117 @@
                 </div>
             </div>
 
-            {{-- Gallery --}}
+            <!-- Gallery -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
                     </div>
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
                     </div>
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
                     </div>
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-base"
+                        <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="bg-gray-900 border-t border-gray-700">
+
+    <!-- ============================== -->
+    <!-- FOOTER -->
+    <!-- ============================== -->
+    <footer class="bg-gray-900 border-t border-gray-800">
         <div
             class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <!-- Teks Legalitas Kiri -->
             <div class="text-center md:text-left space-y-2">
-                <p class="text-sm font-semibold text-gray-200">
-                    2026 © All Rights Reserved by OCBC Indonesia
+                <p class="text-sm font-semibold text-gray-200" id="footer-year">
+                    <!-- year set via script -->
+                    © All Rights Reserved by OCBC Indonesia
                 </p>
                 <p class="text-xs text-gray-400 max-w-xl leading-relaxed">
-                    PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas
-                    Jasa Keuangan & Bank Indonesia, serta merupakan peserta
-                    penjaminan LPS.
+                    PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia, serta
+                    merupakan
+                    peserta penjaminan LPS.
                 </p>
             </div>
 
+            <!-- Tautan Media Sosial Kanan -->
             <div class="flex flex-col items-center md:items-end gap-3">
                 <span class="text-sm font-medium text-gray-300">Follow us:</span>
                 <div class="flex items-center gap-3">
                     <a href="https://facebook.com" target="_blank" aria-label="Facebook"
-                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="https://x.com" target="_blank" aria-label="X (Twitter)"
-                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
                     <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
-                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                        class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Isi tahun berjalan menggantikan {{ date('Y') }} Blade
+        document.getElementById('footer-year').textContent = new Date().getFullYear() + ' © All Rights Reserved by OCBC Indonesia';
+    </script>
+
 </body>
 
 </html>
