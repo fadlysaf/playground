@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 border-t border-gray-700">
+<footer class="bg-gray-900 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
         <!-- Teks Legalitas Kiri -->
         <div class="text-center md:text-left space-y-2">
@@ -15,19 +15,19 @@
             <span class="text-sm font-medium text-gray-300">Follow us:</span>
             <div class="flex items-center gap-3">
                 <a href="https://facebook.com" target="_blank" aria-label="Facebook"
-                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="https://x.com" target="_blank" aria-label="X (Twitter)"
-                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
-                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-[#DA291C] hover:text-white transition-colors duration-200">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
