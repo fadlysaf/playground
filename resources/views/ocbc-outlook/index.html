@@ -7,7 +7,7 @@
     <title>OCBC Outlook</title>
 
     <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -18,6 +18,10 @@
     <style>
         body {
             font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .hero-min-h {
+            min-height: calc(100dvh - var(--header-h, 0px));
         }
     </style>
 </head>
@@ -131,7 +135,7 @@
     <!-- ============================== -->
     <section id="hero-section" class="bg-white relative overflow-hidden">
         <div
-            class="max-w-[100rem] mx-auto px-6 lg:px-5 flex items-center justify-center flex-col gap-8 min-h-dvh py-24 lg:py-12">
+            class="hero-min-h max-w-[100rem] mx-auto px-6 lg:px-5 flex items-center justify-center flex-col gap-8 py-14 lg:py-8">
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
 
@@ -221,7 +225,7 @@
 
             </div>
 
-            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
                 <span class="text uppercase tracking-widest">Scroll More</span>
                 <a href="#agenda-section" class="animate-bounce">
                     <i class="fa-solid fa-arrow-down"></i>
@@ -718,6 +722,15 @@
     <script>
         // Isi tahun berjalan menggantikan {{ date('Y') }} Blade
         document.getElementById('footer-year').textContent = new Date().getFullYear() + ' © All Rights Reserved by OCBC Indonesia';
+    </script>
+
+    <script>
+        function setHeaderHeight() {
+            const header = document.querySelector('header');
+            document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
+        }
+        setHeaderHeight();
+        window.addEventListener('resize', setHeaderHeight);
     </script>
 
 </body>
