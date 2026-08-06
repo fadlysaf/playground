@@ -163,63 +163,95 @@
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
                         Event Highlights
                     </h2>
+                    <p class="text-gray-500 max-w-2xl">
+                        Jelajahi momen-momen terbaik yang menjadikan acara ini penuh inspirasi,
+                        kolaborasi, dan pengalaman berharga bagi seluruh peserta.
+                    </p>
                 </div>
             </div>
 
-            <!-- Speaker Cards -->
+            <!-- Highlight Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
-                <!-- Speaker 1 -->
+                <!-- Highlight 1 -->
                 <div
                     class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=687&auto=format&fit=crop"
-                        alt="Andra Wijaya" class="w-full h-[250px] object-cover" />
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
+                        alt="Opening Ceremony" class="w-full h-[250px] object-cover" />
+
                     <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">Andra Wijaya</h3>
-                        <p class="text-sm text-gray-500 mt-1">Pembicara Utama, Digital Career Academy</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            Andra telah membawakan lebih dari 100 sesi seminar dan webinar seputar pengembangan karier di
-                            era digital.
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Opening Ceremony
+                        </h3>
+
+                        <p class="text-sm text-gray-500 mt-1">
+                            Grand Opening Session
                         </p>
-                        <a href="#" class="text-base text-[var(--color-primary)] mt-5 line-clamp-3">
-                            See More
+
+                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                            Acara dibuka dengan sambutan inspiratif dan penampilan pembuka yang
+                            membangun semangat seluruh peserta sejak awal kegiatan.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] mt-5">
+                            View Gallery
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Speaker 2 -->
+                <!-- Highlight 2 -->
                 <div
                     class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=687&auto=format&fit=crop"
-                        alt="Sarah Amelia" class="w-full h-[250px] object-cover" />
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
+                        alt="Keynote Session" class="w-full h-[250px] object-cover" />
+
                     <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">Sarah Amelia</h3>
-                        <p class="text-sm text-gray-500 mt-1">Narasumber, Praktisi Public Speaking</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            Sarah aktif menjadi narasumber webinar nasional dengan fokus pada komunikasi efektif dan
-                            kepercayaan diri.
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Keynote Session
+                        </h3>
+
+                        <p class="text-sm text-gray-500 mt-1">
+                            Insightful Presentation
                         </p>
-                        <a href="#" class="text-base text-[var(--color-primary)] mt-5 line-clamp-3">
-                            See More
+
+                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                            Para pembicara membagikan wawasan terbaru mengenai tren industri,
+                            inovasi, dan strategi menghadapi tantangan masa depan.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] mt-5">
+                            View Gallery
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Speaker 3 -->
+                <!-- Highlight 3 -->
                 <div
                     class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop"
-                        alt="Rendra Pratama" class="w-full h-[250px] object-cover" />
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1200&auto=format&fit=crop"
+                        alt="Networking Session" class="w-full h-[250px] object-cover" />
+
                     <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">Rendra Pratama</h3>
-                        <p class="text-sm text-gray-500 mt-1">Moderator & Fasilitator Webinar</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            Rendra berpengalaman memandu diskusi interaktif dalam berbagai seminar online lintas industri.
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Networking Session
+                        </h3>
+
+                        <p class="text-sm text-gray-500 mt-1">
+                            Collaboration & Discussion
                         </p>
-                        <a href="#" class="text-base text-[var(--color-primary)] mt-5 line-clamp-3">
-                            See More
+
+                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                            Peserta saling bertukar pengalaman, membangun koneksi baru, dan
+                            berdiskusi langsung dengan para profesional dari berbagai bidang.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] mt-5">
+                            View Gallery
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -270,7 +302,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
                 <!-- LEFT: Agenda list -->
-                <div class="lg:col-span-2 flex flex-col gap-4">
+                <div class="order-2 lg:order-1 lg:col-span-2 flex flex-col gap-4">
 
                     <!-- SAN FRANCISCO agenda -->
                     <div data-city-agenda="sf"
@@ -835,7 +867,7 @@
                 <!-- /LEFT -->
 
                 <!-- RIGHT: Sticky venue card -->
-                <div class="lg:col-span-1">
+                <div class="order-1 lg:order-2 lg:col-span-1">
                     <div class="lg:sticky lg:top-24 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
 
                         <!-- SAN FRANCISCO panel -->
@@ -858,53 +890,40 @@
                                     <span>1 Harbor View Drive, San Francisco, CA 94105</span>
                                 </p>
 
-                                <div class="grid grid-cols-2 gap-3 mb-5">
+                                <div class="grid grid-cols-1 gap-3 mb-5">
                                     <div
                                         class="bg-gray-50/60 rounded-xl p-3 flex items-center gap-3 border border-gray-100/50">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)] shrink-0">
-                                            <i class="ti ti-users text-base"></i>
-                                        </div>
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
-                                                Capacity</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">800</p>
+                                                Keynote</p>
+                                            <p class="text-sm font-bold text-gray-800 leading-tight">Sarah Johnson</p>
                                         </div>
                                     </div>
+
                                     <div
                                         class="bg-gray-50/60 rounded-xl p-3 flex items-center gap-3 border border-gray-100/50">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)] shrink-0">
-                                            <i class="ti ti-layout-grid text-base"></i>
-                                        </div>
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
-                                                Spaces</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">6 rooms</p>
+                                                Speaker</p>
+                                            <p class="text-sm font-bold text-gray-800 leading-tight">Michael Chen</p>
                                         </div>
                                     </div>
+
                                     <div
                                         class="bg-gray-50/60 rounded-xl p-3 flex items-center gap-3 border border-gray-100/50">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)] shrink-0">
-                                            <i class="ti ti-train text-base"></i>
-                                        </div>
-                                        <div>
-                                            <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">To
-                                                BART</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">5 min</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="bg-gray-50/60 rounded-xl p-3 flex items-center gap-3 border border-gray-100/50">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)] shrink-0">
-                                            <i class="ti ti-parking text-base"></i>
-                                        </div>
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
-                                                Parking</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">200 spots</p>
+                                                Speaker</p>
+                                            <p class="text-sm font-bold text-gray-800 leading-tight">Emily Carter</p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-gray-50/60 rounded-xl p-3 flex items-center gap-3 border border-gray-100/50">
+                                        <div>
+                                            <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
+                                                Speaker</p>
+                                            <p class="text-sm font-bold text-gray-800 leading-tight">David Wilson</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1250,30 +1269,125 @@
     </section>
 
     <!-- ============================== -->
+    <!-- SHARE FEEDBACK SECTION (CP VERSION) -->
+    <!-- ============================== -->
+    <section id="feedback" class="bg-gray-50 relative overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+                <!-- LEFT: Intro copy -->
+                <div class="flex flex-col gap-5 lg:sticky lg:top-24">
+                    <span
+                        class="inline-flex w-fit items-center gap-2 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]"></span>
+                        Suara Anda
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+                        Bagaimana pengalaman Anda di OCBC Outlook?
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-500 leading-relaxed max-w-md">
+                        Cerita dan masukan dari Anda membantu kami menghadirkan sesi, pembicara,
+                        dan pengalaman yang lebih baik di penyelenggaraan berikutnya.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-sm text-gray-600">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ti ti-circle-check text-[var(--color-primary)] text-lg shrink-0"></i>
+                            Langsung terhubung, tanpa isi formulir
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i class="ti ti-circle-check text-[var(--color-primary)] text-lg shrink-0"></i>
+                            Identitas Anda tetap rahasia
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i class="ti ti-circle-check text-[var(--color-primary)] text-lg shrink-0"></i>
+                            Masukan dibaca langsung oleh tim penyelenggara
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Contact Person Cards -->
+                <div class="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 sm:p-8">
+                    <label class="text-sm font-semibold text-gray-900 mb-4 block">
+                        Hubungi Tim Kami Langsung
+                    </label>
+
+                    <div class="flex flex-col gap-4">
+                        <!-- CP Card 1 -->
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memberikan%20feedback%20tentang%20OCBC%20Outlook"
+                            target="_blank" rel="noopener"
+                            class="group flex items-center gap-4 rounded-2xl border border-gray-200 p-4 hover:border-[var(--color-primary)] hover:shadow-md transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 group-hover:bg-green-100 transition-colors">
+                                <i class="ti ti-brand-whatsapp text-2xl text-green-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900">Andi Pratama</p>
+                                <p class="text-xs text-gray-500">Event Coordinator · +62 812-3456-7890</p>
+                            </div>
+                            <i
+                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
+                        </a>
+
+                        <!-- CP Card 2 -->
+                        <a href="https://wa.me/6289876543210?text=Halo%2C%20saya%20ingin%20memberikan%20feedback%20tentang%20OCBC%20Outlook"
+                            target="_blank" rel="noopener"
+                            class="group flex items-center gap-4 rounded-2xl border border-gray-200 p-4 hover:border-[var(--color-primary)] hover:shadow-md transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 group-hover:bg-green-100 transition-colors">
+                                <i class="ti ti-brand-whatsapp text-2xl text-green-600"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900">Sarah Wijaya</p>
+                                <p class="text-xs text-gray-500">Guest Relations · +62 898-7654-3210</p>
+                            </div>
+                            <i
+                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
+                        </a>
+
+                        <!-- Email option -->
+                        <a href="mailto:feedback@ocbcoutlook.id?subject=Feedback%20OCBC%20Outlook"
+                            class="group flex items-center gap-4 rounded-2xl border border-dashed border-gray-200 p-4 hover:border-[var(--color-primary)] hover:bg-gray-50 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-blue-100 transition-colors">
+                                <i class="ti ti-mail text-2xl text-blue-500"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-semibold text-gray-900">Kirim via Email</p>
+                                <p class="text-xs text-gray-500">feedback@ocbcoutlook.id</p>
+                            </div>
+                            <i
+                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
     <!-- CTA SECTION (BOOK CONSULTATION) -->
     <!-- ============================== -->
-    <section id="private-consultation" class="bg-gray-50 py-16 lg:py-24">
+    {{-- <section id="private-consultation" class="bg-gray-50 py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
-            <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div class="grid lg:grid-cols-2 gap-10 items-center"> --}}
 
-                {{-- Left: Text content --}}
-                <div class="flex flex-col gap-5">
+    {{-- Left: Text content --}}
+    {{-- <div class="flex flex-col gap-5"> --}}
 
-                    <span
+    {{-- <span
                         class="inline-flex w-fit items-center gap-2 bg-[#DA291C]/10 text-[var(--color-primary)] text-xs font-semibold px-4 py-1.5 rounded-full">
                         Eksklusif untuk Nasabah OCBC
-                    </span>
+                    </span> --}}
 
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+    {{-- <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                         Konsultasi privat, solusi finansial yang lebih personal.
-                    </h2>
+                    </h2> --}}
 
-                    <p class="text-sm sm:text-base text-gray-500 leading-relaxed max-w-md">
+    {{-- <p class="text-sm sm:text-base text-gray-500 leading-relaxed max-w-md">
                         Sesi empat mata bersama ahli OCBC untuk membahas kebutuhan keuangan,
                         bisnis, maupun rencana masa depan Anda — rahasia, personal, dan fleksibel.
-                    </p>
+                    </p> --}}
 
-                    <div class="flex flex-wrap gap-3 mt-2">
+    {{-- <div class="flex flex-wrap gap-3 mt-2">
                         <a href="#"
                             class="inline-flex items-center gap-2 bg-gray-900 hover:bg-black text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors">
                             Jadwalkan Konsultasi
@@ -1282,26 +1396,26 @@
                             class="inline-flex items-center gap-2 border border-gray-300 hover:border-gray-900 text-gray-900 text-sm font-semibold px-6 py-3 rounded-full transition-colors">
                             Chat via WhatsApp
                         </a>
-                    </div>
+                    </div> --}}
 
-                    {{-- Benefit list (simple, no icons) --}}
-                    <div class="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-xs text-gray-500">
+    {{-- Benefit list (simple, no icons) --}}
+    {{-- <div class="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-xs text-gray-500">
                         <span>✔ Rahasia & Aman</span>
                         <span>✔ Solusi Personal</span>
                         <span>✔ Jadwal Fleksibel</span>
                     </div>
 
-                </div>
+                </div> --}}
 
-                {{-- Right: Image --}}
-                <div class="w-full h-full rounded-3xl overflow-hidden">
+    {{-- Right: Image --}}
+    {{-- <div class="w-full h-full rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1170&auto=format&fit=crop"
                         alt="OCBC Private Consultation" class="w-full h-full object-cover rounded-3xl" />
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="sponsored" class="bg-white relative overflow-hidden py-12 lg:py-15">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">

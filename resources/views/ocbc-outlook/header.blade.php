@@ -43,23 +43,25 @@
         </div>
 
         <!-- Desktop CTA Right -->
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        {{-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#private-consultation"
                 class="text-sm font-semibold text-white bg-[#DA291C] px-5 py-2.5 rounded-full hover:bg-[#B91F14] shadow-sm shadow-[#DA291C]/10 hover:shadow-md hover:shadow-[#DA291C]/20 transition-all duration-200">
                 Konsultasi Privat
             </a>
-        </div>
+        </div> --}}
     </nav>
 
     <!-- Mobile Menu Dialog -->
-    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden p-0 m-0 max-w-none max-h-none w-full h-full bg-transparent border-0">
+    <dialog id="mobile-menu"
+        class="backdrop:bg-transparent lg:hidden Fp-0 m-0 max-w-none max-h-none w-full h-full bg-transparent border-0">
         <div class="fixed inset-0 z-50 flex justify-end focus:outline-none">
             <!-- Semi-transparent Backdrop Overlay -->
-            <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300" 
-                 onclick="document.getElementById('mobile-menu').close()"></div>
+            <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300"
+                onclick="document.getElementById('mobile-menu').close()"></div>
 
             <!-- Drawer Container -->
-            <div class="relative w-full max-w-sm bg-white p-6 shadow-2xl ring-1 ring-gray-100 flex flex-col h-full z-10">
+            <div
+                class="relative w-full max-w-sm bg-white p-6 shadow-2xl ring-1 ring-gray-100 flex flex-col h-full z-10">
                 <!-- Header -->
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
@@ -102,7 +104,7 @@
                             Gallery
                         </a>
                     </div>
-                    
+
                     <div class="pt-6 border-t border-gray-100">
                         <a href="#private-consultation" onclick="document.getElementById('mobile-menu').close()"
                             class="block w-full rounded-full px-5 py-3 text-base font-semibold text-white bg-[#DA291C] hover:bg-[#B91F14] text-center shadow-sm shadow-[#DA291C]/10 hover:shadow-md transition-all duration-200">
