@@ -96,3 +96,9 @@ Route::get('/ocbc-outlook', function () {
         ]);
 });
 
+Route::get('/mickey-nyala', function () {
+    return view('mickey-nyala-platinum.index',[
+        'pageCSS' => 'assets/ocbc-outlook/style.css',
+        'title' => 'OCBC Outlook',
+        ]);
+});
