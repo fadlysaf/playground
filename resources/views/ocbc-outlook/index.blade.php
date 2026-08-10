@@ -3,6 +3,69 @@
 @push('style')
     <!-- Tabler Icons (used for ti-arrow-up-right) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+    <!-- Swiper (used for Speakers slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        .speakers-swiper {
+            padding: 0.5rem 0.25rem 3.5rem;
+        }
+
+        .speakers-swiper .swiper-slide {
+            height: auto;
+        }
+
+        .speakers-swiper .swiper-pagination {
+            bottom: 0;
+        }
+
+        .speakers-swiper .swiper-pagination-bullet {
+            background: var(--color-primary);
+            opacity: 0.25;
+        }
+
+        .speakers-swiper .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+        .speakers-prev,
+        .speakers-next {
+            top: 45%;
+            width: 44px;
+            height: 44px;
+            margin-top: -22px;
+            border-radius: 9999px;
+            background: #fff;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+            color: var(--color-primary);
+            z-index: 20;
+        }
+
+        .speakers-prev::after,
+        .speakers-next::after {
+            font-family: swiper-icons;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .speakers-prev:hover,
+        .speakers-next:hover {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        .speakers-prev.swiper-button-disabled,
+        .speakers-next.swiper-button-disabled {
+            opacity: 0.35;
+        }
+
+        @media (max-width: 639px) {
+
+            .speakers-prev,
+            .speakers-next {
+                display: none;
+            }
+        }
+    </style>
     <style>
         .hero-min-h {
             min-height: calc(100dvh - var(--header-h, 0px));
@@ -1221,49 +1284,114 @@
                 </div>
             </div>
 
-            <!-- Speaker Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Speaker Cards Slider -->
+            <div class="relative">
+                <div class="swiper speakers-swiper">
+                    <div class="swiper-wrapper">
 
-                <div
-                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="John Doe" class="w-full h-[320px] object-cover" />
-                    <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
-                        <p class="text-sm text-gray-500 mt-1">CEO, ABC Company</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            John memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan transformasi digital.
-                        </p>
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="John Doe" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
+                                    <p class="text-sm text-gray-500 mt-1">CEO, ABC Company</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        John memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan
+                                        transformasi digital.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Jane Smith" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Product Manager</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        Jane berfokus pada pengembangan produk digital dan pengalaman pengguna.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Michael Lee" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">Michael Lee</h3>
+                                    <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        Michael telah menangani berbagai proyek desain antarmuka untuk perusahaan
+                                        startup maupun enterprise.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="John Doe" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
+                                    <p class="text-sm text-gray-500 mt-1">CEO, ABC Company</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        John memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan
+                                        transformasi digital.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Jane Smith" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Product Manager</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        Jane berfokus pada pengembangan produk digital dan pengalaman pengguna.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Michael Lee" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                <div class="p-5 sm:p-6 flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900">Michael Lee</h3>
+                                    <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
+                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
+                                        Michael telah menangani berbagai proyek desain antarmuka untuk perusahaan
+                                        startup maupun enterprise.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
 
-                <div
-                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Jane Smith" class="w-full h-[320px] object-cover" />
-                    <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
-                        <p class="text-sm text-gray-500 mt-1">Product Manager</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            Jane berfokus pada pengembangan produk digital dan pengalaman pengguna.
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Michael Lee" class="w-full h-[320px] object-cover" />
-                    <div class="p-5 sm:p-6">
-                        <h3 class="text-lg font-semibold text-gray-900">Michael Lee</h3>
-                        <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
-                        <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                            Michael telah menangani berbagai proyek desain antarmuka untuk perusahaan startup maupun
-                            enterprise.
-                        </p>
-                    </div>
-                </div>
-
+                <!-- Navigation -->
+                <div class="swiper-button-prev speakers-prev !-left-1 lg:!-left-5"></div>
+                <div class="swiper-button-next speakers-next !-right-1 lg:!-right-5"></div>
             </div>
         </div>
     </section>
@@ -1566,6 +1694,8 @@
 @endsection
 
 @push('script')
+    <!-- Swiper JS (used for Speakers slider) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         function setHeaderHeight() {
             const header = document.querySelector('header');
@@ -1600,6 +1730,31 @@
                         target);
                 });
             });
+        });
+
+        // Speakers slider
+        new Swiper('.speakers-swiper', {
+            slidesPerView: 1.15,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.speakers-next',
+                prevEl: '.speakers-prev',
+            },
+            pagination: {
+                el: '.speakers-swiper .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 32,
+                },
+            },
         });
     </script>
 @endpush

@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    {{-- @include('mickey-nyala-platinum.header') --}}
+    @include('mickey-nyala-platinum.header')
     <!-- Main Content Area -->
     <main>
         @yield('content')
@@ -57,7 +57,7 @@
 
     @stack('script')
 
-    {{-- @include('mickey-nyala-platinum.footer') --}}
+    @include('mickey-nyala-platinum.footer')
 </body>
 
 </html>
