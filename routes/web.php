@@ -20,11 +20,12 @@ Route::get('/practice-microsite-1', function () {
         ]);
 });
 
+Route::get('/convert-to-json', function () {
+    return response()->file(resource_path('views/convert-to-json/index.html'));
+});
+
 Route::get('/convert-csv-to-json', function () {
-    return view('page-convert-csv-to-json.index',[
-        'pageCSS' => 'assets/page-convert-csv-to-json/style.css',
-        'title' => 'Convert CSV to JSON',
-        ]);
+    return response()->file(resource_path('views/convert-to-json/index.html'));
 });
 
 Route::get('/tracking-request-website', function () {

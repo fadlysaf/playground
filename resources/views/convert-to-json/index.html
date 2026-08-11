@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Convert CSV to JSON</title>
+    <link rel="stylesheet" href="/assets/convert-to-json/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-content">
+            <h1>Convert CSV / Excel to JSON</h1>
+            <form id="csv-form">
+                <label for="csv-input">Upload File:</label>
+                <input class="form-control" type="file" id="csv-input" accept=".csv, .xlsx, .xls, .xlsv" />
+                <div class="button-group">
+                    <button id="convert-btn" type="submit" disabled>
+                        Convert
+                    </button>
+                    <button id="download-btn" type="button" disabled>
+                        Download JSON
+                    </button>
+                </div>
+            </form>
+            <h2>JSON Output:</h2>
+            <pre id="json-output"></pre>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs/dist/protobuf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="/assets/convert-to-json/script.js"></script>
+</body>
+
+</html>
