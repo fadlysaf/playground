@@ -1397,7 +1397,7 @@
     </section>
 
     <!-- ============================== -->
-    <!-- SHARE FEEDBACK SECTION (CP VERSION) -->
+    <!-- SHARE FEEDBACK SECTION (SURVEY VERSION) -->
     <!-- ============================== -->
     <section id="feedback" class="bg-gray-50 relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
@@ -1419,7 +1419,7 @@
                     <div class="flex flex-col gap-3 mt-2 text-sm text-gray-600">
                         <div class="flex items-center gap-2.5">
                             <i class="ti ti-circle-check text-[var(--color-primary)] text-lg shrink-0"></i>
-                            Langsung terhubung, tanpa isi formulir
+                            Hanya butuh waktu kurang dari 3 menit
                         </div>
                         <div class="flex items-center gap-2.5">
                             <i class="ti ti-circle-check text-[var(--color-primary)] text-lg shrink-0"></i>
@@ -1432,59 +1432,49 @@
                     </div>
                 </div>
 
-                <!-- RIGHT: Contact Person Cards -->
+                <!-- RIGHT: Feedback Survey Info -->
                 <div class="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 sm:p-8">
                     <label class="text-sm font-semibold text-gray-900 mb-4 block">
-                        Hubungi Tim Kami Langsung
+                        Isi Survei Feedback
                     </label>
 
                     <div class="flex flex-col gap-4">
-                        <!-- CP Card 1 -->
-                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memberikan%20feedback%20tentang%20OCBC%20Outlook"
-                            target="_blank" rel="noopener"
-                            class="group flex items-center gap-4 rounded-2xl border border-gray-200 p-4 hover:border-[var(--color-primary)] hover:shadow-md transition-all">
-                            <div
-                                class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 group-hover:bg-green-100 transition-colors">
-                                <i class="ti ti-brand-whatsapp text-2xl text-green-600"></i>
+                        <!-- Survey Info Card -->
+                        <div class="flex items-start gap-4 rounded-2xl border border-gray-200 p-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                                <i class="ti ti-clipboard-text text-2xl text-blue-500"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <p class="text-sm font-semibold text-gray-900">Andi Pratama</p>
-                                <p class="text-xs text-gray-500">Event Coordinator · +62 812-3456-7890</p>
+                                <p class="text-sm font-semibold text-gray-900">Survei Kepuasan Peserta</p>
+                                <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                                    Berisi beberapa pertanyaan singkat seputar sesi, pembicara,
+                                    dan penyelenggaraan acara secara keseluruhan.
+                                </p>
                             </div>
-                            <i
-                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
-                        </a>
+                        </div>
 
-                        <!-- CP Card 2 -->
-                        <a href="https://wa.me/6289876543210?text=Halo%2C%20saya%20ingin%20memberikan%20feedback%20tentang%20OCBC%20Outlook"
-                            target="_blank" rel="noopener"
-                            class="group flex items-center gap-4 rounded-2xl border border-gray-200 p-4 hover:border-[var(--color-primary)] hover:shadow-md transition-all">
-                            <div
-                                class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center shrink-0 group-hover:bg-green-100 transition-colors">
-                                <i class="ti ti-brand-whatsapp text-2xl text-green-600"></i>
+                        <!-- Survey Details -->
+                        <div class="flex flex-col gap-3 rounded-2xl bg-gray-50 p-4 text-xs text-gray-500">
+                            <div class="flex items-center gap-2.5">
+                                <i class="ti ti-clock text-gray-400 text-base shrink-0"></i>
+                                Estimasi waktu pengisian: 2–3 menit
                             </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="text-sm font-semibold text-gray-900">Sarah Wijaya</p>
-                                <p class="text-xs text-gray-500">Guest Relations · +62 898-7654-3210</p>
+                            <div class="flex items-center gap-2.5">
+                                <i class="ti ti-calendar-event text-gray-400 text-base shrink-0"></i>
+                                Survei dibuka hingga 7 hari setelah acara berlangsung
                             </div>
-                            <i
-                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
-                        </a>
+                            <div class="flex items-center gap-2.5">
+                                <i class="ti ti-shield-lock text-gray-400 text-base shrink-0"></i>
+                                Jawaban Anda bersifat anonim dan digunakan untuk evaluasi internal
+                            </div>
+                        </div>
 
-                        <!-- Email option -->
-                        <a href="mailto:feedback@ocbcoutlook.id?subject=Feedback%20OCBC%20Outlook"
-                            class="group flex items-center gap-4 rounded-2xl border border-dashed border-gray-200 p-4 hover:border-[var(--color-primary)] hover:bg-gray-50 transition-all">
-                            <div
-                                class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-blue-100 transition-colors">
-                                <i class="ti ti-mail text-2xl text-blue-500"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="text-sm font-semibold text-gray-900">Kirim via Email</p>
-                                <p class="text-xs text-gray-500">feedback@ocbcoutlook.id</p>
-                            </div>
-                            <i
-                                class="ti ti-chevron-right text-gray-300 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all"></i>
-                        </a>
+                        <!-- CTA button -->
+                        {{-- <a href="#survey-form"
+                            class="group flex items-center justify-center gap-2 rounded-2xl bg-[var(--color-primary)] text-white p-4 font-semibold text-sm hover:opacity-90 transition-all">
+                            Isi Survei Sekarang
+                            <i class="ti ti-arrow-right text-lg group-hover:translate-x-0.5 transition-all"></i>
+                        </a> --}}
                     </div>
                 </div>
             </div>
