@@ -118,8 +118,8 @@
         }
 
         /* Blob disembunyikan khusus mobile/tablet (<1024px) — breakpoint sama dgn
-               titik ganti layout kartu hero (lg:hidden), sumber masalah tinggi section
-               yang bikin blob kepotong di mobile. Desktop tetap tampil normal. */
+                                           titik ganti layout kartu hero (lg:hidden), sumber masalah tinggi section
+                                           yang bikin blob kepotong di mobile. Desktop tetap tampil normal. */
         @media (max-width: 1023px) {
             .blob {
                 display: none;
@@ -282,6 +282,17 @@
         {{-- hero section --}}
         <section class="relative bg-[#0B0A14] px-6 pt-2 lg:px-8">
 
+            <!-- Banner background - MOBILE -->
+            <div class="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat lg:hidden"
+                style="background-image: url('https://path-ke-gambar-mobile.jpg');"></div>
+
+            <!-- Banner background - DESKTOP -->
+            <div class="pointer-events-none absolute inset-0 z-0 hidden bg-cover bg-center bg-no-repeat lg:block"
+                style="background-image: url('https://path-ke-gambar-desktop.jpg');"></div>
+
+            <!-- Overlay gelap supaya teks tetap kontras -->
+            <div class="pointer-events-none absolute inset-0 z-0 bg-[#0B0A14]/60"></div>
+
             <!-- Background blur blobs -->
             <div class="pointer-events-none absolute inset-0 z-0">
                 <div class="blob blob-1"></div>
@@ -312,35 +323,16 @@
                     <div class="hidden lg:block"></div>
                 </div>
 
-                <!-- Kartu produk versi MOBILE -->
-                <div class="mt-12 flex justify-center lg:hidden">
-                    <div class="card-wrap relative">
-                        <div class="card-holo-ring"></div>
-                        <div class="card-glow"></div>
-                        <img id="cardImgMobile"
-                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Disney_Credit_Card_Mickey_blank_01_43f7e9321f.png"
-                            alt="Kartu Kredit" width="420" height="420" fetchpriority="high" decoding="async"
-                            class="card-img w-[420px] rounded-3xl shadow-2xl shadow-[#C9A8FF]/30" />
-                        <div class="card-shimmer"><span class="shimmer-bar"></span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kartu produk versi DESKTOP -->
-            <div
-                class="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-1/2 items-center justify-center lg:flex">
-                <div class="card-wrap relative">
-                    <div class="card-holo-ring"></div>
-                    <div class="card-glow"></div>
-                    <img id="cardImgDesktop"
-                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Disney_Credit_Card_Mickey_blank_01_43f7e9321f.png"
-                        alt="Kartu Kredit" width="420" height="420" fetchpriority="high" decoding="async"
-                        class="card-img w-[420px] rounded-3xl shadow-2xl shadow-[#C9A8FF]/30" />
-                    <div class="card-shimmer"><span class="shimmer-bar"></span></div>
-                </div>
             </div>
         </section>
-        <section class="relative bg-[#0B0A14] px-6 py-24 lg:px-8">
+        <section class="relative px-6 py-24 lg:px-8">
+
+            <!-- Section background image -->
+            <div class="pointer-events-none absolute inset-0 z-0"
+                style="background-image: url('assets/email-pattern.png');"></div>
+
+            <!-- Overlay gelap opsional, supaya teks & kartu tetap kontras -->
+            <div class="pointer-events-none absolute inset-0 z-0 bg-[#0B0A14]/20"></div>
 
             <!-- Background blur blobs + sparkle, konsisten dengan hero -->
             <div class="pointer-events-none absolute inset-0 z-0">

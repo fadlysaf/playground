@@ -1,0 +1,757 @@
+:root {
+    --ocbc-red-light: rgba(200, 16, 46, 0.05);
+
+    --ocbc-red: #C8102E;
+
+    --text-dark: #1A1A1A;
+    --text-gray: #4B5563;
+    --bg-white: #FFFFFF;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: "Geomanist", sans-serif;
+}
+
+.disney-font {
+    font-family: "Geomanist", sans-serif;
+}
+
+.general-red-text {
+    color: #ea0a2a;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.pink-bg {
+    background-color: pink;
+    color: black !important;
+}
+
+.custom-bullet {
+    background: #ea0a2a;
+    color: #fff;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    font-size: 24px;
+}
+
+.primary-btn {
+    background-color: #ea0a2a;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 0 4px 6px -1px rgba(234, 10, 42, 0.4),
+        0 2px 4px -1px rgba(234, 10, 42, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+
+.primary-btn:hover {
+    background-color: #c00822;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(234, 10, 42, 0.5);
+}
+
+.secondary-btn {
+    background-color: #ffffff;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    color: #ea0a2a;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: 2px solid #ea0a2a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-btn:hover {
+    background-color: #fff1f2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px rgba(234, 10, 42, 0.15);
+}
+
+.disney-table-wrapper {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #fdf2f8;
+}
+
+.disney-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.disney-table th {
+    background: #ea0a2a;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.disney-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+    font-weight: 500;
+}
+
+.disney-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.disney-table tbody tr:hover {
+    background-color: #fff1f2;
+    transition: background-color 0.2s ease;
+}
+
+.disney-table td:first-child {
+    font-weight: 700;
+    color: #334155;
+    text-align: left;
+    padding-left: 24px;
+}
+
+/* .reveal-element {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-up {
+    transform: translateY(40px);
+}
+
+.reveal-scale {
+    transform: scale(0.95);
+}
+
+.reveal-element.is-visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+} */
+
+.modal-overlay {
+    transition: opacity 0.3s ease-out;
+}
+
+.modal-content {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Start Site Footer Section */
+.site-footer-section {
+    margin-bottom: 70px;
+    padding: 20px;
+    background-color: red;
+}
+
+.site-footer-grid {
+    width: 70%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.site-footer-content p {
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+    .site-footer-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    .site-footer-content {
+        text-align: center;
+    }
+
+    .site-footer-section {
+        margin-bottom: 70px;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.stay-tuned {
+    background-color: red;
+    border-radius: 15px;
+    padding: 7px 15px;
+    color: white;
+    max-width: 650px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+#floating-footer {
+    z-index: 999;
+    padding: 15px;
+    height: 70px;
+    gap: 10px;
+}
+
+/* Main Container */
+.promo-container {
+    /* Menggunakan background putih bersih dengan aksen merah sangat tipis jika diperlukan,
+               atau tetap menggunakan background body.
+               Di sini saya buat container putih bersih agar kontras bagus dengan text dark */
+    background-color: #FFFFFF;
+    border: 1px solid rgba(200, 16, 46, 0.1);
+    /* Border tipis merah untuk aksen brand */
+    border-radius: 32px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Element dekoratif background merah 5% */
+.promo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ocbc-red-light);
+    /* Merah 5% Opacity */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Text Section */
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    /* PERBARUAN: Ukuran font diubah menjadi 1.5rem */
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    /* Teks gelap agar kontras dengan background terang */
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Visual Content Area */
+.visual-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* TikTok Video Container */
+.tiktok-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
+    aspect-ratio: 9 / 16;
+    background: #000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.tiktok-wrapper:hover {
+    transform: translateY(-5px);
+    border-color: var(--ocbc-red);
+}
+
+.tiktok-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.tiktok-wrapper:hover .play-overlay {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.play-button {
+    background: var(--bg-white);
+    color: var(--ocbc-red);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/* Medal List Section */
+.medal-list-container {
+    max-width: 100%;
+}
+
+.medal-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.medal-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom di desktop */
+    gap: 16px;
+}
+
+/* Tablet: 2 kolom */
+@media (max-width: 900px) {
+    .medal-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 kolom */
+@media (max-width: 600px) {
+    .medal-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.medal-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.medal-img-wrapper img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #f3f3f3;
+}
+
+.medal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.medal-category {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    color: #ea0a2a;
+    text-transform: uppercase;
+}
+
+.medal-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.3;
+}
+
+/* Modal Styles */
+.video-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-modal.active {
+    opacity: 1;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 9 / 16;
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.video-modal.active .video-modal-content {
+    transform: scale(1);
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: var(--ocbc-red);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .promo-container {
+        padding: 60px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .header-section {
+        text-align: right;
+        grid-column: 1;
+        margin-bottom: 0;
+    }
+
+    .visual-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        grid-column: 2 / span 2;
+    }
+
+    /* Tetap pertahankan 1.5rem atau bisa diperbesar sedikit jika diinginkan di desktop,
+               tapi sesuai request tetap 1.5rem */
+    .main-text {
+        font-size: 2.5rem;
+    }
+
+    .medal-list-container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+    }
+
+    .medal-title {
+        color: var(--text-dark);
+        text-align: left;
+    }
+}
+
+/* ============================================================
+   MEDALS SECTION + SITE HEADER (added from new component)
+   Note: rules below are NEW selectors only. Duplicates that
+   already exist above (.disney-font, .primary-btn, .secondary-btn,
+   .disney-table*, .pink-bg, .bg-red, .general-red-text,
+   .site-footer-section, .site-footer-grid, #floating-footer,
+   .reveal-element*) were intentionally skipped so your existing
+   styling above is not overridden. See chat notes for details.
+   ============================================================ */
+
+.medal-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* --- Site Header --- */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.site-header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+}
+
+.site-header__logo img {
+    height: 36px;
+}
+
+.site-header__nav {
+    display: none;
+    gap: 28px;
+    align-items: center;
+}
+
+.site-header__nav a {
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site-header__nav a:hover {
+    color: var(--ocbc-red);
+}
+
+.site-header__cta {
+    background: var(--ocbc-red);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-header__burger {
+    display: inline-flex;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (min-width: 900px) {
+    .site-header__nav {
+        display: flex;
+    }
+
+    .site-header__burger {
+        display: none;
+    }
+}
+
+/* --- Mobile nav drawer --- */
+.mobile-nav {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 60;
+    display: none;
+}
+
+.mobile-nav.open {
+    display: block;
+}
+
+.mobile-nav__panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82%;
+    max-width: 340px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.mobile-nav__panel a {
+    display: block;
+    padding: 14px 4px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mobile-nav__close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+}
+
+/* --- Medals section --- */
+.medal-section {
+    background: linear-gradient(180deg, #FCE9EC 0%, #FDF3F4 100%);
+    border-radius: 28px;
+    padding: 48px 24px;
+}
+
+/* Video wrapper: landscape (16:9) on desktop */
+.video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Default behavior: landscape on desktop, portrait on mobile */
+@media (max-width: 767px) {
+    .video-wrap {
+        aspect-ratio: 9 / 16;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+/* Force landscape (YouTube video biasa) di semua ukuran layar */
+.video-wrap.video-wrap--normal {
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Force portrait (YouTube Shorts) di semua ukuran layar */
+.video-wrap.video-wrap--short {
+    aspect-ratio: 9 / 16;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.medal-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.medal-card img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+    background: #f3f3f3;
+}
+
+.medal-card .cat-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    color: #ea0a2a;
+    text-transform: uppercase;
+}
+
+.medal-card .cat-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.3;
+}
