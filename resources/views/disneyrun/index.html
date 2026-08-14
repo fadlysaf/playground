@@ -796,6 +796,66 @@
         const countdownInterval = setInterval(updateCountdown, 1000);
     </script>
 
+
+
+Claude finished the response
+
+Ran 2 commands, viewed a file
+Ran 2 commands, viewed a file
+Sudah saya cek script-nya di file yang di-upload. Temuan:
+
+Scroll memang belum di-lock sama sekali — script cuma setInterval buat countdown, dan tombol close/CTA cuma classList.add('hidden'). Tidak ada baris manapun yang menyentuh body untuk mengunci scroll.
+Bonus finding: div #presaleModal (baris 686) tidak punya class hidden dari awal, artinya modal ini langsung muncul saat halaman load (bukan dipicu tombol/delay). Selama modal tampil ini, halaman di belakangnya tetap bisa di-scroll bebas — itu penyebab utama kenapa "scroll disabled"-nya belum kerja, karena memang belum pernah diimplementasikan.
+Saya perbaiki langsung di file: tambah fungsi openPresaleModal() / closePresaleModal() yang mengunci scroll body, dan pasang di semua trigger (termasuk saat modal auto-muncul di awal).
+
+
+Edited 4 files, ran a command, read a file · 1 note
+Edited 4 files, ran a command, read a file · 1 note
+Ringkasan perbaikan (openPresaleModal() / closePresaleModal()):
+
+Pakai teknik position: fixed pada <body> (bukan cuma overflow-hidden) — ini yang bikin scroll benar-benar terkunci di iOS Safari juga, karena iOS masih membolehkan rubber-band scroll di background walau overflow-hidden dipasang sendirian.
+Posisi scroll disimpan (presaleScrollY) sebelum dikunci, lalu dikembalikan persis di titik semula saat modal ditutup — supaya user tidak "terlempar" ke atas halaman.
+Karena modal ini ternyata muncul otomatis saat load (tidak ada class hidden dari awal), saya tambahkan pengecekan di DOMContentLoaded: begitu terdeteksi modal sedang tampil, scroll langsung dikunci — jadi behavior-nya konsisten baik modal dipicu manual maupun auto-muncul.
+Tombol close dan CTA "Beli tiket di sini" di dalam modal sekarang manggil closePresaleModal(), bukan langsung classList.add('hidden') — supaya lock-nya ikut dilepas saat ditutup.
+Kalau nanti ternyata modal ini memang dimaksudkan tidak auto-muncul (misalnya harusnya cuma tampil lewat delay/timer atau tombol tertentu), kabari saja — saya bisa tambahkan class hidden default plus trigger yang sesuai.
+
+
+Index
+Code · HTML 
+berikan syntaxnya saja
+
+1. Script scroll-lock (taruh sebelum script mobile nav)
+
+html
+<script>
+    // Scroll lock untuk popup presale
+    let presaleScrollY = 0;
+
+    function openPresaleModal() {
+        presaleScrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${presaleScrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.getElementById('presaleModal').classList.remove('hidden');
+    }
+
+    function closePresaleModal() {
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        window.scrollTo(0, presaleScrollY);
+        document.getElementById('presaleModal').classList.add('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const presaleModal = document.getElementById('presaleModal');
+        if (presaleModal && !presaleModal.classList.contains('hidden')) {
+            openPresaleModal();
+        }
+    });
+</script>
 </body>
 
 </html>
