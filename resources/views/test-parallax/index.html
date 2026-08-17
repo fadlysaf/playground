@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parallax Landing Page</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+            <a href="#" class="text-xl font-bold tracking-wide">
+                PARALLAX
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#home" class="hover:text-cyan-400 transition">
+                    Home
+                </a>
+
+                <a href="#about" class="hover:text-cyan-400 transition">
+                    About
+                </a>
+
+                <a href="#features" class="hover:text-cyan-400 transition">
+                    Features
+                </a>
+
+                <a href="#contact" class="hover:text-cyan-400 transition">
+                    Contact
+                </a>
+            </div>
+
+            <button
+                class="px-5 py-2 rounded-full bg-white text-slate-950 text-sm font-medium hover:bg-cyan-400 transition">
+                Get Started
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="home" class="relative min-h-screen overflow-hidden flex items-center justify-center">
+
+        <!-- Parallax Background -->
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center" data-speed="0.25" style="
+                background-image:
+                linear-gradient(
+                    rgba(2, 6, 23, 0.45),
+                    rgba(2, 6, 23, 0.85)
+                ),
+                url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=80');
+            "></div>
+
+        <!-- Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/20 to-slate-950"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content relative z-10 max-w-4xl mx-auto px-6 text-center" data-speed="0.08">
+
+            <span
+                class="inline-block mb-6 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-sm">
+                ✦ Explore Something New
+            </span>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none">
+                Create Your
+                <span class="text-cyan-400">
+                    Experience.
+                </span>
+            </h1>
+
+            <p class="mt-8 max-w-2xl mx-auto text-slate-300 text-lg md:text-xl leading-relaxed">
+                A modern landing page combining clean design,
+                smooth scrolling, and subtle parallax effects.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+                <a href="#about"
+                    class="px-7 py-3 rounded-full bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition">
+                    Explore Website
+                </a>
+
+                <a href="#features"
+                    class="px-7 py-3 rounded-full border border-white/20 bg-white/5 backdrop-blur-md hover:bg-white/10 transition">
+                    View Features
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="relative py-32 bg-slate-950 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Image -->
+                <div class="relative" data-parallax-element data-speed="0.12">
+
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+
+                        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=80"
+                            alt="Mountain" class="w-full h-full object-cover">
+
+                    </div>
+
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-8 -right-8 bg-white text-slate-950 p-6 rounded-2xl shadow-2xl max-w-xs"
+                        data-parallax-element data-speed="0.2">
+
+                        <p class="text-sm text-slate-500">
+                            Discover
+                        </p>
+
+                        <p class="text-xl font-bold mt-1">
+                            Beyond the Ordinary
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Text -->
+                <div>
+
+                    <span class="text-cyan-400 font-medium">
+                        ABOUT US
+                    </span>
+
+                    <h2 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+                        Design that moves
+                        with your story.
+                    </h2>
+
+                    <p class="mt-6 text-slate-400 text-lg leading-relaxed">
+                        Parallax tidak harus digunakan pada setiap elemen.
+                        Gunakan pada bagian tertentu untuk memberikan
+                        depth dan membuat website terasa lebih hidup.
+                    </p>
+
+                    <p class="mt-4 text-slate-400 leading-relaxed">
+                        Kombinasikan efek tersebut dengan whitespace,
+                        typography yang kuat, dan layout sederhana agar
+                        website tetap nyaman digunakan.
+                    </p>
+
+                    <div class="mt-8 flex gap-10">
+
+                        <div>
+                            <p class="text-3xl font-bold">
+                                10+
+                            </p>
+
+                            <p class="text-sm text-slate-500 mt-1">
+                                Projects
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-3xl font-bold">
+                                5+
+                            </p>
+
+                            <p class="text-sm text-slate-500 mt-1">
+                                Years
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-3xl font-bold">
+                                100%
+                            </p>
+
+                            <p class="text-sm text-slate-500 mt-1">
+                                Passion
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PARALLAX DIVIDER
+    ========================== -->
+    <section class="relative h-[60vh] overflow-hidden flex items-center justify-center">
+
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center" data-speed="0.2" style="
+                background-image:
+                linear-gradient(
+                    rgba(2, 6, 23, 0.35),
+                    rgba(2, 6, 23, 0.6)
+                ),
+                url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=80');
+            "></div>
+
+        <div class="relative z-10 text-center px-6">
+
+            <p class="text-cyan-400 font-medium">
+                KEEP EXPLORING
+            </p>
+
+            <h2 class="mt-4 text-4xl md:text-6xl font-bold">
+                Move Forward.
+            </h2>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURES
+    ========================== -->
+    <section id="features" class="py-32 bg-slate-950">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="max-w-2xl mb-16">
+
+                <span class="text-cyan-400 font-medium">
+                    FEATURES
+                </span>
+
+                <h2 class="mt-4 text-4xl md:text-5xl font-bold">
+                    Simple, immersive,
+                    memorable.
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="feature-card p-8 rounded-3xl bg-slate-900 border border-white/10" data-parallax-element
+                    data-speed="0.08">
+
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-xl">
+                        ✦
+                    </div>
+
+                    <h3 class="mt-8 text-2xl font-semibold">
+                        Smooth Motion
+                    </h3>
+
+                    <p class="mt-4 text-slate-400 leading-relaxed">
+                        Animasi sederhana membuat interaksi terasa
+                        lebih natural tanpa mengganggu pengguna.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="feature-card p-8 rounded-3xl bg-slate-900 border border-white/10" data-parallax-element
+                    data-speed="0.14">
+
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-xl">
+                        ◈
+                    </div>
+
+                    <h3 class="mt-8 text-2xl font-semibold">
+                        Modern Layout
+                    </h3>
+
+                    <p class="mt-4 text-slate-400 leading-relaxed">
+                        Layout menggunakan whitespace dan typography
+                        untuk menghasilkan tampilan yang clean.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="feature-card p-8 rounded-3xl bg-slate-900 border border-white/10" data-parallax-element
+                    data-speed="0.20">
+
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-xl">
+                        ◎
+                    </div>
+
+                    <h3 class="mt-8 text-2xl font-semibold">
+                        Responsive
+                    </h3>
+
+                    <p class="mt-4 text-slate-400 leading-relaxed">
+                        Tetap nyaman digunakan pada desktop,
+                        tablet, maupun mobile.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section id="contact" class="relative min-h-[70vh] overflow-hidden flex items-center">
+
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center" data-speed="0.15" style="
+                background-image:
+                linear-gradient(
+                    rgba(2, 6, 23, 0.55),
+                    rgba(2, 6, 23, 0.85)
+                ),
+                url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80');
+            "></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl md:text-6xl font-bold">
+                Ready to create
+                something different?
+            </h2>
+
+            <p class="mt-6 text-slate-300 text-lg">
+                Start building an experience that people remember.
+            </p>
+
+            <button
+                class="mt-10 px-8 py-4 rounded-full bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition">
+                Let's Get Started
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="py-8 bg-slate-950 border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
+
+            <p>
+                © 2026 Parallax Studio
+            </p>
+
+            <p>
+                Built with HTML + Tailwind CSS
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -103,3 +103,20 @@ Route::get('/mickey-nyala', function () {
         'title' => 'OCBC Outlook',
         ]);
 });
+
+Route::get('/disneyrun', function () {
+    return view('disneyrun.index', [
+        'pageCSS' => 'assets/disneyrun/style.css',
+        'title' => 'Disney Run Jakarta 2026 - OCBC Indonesia',
+        'isOCBC' => true,
+    ]);
+});
+
+Route::get('/disneyrun-blob', function () {
+    return view('disneyrun.blob-route', [
+        'pageCSS' => 'assets/disneyrun/style.css',
+        'title' => 'Disney Run Blob Route Concept - OCBC Indonesia',
+        'isOCBC' => true,
+    ]);
+});
+
