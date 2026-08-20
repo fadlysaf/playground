@@ -149,7 +149,8 @@
         }
     </style>
 
-    <div class="relative z-10 min-h-screen flex flex-col pt-16 md:pt-20">
+    <div class="relative z-10 min-h-screen flex flex-col pt-16 md:pt-20 no-repeat bg-cover bg-center"
+        style="background-image: url(https://plus.unsplash.com/premium_photo-1734463718301-d74b7e9e46dd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
 
         <section id="hero2" class="w-full flex flex-col items-center relative">
             <picture class="w-full">
@@ -388,7 +389,7 @@
                         </linearGradient>
                     </defs>
                     <!-- <path class="rt-bg-path-dots"
-                                                                                                                                                                                d="M 1350,60 C 1150,140 1050,-10 830,70 C 610,150 500,-20 300,80 C 180,140 90,110 30,80" /> -->
+                                                                                                                                                                                            d="M 1350,60 C 1150,140 1050,-10 830,70 C 610,150 500,-20 300,80 C 180,140 90,110 30,80" /> -->
                     <path class="rt-bg-path" stroke="url(#rtGradEarlyAccess)"
                         d="M 1350,60 C 1150,140 1050,-10 830,70 C 610,150 500,-20 300,80 C 180,140 90,110 30,80" />
                 </svg>
@@ -397,11 +398,11 @@
             <i class="fa-solid fa-star rt-spark d2" style="bottom:14%; left:8%; font-size:10px;"></i>
             {{-- Background blur blobs --}}
             <!-- <div class="pointer-events-none absolute inset-0 z-0">
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-1" style="top: 3%; left: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-2" style="bottom: 3%; right: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-3" style="top: 25%; right: 15%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-4" style="bottom: 15%; left: 10%;"></div>
-                                                                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-1" style="top: 3%; left: 2%;"></div>
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-2" style="bottom: 3%; right: 2%;"></div>
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-3" style="top: 25%; right: 15%;"></div>
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-4" style="bottom: 15%; left: 10%;"></div>
+                                                                                                                                                                                                                                                                                                                                    </div> -->
             {{-- <div class="ornament-layer" aria-hidden="true">
                 <svg class="deco deco-mobile-hide" style="top:8%; left:0; width:100%; height:120px; --op:.14;"
                     viewBox="0 0 1000 120" preserveAspectRatio="none" fill="none">
@@ -522,7 +523,7 @@
 
                     <!-- Curve tengah -->
                     <!-- <path class="rt-bg-path-dots"
-                                                                                                                                                                                d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" /> -->
+                                                                                                                                                                                            d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" /> -->
                     <path class="rt-bg-path" stroke="url(#rtGradKategori2Tengah)"
                         d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" />
 
@@ -711,19 +712,19 @@
 
                     <!-- Garis 2 (tengah-atas): zigzag rapat, 4 segmen -->
                     <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 1360,210 C 1200,250 1120,150 960,200 C 800,250 720,150 560,200 C 400,250 320,150 160,200 C 100,220 60,210 30,210" /> -->
+                                                                                                                                                                                            d="M 1360,210 C 1200,250 1120,150 960,200 C 800,250 720,150 560,200 C 400,250 320,150 160,200 C 100,220 60,210 30,210" /> -->
                     <path class="rt-bg-path" stroke="url(#rtGradMedal2)" style="stroke-width:2;"
                         d="M 1360,210 C 1200,250 1120,150 960,200 C 800,250 720,150 560,200 C 400,250 320,150 160,200 C 100,220 60,210 30,210" />
 
                     <!-- Garis 3 (tengah-bawah): gelombang bolak-balik, 3 lekukan -->
                     <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 30,340 C 260,400 400,290 630,350 C 860,410 1000,300 1230,360 C 1290,376 1330,350 1360,340" /> -->
+                                                                                                                                                                                            d="M 30,340 C 260,400 400,290 630,350 C 860,410 1000,300 1230,360 C 1290,376 1330,350 1360,340" /> -->
                     <path class="rt-bg-path" stroke="url(#rtGradMedal3)" style="stroke-width:2;"
                         d="M 30,340 C 260,400 400,290 630,350 C 860,410 1000,300 1230,360 C 1290,376 1330,350 1360,340" />
 
                     <!-- Garis 4 (bawah): dalam & dramatis, 2 lekukan besar -->
                     <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 1360,560 C 1050,460 900,590 650,480 C 400,370 250,540 30,470" /> -->
+                                                                                                                                                                                            d="M 1360,560 C 1050,460 900,590 650,480 C 400,370 250,540 30,470" /> -->
                     <path class="rt-bg-path" stroke="url(#rtGradMedal4)" style="stroke-width:2;"
                         d="M 1360,560 C 1050,460 900,590 650,480 C 400,370 250,540 30,470" />
                 </svg>
@@ -974,9 +975,9 @@
         <section id="info-lanjut" class="py-12 px-4 md:px-8 relative overflow-hidden">
             <!-- Background blur blobs -->
             <!-- <div class="pointer-events-none absolute inset-0 z-0">
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-4" style="top: 3%; left: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-1" style="bottom: 3%; right: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-4" style="top: 3%; left: 2%;"></div>
+                                                                                                                                                                                                                                                                                                                                        <div class="blob blob-1" style="bottom: 3%; right: 2%;"></div>
+                                                                                                                                                                                                                                                                                                                                    </div> -->
             {{-- <div class="ornament-layer" aria-hidden="true">
                 <i class="fa-solid fa-star deco deco-twinkle deco-mobile-hide"
                     style="top:6px; right:8%; font-size:9px; --op:.25; --dur:3.2s;"></i>

@@ -408,9 +408,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Opening Keynote: The Future of
                                     Distributed Systems</h3>
-                                <p class="text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5">Sarah Chen —
-                                    CTO, Vercel
-                                </p>
+                                <a href="#speakers" data-speaker="sarah-chen"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5 hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Sarah Chen — CTO, Vercel
+                                </a>
                                 <p class="text-xs sm:text-sm text-gray-500 mt-1.5 line-clamp-2">
                                     An exploration of how distributed architectures are reshaping the foundations of modern
                                     software.
@@ -435,7 +437,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Rethinking Infrastructure at
                                     Scale</h3>
-                                <p class="text-xs sm:text-sm text-gray-500 mt-0.5">Marcus Webb — VP Engineering, Linear</p>
+                                <a href="#speakers" data-speaker="marcus-webb"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 mt-0.5 hover:text-[var(--color-primary)] hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Marcus Webb — VP Engineering, Linear
+                                </a>
                             </div>
                         </div>
 
@@ -475,7 +481,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Building Real-Time
                                     Collaborative Tools</h3>
-                                <p class="text-xs sm:text-sm text-gray-500 mt-0.5">Priya Nair — Staff Engineer, Figma</p>
+                                <a href="#speakers" data-speaker="priya-nair"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 mt-0.5 hover:text-[var(--color-primary)] hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Priya Nair — Staff Engineer, Figma
+                                </a>
                                 <p class="text-xs sm:text-sm text-gray-500 mt-1.5 line-clamp-2">
                                     Hands-on session exploring operational transforms and CRDT approaches for real-time
                                     sync.
@@ -547,9 +557,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Keynote: High-Frequency
                                     Systems &amp; FinTech Architecture</h3>
-                                <p class="text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5">Alexander
-                                    Wright —
-                                    Managing Director, Goldman Sachs</p>
+                                <a href="#speakers" data-speaker="alexander-wright"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5 hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Alexander Wright — Managing Director, Goldman Sachs
+                                </a>
                                 <p class="text-xs sm:text-sm text-gray-500 mt-1.5 line-clamp-2">
                                     An in-depth study of low latency patterns, dynamic scaling, and reliability practices
                                     inside high-volume financial hubs.
@@ -688,9 +700,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Keynote: Decentralized Web
                                     &amp; Sovereign Data</h3>
-                                <p class="text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5">Dr. Emily
-                                    Watson —
-                                    Professor, Oxford &amp; W3C Lead</p>
+                                <a href="#speakers" data-speaker="emily-watson"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5 hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Emily Watson — Professor, Oxford &amp; W3C Lead
+                                </a>
                                 <p class="text-xs sm:text-sm text-gray-500 mt-1.5 line-clamp-2">
                                     Exploring decentralized identity, privacy architectures, and next-generation W3C
                                     standards for user data control.
@@ -828,9 +842,11 @@
                                 </div>
                                 <h3 class="text-sm sm:text-base font-semibold text-gray-900">Keynote: Humanoid Robotics
                                     &amp; Edge AI Integration</h3>
-                                <p class="text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5">Kenji Sato —
-                                    Lead
-                                    Researcher, Sony Robotics</p>
+                                <a href="#speakers" data-speaker="kenji-sato"
+                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[var(--color-primary)] font-medium mt-0.5 hover:underline">
+                                    <i class="ti ti-user text-sm" aria-hidden="true"></i>
+                                    Kenji Sato — Lead Researcher, Sony Robotics
+                                </a>
                                 <p class="text-xs sm:text-sm text-gray-500 mt-1.5 line-clamp-2">
                                     Bridging the gap between embedded real-time software, visual-spatial models, and
                                     interactive robotics platforms.
@@ -959,7 +975,12 @@
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
                                                 Keynote</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">Sarah Johnson</p>
+                                            <a href="#speakers" data-speaker="sarah-chen"
+                                                class="inline-flex items-center gap-1.5 text-sm font-bold text-gray-800 leading-tight hover:text-[var(--color-primary)]">
+                                                <i class="ti ti-user text-sm text-[var(--color-primary)]"
+                                                    aria-hidden="true"></i>
+                                                Sarah Chen
+                                            </a>
                                         </div>
                                     </div>
 
@@ -968,7 +989,12 @@
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
                                                 Speaker</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">Michael Chen</p>
+                                            <a href="#speakers" data-speaker="marcus-webb"
+                                                class="inline-flex items-center gap-1.5 text-sm font-bold text-gray-800 leading-tight hover:text-[var(--color-primary)]">
+                                                <i class="ti ti-user text-sm text-[var(--color-primary)]"
+                                                    aria-hidden="true"></i>
+                                                Marcus Webb
+                                            </a>
                                         </div>
                                     </div>
 
@@ -977,7 +1003,12 @@
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
                                                 Speaker</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">Emily Carter</p>
+                                            <a href="#speakers" data-speaker="priya-nair"
+                                                class="inline-flex items-center gap-1.5 text-sm font-bold text-gray-800 leading-tight hover:text-[var(--color-primary)]">
+                                                <i class="ti ti-user text-sm text-[var(--color-primary)]"
+                                                    aria-hidden="true"></i>
+                                                Priya Nair
+                                            </a>
                                         </div>
                                     </div>
 
@@ -986,7 +1017,12 @@
                                         <div>
                                             <p class="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">
                                                 Speaker</p>
-                                            <p class="text-sm font-bold text-gray-800 leading-tight">David Wilson</p>
+                                            <a href="#speakers" data-speaker="alexander-wright"
+                                                class="inline-flex items-center gap-1.5 text-sm font-bold text-gray-800 leading-tight hover:text-[var(--color-primary)]">
+                                                <i class="ti ti-user text-sm text-[var(--color-primary)]"
+                                                    aria-hidden="true"></i>
+                                                Alexander Wright
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1289,95 +1325,91 @@
                 <div class="swiper speakers-swiper">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="sarah-chen">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="John Doe" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Sarah Chen" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
-                                    <p class="text-sm text-gray-500 mt-1">CEO, ABC Company</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Sarah Chen</h3>
+                                    <p class="text-sm text-gray-500 mt-1">CTO, Vercel</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        John memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan
-                                        transformasi digital.
+                                        Sarah memimpin pengembangan platform dan arsitektur terdistribusi di Vercel.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="marcus-webb">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Jane Smith" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Marcus Webb" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Product Manager</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Marcus Webb</h3>
+                                    <p class="text-sm text-gray-500 mt-1">VP Engineering, Linear</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Jane berfokus pada pengembangan produk digital dan pengalaman pengguna.
+                                        Marcus berfokus pada infrastruktur tangguh dan sistem berskala besar.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="priya-nair">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Michael Lee" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Priya Nair" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Michael Lee</h3>
-                                    <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Priya Nair</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Staff Engineer, Figma</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Michael telah menangani berbagai proyek desain antarmuka untuk perusahaan
-                                        startup maupun enterprise.
+                                        Priya membangun pengalaman kolaboratif real-time untuk produk digital.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="alexander-wright">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="John Doe" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Alexander Wright" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
-                                    <p class="text-sm text-gray-500 mt-1">CEO, ABC Company</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Alexander Wright</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Managing Director, Goldman Sachs</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        John memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan
-                                        transformasi digital.
+                                        Alexander mendalami arsitektur FinTech berperforma tinggi dan andal.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="emily-watson">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Jane Smith" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Emily Watson" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Product Manager</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Emily Watson</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Professor, Oxford &amp; W3C Lead</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Jane berfokus pada pengembangan produk digital dan pengalaman pengguna.
+                                        Emily meneliti identitas terdesentralisasi, privasi, dan standar web terbuka.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-speaker-card="kenji-sato">
                             <div
                                 class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Michael Lee" class="w-full h-[440px] sm:h-[480px] object-cover" />
+                                    alt="Kenji Sato" class="w-full h-[440px] sm:h-[480px] object-cover" />
                                 <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Michael Lee</h3>
-                                    <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
+                                    <h3 class="text-lg font-semibold text-gray-900">Kenji Sato</h3>
+                                    <p class="text-sm text-gray-500 mt-1">Lead Researcher, Sony Robotics</p>
                                     <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Michael telah menangani berbagai proyek desain antarmuka untuk perusahaan
-                                        startup maupun enterprise.
+                                        Kenji mengembangkan integrasi robotika humanoid dan AI edge real-time.
                                     </p>
                                 </div>
                             </div>
@@ -1723,7 +1755,7 @@
         });
 
         // Speakers slider
-        new Swiper('.speakers-swiper', {
+        const speakersSwiper = new Swiper('.speakers-swiper', {
             slidesPerView: 1.15,
             spaceBetween: 20,
             loop: true,
@@ -1745,6 +1777,26 @@
                     spaceBetween: 32,
                 },
             },
+        });
+
+        document.querySelectorAll('[data-speaker]').forEach(function(speakerLink) {
+            speakerLink.addEventListener('click', function() {
+                const speakerId = speakerLink.getAttribute('data-speaker');
+                const speakerCards = Array.from(document.querySelectorAll(
+                        '.speakers-swiper .swiper-slide[data-speaker-card]'))
+                    .filter(function(card) {
+                        return !card.classList.contains('swiper-slide-duplicate');
+                    });
+                const slideIndex = speakerCards.findIndex(function(card) {
+                    return card.getAttribute('data-speaker-card') === speakerId;
+                });
+
+                if (slideIndex >= 0) {
+                    window.setTimeout(function() {
+                        speakersSwiper.slideToLoop(slideIndex, 0);
+                    }, 0);
+                }
+            });
         });
     </script>
 @endpush
