@@ -1,510 +1,140 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OCBC Indonesia - Disney Run Jakarta 2026 | OCBC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Run Jakarta 2026 - Pre-Sales Ticket | OCBC</title>
     <meta name="description"
-        content="Bersiaplah untuk menikmati petualangan luar biasa bersama Disney, di mana olahraga, hiburan, dan momen hangat keluarga berpadu dalam satu perayaan istimewa." />
+        content="Bersiaplah untuk menikmati petualangan luar biasa bersama Disney, di mana olahraga, hiburan, dan momen hangat keluarga berpadu dalam satu perayaan istimewa. Temukan karakter-karakter ikonik serta berbagai aktivitas seru di sepanjang rute.">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Fira+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="OCBC Indonesia - Disney Run Jakarta 2026">
+    <meta property="og:description"
+        content="Bersiaplah untuk menikmati petualangan luar biasa bersama Disney, di mana olahraga, hiburan, dan momen hangat keluarga berpadu dalam satu perayaan istimewa. Temukan karakter-karakter ikonik serta berbagai aktivitas seru di sepanjang rute.">
+    <meta property="og:image"
+        content="https://cdn1.ocbc.id/asset/media/Feature/Banner/Banner-Nyala/disney-run-mobile.jpg?rev=-1">
+    <meta property="og:url" content="https://www.ocbc.id/id/program/disneyrunjkt26">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="OCBC Indonesia - Disney Run Jakarta 2026">
 
-    <!-- Utility CSS + Icons -->
+    <link rel="shortcut icon"
+        href="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/ICO/favicon.png?rev=8a9a44ad072d4803bc6f84020a64ac70">
+
+    <!-- Fonts & frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Page-specific styles (from original Sitecore build) -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Page-specific styles (colors, table, medal list, buttons, etc.) -->
+    <link rel="stylesheet" href="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/new_styles_7236fb8883.css">
 
+    <style>
+        body {
+            font-family: 'Open Sans', 'Fira Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- ============ HEADER ============ -->
-    <header class="site-header">
-        <div class="site-header__inner">
-            <a href="https://www.ocbc.id/en" class="site-header__logo">
-                <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
-                    alt="OCBC Logo" />
+<body class="bg-white">
+
+    <!-- ===== Simple header (Sitecore mega menu removed) ===== -->
+    <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+            <a href="https://www.ocbc.id/id">
+                <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=e90e53c526e44e6ca70efc4646c1ab07"
+                    alt="OCBC" class="h-8">
             </a>
-
-            <nav class="site-header__nav">
-                <a href="https://www.ocbc.id/en/individu">Individual</a>
-                <a href="https://www.ocbc.id/en/sme">SME</a>
-                <a href="https://www.ocbc.id/en/korporasi">Corporate</a>
-                <a href="https://www.ocbc.id/en/syariah">Sharia</a>
-                <a href="https://www.ocbc.id/en/digital-channel">Digital</a>
-                <a href="https://www.ocbc.id/en/article">Article</a>
-                <a href="https://www.ocbc.id/en/tentang-ocbc">About OCBC</a>
-            </nav>
-
-            <div style="display: flex; align-items: center; gap: 14px">
-                <a href="https://www.ocbc.id/en/jadi-nasabah" class="site-header__cta" style="display: none"
-                    id="becomeMemberDesktop">Become Member</a>
-                <button class="site-header__burger" id="mobileNavToggle" aria-label="Open menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
+            <a href="https://www.ocbc.id/id/jadi-nasabah" class="primary-btn">Jadi Nasabah</a>
         </div>
     </header>
 
-    <!-- Mobile nav drawer -->
-    <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav__panel">
-            <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div style="clear: both; margin-top: 40px">
-                <a href="https://www.ocbc.id/en/individu">Individual</a>
-                <a href="https://www.ocbc.id/en/sme">SME</a>
-                <a href="https://www.ocbc.id/en/korporasi">Corporate</a>
-                <a href="https://www.ocbc.id/en/syariah">Sharia</a>
-                <a href="https://www.ocbc.id/en/digital-channel">Digital</a>
-                <a href="https://www.ocbc.id/en/article">Article</a>
-                <a href="https://www.ocbc.id/en/tentang-ocbc">About OCBC</a>
-                <a href="https://www.ocbc.id/en/jadi-nasabah" class="primary-btn"
-                    style="width: 100%; margin-top: 16px">Become Member</a>
-            </div>
-        </div>
-    </div>
+    <div class="relative z-10 min-h-screen flex flex-col bg-cover"
+        style="background-image: url('https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Banner_Microsite_Disney_Run_73766ef43b.jpg');">
 
-    <!-- ============ MAIN CONTENT ============ -->
-    <div class="relative z-10 min-h-screen flex flex-col pt-16 md:pt-20">
-        <section id="hero2" class="w-full flex flex-col items-center relative">
+        <!-- ===== Hero ===== -->
+        <section id="hero2" class="w-full bg-white flex flex-col items-center">
             <picture class="w-full">
-                <source media="(min-width: 500px)" srcset="
-                            https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/new_main_kv_4ccac64805.jpg
-                        " />
+                <source media="(min-width: 500px)"
+                    srcset="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/new_main_kv_4ccac64805.jpg">
                 <img src="https://www.ocbc.id/asset/media/Feature/Banner/Banner%20Nyala/disney-run-mobile.jpeg"
-                    loading="eager" fetchpriority="high" decoding="async" alt="Disney Run 2026"
-                    class="w-full h-auto block object-cover" />
+                    alt="Disney Run 2026" class="w-full h-auto block object-cover">
             </picture>
+        </section>
 
-            <div class="absolute bottom-6 md:bottom-10 left-0 w-full flex justify-center px-4 z-10">
-                <a href="#kategori" class="primary-btn">
-                    Beli tiket di sini
-                </a>
+        <!-- ===== Mark your date ===== -->
+        <section id="mark-your-date" class="flex py-4 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <img class="w-max-screen h-[22rem] mt-8 rounded-2xl shadow-md block object-cover hidden md:block"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_RCP_DESKTOP_6ef33656a6.webp"
+                    alt="Disney Run 2026" loading="lazy">
+                <img class="w-max-screen h-[34rem] mt-8 rounded-2xl shadow-md block bg-cover md:hidden"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_RCP_MOBILE_b87f798f71.webp"
+                    alt="Disney Run 2026" loading="lazy">
             </div>
         </section>
 
-        <section id="category"
-            class="rt-bg-host pt-8 px-4 md:px-8 border-t border-pink-50 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradCategory" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#00b6c0" />
-                            <stop offset="50%" stop-color="#3885b9" />
-                            <stop offset="100%" stop-color="#153150" />
-                        </linearGradient>
-                    </defs>
-
-                    <path class="rt-bg-path" stroke="url(#rtGradCategory)" stroke-width="6"
-                        d="M 1370,260 C 1200,350 1000,180 800,280 C 600,380 460,210 260,310 C 150,365 80,330 30,300" />
-                </svg>
-            </div>
-
-            <i class="fa-solid fa-shoe-prints rt-print" style="top: 14%; right: 9%; transform: rotate(-8deg)"></i>
-
+        <!-- ===== Race categories ===== -->
+        <section id="category" class="rt-bg-host pt-8 px-4 md:px-8 relative z-10 overflow-hidden">
             <div class="max-w-6xl mx-auto relative">
                 <div class="text-center max-w-3xl mx-auto mb-4">
-                    <h2 class="text-black text-xl md:text-2xl font-bold general-red-text mb-4 reveal-element reveal-up">
-                        Race category options
+                    <h2 class="text-black text-xl md:text-2xl font-medium mb-4 reveal-element reveal-up is-visible">
+                        Pilihan kategori lari yang bisa kamu ikuti
                     </h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 max-w-3xl mx-auto">
-                    <div class="reveal-element reveal-up delay-100">
+                    <div class="reveal-element reveal-up delay-100 is-visible">
                         <div class="overflow-hidden rounded-2xl shadow-md border-2 border-pink-50 group">
                             <img loading="lazy" decoding="async"
                                 src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kategori_1k_eng_87e0a83105.jpg"
                                 alt="1K"
-                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500">
                         </div>
                     </div>
-                    <div class="reveal-element reveal-up delay-200">
+                    <div class="reveal-element reveal-up delay-200 is-visible">
                         <div class="overflow-hidden rounded-2xl shadow-md border-2 border-pink-50 group">
                             <img loading="lazy" decoding="async"
                                 src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kategori_5k_eng_c162912193.jpg"
                                 alt="5K"
-                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500">
                         </div>
                     </div>
-                    <div class="reveal-element reveal-up delay-300">
+                    <div class="reveal-element reveal-up delay-300 is-visible">
                         <div class="overflow-hidden rounded-2xl shadow-md border-2 border-pink-50 group">
                             <img loading="lazy" decoding="async"
                                 src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kategori_10k_eng_7fbea126d8.jpg"
                                 alt="10K"
-                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="kategori" class="rt-bg-host pt-4 md:pt-8 pb-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradKategori" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cdb7a4" />
-                            <stop offset="50%" stop-color="#cfb47d" />
-                            <stop offset="100%" stop-color="#cea94d" />
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Garis atas -->
-                    <path class="rt-bg-path rt-bg-path-top" stroke="url(#rtGradKategori)"
-                        d="M 1360,90 C 1200,150 1050,10 830,100 C 610,190 450,40 250,110 C 150,145 80,110 30,90" />
-
-                    <!-- Garis tengah -->
-                    <path class="rt-bg-path rt-bg-path-middle" stroke="url(#rtGradKategori)"
-                        d="M 1360,250 C 1220,320 1080,120 880,260 C 680,400 500,180 320,290 C 200,360 100,300 30,250" />
-
-                    <!-- Garis bawah -->
-                    <path class="rt-bg-path rt-bg-path-bottom" stroke="url(#rtGradKategori)"
-                        d="M 1360,372 C 1180,277 1030,502 760,430 C 550,370 430,562 220,482 C 120,442 70,402 30,372" />
-                </svg>
-            </div>
-            <div class="rt-pin" style="top: 6%; left: 30%">
-                <div class="rt-pin-ring" style="color: var(--rt-red)"></div>
-                <i class="fa-solid fa-flag"></i>
-            </div>
-            <i class="fa-solid fa-shoe-prints rt-print" style="bottom: 16%; left: 7%; transform: rotate(10deg)"></i>
-
-            <div class="max-w-6xl mx-auto relative z-10">
-                <div class="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative backdrop-blur-md mb-10"
-                    style="
-                            background: linear-gradient(
-                                135deg,
-                                #3885b9 0%,
-                                #ee2034 50%,
-                                #bd3629 100%
-                            );
-                        ">
-                    <!-- Kolom kiri: logo, heading, deskripsi -->
-                    <div class="text-content flex-1 z-10 w-full">
-                        <h1
-                            class="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight text-left drop-shadow-sm">
-                            Bersiap untuk Pre-Sale Ticket
-                        </h1>
-                        <div class="text-left">
-                            <p class="text-white/95 text-sm md:text-base leading-relaxed">
-                                Siapkan Kartu Kredit / Debit OCBC kamu untuk
-                                pre-sale ticket di tanggal
-                                <span class="whitespace-nowrap font-semibold">5 September 2026</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Kolom kanan: countdown card -->
-                    <div class="flex-1 flex justify-start md:justify-center items-start relative z-10 w-full">
-                        <div class="image-wrapper p-6 md:p-8 w-full max-w-md md:max-w-lg">
-                            <div class="grid grid-cols-4 gap-3 md:gap-4">
-                                <div class="bg-slate-100 rounded-2xl py-4 px-2 text-center">
-                                    <div id="cd-days"
-                                        class="cd-days text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                                        00
-                                    </div>
-                                    <div class="text-[10px] md:text-xs font-bold text-slate-600 mt-1.5 tracking-wide">
-                                        HARI
-                                    </div>
-                                </div>
-
-                                <div class="bg-slate-100 rounded-2xl py-4 px-2 text-center">
-                                    <div id="cd-hours"
-                                        class="cd-hours text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                                        00
-                                    </div>
-                                    <div class="text-[10px] md:text-xs font-bold text-slate-600 mt-1.5 tracking-wide">
-                                        JAM
-                                    </div>
-                                </div>
-
-                                <div class="bg-slate-100 rounded-2xl py-4 px-2 text-center">
-                                    <div id="cd-minutes"
-                                        class="cd-minutes text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                                        00
-                                    </div>
-                                    <div class="text-[10px] md:text-xs font-bold text-slate-600 mt-1.5 tracking-wide">
-                                        MENIT
-                                    </div>
-                                </div>
-
-                                <div class="bg-slate-100 rounded-2xl py-4 px-2 text-center">
-                                    <div id="cd-seconds"
-                                        class="cd-seconds text-2xl md:text-3xl font-extrabold text-[#ea0a2a]">
-                                        00
-                                    </div>
-                                    <div class="text-[10px] md:text-xs font-bold text-slate-600 mt-1.5 tracking-wide">
-                                        DETIK
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
-                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
-                </div>
-
-                <div class="text-center mb-10 reveal-element reveal-up">
-                    <h2 class="text-black text-xl md:text-2xl font-bold general-red-text mb-3">
-                        Disney Run Jakarta 2026 Ticket Price / Category
-                    </h2>
-                </div>
-
-                <div class="disney-table-wrapper overflow-x-auto reveal-element reveal-up delay-200">
-                    <table class="disney-table">
-                        <thead>
-                            <tr>
-                                <th style="background-color: gray">
-                                    Category
-                                </th>
-                                <th>
-                                    Pre-sale<br /><span class="text-sm">Ticket price* exclusive for OCBC
-                                        customers,<br />transaction using
-                                        Credit / Debit Card</span>
-                                </th>
-                                <th style="background-color: gray">
-                                    General Sale<br /><small>Ticket price* for public,<br />transact
-                                        with all payment method</small>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1K (Child / Adult)</td>
-                                <td>Rp349.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp449.000
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    1K Family package: (1 Child + 1 Adult)
-                                </td>
-                                <td>Rp649.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp749.000
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5K</td>
-                                <td>Rp449.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp549.000
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10K</td>
-                                <td>Rp499.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp599.000
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="pt-4 italic">
-                    <small>*the listed base price does not include additional
-                        charges such as taxes, service fees, or transaction
-                        administration fees</small>
-                </p>
-
-                <img loading="lazy" decoding="async"
-                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/timeline_eng_072534c8cb.jpg"
-                    class="w-full h-auto mt-8 rounded-2xl shadow-md" alt="Timeline" />
-            </div>
-        </section>
-
-        <section id="early-access" class="rt-bg-host pt-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradEarlyAccess" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cdad5b" />
-                            <stop offset="50%" stop-color="#fbc656" />
-                            <stop offset="100%" stop-color="#ed1c2a" />
-                        </linearGradient>
-                    </defs>
-                    <!-- <path class="rt-bg-path-dots"
-                                                                                                                                                                                d="M 1350,60 C 1150,140 1050,-10 830,70 C 610,150 500,-20 300,80 C 180,140 90,110 30,80" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradEarlyAccess)"
-                        d="M 1350,60 C 1150,140 1050,-10 830,70 C 610,150 500,-20 300,80 C 180,140 90,110 30,80" />
-                </svg>
-            </div>
-            <i class="fa-solid fa-sparkles rt-spark" style="top: 10%; right: 10%; font-size: 13px"></i>
-            <i class="fa-solid fa-star rt-spark d2" style="bottom: 14%; left: 8%; font-size: 10px"></i>
-
-            <!-- <div class="pointer-events-none absolute inset-0 z-0">
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-1" style="top: 3%; left: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-2" style="bottom: 3%; right: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-3" style="top: 25%; right: 15%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-4" style="bottom: 15%; left: 10%;"></div>
-                                                                                                                                                                                                                                                                                                                        </div> -->
-
-            <div class="max-w-6xl mx-auto relative">
-                <div class="text-center mb-12">
-                    <h2
-                        class="disney-font text-3xl md:text-4xl font-bold general-red-text mb-4 reveal-element reveal-up">
-                        Get Early Access & secure your ticket!
-                    </h2>
-                    <p class="text-lg text-slate-600 font-medium reveal-element reveal-up delay-100">
-                        Quota limited! For every new product open, Customers
-                        will secure Disney Run Jakarta 2026 ticket with
-                        available category.
-                    </p>
-                    <br />
-                    <p class="text-xl text-black md:text-2xl font-bold reveal-element reveal-up delay-100">
-                        Choose your desire product & rewards:
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="nyala-promo" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true" style="overflow: hidden">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradNyalaPromo" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#ee2034" />
-                            <stop offset="50%" stop-color="#ed1c2a" />
-                            <stop offset="100%" stop-color="#fbc656" />
-                        </linearGradient>
-                    </defs>
-
-                    <path class="rt-bg-path" stroke="url(#rtGradNyalaPromo)"
-                        d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" />
-                </svg>
-            </div>
-
-            <div class="max-w-6xl mx-auto relative z-10">
-                <div
-                    class="mesh-gradient-card rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-red-100/60 relative overflow-hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative">
-                        <div class="text-left reveal-element reveal-up">
-                            <h2 class="text-3xl md:text-5xl font-bold general-red-text mb-3 leading-tight">
-                                1. Discount 50%
-                            </h2>
-                            <h3 class="text-black text-2xl md:text-4xl font-semibold mb-4">
-                                Apply OCBC Star Wars / 90&deg;N Credit Card
-                            </h3>
-                            <h3 class="text-black text-lg md:text-xl font-semibold mb-4">
-                                Promo Code:
-                                <span class="general-red-text font-bold"><b>OCBCDISNEYRUNJKT</b></span>
-                            </h3>
-
-                            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-6">
-                                <a href="https://www.ocbc.id/en/promo/2026/07/24/disney-run-promo-cc" target="_blank"
-                                    class="primary-btn w-full sm:w-auto">
-                                    <i class="fa-solid fa-circle-info mr-2"></i>
-                                    More info
-                                </a>
-                                <a href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBCDISNEYRUNJKT&utm_medium=&utm_campaignid=&utm_campaign=WEBSITE_DISNEYRUNJKT26_20260724&utm_content=&promo_referal=OCBCDISNEYRUNJKT&force=&promo_code=&sk=%25%25subskey%25%25"
-                                    target="_blank" class="secondary-btn w-full sm:w-auto">
-                                    Apply now
-                                </a>
-                            </div>
-
-                            <p class="text-slate-600 text-base md:text-sm leading-relaxed">
-                                * This program only applied for the new
-                                Credit Card OCBC customers. The discount
-                                will be applied only if the credit card
-                                application is approved.
-                            </p>
-                        </div>
-
-                        <div class="reveal-element reveal-up delay-200 flex justify-center">
-                            <div class="relative overflow-hidden w-full">
-                                <img loading="lazy" decoding="async"
-                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/credit_card_81c16916a0.png"
-                                    alt="Kartu Kredit"
-                                    class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="kategori2" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradKategori2Tengah" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#26a8be" />
-                            <stop offset="50%" stop-color="#3e6b98" />
-                            <stop offset="100%" stop-color="#0069ad" />
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Curve tengah -->
-                    <!-- <path class="rt-bg-path-dots"
-                                                                                                                                                                                d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradKategori2Tengah)"
-                        d="M 1365,240 C 1145,330 1065,170 845,290 C 625,410 485,210 265,320 C 165,372 95,350 35,340" />
-                </svg>
-            </div>
-
-            <div class="ornament-layer" aria-hidden="true">
-                <svg class="deco deco-dash-slow deco-mobile-hide" style="top: 4px; left: 6%; width: 180px; --op: 0.14"
-                    viewBox="0 0 220 50" fill="none">
-                    <path d="M0,30 Q55,0 110,25 T220,15" stroke="currentColor" stroke-width="2" stroke-dasharray="1 8"
-                        stroke-linecap="round" />
-                </svg>
-                <i class="fa-solid fa-star deco deco-twinkle" style="
-                            top: 6px;
-                            right: 6%;
-                            font-size: 10px;
-                            --op: 0.3;
-                            --dur: 3.2s;
-                        "></i>
-                <i class="fa-solid fa-medal deco deco-mobile-hide deco-gold" style="
-                            bottom: 8px;
-                            left: 3%;
-                            font-size: 18px;
-                            --op: 0.1;
-                            --rot: -12deg;
-                        "></i>
-            </div>
-            <div class="max-w-6xl mx-auto relative">
-                <div class="text-center mb-10 reveal-element reveal-up">
+        <!-- ===== Pricing table ===== -->
+        <section id="kategori" class="py-8 px-4 md:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-10 reveal-element reveal-up is-visible">
                     <h2 class="text-xl text-black md:text-2xl font-bold mb-3">
-                        Ticket price you can get if your credit card
-                        successfully approved
+                        Kategori &amp; harga tiket Disney Run Jakarta 2026
                     </h2>
                 </div>
 
-                <div class="disney-table-wrapper overflow-x-auto reveal-element reveal-up delay-200">
+                <div class="disney-table-wrapper overflow-x-auto reveal-element reveal-up delay-200 is-visible">
                     <table class="disney-table">
                         <thead>
                             <tr>
-                                <th style="background-color: gray">
-                                    Category
-                                </th>
-                                <th>
-                                    Early Access Credit Card<br /><small>Ticket price* exclusive for new
-                                        customers who applied OCBC Star Wars
-                                        / 90&deg;N Credit Card & get
-                                        approved</small>
-                                </th>
-                                <th style="background-color: gray">
-                                    Pre-sale<br /><small>Ticket price* exclusive for OCBC
-                                        customers, transaction using Credit
-                                        / Debit Card</small>
-                                </th>
-                                <th style="background-color: gray">
-                                    General Sale<br /><small>Ticket price* for public, transact
-                                        with all payment method</small>
-                                </th>
+                                <th style="background-color: gray;">Kategori</th>
+                                <th>Early Access Credit Card<br><small>Harga* tiket khusus Nasabah Baru yang mengajukan
+                                        &amp; approve Kartu Kredit OCBC Star Wars dan 90&deg;N</small></th>
+                                <th style="background-color: gray;">Pre-sale<br><small>Harga* tiket hanya untuk Nasabah
+                                        OCBC, transaksi menggunakan<br>Kartu Kredit / Debit</small></th>
+                                <th style="background-color: gray;">General Sale<br><small>Harga* tiket untuk umum,
+                                        dengan metode pembayaran yang tersedia</small></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -512,222 +142,103 @@
                                 <td>1K (Child / Adult)</td>
                                 <td class="pink-bg">Rp174.500</td>
                                 <td>Rp349.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp449.000
-                                </td>
+                                <td class="general-red-text font-bold">Rp449.000</td>
                             </tr>
                             <tr>
-                                <td>
-                                    1K Family package: (1 Child + 1 Adult)
-                                </td>
+                                <td>1K Family package: (1 Child + 1 Adult)</td>
                                 <td class="pink-bg">Rp324.500</td>
                                 <td>Rp649.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp749.000
-                                </td>
+                                <td class="general-red-text font-bold">Rp749.000</td>
                             </tr>
                             <tr>
                                 <td>5K</td>
                                 <td class="pink-bg">Rp224.500</td>
                                 <td>Rp449.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp549.000
-                                </td>
+                                <td class="general-red-text font-bold">Rp549.000</td>
                             </tr>
                             <tr>
                                 <td>10K</td>
                                 <td class="pink-bg">Rp249.500</td>
                                 <td>Rp499.000</td>
-                                <td class="general-red-text font-bold">
-                                    Rp599.000
-                                </td>
+                                <td class="general-red-text font-bold">Rp599.000</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p class="pt-4 italic">
-                    <small>*the listed base price does not include additional
-                        charges such as taxes, service fees, or transaction
-                        administration fees</small>
-                </p>
+                <p class="pt-4 italic"><small>*the listed base price does not include additional charges such as taxes,
+                        service fees, or transaction administration fees</small></p>
             </div>
         </section>
 
-        <section id="apply-cc" class="rt-bg-host py-10 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradApplyCc" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#153150" />
-                            <stop offset="50%" stop-color="#3e6b98" />
-                            <stop offset="100%" stop-color="#cdad5b" />
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Garis atas -->
-                    <path class="rt-bg-path rt-bg-path-top" stroke="url(#rtGradApplyCc)" stroke-width="6"
-                        d="M 30,100 C 260,60 460,160 680,90 C 900,20 1080,140 1370,80" />
-
-                    <!-- Garis tengah -->
-                    <path class="rt-bg-path" stroke="url(#rtGradApplyCc)" stroke-width="6"
-                        d="M 30,260 C 280,300 480,220 700,270 C 940,320 1120,240 1370,290" />
-
-                    <!-- Garis bawah -->
-                    <path class="rt-bg-path rt-bg-path-bottom" stroke="url(#rtGradApplyCc)" stroke-width="6"
-                        d="M 30,460 C 250,520 470,420 690,490 C 900,550 1100,450 1370,500" />
-                </svg>
-            </div>
-            <i class="fa-solid fa-shoe-prints rt-print" style="bottom: 8%; right: 6%; transform: rotate(6deg)"></i>
-
+        <!-- ===== Early access redemption ===== -->
+        <section id="early-access" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
             <div class="max-w-6xl mx-auto relative z-10">
                 <div
-                    class="mesh-gradient-apply-cc backdrop-blur-md rounded-3xl p-6 md:p-12 shadow-xl border border-red-100/60 text-center relative">
+                    class="bg-white rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-red-100/60 text-center relative overflow-hidden">
                     <div class="max-w-3xl mx-auto mb-10 reveal-element reveal-up relative">
-                        <h2 class="text-black text-xl md:text-3xl font-bold mb-3 leading-tight">
-                            2. Open product saving (TANDA HADIAH) in OCBC
-                            mobile and get:
+                        <h2 class="text-black text-3xl md:text-2xl font-medium mb-3 leading-tight">
+                            Khusus Nasabah yang telah mengikuti <span class="general-red-text">Early Access
+                                program,</span><br>
+                            segera tukarkan tiket kamu!
                         </h2>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-4 max-w-3xl mx-auto">
-                        <div class="overflow-hidden rounded-xl mb-4 bg-white/80 backdrop-blur-sm shadow-md">
-                            <img loading="lazy" decoding="async"
-                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cashback_175_eng_60118d16d6.jpg"
-                                alt="Benefit Cashback"
-                                class="w-full rounded-lg transform hover:scale-105 transition-transform duration-300" />
-                        </div>
-                        <div class="overflow-hidden rounded-xl mb-4 bg-white/80 backdrop-blur-sm shadow-md">
-                            <img loading="lazy" decoding="async"
-                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/tiket_440_eng_c655fc80f0.jpg"
-                                alt="Cicilan 0 Persen"
-                                class="w-full rounded-lg transform hover:scale-105 transition-transform duration-300" />
-                        </div>
-                        <div class="overflow-hidden rounded-xl mb-4 bg-white/80 backdrop-blur-sm shadow-md">
-                            <img loading="lazy" decoding="async"
-                                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/gratis_tiket_eng_546fa4fa3c.jpg"
-                                alt="Welcome Bonus"
-                                class="w-full rounded-lg transform hover:scale-105 transition-transform duration-300" />
-                        </div>
-                    </div>
-
-                    <div class="max-w-4xl mx-auto mb-8 reveal-element reveal-up delay-200">
-                        <p class="text-slate-500 text-lg">
-                            Every 1 placement of TANDA Hadiah, customers
-                            will get e-voucher discount from pre-sale price
-                            & ticket secured based on the available category
-                            & program scheme that customers choose.
+                    <div class="max-w-4xl mx-auto mb-2">
+                        <p class="mt-2 text-slate-500 text-base font-medium">
+                            Periode: 1 September &ndash; 10 September 23.59 WIB
                         </p>
                     </div>
-
                     <div
                         class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-element reveal-scale delay-300">
-                        <a href="https://www.ocbc.id/en/promo/2026/07/23/disney-run-tanda-hadiah" target="_blank"
+                        <a href="https://www.ocbc.id/id/promo/2026/08/28/early-access-disney-run" target="_blank"
                             class="primary-btn w-full sm:w-auto">
                             <i class="fa-solid fa-circle-info mr-2"></i>
-                            More info
+                            Info Lengkap
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- MEDAL SECTION -->
+        <!-- ===== Medal showcase ===== -->
         <section id="medal" class="rt-bg-host medal-section py-12 px-4 md:px-8 mt-0 mb-0 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradMedal1" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cea94d" />
-                            <stop offset="50%" stop-color="#cdad5b" />
-                            <stop offset="100%" stop-color="#cfb47d" />
-                        </linearGradient>
-                        <linearGradient id="rtGradMedal2" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cea94d" />
-                            <stop offset="50%" stop-color="#cdad5b" />
-                            <stop offset="100%" stop-color="#cfb47d" />
-                        </linearGradient>
-                        <linearGradient id="rtGradMedal3" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cea94d" />
-                            <stop offset="50%" stop-color="#cdad5b" />
-                            <stop offset="100%" stop-color="#cfb47d" />
-                        </linearGradient>
-                        <linearGradient id="rtGradMedal4" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#cea94d" />
-                            <stop offset="50%" stop-color="#cdad5b" />
-                            <stop offset="100%" stop-color="#cfb47d" />
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Garis 1 (atas): landai, 1 lekukan lebar -->
-                    <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;" d="M 1360,60 C 1000,160 700,-10 30,90" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradMedal1)" style="stroke-width: 2"
-                        d="M 1360,60 C 1000,160 700,-10 30,90" />
-
-                    <!-- Garis 2 (tengah-atas): zigzag rapat, 4 segmen -->
-                    <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 1360,210 C 1200,250 1120,150 960,200 C 800,250 720,150 560,200 C 400,250 320,150 160,200 C 100,220 60,210 30,210" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradMedal2)" style="stroke-width: 2"
-                        d="M 1360,210 C 1200,250 1120,150 960,200 C 800,250 720,150 560,200 C 400,250 320,150 160,200 C 100,220 60,210 30,210" />
-
-                    <!-- Garis 3 (tengah-bawah): gelombang bolak-balik, 3 lekukan -->
-                    <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 30,340 C 260,400 400,290 630,350 C 860,410 1000,300 1230,360 C 1290,376 1330,350 1360,340" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradMedal3)" style="stroke-width: 2"
-                        d="M 30,340 C 260,400 400,290 630,350 C 860,410 1000,300 1230,360 C 1290,376 1330,350 1360,340" />
-
-                    <!-- Garis 4 (bawah): dalam & dramatis, 2 lekukan besar -->
-                    <!-- <path class="rt-bg-path-dots" style="stroke-width:3.5;"
-                                                                                                                                                                                d="M 1360,560 C 1050,460 900,590 650,480 C 400,370 250,540 30,470" /> -->
-                    <path class="rt-bg-path" stroke="url(#rtGradMedal4)" style="stroke-width: 2"
-                        d="M 1360,560 C 1050,460 900,590 650,480 C 400,370 250,540 30,470" />
-                </svg>
-            </div>
-
             <div class="max-w-6xl mx-auto relative z-10">
-                <!-- Outer section container with soft gradient background -->
                 <div
-                    class="mesh-gradient-medal rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-slate-200/80 relative">
-                    <!-- 1. TEXT — top of section (outside white card) -->
+                    class="bg-white rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-slate-200/80 relative">
                     <div class="text-center max-w-2xl mx-auto mb-8 pt-2 relative z-10">
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-black leading-tight">
+                        <h2 class="text-3xl md:text-3xl font-medium text-black leading-tight">
                             A Medal to Celebrate your Magical Moment
                         </h2>
                     </div>
 
-                    <!-- 2. WHITE MEDAL CARD — container for the 3 medals -->
-                    <div
-                        class="bg-white rounded-3xl p-6 md:p-10 shadow-md border border-slate-100/80 mb-8 relative z-10">
+                    <div class="bg-white rounded-3xl p-6 md:p-10 mb-8 relative z-10">
                         <div class="medal-list-container !bg-transparent !p-0">
                             <div class="medal-list">
                                 <div class="medal-item">
                                     <div class="medal-img-wrapper">
                                         <img loading="lazy" decoding="async"
                                             src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/1_d948a2fec8.png"
-                                            alt="Medali 1K" />
+                                            alt="Medali 1K">
                                     </div>
                                     <div class="medal-details">
-                                        <span class="medal-name">1K Child / Adult & Family
-                                            Package</span>
+                                        <span class="medal-name">1K Child / Adult <br>Family Package</span>
                                     </div>
                                 </div>
-
                                 <div class="medal-item">
                                     <div class="medal-img-wrapper">
                                         <img loading="lazy" decoding="async"
                                             src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/2_ef67896188.png"
-                                            alt="Medali 5K" />
+                                            alt="Medali 5K">
                                     </div>
                                     <div class="medal-details">
                                         <span class="medal-name">5K Run</span>
                                     </div>
                                 </div>
-
                                 <div class="medal-item">
                                     <div class="medal-img-wrapper">
                                         <img loading="lazy" decoding="async"
                                             src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/3_882abd921e.png"
-                                            alt="Medali 10K" />
+                                            alt="Medali 10K">
                                     </div>
                                     <div class="medal-details">
                                         <span class="medal-name">10K Run</span>
@@ -737,414 +248,173 @@
                         </div>
                     </div>
 
-                    <!-- 3. VIDEO — landscape on desktop, portrait on mobile -->
                     <div
                         class="video-wrap video-wrap--normal hidden sm:block rounded-3xl overflow-hidden shadow-lg relative z-10">
                         <iframe class="js-lazy-video w-full aspect-video rounded-3xl"
-                            data-src="https://www.youtube.com/embed/VIDEO_ID_HERE" loading="lazy"
-                            title="Disney Run Jakarta 2026" allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                " allowfullscreen></iframe>
+                            data-src="https://www.youtube.com/embed/hA3FB-YAmhI?rel=0" loading="lazy"
+                            title="Disney Run Jakarta 2026"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            allowfullscreen></iframe>
                     </div>
-
                     <div
                         class="video-wrap video-wrap--short block sm:hidden rounded-3xl overflow-hidden shadow-lg relative z-10">
                         <iframe class="js-lazy-video w-full aspect-[9/16] rounded-3xl"
-                            data-src="https://www.youtube.com/embed/SHORT_VIDEO_ID_HERE" loading="lazy"
-                            title="Disney Run Shorts" allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                " allowfullscreen></iframe>
+                            data-src="https://www.youtube.com/embed/iOwjiMbjXLk?rel=0" loading="lazy"
+                            title="Disney Run Shorts"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ===== Race jersey ===== -->
         <section id="promo-jersey" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradPromoJersey" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#db212a" />
-                            <stop offset="50%" stop-color="#ee2034" />
-                            <stop offset="100%" stop-color="#153150" />
-                        </linearGradient>
-                    </defs>
-                    <path class="rt-bg-path" stroke="url(#rtGradPromoJersey)"
-                        d="M 30,335 C 220,385 380,235 620,285 C 860,335 1000,195 1240,245 C 1300,258 1335,235 1360,220" />
-                </svg>
-            </div>
-            <i class="fa-solid fa-shoe-prints rt-print" style="top: 8%; right: 8%; transform: rotate(-6deg)"></i>
-            <!-- Background blur blobs (section level background) -->
             <div class="max-w-6xl mx-auto relative z-10">
                 <div
-                    class="mesh-gradient-jersey rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative max-w-5xl mx-auto shadow-xl">
+                    class="bg-white rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative max-w-5xl mx-auto shadow-xl">
                     <div class="text-content flex-1 z-10 w-full">
-                        <h2
-                            class="text-3xl md:text-4xl font-extrabold text-white mb-4 md:mb-8 leading-tight text-left drop-shadow-sm">
+                        <h2 class="text-3xl md:text-3xl font-medium black mb-4 md:mb-8 leading-tight text-left">
                             Official Disney Run Jakarta 2026 Race Jersey
                         </h2>
                         <div class="text-left">
-                            <p class="text-white/95 text-sm md:text-base leading-relaxed mb-2">
-                                Every participant will receive an official
-                                race jersey & may select their preferred
-                                jersey size (child/adult) starting on:
+                            <p class="black text-sm md:text-base leading-relaxed mb-2">
+                                Setiap peserta akan mendapatkan jersey dengan size yang dapat dipilih untuk child/adult
+                                saat registrasi dibuka.
                             </p>
-                            <ul class="list-disc list-inside text-white/95 text-sm md:text-base space-y-1 text-left">
-                                <li>5th September for pre-sale</li>
-                                <li>10th September for general sale</li>
+                            <ul class="list-disc list-inside black text-sm md:text-base space-y-1 text-left">
+                                <li>Tanggal pre-sale: 5 September</li>
+                                <li>Tanggal general sale: 10 September</li>
                             </ul>
                         </div>
                     </div>
-
                     <div class="flex-1 flex justify-start md:justify-center items-start relative z-10 w-full">
                         <div
                             class="image-wrapper bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-0 w-full max-w-md md:max-w-lg">
                             <div class="w-full">
                                 <img loading="lazy" decoding="async"
                                     src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Jersey_Disney_Run_2026_251c277eeb.webp"
-                                    alt="Jersey Disney Run 2026 Front" class="w-full h-auto object-cover rounded-2xl" />
+                                    alt="Jersey Disney Run 2026 Front" class="w-full h-auto object-cover rounded-2xl">
                             </div>
                         </div>
                     </div>
-
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
-                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
                 </div>
             </div>
         </section>
 
-        <!-- ============ MARK YOUR CALENDAR ============ -->
-        <section id="mark-your-calendar" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
-            <div class="rt-bg-layer" aria-hidden="true">
-                <svg viewBox="0 0 1400 580" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="rtGradCalendar" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#d2716c" />
-                            <stop offset="50%" stop-color="#fbc656" />
-                            <stop offset="100%" stop-color="#0069ad" />
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Garis 1 -->
-                    <path class="rt-bg-path" stroke="url(#rtGradCalendar)" stroke-width="3"
-                        d="M 1360,150 C 1140,220 1070,10 850,110 C 630,210 470,30 260,130 C 160,178 90,160 30,150" />
-
-                    <!-- Garis 2 -->
-                    <path class="rt-bg-path" stroke="url(#rtGradCalendar)" stroke-width="3"
-                        d="M 1360,420 C 1200,480 1020,340 800,440 C 580,540 420,380 220,460 C 130,500 80,460 30,420" />
-                </svg>
-            </div>
-
+        <!-- ===== Debit card promo ===== -->
+        <section id="disney-run-card" class="flex py-4 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
             <div class="max-w-6xl mx-auto relative z-10">
-                <div class="relative rounded-3xl border-2 border-red-100/60 p-8 md:p-14 shadow-xl max-w-5xl mx-auto"
-                    style="background-color: var(--white)">
-                    <i
-                        class="fa-solid fa-flag-checkered absolute top-6 right-6 text-[#ea0a2a] opacity-10 text-5xl rotate-12"></i>
-                    <i class="fa-solid fa-sparkles rt-spark" style="top: 8%; left: 6%; font-size: 12px"></i>
+                <img class="w-max-screen h-[28rem] mt-8 rounded-2xl shadow-md block object-cover hidden md:block"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_DEBIT_DISNEY_RUN_DESKTOP_d1130c8807.webp"
+                    alt="Disney Run 2026 Desktop" loading="lazy">
+                <img class="w-max-screen h-[34rem] mt-8 rounded-2xl shadow-md block bg-cover md:hidden"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_DEBIT_DISNEY_RUN_MOBILE_10552efa06.webp"
+                    alt="Disney Run 2026 Mobile" loading="lazy">
 
-                    <!-- heading -->
-                    <div class="relative z-10 text-center mb-10 md:mb-14">
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                            Mark Your Calendar!
-                        </h2>
-                    </div>
-
-                    <!-- race route timeline: pack collection -> race day -->
-                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-0 items-center">
-                        <!-- Race Pack Collection -->
-                        <div
-                            class="bg-white/70 backdrop-blur-sm rounded-2xl md:rounded-none md:bg-transparent md:backdrop-blur-0 p-6 md:p-0 md:pr-10 text-center md:text-right">
-                            <div class="flex items-center justify-center md:justify-start gap-3 mb-5">
-                                <h3 class="text-lg md:text-xl font-bold text-gray-900 order-2 md:order-1">
-                                    Race Pack Collection
-                                </h3>
-                            </div>
-                            <ul class="space-y-3 text-gray-700 text-sm md:text-base">
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-solid fa-location-dot text-[#ea0a2a]"></i>
-                                    <span>The Breeze, BSD</span>
-                                </li>
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-regular fa-calendar text-[#ea0a2a]"></i>
-                                    <span>11 &ndash; 13 November 2026</span>
-                                </li>
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-regular fa-clock text-[#ea0a2a]"></i>
-                                    <span>10.00 &ndash; 20.00 WIB</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Route divider: desktop vertical, mobile horizontal -->
-                        <div class="hidden md:flex relative flex-col items-center self-stretch w-0 px-8">
-                            <div class="w-0 grow border-l-2 border-dashed border-[#ea0a2a]/30"></div>
-                            <span
-                                class="absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md border border-[#ea0a2a]/15 flex items-center justify-center">
-                                <i class="fa-solid fa-caret-right text-[#ea0a2a]"></i>
-                            </span>
-                        </div>
-
-                        <div class="md:hidden relative flex items-center justify-center py-2">
-                            <div class="w-full border-t-2 border-dashed border-[#ea0a2a]/30"></div>
-                            <span
-                                class="absolute w-9 h-9 rounded-full bg-white shadow-md border border-[#ea0a2a]/15 flex items-center justify-center">
-                                <i class="fa-solid fa-caret-down text-[#ea0a2a] text-sm"></i>
-                            </span>
-                        </div>
-
-                        <!-- Race Day -->
-                        <div
-                            class="bg-white/70 backdrop-blur-sm rounded-2xl md:rounded-none md:bg-transparent md:backdrop-blur-0 p-6 md:p-0 md:pl-10 text-center md:text-left">
-                            <div class="flex items-center justify-center md:justify-start gap-3 mb-5">
-                                <h3 class="text-lg md:text-xl font-bold text-gray-900">
-                                    Race Day
-                                </h3>
-                            </div>
-                            <ul class="space-y-3 text-gray-700 text-sm md:text-base">
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-solid fa-location-dot text-[#ea0a2a] w-4"></i>
-                                    <span>Parkir Timur ICE BSD</span>
-                                </li>
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-regular fa-calendar text-[#ea0a2a] w-4"></i>
-                                    <span>14 November 2026</span>
-                                </li>
-                                <li class="flex items-center justify-center md:justify-start gap-3">
-                                    <i class="fa-regular fa-clock text-[#ea0a2a] w-4"></i>
-                                    <span>05.00 &ndash; 12.00 WIB</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============ SECTION: INFORMASI LEBIH LANJUT ============ -->
-        <section id="info-lanjut" class="py-12 px-4 md:px-8 relative overflow-hidden">
-            <!-- Background blur blobs -->
-            <!-- <div class="pointer-events-none absolute inset-0 z-0">
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-4" style="top: 3%; left: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                            <div class="blob blob-1" style="bottom: 3%; right: 2%;"></div>
-                                                                                                                                                                                                                                                                                                                        </div> -->
-
-            <div class="max-w-5xl mx-auto relative">
-                <!-- Heading -->
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-2">
-                        Informasi Lebih Lanjut
-                    </h2>
-                    <p class="text-slate-500 text-base md:text-lg">
-                        Informasi lengkap seputar pendaftaran, syarat &amp;
-                        ketentuan, serta benefit Disney Run Jakarta 2026.
+                <div class="absolute top-4 left-4 md:top-[3.5rem] md:left-6 z-10">
+                    <p class="text-black text-sm sm:text-base md:text-lg bg-white/70 rounded-lg px-2 py-1">
+                        Masukan kode promo
+                        <span class="text-white p-1 pl-2 pr-2 rounded font-medium bg-[#ea0a2a]">DEBITDISNEYRUN</span>
                     </p>
                 </div>
 
-                <!-- Tabs + Content -->
+                <!-- <div class="disney-run-promo">
+                    <p class="disney-run-promo-text">
+                        Masukan kode promo
+                        <span class="disney-run-promo-code">DEBITDISNEYRUN</span>
+                    </p>
+                </div> -->
+
+                <div
+                    class="w-full flex justify-end px-4 py-3 absolute bottom-2 right-0 z-10 md:bottom-3 md:left-[-15px] md:right-auto md:py-0">
+                    <button id="open-debit-modal" onclick="openDebitModal()" class="primary-btn-apply" type="button">
+                        Info Lengkap
+                    </button>
+                </div>
+
+                <!-- <div class="disney-run-btn-wrap">
+                    <button id="open-debit-modal" onclick="openDebitModal()" class="primary-btn-apply" type="button">
+                        Info Lengkap
+                    </button>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- ===== Info lebih lanjut (FAQ / Surat Kuasa) ===== -->
+        <section id="info-lanjut" class="py-4 px-4 md:px-8">
+            <div class="p-6 md:p-12 medal-wrap mt-8 mb-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-2xl font-medium text-black mb-2">Informasi Lebih Lanjut</h2>
+                    <p class="text-slate-500 text-base md:text-base">Informasi terkait Disney Run Jakarta 2026</p>
+                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 md:gap-12">
-                    <!-- Tab list (kiri) -->
                     <div class="border-t border-slate-200" id="info-tab-list">
-                        <button type="button" data-tab="persyaratan"
+                        <button type="button" data-tab="faq"
                             class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-[#ea0a2a] transition-colors">
-                            Persyaratan
+                            FAQ
                             <i class="fa-solid fa-chevron-right text-sm"></i>
                         </button>
-                        <button type="button" data-tab="keuntungan-biaya"
+                        <button type="button" data-tab="suratkuasa"
                             class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
-                            Keuntungan &amp; Biaya
-                            <i class="fa-solid fa-chevron-right text-sm"></i>
-                        </button>
-                        <button type="button" data-tab="fasilitas"
-                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
-                            Fasilitas
-                            <i class="fa-solid fa-chevron-right text-sm"></i>
-                        </button>
-                        <button type="button" data-tab="informasi-lainnya"
-                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
-                            Informasi Lainnya
-                            <i class="fa-solid fa-chevron-right text-sm"></i>
-                        </button>
-                        <button type="button" data-tab="ringkasan-produk"
-                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
-                            Ringkasan Informasi Produk
+                            Surat Kuasa Race Pack Collection
                             <i class="fa-solid fa-chevron-right text-sm"></i>
                         </button>
                     </div>
 
-                    <!-- Tab content (kanan) -->
                     <div id="info-tab-content">
-                        <!-- Persyaratan -->
-                        <div class="info-tab-panel" data-panel="persyaratan">
-                            <div
-                                class="space-y-4 text-slate-700 text-sm md:text-base leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 class="text-xl font-bold text-black mb-2">
-                                    Syarat &amp; Ketentuan Peserta
-                                </h3>
-                                <ul class="list-disc list-inside space-y-2">
-                                    <li>
-                                        Pendaftaran terbuka untuk WNI maupun
-                                        WNA yang memiliki kartu identitas
-                                        resmi (KTP / SIM / Paspor).
-                                    </li>
-                                    <li>
-                                        Kategori 1K Child diperuntukkan bagi
-                                        anak usia 3–12 tahun yang wajib
-                                        didampingi oleh 1 peserta dewasa.
-                                    </li>
-                                    <li>
-                                        Kategori 5K &amp; 10K diperuntukkan
-                                        bagi peserta minimal berusia 13
-                                        tahun pada hari pelaksanaan acara.
-                                    </li>
-                                    <li>
-                                        Peserta wajib dalam kondisi sehat
-                                        jasmani dan rohani serta menyetujui
-                                        pernyataan pelepasan tanggung jawab.
-                                    </li>
-                                    <li>
-                                        E-voucher tiket presale / early
-                                        access bersifat non-refundable dan
-                                        tidak dapat dipindah tangankan
-                                        secara komersial.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Keuntungan & Biaya -->
-                        <div class="info-tab-panel hidden" data-panel="keuntungan-biaya">
-                            <div
-                                class="space-y-4 text-slate-700 text-sm md:text-base leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 class="text-xl font-bold text-black mb-2">
-                                    Keuntungan &amp; Rincian Biaya
-                                </h3>
-                                <p>
-                                    Setiap tiket yang dibeli sudah mencakup
-                                    paket peserta eksklusif Disney Run
-                                    Jakarta 2026:
-                                </p>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-3">
-                                    <div class="p-4 bg-red-50/60 rounded-xl border border-red-100">
-                                        <h4 class="font-bold text-[#ea0a2a] mb-1">
-                                            <i class="fa-solid fa-gift mr-2"></i>Race Pack Official
-                                        </h4>
-                                        <p class="text-xs text-slate-600">
-                                            Jersey eksklusif Disney Run,
-                                            Finisher Medal, BIB Number
-                                            dengan Timing Chip, dan String
-                                            Bag.
-                                        </p>
+                        <div class="info-tab-panel active" data-panel="faq">
+                            <div class="space-y-4">
+                                <a href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/08/19/faq-ocbc-disney-run-jakarta-2026-id-version"
+                                    target="_blank" rel="noopener"
+                                    class="group flex items-center justify-between w-full p-4 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 ease-in-out shadow-sm hover:shadow">
+                                    <div class="flex items-center space-x-3">
+                                        <div
+                                            class="flex items-center justify-center w-8 h-8 rounded-md bg-slate-100 group-hover:bg-slate-200 transition-colors duration-300">
+                                            <i class="far fa-file-pdf"></i>
+                                        </div>
+                                        <span
+                                            class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                            Frequently asked question - Bahasa Indonesia
+                                        </span>
                                     </div>
-                                    <div class="p-4 bg-red-50/60 rounded-xl border border-red-100">
-                                        <h4 class="font-bold text-[#ea0a2a] mb-1">
-                                            <i class="fa-solid fa-tags mr-2"></i>Diskon Spesial OCBC
-                                        </h4>
-                                        <p class="text-xs text-slate-600">
-                                            Diskon hingga 50% untuk
-                                            pengajuan Kartu Kredit OCBC Star
-                                            Wars / 90&deg;N &amp; Tanda
-                                            Hadiah.
-                                        </p>
+                                    <div
+                                        class="text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
                                     </div>
-                                </div>
-                                <p class="text-xs text-slate-500 italic">
-                                    *Biaya dasar belum termasuk pajak (VAT),
-                                    biaya administrasi transaksi, dan biaya
-                                    layanan platform.
-                                </p>
+                                </a>
                             </div>
                         </div>
 
-                        <!-- Fasilitas -->
-                        <div class="info-tab-panel hidden" data-panel="fasilitas">
-                            <div
-                                class="space-y-4 text-slate-700 text-sm md:text-base leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 class="text-xl font-bold text-black mb-2">
-                                    Fasilitas Event
-                                </h3>
-                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
-                                        <i class="fa-solid fa-bottle-water text-[#ea0a2a] mt-1"></i><span>Water Station
-                                            setiap 1.5
-                                            KM</span>
-                                    </li>
-                                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
-                                        <i class="fa-solid fa-kit-medical text-[#ea0a2a] mt-1"></i><span>Layanan Medis
-                                            &amp; Ambulans 24
-                                            Jam</span>
-                                    </li>
-                                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
-                                        <i class="fa-solid fa-shield-halved text-[#ea0a2a] mt-1"></i><span>Asuransi
-                                            Perlindungan
-                                            Diri</span>
-                                    </li>
-                                    <li class="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
-                                        <i class="fa-solid fa-camera text-[#ea0a2a] mt-1"></i><span>Disney Photo Booth
-                                            &amp;
-                                            Character Meet</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Informasi Lainnya -->
-                        <div class="info-tab-panel hidden" data-panel="informasi-lainnya">
-                            <div
-                                class="space-y-4 text-slate-700 text-sm md:text-base leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 class="text-xl font-bold text-black mb-2">
-                                    Informasi Pengambilan Race Pack
-                                </h3>
-                                <p>
-                                    Pengambilan Race Pack (RPC) wajib
-                                    membawa konfirmasi e-voucher dan
-                                    identitas diri asli. Apabila diwakilkan,
-                                    penerima wajib membawa Surat Kuasa
-                                    bermeterai Rp10.000 serta fotokopi
-                                    identitas pendaftar.
-                                </p>
-                                <p class="text-xs text-slate-500">
-                                    Untuk bantuan lebih lanjut, hubungi
-                                    layanan nasabah OCBC Call Center 1500999
-                                    atau kunjungi kantor cabang terdekat.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Ringkasan Informasi Produk -->
-                        <div class="info-tab-panel hidden" data-panel="ringkasan-produk">
-                            <div
-                                class="space-y-4 text-slate-700 text-sm md:text-base leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 class="text-xl font-bold text-black mb-2">
-                                    Ringkasan Produk Kartu Kredit &amp;
-                                    Tabungan OCBC
-                                </h3>
-                                <p>
-                                    Program Disney Run Jakarta 2026 didukung
-                                    oleh produk unggulan OCBC:
-                                </p>
-                                <ul class="list-disc list-inside space-y-2">
-                                    <li>
-                                        <strong>Kartu Kredit OCBC Star Wars /
-                                            90&deg;N</strong>: Fasilitas cashback transaksi luar
-                                        negeri, poin reward poinseru, dan
-                                        akses lounge bandara.
-                                    </li>
-                                    <li>
-                                        <strong>Tabungan TANDA HADIAH</strong>: Rekening tabungan dengan skema
-                                        hadiah langsung &amp; voucher
-                                        eksklusif tanpa diundi.
-                                    </li>
-                                </ul>
+                        <div class="info-tab-panel hidden" data-panel="suratkuasa">
+                            <div class="space-y-4">
+                                <a href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/08/19/ocbc-disney-run-jakarta-2026-form-surat-kuasa"
+                                    target="_blank" rel="noopener"
+                                    class="group flex items-center justify-between w-full p-4 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 ease-in-out shadow-sm hover:shadow">
+                                    <div class="flex items-center space-x-3">
+                                        <div
+                                            class="flex items-center justify-center w-8 h-8 rounded-md bg-slate-100 group-hover:bg-slate-200 transition-colors duration-300">
+                                            <i class="far fa-file-pdf"></i>
+                                        </div>
+                                        <span
+                                            class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                            Template surat kuasa untuk pengambilan race pack collection
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1152,15 +422,24 @@
             </div>
         </section>
 
+        <!-- ===== Footer ===== -->
+        <section class="site-footer-section">
+            <div class="site-footer-grid">
+                <div class="site-footer-content">
+                    <p>PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan &amp; Bank Indonesia, serta
+                        merupakan peserta penjaminan LPS.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Sticky bottom CTA ===== -->
         <section id="floating-footer"
             class="fixed bottom-0 left-0 w-full bg-white shadow-lg p-4 flex items-center justify-between transition-all duration-500 ease-in-out transform opacity-100">
             <div class="flex items-center space-x-2 gap-[5px]">
-                <img loading="lazy" decoding="async"
-                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/floating_img_4b1c36359c.png"
-                    alt="Credit Card" class="hidden md:block w-24 h-10" />
+                <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/floating_img_4b1c36359c.png"
+                    alt="Credit Card" class="hidden md:block w-24 h-10">
                 <p class="font-bold text-black text-sm md:text-lg">
-                    Apply Credit Card OCBC Star Wars Platinum / 90&deg;N
-                    now!
+                    Apply Kartu Kredit OCBC Star Wars Platinum/90&deg;N sekarang!
                 </p>
             </div>
             <div class="flex space-x-2">
@@ -1172,111 +451,92 @@
                 </a>
             </div>
         </section>
+    </div>
 
-        <!-- ============ POPUP COUNTDOWN PRE-SALE ============ -->
-        <div id="presaleModal" onclick="if (event.target === this) closePresaleModal();"
-            class="hidden fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs">
-            <div
-                class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl px-6 py-8 md:px-10 md:py-10 text-center">
-                <!-- Close button -->
-                <button onclick="closePresaleModal()" aria-label="Tutup popup"
-                    class="absolute -top-3 -right-3 md:top-4 md:right-4 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-slate-500 hover:text-[#ea0a2a] transition-colors cursor-pointer">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+    <!-- ===== Pre-sale countdown modal ===== -->
+    <div id="presaleModal" onclick="if (event.target === this) closePresaleModal();"
+        class="hidden fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs">
+        <div class="relative w-full max-w-md rounded-3xl shadow-2xl px-6 py-8 md:px-10 md:py-10 text-center"
+            style="background: linear-gradient(135deg,#3885b9 0%,#ee2034 50%,#bd3629 100%);">
+            <button onclick="closePresaleModal()" aria-label="Tutup popup"
+                class="absolute -top-3 -right-3 md:top-4 md:right-4 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-slate-500 hover:text-[#ea0a2a] transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
 
-                <!-- Logo -->
-                <img loading="lazy" decoding="async"
-                    src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
-                    alt="OCBC" class="h-8 md:h-9 mx-auto mb-6" />
+            <img loading="lazy" decoding="async"
+                src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-white.png?h=392&w=1452&rev=31388dd61e9a4ea0a80496439349020b"
+                alt="OCBC" class="h-8 md:h-9 mx-auto mb-6 px-6">
 
-                <!-- Heading -->
-                <p class="text-slate-800 font-semibold text-base md:text-lg leading-snug mb-6">
-                    Siapkan Kartu Kredit / Debit OCBC kamu untuk pre-sale
-                    ticket di tanggal
-                    <span class="whitespace-nowrap">5 September 2026</span>
-                </p>
+            <p class="text-white font-semibold text-base md:text-lg leading-snug mb-6">
+                Siapkan Kartu Kredit / Debit OCBC kamu untuk pre-sale ticket di tanggal
+                <span class="whitespace-nowrap">5 September 2026</span>
+            </p>
 
-                <!-- Countdown -->
-                <div class="grid grid-cols-4 gap-2 md:gap-3 mb-8">
-                    <div class="bg-slate-100 rounded-2xl py-4">
-                        <div id="presale-cd-days" class="cd-days text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                            00
-                        </div>
-                        <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">
-                            HARI
-                        </div>
+            <div class="grid grid-cols-4 gap-2 md:gap-3 mb-8">
+                <div class="bg-slate-100 rounded-2xl py-4">
+                    <div id="presale-cd-days" class="cd-days text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">00
                     </div>
-                    <div class="bg-slate-100 rounded-2xl py-4">
-                        <div id="presale-cd-hours" class="cd-hours text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                            00
-                        </div>
-                        <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">
-                            JAM
-                        </div>
-                    </div>
-                    <div class="bg-slate-100 rounded-2xl py-4">
-                        <div id="presale-cd-minutes"
-                            class="cd-minutes text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
-                            00
-                        </div>
-                        <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">
-                            MENIT
-                        </div>
-                    </div>
-                    <div class="bg-slate-100 rounded-2xl py-4">
-                        <div id="presale-cd-seconds"
-                            class="cd-seconds text-2xl md:text-3xl font-extrabold text-[#ea0a2a]">
-                            00
-                        </div>
-                        <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">
-                            DETIK
-                        </div>
-                    </div>
+                    <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">HARI</div>
                 </div>
+                <div class="bg-slate-100 rounded-2xl py-4">
+                    <div id="presale-cd-hours" class="cd-hours text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">00
+                    </div>
+                    <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">JAM</div>
+                </div>
+                <div class="bg-slate-100 rounded-2xl py-4">
+                    <div id="presale-cd-minutes" class="cd-minutes text-2xl md:text-3xl font-extrabold text-[#1E3A8A]">
+                        00</div>
+                    <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">MENIT</div>
+                </div>
+                <div class="bg-slate-100 rounded-2xl py-4">
+                    <div id="presale-cd-seconds" class="cd-seconds text-2xl md:text-3xl font-extrabold text-[#ea0a2a]">
+                        00</div>
+                    <div class="text-[10px] md:text-xs font-semibold text-slate-500 mt-1 tracking-wide">DETIK</div>
+                </div>
+            </div>
 
-                <!-- CTA -->
-                <a href="#kategori" onclick="closePresaleModal()"
-                    class="block w-full bg-[#ea0a2a] hover:bg-[#c00822] text-white font-bold text-base md:text-lg rounded-full py-3.5 transition-colors">
-                    Beli tiket di sini
+            <a href="#kategori" onclick="closePresaleModal()"
+                class="block w-full bg-white hover:text-[#ea0a2a] text-black font-medium text-base md:text-lg rounded-full py-3.5 transition-colors">
+                Beli tiket di sini
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== Debit card modal ===== -->
+    <div id="debitModal" onclick="if (event.target === this) closeDebitModal();"
+        class="hidden fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs">
+        <div class="bg-white relative w-full max-w-xl rounded-3xl shadow-2xl px-6 py-8 md:px-12 md:py-10 text-center">
+            <button onclick="closeDebitModal()" aria-label="Tutup popup"
+                class="absolute -top-3 -right-3 md:top-4 md:right-4 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-slate-500 hover:text-[#ea0a2a] transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex flex-col items-center mb-2 justify-center">
+                <span class="block mt-2 text-black font-medium text-base md:text-lg">
+                    Dapatkan Kartu Debit edisi Disney Run Jakarta 2026!
+                </span>
+                <a href="https://onboarding.ocbc.id/product/nyala?utm_source=DisneyRun&utm_medium=Event&utm_campaign=Acquisition_DisneyRun_20260828&promo_referal=DEBITDISNEYRUN"
+                    target="_blank" rel="noopener noreferrer"
+                    class="block w-[250px] bg-[#ea0a2a] mt-2 text-white font-medium text-base md:text-lg rounded-full py-2 px-2 transition-colors">
+                    Buka Nyala di sini
                 </a>
             </div>
+
+            <p class="mt-4 text-black font-normal text-base">Jika kartu fisik belum sampai, bisa menggunakan Kartu Debit
+                online dengan cara ini:</p>
+            <ol class="text-black mt-2 text-left font-normal text-base md:text-base leading-snug mb-6">
+                <li>1. Login di OCBC mobile dan pilih <span class="font-medium">"Lainnya"</span></li>
+                <li>2. Klik "Kartu" dan pilih <span class="font-medium">"Online Debit Card"</span></li>
+                <li>3. Pilih <span class="font-medium">"Buat Kartu Debit Online"</span> dan pilih sumber dananya</li>
+                <li>4. Konfirmasi dengan memasukan PIN transaksi</li>
+            </ol>
         </div>
     </div>
 
     <script>
-        // Mobile nav toggle
         document.addEventListener("DOMContentLoaded", function () {
-            const mobileNav = document.getElementById("mobileNav");
-            const toggleBtn = document.getElementById("mobileNavToggle");
-            const closeBtn = document.getElementById("mobileNavClose");
-
-            if (toggleBtn && mobileNav) {
-                toggleBtn.addEventListener("click", () =>
-                    mobileNav.classList.add("open"),
-                );
-            }
-            if (closeBtn && mobileNav) {
-                closeBtn.addEventListener("click", () =>
-                    mobileNav.classList.remove("open"),
-                );
-            }
-            if (mobileNav) {
-                mobileNav.addEventListener("click", (e) => {
-                    if (e.target === mobileNav)
-                        mobileNav.classList.remove("open");
-                });
-            }
-
             // Scroll reveal animation
-            const options = {
-                root: null,
-                rootMargin: "0px",
-                threshold: 0.15,
-            };
-            const observer = new IntersectionObserver(function (
-                entries,
-                obs,
-            ) {
+            const options = { root: null, rootMargin: "0px", threshold: 0.15 };
+            const observer = new IntersectionObserver(function (entries, obs) {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("is-visible");
@@ -1284,38 +544,26 @@
                     }
                 });
             }, options);
-            document
-                .querySelectorAll(".reveal-element")
-                .forEach((el) => observer.observe(el));
+            document.querySelectorAll(".reveal-element").forEach((el) => observer.observe(el));
 
-            // Informasi Lebih Lanjut Tab Switcher
-            const tabButtons = document.querySelectorAll(
-                "#info-tab-list .info-tab-btn",
-            );
-            const tabPanels = document.querySelectorAll(
-                "#info-tab-content .info-tab-panel",
-            );
+            // Informasi Lebih Lanjut tab switcher
+            const tabButtons = document.querySelectorAll("#info-tab-list .info-tab-btn");
+            const tabPanels = document.querySelectorAll("#info-tab-content .info-tab-panel");
 
             if (tabButtons.length > 0 && tabPanels.length > 0) {
                 tabButtons.forEach((button) => {
                     button.addEventListener("click", function () {
                         const targetTab = this.getAttribute("data-tab");
 
-                        // Reset all tab button styles
                         tabButtons.forEach((btn) => {
                             btn.classList.remove("text-[#ea0a2a]");
                             btn.classList.add("text-slate-700");
                         });
-                        // Set active tab button style
                         this.classList.remove("text-slate-700");
                         this.classList.add("text-[#ea0a2a]");
 
-                        // Hide all panels, show target panel
                         tabPanels.forEach((panel) => {
-                            if (
-                                panel.getAttribute("data-panel") ===
-                                targetTab
-                            ) {
+                            if (panel.getAttribute("data-panel") === targetTab) {
                                 panel.classList.remove("hidden");
                             } else {
                                 panel.classList.add("hidden");
@@ -1325,87 +573,64 @@
                 });
             }
 
-            // Load embedded videos only when they are near the viewport.
-            const lazyVideos = document.querySelectorAll(
-                "iframe.js-lazy-video[data-src]",
-            );
+            // Lazy-load embedded videos when near the viewport
+            const lazyVideos = document.querySelectorAll("iframe.js-lazy-video[data-src]");
             if (lazyVideos.length > 0) {
                 const loadVideo = (iframe) => {
                     if (!iframe.getAttribute("src")) {
-                        iframe.setAttribute(
-                            "src",
-                            iframe.getAttribute("data-src"),
-                        );
+                        iframe.setAttribute("src", iframe.getAttribute("data-src"));
                     }
                 };
-
                 if ("IntersectionObserver" in window) {
-                    const videoObserver = new IntersectionObserver(
-                        (entries, obs) => {
-                            entries.forEach((entry) => {
-                                if (entry.isIntersecting) {
-                                    loadVideo(entry.target);
-                                    obs.unobserve(entry.target);
-                                }
-                            });
-                        },
-                        {
-                            rootMargin: "240px 0px",
-                        },
-                    );
-
-                    lazyVideos.forEach((iframe) =>
-                        videoObserver.observe(iframe),
-                    );
+                    const videoObserver = new IntersectionObserver((entries, obs) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                loadVideo(entry.target);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    }, { rootMargin: "240px 0px" });
+                    lazyVideos.forEach((iframe) => videoObserver.observe(iframe));
                 } else {
                     lazyVideos.forEach(loadVideo);
                 }
             }
+
+            // Auto-open presale countdown popup on page load
+            openPresaleModal();
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closePresaleModal();
+            });
         });
 
+        // ===== Countdown to presale date =====
         // Target: 5 September 2026, 00:00 WIB (UTC+7)
-        const presaleTarget = new Date(
-            "2026-09-05T00:00:00+07:00",
-        ).getTime();
+        const presaleTarget = new Date("2026-09-05T00:00:00+07:00").getTime();
 
         function updateCountdown() {
             const now = Date.now();
             const distance = presaleTarget - now;
 
             const daysEls = document.querySelectorAll(".cd-days, #cd-days");
-            const hoursEls = document.querySelectorAll(
-                ".cd-hours, #cd-hours",
-            );
-            const minutesEls = document.querySelectorAll(
-                ".cd-minutes, #cd-minutes",
-            );
-            const secondsEls = document.querySelectorAll(
-                ".cd-seconds, #cd-seconds",
-            );
+            const hoursEls = document.querySelectorAll(".cd-hours, #cd-hours");
+            const minutesEls = document.querySelectorAll(".cd-minutes, #cd-minutes");
+            const secondsEls = document.querySelectorAll(".cd-seconds, #cd-seconds");
 
             if (distance <= 0) {
                 daysEls.forEach((el) => (el.textContent = "00"));
                 hoursEls.forEach((el) => (el.textContent = "00"));
                 minutesEls.forEach((el) => (el.textContent = "00"));
                 secondsEls.forEach((el) => (el.textContent = "00"));
-                if (typeof countdownInterval !== "undefined")
-                    clearInterval(countdownInterval);
+                clearInterval(countdownInterval);
                 return;
             }
 
             const pad = (n) => String(n).padStart(2, "0");
             const days = pad(Math.floor(distance / (1000 * 60 * 60 * 24)));
-            const hours = pad(
-                Math.floor(
-                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-                ),
-            );
-            const minutes = pad(
-                Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-            );
-            const seconds = pad(
-                Math.floor((distance % (1000 * 60)) / 1000),
-            );
+            const hours = pad(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            const minutes = pad(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+            const seconds = pad(Math.floor((distance % (1000 * 60)) / 1000));
 
             daysEls.forEach((el) => (el.textContent = days));
             hoursEls.forEach((el) => (el.textContent = hours));
@@ -1416,41 +641,50 @@
         updateCountdown();
         const countdownInterval = setInterval(updateCountdown, 1000);
 
-        // Scroll lock untuk popup presale
-        let presaleScrollY = 0;
+        // ===== Modal open/close with scroll lock =====
+        let savedScrollY = 0;
+
+        function lockScroll() {
+            savedScrollY = window.scrollY;
+            document.body.style.position = "fixed";
+            document.body.style.top = `-${savedScrollY}px`;
+            document.body.style.left = "0";
+            document.body.style.right = "0";
+        }
+
+        function unlockScroll() {
+            document.body.style.position = "";
+            document.body.style.top = "";
+            document.body.style.left = "";
+            document.body.style.right = "";
+            window.scrollTo(0, savedScrollY);
+        }
 
         function openPresaleModal() {
             const modal = document.getElementById("presaleModal");
             if (!modal) return;
-            presaleScrollY = window.scrollY;
-            document.body.style.position = "fixed";
-            document.body.style.top = `-${presaleScrollY}px`;
-            document.body.style.left = "0";
-            document.body.style.right = "0";
+            lockScroll();
             modal.classList.remove("hidden");
         }
 
         function closePresaleModal() {
             const modal = document.getElementById("presaleModal");
             if (modal) modal.classList.add("hidden");
-            document.body.style.position = "";
-            document.body.style.top = "";
-            document.body.style.left = "";
-            document.body.style.right = "";
-            window.scrollTo(0, presaleScrollY);
+            unlockScroll();
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            // Auto open presale countdown popup modal on page load
-            openPresaleModal();
+        function openDebitModal() {
+            const modal = document.getElementById("debitModal");
+            if (!modal) return;
+            lockScroll();
+            modal.classList.remove("hidden");
+        }
 
-            // Press Escape key to close modal
-            document.addEventListener("keydown", function (e) {
-                if (e.key === "Escape") {
-                    closePresaleModal();
-                }
-            });
-        });
+        function closeDebitModal() {
+            const modal = document.getElementById("debitModal");
+            if (modal) modal.classList.add("hidden");
+            unlockScroll();
+        }
     </script>
 </body>
 

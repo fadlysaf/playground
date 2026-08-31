@@ -896,3 +896,70 @@ body {
         transform: scale(1.1);
     }
 }
+
+/* Container kode promo — top-4 left-4 md:top-[3.5rem] md:left-6 z-10 */
+.disney-run-promo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .disney-run-promo {
+        top: 3.5rem;
+        left: 1.5rem;
+    }
+}
+
+/* Text badge — text-sm sm:text-base md:text-lg bg-white/70 rounded-lg px-2 py-1 */
+.disney-run-promo-text {
+    color: #000;
+    font-size: 0.875rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .disney-run-promo-text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .disney-run-promo-text {
+        font-size: 1.125rem;
+    }
+}
+
+/* Kode promo (span merah) — text-white p-1 pl-2 pr-2 rounded font-medium bg-[#ea0a2a] */
+.disney-run-promo-code {
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    background-color: #ea0a2a;
+}
+
+/* Container tombol — w-full flex justify-end px-4 py-3 absolute bottom-2 right-0 z-10 md:bottom-3 md:left-[-15px] md:right-auto md:py-0 */
+.disney-run-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .disney-run-btn-wrap {
+        bottom: 0.75rem;
+        left: -15px;
+        right: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
