@@ -25,33 +25,18 @@
         }
 
         :root {
-            --color-primary: #A60000;
-            --color-primary-hover: #8A0000;
-            --color-primary-mid: #E31715;
-            --color-primary-light: #FFA09E;
-            --color-primary-soft: #FFF3F2;
+            --color-primary: #DA291C;
+            --color-primary-hover: #B91F14;
+            --color-primary-light: #FDECEA;
+            --color-primary-soft: #F6B8B2;
             --color-dark: #111827;
             --color-dark-soft: #1F2937;
-            --color-text-body: #000000;
-            --color-text-muted: #7F7F7F;
+            --color-text-body: #111827;
+            --color-text-muted: #6B7280;
             --color-surface: #FFFFFF;
-            --color-surface-alt: #F2F2F2;
-            --color-surface-card: #F2F2F2;
-            --color-border: #BFBFBF;
-            --color-navy: #527078;
-            --color-navy-light: #8EA8AF;
-            --color-navy-bg: #E6EEEF;
-        }
-
-        body {
-            background-color: var(--color-surface);
-            color: var(--color-text-body);
-            font-family: "Open Sans", sans-serif;
-        }
-
-        ::selection {
-            background-color: var(--color-primary-light);
-            color: var(--color-dark);
+            --color-surface-alt: #F9FAFB;
+            --color-surface-card: #F3F4F6;
+            --color-border: #E5E7EB
         }
 
         @keyframes gradient-flow {
@@ -174,7 +159,14 @@
         </div>
     </nav>
 
-    <section id="overview" class="relative pt-32 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
+    <section id="overview"
+        class="relative pt-32 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-white via-red-50 to-red-100 overflow-hidden">
+        <!-- Red Accent Blobs -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-red-200 rounded-full blur-3xl opacity-50">
+        </div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-60">
+        </div>
+
         <div class="container mx-auto px-6 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 text-center lg:text-left">
@@ -194,16 +186,17 @@
                 </div>
 
                 <div class="lg:w-1/2 relative">
-                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3] group">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-red-200/50 aspect-[4/3] group">
                         <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/web_KV_712x534_px_63efec8517.webp"
                             alt="outlook-ocbc-2026" class="w-full h-full object-cover transition duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="event-highlights" class="bg-[var(--color-navy-bg)] relative overflow-hidden py-16 lg:py-24">
+    <section id="event-highlights" class="bg-gray-50 relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-[90rem] mx-auto px-4 lg:px-0">
 
             <!-- Header -->
@@ -219,7 +212,7 @@
             <!-- Event Higlights -->
             <div class="grid md:grid-cols-5 gap-2">
                 <div
-                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
                     <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1000&auto=format&fit=crop"
                         alt="ocbc-outlook" class="w-full h-[16rem] object-cover" />
                     <div class="p-4">
@@ -230,7 +223,7 @@
                     </div>
                 </div>
                 <div
-                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
                     <img src="https://plus.unsplash.com/premium_photo-1677529496848-be30280729f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="private-consultation" class="w-full h-[16rem] object-cover" />
                     <div class="p-4">
@@ -242,7 +235,7 @@
                     </div>
                 </div>
                 <div
-                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
                     <img src="https://images.unsplash.com/photo-1629249329970-24f248351612?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJlbWllcmUlMjBsb3VuZ2V8ZW58MHx8MHx8fDA%3D"
                         alt="premier-banking-lounge" class="w-full h-[16rem] object-cover" />
                     <div class="p-4">
@@ -254,7 +247,7 @@
                     </div>
                 </div>
                 <div
-                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
                     <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="intimate-lunch" class="w-full h-[16rem] object-cover" />
                     <div class="p-4">
@@ -266,7 +259,7 @@
                     </div>
                 </div>
                 <div
-                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
+                    class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-red-100 transition-all duration-300 hover:-translate-y-2">
                     <img src="https://images.unsplash.com/photo-1714974528232-f62051870736?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="business-matching" class="w-full h-[16rem] object-cover" />
                     <div class="p-4">
@@ -281,33 +274,33 @@
         </div>
     </section>
 
-    <section id="schedule" class="relative overflow-hidden py-16 lg:py-24 bg-[#F2F2F2] text-[#111827]">
+    <section id="schedule" class="relative overflow-hidden py-16 lg:py-24 bg-red-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
             <!-- Header -->
             <div
-                class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10 border-b border-[#BFBFBF] pb-4">
+                class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10 border-b border-gray-100 pb-4">
                 <div class="flex flex-col gap-3">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-[#111827]">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
                         Agenda Overview
                     </h2>
                 </div>
 
                 <!-- City tabs -->
-                <div class="flex bg-[#F2F2F2] p-1 rounded-xl w-full md:w-auto self-start md:self-auto">
+                <div class="flex bg-gray-100 p-1 rounded-xl w-full md:w-auto self-start md:self-auto">
                     <button type="button" data-city-tab="sf"
-                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none bg-[#FFFFFF] text-[#A60000] shadow-sm">
+                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none bg-white text-[var(--color-primary)] shadow-sm">
                         Jakarta
                     </button>
                     <button type="button" data-city-tab="nyc"
-                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-[#7F7F7F] hover:text-[#111827]">
+                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-gray-500 hover:text-gray-900">
                         Surabaya
                     </button>
                     <button type="button" data-city-tab="london"
-                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-[#7F7F7F] hover:text-[#111827]">
+                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-gray-500 hover:text-gray-900">
                         Medan
                     </button>
                     <button type="button" data-city-tab="tokyo"
-                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-[#7F7F7F] hover:text-[#111827]">
+                        class="city-tab-btn flex-1 md:flex-none text-[12px] font-semibold text-center px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus:outline-none text-gray-500 hover:text-gray-900">
                         Bali
                     </button>
                 </div>
@@ -319,7 +312,7 @@
                 <div class="order-2 lg:order-1 lg:col-span-2 flex flex-col gap-4">
                     <!-- Jakarta -->
                     <div data-city-agenda="sf"
-                        class="city-agenda bg-[#FFFFFF] overflow-hidden shadow-sm border border-[#BFBFBF] divide-y divide-[#BFBFBF] transition-all duration-300">
+                        class="city-agenda bg-white overflow-hidden shadow-sm border border-gray-100 divide-y divide-gray-100 transition-all duration-300">
                         <!-- Break -->
                         <div
                             class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-white hover:bg-gray-50 transition-colors">
@@ -341,7 +334,7 @@
 
                         <!-- Keynote (highlighted) -->
                         <div
-                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-red-50 hover:bg-red-100 transition-colors relative">
+                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-[#DA291C]/5 hover:bg-[#DA291C]/10 transition-colors relative">
                             <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[var(--color-primary)]"></div>
                             <div class="w-12 sm:w-25 shrink-0">
                                 <p class="text-xs sm:text-sm font-semibold text-gray-900">09:30 - 09:35</p>
@@ -482,7 +475,7 @@
 
                     <!-- Surabaya agenda -->
                     <div data-city-agenda="nyc"
-                        class="city-agenda bg-[#FFFFFF] overflow-hidden shadow-sm border border-[#BFBFBF] divide-y divide-[#BFBFBF] transition-all duration-300 hidden">
+                        class="city-agenda bg-white overflow-hidden shadow-sm border border-gray-100 divide-y divide-gray-100 transition-all duration-300 hidden">
                         <!-- Break -->
                         <div
                             class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-white hover:bg-gray-50 transition-colors">
@@ -504,7 +497,7 @@
 
                         <!-- Keynote (highlighted) -->
                         <div
-                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-red-50 hover:bg-red-100 transition-colors relative">
+                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-[#DA291C]/5 hover:bg-[#DA291C]/10 transition-colors relative">
                             <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[var(--color-primary)]"></div>
                             <div class="w-12 sm:w-25 shrink-0">
                                 <p class="text-xs sm:text-sm font-semibold text-gray-900">16:00 - 16:05</p>
@@ -629,7 +622,7 @@
 
                     <!-- Medan -->
                     <div data-city-agenda="london"
-                        class="city-agenda bg-[#FFFFFF] overflow-hidden shadow-sm border border-[#BFBFBF] divide-y divide-[#BFBFBF] transition-all duration-300 hidden">
+                        class="city-agenda bg-white overflow-hidden shadow-sm border border-gray-100 divide-y divide-gray-100 transition-all duration-300 hidden">
                         <!-- Break -->
                         <div
                             class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-white hover:bg-gray-50 transition-colors">
@@ -651,7 +644,7 @@
 
                         <!-- Keynote (highlighted) -->
                         <div
-                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-red-50 hover:bg-red-100 transition-colors relative">
+                            class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-[#DA291C]/5 hover:bg-[#DA291C]/10 transition-colors relative">
                             <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[var(--color-primary)]"></div>
                             <div class="w-12 sm:w-25 shrink-0">
                                 <p class="text-xs sm:text-sm font-semibold text-gray-900">16:00 - 16:05</p>
@@ -774,7 +767,7 @@
 
                     <!-- TOKYO agenda -->
                     <div data-city-agenda="tokyo"
-                        class="city-agenda bg-[#FFFFFF] overflow-hidden shadow-sm border border-[#BFBFBF] divide-y divide-[#BFBFBF] transition-all duration-300 hidden">
+                        class="city-agenda bg-white overflow-hidden shadow-sm border border-gray-100 divide-y divide-gray-100 transition-all duration-300 hidden">
                         <!-- Break -->
                         <div
                             class="flex gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 bg-white hover:bg-gray-50 transition-colors">
@@ -1163,13 +1156,13 @@
         </div>
     </section>
 
-    <section id="speakers" class="bg-[#FFFFFF] relative overflow-hidden py-16 lg:py-24 text-[#111827]">
+    <section id="speakers" class="bg-white relative overflow-hidden py-16 lg:py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-0">
 
             <!-- Header Section (Sesuai Konsep OCBC) -->
             <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-20">
-                <h2 class="text-3xl md:text-5xl font-bold text-[#111827] mb-6 tracking-tight">Keynote Speakers</h2>
-                <div class="h-1.5 w-24 bg-[#A60000] mx-auto rounded-full mb-6"></div>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Keynote Speakers</h2>
+                <div class="h-1.5 w-24 bg-red-600 mx-auto rounded-full mb-6"></div>
             </div>
 
             <!-- Speaker Cards Slider Container -->
@@ -1178,9 +1171,8 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide" data-speaker-card="vincent-goh">
-                            <div
-                                class="group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E]
-                            hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                            <div class="group bg-white rounded-2xl overflow-hidden border border-red-100
+                            hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Vincent_Goh_Joey_Yap_Team_34acbd4863.jpg"
@@ -1190,7 +1182,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Vincent Goh</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">Feng
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">Feng
                                             Shui Master & Consultant
                                         </p>
                                         <p
@@ -1205,9 +1197,8 @@
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="ahmad-enver">
-                            <div
-                                class="group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E]
-                            hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                            <div class="group bg-white rounded-2xl overflow-hidden border border-red-100
+                            hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Enver_5040_Y_1_9febc05396.jpg"
@@ -1217,7 +1208,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Ahmad Enver</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">Asean
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">Asean
                                             Economist
                                         </p>
                                         <p
@@ -1232,9 +1223,8 @@
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="tjahjadi-bunjamin">
-                            <div
-                                class=" group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E]
-                            hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                            <div class=" group bg-white rounded-2xl overflow-hidden border border-red-100
+                            hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/web_Tjahjadi_401x454_px_025c2f2b0a.webp"
@@ -1244,7 +1234,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Tjahjadi Bunjamin</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">
                                             Managing Partner
                                         </p>
                                         <p
@@ -1261,7 +1251,7 @@
 
                         <div class="swiper-slide" data-speaker-card="wiko-harry-tanata">
                             <div
-                                class=" group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E] hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                                class=" group bg-white rounded-2xl overflow-hidden border border-red-100 hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Wiko_Harry_Tanata_016565a797.JPG"
@@ -1271,7 +1261,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Wiko Harry Tanata</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">
                                             Private Banking
                                         </p>
                                         <p
@@ -1286,7 +1276,7 @@
 
                         <div class="swiper-slide" data-speaker-card="septian-hario-seto">
                             <div
-                                class=" group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E] hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                                class=" group bg-white rounded-2xl overflow-hidden border border-red-100 hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Septian_Hario_Seto_270a8b0a9e.jpg"
@@ -1296,7 +1286,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Septian Hario Seto</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">
                                             Anggota Dewan Ekonomi Nasional RI
                                         </p>
                                         <p
@@ -1310,9 +1300,8 @@
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="hadi-cahyadi">
-                            <div
-                                class=" group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E]
-                            hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                            <div class=" group bg-white rounded-2xl overflow-hidden border border-red-100
+                            hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
                                     <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Dr_Hadi_Cahyadi_1d3b2c9b01.jpg"
@@ -1322,7 +1311,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Hadi Cahyadi</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">
                                             Managing Partner & Founder
                                         </p>
                                         <p
@@ -1337,8 +1326,8 @@
                         </div>
                         <div class="swiper-slide" data-speaker-card="eri-kusnadi">
                             <div
-                                class=" group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#FFA09E]
-                                                    hover:shadow-xl hover:shadow-[#A60000]/20 transition-all duration-300 h-[650px] flex flex-col">
+                                class=" group bg-white rounded-2xl overflow-hidden border border-red-100
+                                                    hover:shadow-xl hover:shadow-red-200 transition-all duration-300 h-[650px] flex flex-col">
 
                                 <div
                                     class="h-[70%] overflow-hidden relative flex items-center justify-center bg-gray-200">
@@ -1349,7 +1338,7 @@
                                 <div class="p-6 text-center relative flex-1 flex flex-col justify-between">
                                     <div class="flex-1 flex flex-col">
                                         <h3 class="text-xl font-bold text-slate-900 mb-1">Eri Kusnadi</h3>
-                                        <p class="text-sm text-[#A60000] font-medium mb-2 uppercase tracking-wide">
+                                        <p class="text-sm text-red-600 font-medium mb-2 uppercase tracking-wide">
                                             Direktur
                                         </p>
                                         <p
