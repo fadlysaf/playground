@@ -1755,6 +1755,18 @@
         });
 
         // Speakers slider
+
+        // PENTING: mapping speakerId -> index diambil SEBELUM Swiper diinisialisasi,
+        // yaitu selagi belum ada slide duplikat (loop) di DOM sama sekali.
+        // Ini dibuat statis (sekali saja) supaya klik ke-8, ke-20, dst tetap akurat,
+        // karena tidak lagi bergantung pada query ulang DOM yang bisa desync
+        // akibat Swiper terus menambah/menggeser slide duplikat saat loop aktif.
+        const speakerIndexMap = {};
+        document.querySelectorAll('.speakers-swiper .swiper-slide[data-speaker-card]').forEach(
+            function(card, idx) {
+                speakerIndexMap[card.getAttribute('data-speaker-card')] = idx;
+            });
+
         const speakersSwiper = new Swiper('.speakers-swiper', {
             slidesPerView: 1.15,
             spaceBetween: 20,
@@ -1782,16 +1794,9 @@
         document.querySelectorAll('[data-speaker]').forEach(function(speakerLink) {
             speakerLink.addEventListener('click', function() {
                 const speakerId = speakerLink.getAttribute('data-speaker');
-                const speakerCards = Array.from(document.querySelectorAll(
-                        '.speakers-swiper .swiper-slide[data-speaker-card]'))
-                    .filter(function(card) {
-                        return !card.classList.contains('swiper-slide-duplicate');
-                    });
-                const slideIndex = speakerCards.findIndex(function(card) {
-                    return card.getAttribute('data-speaker-card') === speakerId;
-                });
+                const slideIndex = speakerIndexMap[speakerId];
 
-                if (slideIndex >= 0) {
+                if (slideIndex !== undefined) {
                     window.setTimeout(function() {
                         speakersSwiper.slideToLoop(slideIndex, 0);
                     }, 0);
