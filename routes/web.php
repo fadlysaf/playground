@@ -108,7 +108,7 @@ Route::get('/disneyrun', function () {
     return view('disneyrun.index', [
         'pageCSS' => 'assets/disneyrun/style.css',
         'title' => 'Disney Run Jakarta 2026 - OCBC Indonesia',
-        'isOCBC' => true,
+        'noOCBC' => true,
     ]);
 });
 

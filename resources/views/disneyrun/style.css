@@ -29,18 +29,15 @@
     --frozen-water: #25696a;
     --strawberry-red: #ee2f3c;
     --charcoal: #bfbaca;
+    --rt-red: #db212a;
+    --rt-gold: #cdad5b;
+    --rt-teal: #00b6c0;
+    --rt-navy: #153150;
 }
 
 body {
     margin: 0;
     font-family: "Geomanist", sans-serif;
-    background-image:
-        radial-gradient(at 0% 0%,
-            rgba(254, 226, 226, 0.4) 0px,
-            transparent 50%),
-        radial-gradient(at 100% 100%,
-            rgba(251, 207, 232, 0.4) 0px,
-            transparent 50%);
     background-attachment: scroll;
     overflow-x: hidden;
 }
@@ -75,7 +72,7 @@ body {
     border-radius: 9999px;
     padding: 12px 32px;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.125rem;
     box-shadow:
         0 4px 6px -1px rgba(234, 10, 42, 0.4),
@@ -223,6 +220,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 @media (max-width: 900px) {
@@ -244,14 +244,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     gap: 14px;
     /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); */
 }
 
 .medal-img-wrapper img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
     border-radius: 12px;
     /* background: #f3f3f3; */
 }
@@ -260,13 +261,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
 }
 
 .medal-name {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: lighter;
     color: #111;
     line-height: 1.3;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -961,5 +966,290 @@ body {
         right: auto;
         padding-top: 0;
         padding-bottom: 0;
+    }
+}
+
+/* Compact ticket table. */
+.disney-table-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.disney-table th,
+.disney-table td {
+    padding: 9px 10px;
+    line-height: 1.25;
+}
+
+.disney-table th {
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+}
+
+.disney-table td {
+    font-size: 0.88rem;
+}
+
+.disney-table td:first-child {
+    padding-left: 14px;
+}
+
+@media (max-width: 767px) {
+    .disney-table-wrapper {
+        border-radius: 10px;
+        overflow-x: hidden;
+    }
+
+    .disney-table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .disney-table th,
+    .disney-table td {
+        padding: 6px 4px;
+        font-size: 0.2rem;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .disney-table th:first-child,
+    .disney-table td:first-child {
+        width: 22%;
+        padding-left: 6px;
+    }
+
+    .disney-table th:not(:first-child),
+    .disney-table td:not(:first-child) {
+        width: 26%;
+    }
+
+    .disney-table td .text-lg {
+        font-size: 0.78rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .disney-table th,
+    .disney-table td {
+        padding: 5px 3px;
+        font-size: 0.6rem;
+    }
+
+    .disney-table td .text-lg {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Compact page spacing without changing the supplied page markup. */
+#save-the-date,
+#mark-your-date,
+#category,
+#kategori,
+#early-access,
+#medal,
+#promo-jersey,
+#disney-run-card,
+#info-lanjut {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+
+#save-the-date img,
+#mark-your-date img {
+    max-height: 220px;
+    object-fit: cover;
+}
+
+#mark-your-date img {
+    margin-top: 0.5rem !important;
+}
+
+#category .mb-12 {
+    margin-bottom: 1.25rem !important;
+}
+
+#kategori .mb-10,
+#info-lanjut .mb-10 {
+    margin-bottom: 1.25rem !important;
+}
+
+#kategori .disney-table th,
+#kategori .disney-table td {
+    padding: 10px 12px;
+}
+
+#kategori .disney-table th {
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
+#kategori .disney-table td {
+    font-size: 0.9rem;
+}
+
+#kategori > div > p {
+    padding-top: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+#kategori > div > div:last-child,
+#early-access .max-w-6xl > div,
+#promo-jersey .max-w-6xl > div {
+    padding: 1.25rem !important;
+}
+
+#medal .max-w-5xl {
+    padding: 1.25rem !important;
+}
+
+#medal .medal-list-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#medal .medal-list,
+#medal .medal-item,
+#medal .medal-details {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#medal .medal-img-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#medal .mb-8 {
+    margin-bottom: 1rem !important;
+}
+
+#medal .medal-img-wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+#medal .video-wrap {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#promo-jersey .gap-8 {
+    gap: 1rem !important;
+}
+
+#disney-run-card img {
+    margin-top: 0.5rem !important;
+}
+
+#info-lanjut .mt-8,
+#info-lanjut .mb-8 {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+#floating-footer {
+    min-height: 52px;
+    height: auto;
+    padding: 8px 12px;
+}
+
+@media (max-width: 767px) {
+    #save-the-date,
+    #mark-your-date,
+    #category,
+    #kategori,
+    #early-access,
+    #medal,
+    #promo-jersey,
+    #disney-run-card,
+    #info-lanjut {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    #save-the-date img,
+    #mark-your-date img {
+        max-height: 150px;
+    }
+
+    #kategori .disney-table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    #kategori .disney-table th,
+    #kategori .disney-table td {
+        padding: 6px 4px;
+        font-size: 0.68rem;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #medal .medal-img-wrapper img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+    }
+
+    #medal .medal-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        max-width: 100%;
+    }
+
+    #medal .medal-item {
+        padding: 4px 2px;
+        gap: 7px;
+    }
+
+    #medal .medal-img-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #medal .medal-name {
+        font-size: 0.72rem;
+        line-height: 1.2;
+    }
+
+    #floating-footer p {
+        font-size: 0.75rem;
+        line-height: 1.1;
+    }
+
+    #floating-footer #btn-floating {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #medal .medal-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    #medal .medal-img-wrapper {
+        width: 220px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #medal .medal-img-wrapper img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #medal .medal-name {
+        font-size: 0.9rem;
     }
 }

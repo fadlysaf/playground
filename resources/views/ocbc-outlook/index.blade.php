@@ -1754,14 +1754,6 @@
             });
         });
 
-        // Speakers slider
-
-        // PENTING: mapping speakerId -> index diambil SEBELUM Swiper diinisialisasi,
-        // yaitu selagi belum ada slide duplikat (loop) di DOM sama sekali.
-        // Ini dibuat statis (sekali saja) supaya klik ke-8, ke-20, dst tetap akurat,
-        // karena tidak lagi bergantung pada query ulang DOM yang bisa desync
-        // akibat Swiper terus menambah/menggeser slide duplikat saat loop aktif.
-        const speakerIndexMap = {};
         document.querySelectorAll('.speakers-swiper .swiper-slide[data-speaker-card]').forEach(
             function(card, idx) {
                 speakerIndexMap[card.getAttribute('data-speaker-card')] = idx;
