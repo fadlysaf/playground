@@ -1,1 +1,303 @@
-add file wireframe
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe Microsite Bank - 5 Layout</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style type="text/tailwindcss">
+  @layer components {
+    .ph { @apply bg-gray-300 text-gray-500 flex items-center justify-center text-sm; }
+    .btn { @apply inline-block bg-gray-800 text-white px-5 py-2.5 rounded text-sm font-medium; }
+    .btn-o { @apply inline-block border border-gray-800 text-gray-800 px-5 py-2.5 rounded text-sm font-medium; }
+    .card { @apply bg-white border border-gray-300 rounded p-4; }
+    .inp { @apply w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white; }
+    .wrap { @apply max-w-6xl mx-auto px-4; }
+    .sec { @apply py-12; }
+    .h2 { @apply text-2xl font-bold text-gray-800 mb-6; }
+    .lbl { @apply bg-gray-800 text-white text-sm px-4 py-2; }
+  }
+</style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+<!-- Navigasi antar layout (hapus saat dipakai di project) -->
+<nav class="sticky top-0 z-50 bg-gray-900 text-gray-200 text-sm">
+  <div class="wrap flex gap-4 overflow-x-auto py-2 whitespace-nowrap">
+    <a href="#l1">1. Launching Kartu</a>
+    <a href="#l2">2. Promo Merchant</a>
+    <a href="#l3">3. Event</a>
+    <a href="#l4">4. Storytelling</a>
+    <a href="#l5">5. Gamifikasi</a>
+  </div>
+</nav>
+
+<!-- ================= LAYOUT 1: LAUNCHING KARTU ================= -->
+<div id="l1" class="lbl">Layout 1 - Launching Kartu (Hero Card + Benefit)</div>
+<header class="bg-white border-b border-gray-300">
+  <div class="wrap flex items-center justify-between py-4">
+    <div class="ph w-28 h-8">LOGO</div>
+    <nav class="hidden md:flex gap-6 text-sm"><a href="#">Benefit</a><a href="#">Fitur</a><a href="#">FAQ</a></nav>
+    <a href="#" class="btn">Daftar</a>
+  </div>
+</header>
+<section class="bg-gray-200 sec">
+  <div class="wrap grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <span class="inline-block bg-gray-400 text-white text-xs px-2 py-1 rounded mb-3">Badge</span>
+      <h1 class="text-4xl font-bold text-gray-800 mb-3">Lorem ipsum dolor sit amet</h1>
+      <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      <div class="flex gap-3"><a href="#" class="btn">Ajukan Sekarang</a><a href="#" class="btn-o">Lihat Benefit</a></div>
+    </div>
+    <div class="ph h-64 rounded-xl">Visual Kartu 3D</div>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap grid sm:grid-cols-3 gap-6 text-center">
+    <div class="card"><div class="ph w-14 h-14 rounded-full mx-auto mb-3">ikon</div><h3 class="font-semibold">Lorem ipsum</h3><p class="text-sm">Dolor sit amet consectetur.</p></div>
+    <div class="card"><div class="ph w-14 h-14 rounded-full mx-auto mb-3">ikon</div><h3 class="font-semibold">Dolor sit</h3><p class="text-sm">Adipiscing elit sed do.</p></div>
+    <div class="card"><div class="ph w-14 h-14 rounded-full mx-auto mb-3">ikon</div><h3 class="font-semibold">Consectetur</h3><p class="text-sm">Eiusmod tempor incididunt.</p></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <h2 class="h2">Fitur Kartu</h2>
+    <div class="card overflow-x-auto">
+      <table class="w-full text-sm text-left">
+        <thead><tr class="border-b border-gray-300"><th class="py-2">Fitur</th><th>Keterangan</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-gray-200"><td class="py-2">Lorem</td><td>Ipsum dolor sit amet</td></tr>
+          <tr class="border-b border-gray-200"><td class="py-2">Dolor</td><td>Consectetur adipiscing</td></tr>
+          <tr><td class="py-2">Sit amet</td><td>Sed do eiusmod tempor</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap">
+    <h2 class="h2">Cara Mengajukan</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="card"><b>1. Lorem ipsum</b><p class="text-sm mt-1">Dolor sit amet consectetur.</p></div>
+      <div class="card"><b>2. Dolor sit</b><p class="text-sm mt-1">Adipiscing elit sed do.</p></div>
+      <div class="card"><b>3. Amet elit</b><p class="text-sm mt-1">Eiusmod tempor incididunt.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap max-w-xl">
+    <h2 class="h2">Form Pengajuan</h2>
+    <div class="card space-y-3">
+      <input class="inp" placeholder="Nama lengkap">
+      <input class="inp" placeholder="No. HP">
+      <input class="inp" placeholder="Email">
+      <label class="flex gap-2 text-xs"><input type="checkbox"> Lorem ipsum dolor sit amet, persetujuan penggunaan data.</label>
+      <button class="btn w-full">Kirim</button>
+    </div>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap max-w-3xl">
+    <h2 class="h2">FAQ</h2>
+    <div class="space-y-2">
+      <details class="card"><summary class="cursor-pointer font-medium">Lorem ipsum dolor sit amet?</summary><p class="mt-2 text-sm">Consectetur adipiscing elit, sed do eiusmod tempor.</p></details>
+      <details class="card"><summary class="cursor-pointer font-medium">Ut enim ad minim veniam?</summary><p class="mt-2 text-sm">Quis nostrud exercitation ullamco laboris.</p></details>
+    </div>
+  </div>
+</section>
+<footer class="bg-gray-800 text-gray-300 text-xs py-6 text-center">Lorem ipsum - S&amp;K - Disclaimer OJK/LPS - Sosmed</footer>
+
+<!-- ================= LAYOUT 2: PROMO MERCHANT ================= -->
+<div id="l2" class="lbl">Layout 2 - Promo Merchant Showcase</div>
+<header class="bg-white border-b border-gray-300">
+  <div class="wrap flex items-center justify-between py-4"><div class="ph w-28 h-8">LOGO</div><a href="#" class="btn-o">Menu</a></div>
+</header>
+<section class="bg-gray-200 sec text-center">
+  <div class="wrap">
+    <div class="ph h-40 rounded mb-4">Banner Promo Utama</div>
+    <h1 class="text-3xl font-bold text-gray-800">Lorem ipsum hingga 50%</h1>
+    <p class="text-sm mt-2">Periode: 00 Lorem - 00 Ipsum 0000</p>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="flex gap-2 mb-6 overflow-x-auto">
+      <button class="btn">Semua</button><button class="btn-o">Kategori A</button><button class="btn-o">Kategori B</button><button class="btn-o">Kategori C</button>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Lorem</h3><p class="text-sm mb-3">Diskon 30%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Ipsum</h3><p class="text-sm mb-3">Diskon 20%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Dolor</h3><p class="text-sm mb-3">Diskon 50%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Amet</h3><p class="text-sm mb-3">Diskon 15%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Elit</h3><p class="text-sm mb-3">Diskon 25%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Sed do</h3><p class="text-sm mb-3">Diskon 10%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Tempor</h3><p class="text-sm mb-3">Diskon 40%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+      <div class="card"><div class="ph h-24 mb-3">logo</div><h3 class="font-semibold">Labore</h3><p class="text-sm mb-3">Diskon 35%</p><a href="#" class="btn-o w-full text-center">Detail</a></div>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-300 py-8 text-center">
+  <p class="font-semibold mb-3">Belum punya kartu? Lorem ipsum dolor sit amet.</p><a href="#" class="btn">Ajukan Kartu</a>
+</section>
+<section class="sec">
+  <div class="wrap max-w-3xl">
+    <details class="card"><summary class="cursor-pointer font-medium">Syarat &amp; Ketentuan</summary>
+      <ul class="list-disc pl-5 mt-2 text-sm space-y-1"><li>Lorem ipsum dolor sit amet.</li><li>Consectetur adipiscing elit.</li><li>Sed do eiusmod tempor.</li></ul>
+    </details>
+  </div>
+</section>
+
+<!-- ================= LAYOUT 3: EVENT ================= -->
+<div id="l3" class="lbl">Layout 3 - Event Registration</div>
+<header class="bg-white border-b border-gray-300">
+  <div class="wrap flex items-center justify-between py-4"><div class="ph w-28 h-8">LOGO</div><a href="#form-event" class="btn">Daftar</a></div>
+</header>
+<section class="bg-gray-200 sec text-center">
+  <div class="wrap">
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Lorem Ipsum Event</h1>
+    <p class="mb-6 text-sm">00 Lorem 0000 - Lokasi Ipsum - 00.00 WIB</p>
+    <div class="flex justify-center gap-3 mb-6">
+      <div class="card w-20"><div class="text-2xl font-bold">00</div><div class="text-xs">Hari</div></div>
+      <div class="card w-20"><div class="text-2xl font-bold">00</div><div class="text-xs">Jam</div></div>
+      <div class="card w-20"><div class="text-2xl font-bold">00</div><div class="text-xs">Menit</div></div>
+      <div class="card w-20"><div class="text-2xl font-bold">00</div><div class="text-xs">Detik</div></div>
+    </div>
+    <a href="#form-event" class="btn">Daftar Sekarang</a>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap grid md:grid-cols-2 gap-8 items-center">
+    <div><h2 class="h2">Tentang Acara</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+    <div class="ph h-56 rounded">Foto Acara</div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap max-w-2xl">
+    <h2 class="h2">Rundown</h2>
+    <ul class="space-y-2">
+      <li class="card flex gap-4"><b class="w-16">09.00</b><span>Lorem ipsum registrasi</span></li>
+      <li class="card flex gap-4"><b class="w-16">10.00</b><span>Dolor sit amet sesi 1</span></li>
+      <li class="card flex gap-4"><b class="w-16">12.00</b><span>Consectetur ishoma</span></li>
+      <li class="card flex gap-4"><b class="w-16">13.00</b><span>Adipiscing elit sesi 2</span></li>
+    </ul>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap">
+    <h2 class="h2">Pembicara</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div><div class="ph h-40 rounded-full aspect-square mx-auto mb-2 w-40">foto</div><b>Nama Lorem</b><p class="text-xs">Jabatan ipsum</p></div>
+      <div><div class="ph h-40 rounded-full aspect-square mx-auto mb-2 w-40">foto</div><b>Nama Ipsum</b><p class="text-xs">Jabatan dolor</p></div>
+      <div><div class="ph h-40 rounded-full aspect-square mx-auto mb-2 w-40">foto</div><b>Nama Dolor</b><p class="text-xs">Jabatan sit</p></div>
+      <div><div class="ph h-40 rounded-full aspect-square mx-auto mb-2 w-40">foto</div><b>Nama Amet</b><p class="text-xs">Jabatan elit</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap grid md:grid-cols-2 gap-6">
+    <div class="ph h-56 rounded">Peta Lokasi</div>
+    <div class="grid grid-cols-3 gap-3 content-start">
+      <div class="ph h-16 rounded">sponsor</div><div class="ph h-16 rounded">sponsor</div><div class="ph h-16 rounded">sponsor</div>
+      <div class="ph h-16 rounded">partner</div><div class="ph h-16 rounded">partner</div><div class="ph h-16 rounded">partner</div>
+    </div>
+  </div>
+</section>
+<section id="form-event" class="sec bg-white">
+  <div class="wrap max-w-xl">
+    <h2 class="h2">Form Registrasi</h2>
+    <p class="text-sm mb-3">Kuota tersisa: 000 dari 000</p>
+    <div class="card space-y-3">
+      <input class="inp" placeholder="Nama lengkap">
+      <input class="inp" placeholder="Email">
+      <input class="inp" placeholder="No. HP">
+      <select class="inp"><option>Pilih sesi</option><option>Lorem ipsum</option></select>
+      <button class="btn w-full">Daftar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAYOUT 4: STORYTELLING ================= -->
+<div id="l4" class="lbl">Layout 4 - Fullscreen Storytelling (snap scroll)</div>
+<div class="relative h-screen overflow-y-scroll snap-y snap-mandatory bg-gray-100">
+  <!-- Dot navigation -->
+  <div class="fixed-none sticky top-0 h-0 z-10">
+    <div class="absolute right-4 top-[40vh] flex flex-col gap-2">
+      <span class="w-3 h-3 rounded-full bg-gray-800"></span><span class="w-3 h-3 rounded-full bg-gray-400"></span>
+      <span class="w-3 h-3 rounded-full bg-gray-400"></span><span class="w-3 h-3 rounded-full bg-gray-400"></span><span class="w-3 h-3 rounded-full bg-gray-400"></span>
+    </div>
+  </div>
+  <section class="snap-start h-screen bg-gray-300 flex flex-col items-center justify-center text-center px-4">
+    <div class="ph w-40 h-40 rounded-xl mb-6 bg-gray-400">Key Visual</div>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Lorem Ipsum Dolor</h1>
+    <p class="text-sm">Scroll untuk mulai</p>
+  </section>
+  <section class="snap-start h-screen bg-gray-100 flex items-center">
+    <div class="wrap grid md:grid-cols-2 gap-8 items-center">
+      <div class="ph h-72 rounded">Visual</div>
+      <div><h2 class="h2">Cerita Lorem</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p></div>
+    </div>
+  </section>
+  <section class="snap-start h-screen bg-gray-200 flex items-center">
+    <div class="wrap grid md:grid-cols-2 gap-8 items-center">
+      <div><h2 class="h2">Kartu Edisi Khusus</h2><ul class="list-disc pl-5 space-y-1 text-sm"><li>Lorem ipsum dolor</li><li>Sit amet consectetur</li><li>Adipiscing elit</li></ul></div>
+      <div class="ph h-72 rounded">Kartu Berputar</div>
+    </div>
+  </section>
+  <section class="snap-start h-screen bg-gray-100 flex items-center">
+    <div class="wrap">
+      <h2 class="h2 text-center">Hadiah &amp; Merchandise</h2>
+      <div class="grid grid-cols-3 gap-4"><div class="ph h-48 rounded">hadiah</div><div class="ph h-48 rounded">hadiah</div><div class="ph h-48 rounded">hadiah</div></div>
+    </div>
+  </section>
+  <section class="snap-start h-screen bg-gray-300 flex items-center">
+    <div class="wrap max-w-xl">
+      <h2 class="h2 text-center">Lorem ipsum, ayo daftar</h2>
+      <div class="card space-y-3"><input class="inp" placeholder="Nama"><input class="inp" placeholder="No. HP"><button class="btn w-full">Kirim</button></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LAYOUT 5: GAMIFIKASI ================= -->
+<div id="l5" class="lbl">Layout 5 - Gamifikasi (Kuis / Simulasi)</div>
+<header class="bg-white border-b border-gray-300">
+  <div class="wrap py-4"><div class="ph w-28 h-8">LOGO</div></div>
+</header>
+<section class="sec">
+  <div class="wrap max-w-xl">
+    <div class="mb-2 text-sm">Pertanyaan 3 dari 5</div>
+    <div class="w-full h-2 bg-gray-300 rounded mb-6"><div class="h-2 bg-gray-800 rounded w-3/5"></div></div>
+    <div class="card">
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Lorem ipsum dolor sit amet?</h2>
+      <div class="space-y-2">
+        <label class="flex gap-3 border border-gray-300 rounded p-3"><input type="radio" name="q"> Pilihan lorem</label>
+        <label class="flex gap-3 border border-gray-300 rounded p-3"><input type="radio" name="q"> Pilihan ipsum</label>
+        <label class="flex gap-3 border border-gray-300 rounded p-3"><input type="radio" name="q"> Pilihan dolor</label>
+      </div>
+      <div class="flex justify-between mt-6"><button class="btn-o">Kembali</button><button class="btn">Lanjut</button></div>
+    </div>
+  </div>
+</section>
+<section class="sec bg-white">
+  <div class="wrap max-w-2xl">
+    <h2 class="h2 text-center">Hasil: Kartu Lorem cocok untukmu</h2>
+    <div class="card grid sm:grid-cols-2 gap-4 items-center">
+      <div class="ph h-40 rounded">Visual Kartu</div>
+      <div><ul class="list-disc pl-5 text-sm space-y-1 mb-4"><li>Lorem ipsum dolor</li><li>Sit amet consectetur</li></ul>
+        <div class="flex gap-2"><a href="#" class="btn">Ajukan Kartu Ini</a><a href="#" class="btn-o">Bagikan</a></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap max-w-xl">
+    <h2 class="h2">Data Diri</h2>
+    <div class="card space-y-3">
+      <input class="inp" placeholder="Nama lengkap"><input class="inp" placeholder="No. HP"><input class="inp" placeholder="Email">
+      <label class="flex gap-2 text-xs"><input type="checkbox"> Lorem ipsum dolor sit amet, persetujuan penggunaan data.</label>
+      <button class="btn w-full">Kirim</button>
+    </div>
+  </div>
+</section>
+<footer class="bg-gray-800 text-gray-300 text-xs py-6 text-center">Lorem ipsum - S&amp;K - Disclaimer OJK/LPS</footer>
+
+</body>
+</html>
