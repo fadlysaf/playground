@@ -11,7 +11,7 @@
         request()->is('*mickey-nyala*') || request()->is('*disney*') || (isset($isTailwindV4) && $isTailwindV4);
 
     // Menentukan folder partials secara dinamis
-    $partialsFolder = $partialsFolder ?? ($showOCBC ? 'partials-ocbc' : null);
+    $partialsFolder = $partialsFolder ?? (request()->is('*ocbc-outlook*') ? 'ocbc-outlook' : ($showOCBC ? 'partials-ocbc' : null));
 @endphp
 <!DOCTYPE html>
 <html lang="id">

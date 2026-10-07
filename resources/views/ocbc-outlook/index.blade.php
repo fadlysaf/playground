@@ -1,5 +1,13 @@
 @extends('app')
 
+@section('header')
+    @include('ocbc-outlook.header')
+@endsection
+
+@section('footer')
+    @include('ocbc-outlook.footer')
+@endsection
+
 @push('style')
     <!-- Tabler Icons (used for ti-arrow-up-right) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
@@ -110,8 +118,8 @@
     <!-- ============================== -->
     <!-- HERO SECTION -->
     <!-- ============================== -->
-    <section id="hero-section" class="bg-white overflow-hidden mt-[100px]">
-        <div class="hero-min-h max-w-[100rem] mx-auto px-6 lg:px-5 flex flex-col items-center py-14 lg:py-8">
+    <section id="hero-section" class="bg-white overflow-hidden">
+        <div class="hero-min-h max-w-[100rem] mx-auto px-6 lg:px-5 flex flex-col items-center py-6 lg:py-8">
 
             <!-- Konten utama, dibuat flex-1 supaya mengisi ruang dan mendorong scroll indicator ke bawah -->
             <div class="flex-1 w-full flex items-center justify-center">
@@ -1303,21 +1311,22 @@
     <!-- ============================== -->
     <!-- SPEAKERS SECTION -->
     <!-- ============================== -->
-    <section id="speakers" class="bg-white relative overflow-hidden py-16 lg:py-24">
-        <div class="max-w-7xl mx-auto px-6 lg:px-0">
+    <section id="speakers" class="bg-slate-50 relative overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
             <!-- Header -->
-            <div class="flex flex-col items-center text-center gap-6 mb-10">
-                <div class="flex flex-col gap-3">
-                    <span
-                        class="inline-flex items-center justify-center text-center gap-2 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]"></span>
-                        Our Speakers
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-400">
-                        Main Speakers
-                    </h2>
-                </div>
+            <div class="flex flex-col items-center text-center gap-3 mb-12">
+                <span
+                    class="inline-flex items-center gap-2 text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider bg-[var(--color-primary-light)] px-3 py-1 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-[var(--color-primary)] animate-pulse"></span>
+                    Our Keynote &amp; Main Speakers
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                    Pembicara Utama
+                </h2>
+                <p class="text-sm sm:text-base text-gray-500 max-w-xl">
+                    Dengarkan wawasan mendalam dari para pakar industri, arsitek teknologi, dan pemimpin eksekutif global.
+                </p>
             </div>
 
             <!-- Speaker Cards Slider -->
@@ -1327,90 +1336,132 @@
 
                         <div class="swiper-slide" data-speaker-card="sarah-chen">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Sarah Chen" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Sarah Chen</h3>
-                                    <p class="text-sm text-gray-500 mt-1">CTO, Vercel</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Sarah memimpin pengembangan platform dan arsitektur terdistribusi di Vercel.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+                                        alt="Sarah Chen" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        CTO · Vercel
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Sarah Chen</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">Platform &amp; Distributed Architecture</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Sarah memimpin pengembangan platform global dan riset arsitektur terdistribusi berperforma tinggi di Vercel.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="marcus-webb">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Marcus Webb" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Marcus Webb</h3>
-                                    <p class="text-sm text-gray-500 mt-1">VP Engineering, Linear</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Marcus berfokus pada infrastruktur tangguh dan sistem berskala besar.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop"
+                                        alt="Marcus Webb" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        VP Eng · Linear
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Marcus Webb</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">Infrastructure &amp; Systems Scale</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Marcus berfokus pada infrastruktur tangguh, optimasi performa backend, dan sistem berskala enterprise.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="priya-nair">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Priya Nair" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Priya Nair</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Staff Engineer, Figma</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Priya membangun pengalaman kolaboratif real-time untuk produk digital.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop"
+                                        alt="Priya Nair" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        Staff Eng · Figma
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Priya Nair</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">Real-Time Collaborative Tech</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Priya merancang engine kolaborasi real-time dan sistem synchronisation data untuk jutaan desainer web.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="alexander-wright">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Alexander Wright" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Alexander Wright</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Managing Director, Goldman Sachs</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Alexander mendalami arsitektur FinTech berperforma tinggi dan andal.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
+                                        alt="Alexander Wright" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        MD · Goldman Sachs
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Alexander Wright</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">High-Frequency FinTech Systems</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Alexander mendalami arsitektur transaksi keuangan berlatensi ultra-rendah dan keamanan perbankan global.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="emily-watson">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Emily Watson" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Emily Watson</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Professor, Oxford &amp; W3C Lead</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Emily meneliti identitas terdesentralisasi, privasi, dan standar web terbuka.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=600&auto=format&fit=crop"
+                                        alt="Emily Watson" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        Professor · Oxford &amp; W3C
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Emily Watson</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">Decentralized Web &amp; Privacy</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Emily memelopori standar identitas terdesentralisasi, kriptografi privasi data, dan arsitektur W3C.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide" data-speaker-card="kenji-sato">
                             <div
-                                class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
-                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Kenji Sato" class="w-full h-[440px] sm:h-[480px] object-cover" />
-                                <div class="p-5 sm:p-6 flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-900">Kenji Sato</h3>
-                                    <p class="text-sm text-gray-500 mt-1">Lead Researcher, Sony Robotics</p>
-                                    <p class="text-xs text-gray-400 mt-2 line-clamp-3">
-                                        Kenji mengembangkan integrasi robotika humanoid dan AI edge real-time.
-                                    </p>
+                                class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 h-full flex flex-col">
+                                <div class="relative overflow-hidden h-[300px] sm:h-[340px] bg-gray-100">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
+                                        alt="Kenji Sato" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                                    <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/50 text-xs font-semibold text-[var(--color-primary)]">
+                                        Lead · Sony Robotics
+                                    </div>
+                                </div>
+                                <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">Kenji Sato</h3>
+                                        <p class="text-xs font-medium text-gray-500 mt-1">Humanoid Robotics &amp; Edge AI</p>
+                                        <p class="text-xs text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                                            Kenji memimpin riset pemrosesan Edge AI dan kontrol terdistribusi untuk sistem robotika humanoid masa depan.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

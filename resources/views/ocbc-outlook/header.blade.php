@@ -1,5 +1,5 @@
-<header class="bg-white text-gray-900 shadow-sm">
-    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+<header class="sticky top-0 z-50 bg-white text-gray-900 shadow-sm">
+    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between py-3.5 px-6 lg:px-8">
         <!-- Logo Left -->
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5 transition-opacity hover:opacity-90">
@@ -53,7 +53,7 @@
 
     <!-- Mobile Menu Dialog -->
     <dialog id="mobile-menu"
-        class="backdrop:bg-transparent lg:hidden Fp-0 m-0 max-w-none max-h-none w-full h-full bg-transparent border-0">
+        class="backdrop:bg-transparent lg:hidden p-0 m-0 max-w-none max-h-none w-full h-full bg-transparent border-0">
         <div class="fixed inset-0 z-50 flex justify-end focus:outline-none">
             <!-- Semi-transparent Backdrop Overlay -->
             <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300"

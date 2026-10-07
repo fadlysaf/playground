@@ -94,6 +94,8 @@ Route::get('/ocbc-outlook', function () {
     return view('ocbc-outlook.index',[
         'pageCSS' => 'assets/ocbc-outlook/style.css',
         'title' => 'OCBC Outlook',
+        'headerView' => 'ocbc-outlook.header',
+        'footerView' => 'ocbc-outlook.footer',
         ]);
 });
 
