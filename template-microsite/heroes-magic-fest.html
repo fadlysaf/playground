@@ -13,29 +13,19 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        display: ['"Bebas Neue"', "sans-serif"],
-                        sans: ['"DM Sans"', "sans-serif"],
-                    },
-                    colors: {
-                        navy: "#0b1f3a",
-                        navy2: "#071426",
-                        paper: "#f5f6f8",
-                        brand: {
-                            red: "#e62429",
-                            blue: "#1b3a8c",
-                            gold: "#f5c542",
-                        },
-                    },
-                },
-            },
-        };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-display: "Bebas Neue", sans-serif;
+            --font-sans: "DM Sans", sans-serif;
+            --color-navy: #0b1f3a;
+            --color-navy2: #071426;
+            --color-paper: #f5f6f8;
+            --color-brand-red: #e62429;
+            --color-brand-blue: #1b3a8c;
+            --color-brand-gold: #f5c542;
+        }
+    </style>
     <style>
         html {
             scroll-behavior: smooth;
