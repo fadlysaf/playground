@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Spectrum — The Infinite Card</title>
+    <meta name="description" content="The Spectrum Infinite Card: brushed titanium, unlimited rewards." />
+    <meta name="color-scheme" content="light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #F5F6FB;
+            --surface: #FFFFFF;
+            --ink: #14152B;
+            --mute: #5A5F7A;
+            --line: #E2E5F1;
+            --accent: #2A44C9;
+            --accent-soft: #E9EDFB;
+            --steel: #8A90A6;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px)
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: "Inter", system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased
+        }
+
+        h1,
+        h2,
+        h3,
+        .display {
+            font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 8px
+        }
+
+        .accent {
+            color: var(--accent)
+        }
+
+        .btn {
+            background: var(--ink);
+            color: #fff
+        }
+
+        .btn:hover {
+            background: var(--accent)
+        }
+
+        .panel {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 20px
+        }
+
+
+        .card {
+            width: 20rem;
+            max-width: 100%;
+            aspect-ratio: 1.586;
+            border-radius: 22px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(145deg, #F4F5F8 0%, #DADDE5 55%, #E9EBF0 100%);
+            border: 1px solid #fff;
+            box-shadow: 0 1px 0 #fff inset, 0 30px 50px -24px rgba(20, 21, 43, .4), 0 8px 18px -10px rgba(20, 21, 43, .25);
+            transform: rotate(3deg);
+            animation: float 6s ease-in-out infinite
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .28) 0 1px, transparent 1px 4px);
+            opacity: .6
+        }
+
+        .chip {
+            width: 2.2rem;
+            height: 1.7rem;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #C9A24A, #F3DB93, #C9A24A)
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: rotate(3deg) translateY(0)
+            }
+
+            50% {
+                transform: rotate(2deg) translateY(-10px)
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            .card {
+                animation: none
+            }
+
+            html {
+                scroll-behavior: auto
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="sticky z-50 border-b"
+        style="top:env(safe-area-inset-top,0px);background:rgba(245,246,251,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)">
+        <nav class="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg btn flex items-center justify-center">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" />
+                        <path d="M8 12h8" />
+                    </svg>
+                </span>
+                <span class="display font-extrabold tracking-tight text-lg">Spectrum</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm" style="color:var(--mute)">
+                <a href="#benefits" class="hover:text-[var(--ink)] transition-colors">Benefits</a>
+                <a href="#rewards" class="hover:text-[var(--ink)] transition-colors">Rewards</a>
+                <a href="#security" class="hover:text-[var(--ink)] transition-colors">Security</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-sm hidden sm:inline" style="color:var(--mute)">Sign in</a>
+                <button class="btn px-5 py-2 rounded-full text-sm font-semibold transition">Apply now</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="relative overflow-hidden px-6 pt-16 pb-24 md:pt-24">
+            <div class="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <p class="text-sm mb-6" style="color:var(--mute)">Spectrum Financial · Titanium Series I · By
+                        invitation</p>
+                    <h1 class="font-extrabold leading-[0.92] tracking-tight text-6xl sm:text-7xl md:text-8xl">
+                        The infinite <span class="accent">card.</span>
+                    </h1>
+                    <p class="mt-8 text-lg max-w-md leading-relaxed" style="color:var(--mute)">
+                        Brushed titanium. Unlimited credit. Made for people who know the difference between luxury and
+                        extravagance.
+                    </p>
+                    <div class="mt-10 flex flex-wrap items-center gap-4">
+                        <button class="btn px-7 py-3 rounded-full font-semibold transition">Request an
+                            invitation</button>
+                        <a href="#benefits" class="px-5 py-3 rounded-full font-medium border transition hover:bg-white"
+                            style="border-color:var(--line)">See benefits</a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 flex justify-center md:justify-end">
+                    <div class="card select-none" role="img" aria-label="Spectrum Infinite card, brushed titanium">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between z-10">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <p class="text-xs" style="color:#6a6f8c">Spectrum</p>
+                                    <p class="display font-extrabold text-lg tracking-tight">Infinite</p>
+                                </div>
+                                <div class="flex">
+                                    <span class="w-7 h-7 rounded-full" style="background:#C9CCD8"></span>
+                                    <span class="w-7 h-7 rounded-full -ml-3"
+                                        style="background:var(--accent);opacity:.85"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="chip mb-3"></div>
+                                <p class="text-sm tracking-[0.2em] mb-2" style="color:#3b3f5c">•••• •••• •••• 4291</p>
+                                <div class="flex justify-between text-xs font-medium" style="color:#3b3f5c">
+                                    <span>ARIA CHEN</span><span>12/29</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section id="benefits" class="px-6 py-20" style="background:var(--surface);border-block:1px solid var(--line)">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-extrabold text-3xl md:text-4xl tracking-tight max-w-lg">Built around how you travel and
+                    spend.</h2>
+                <div class="mt-12 grid md:grid-cols-3 gap-x-10 gap-y-10">
+                    <div class="pt-6 border-t-2" style="border-color:var(--ink)">
+                        <h3 class="font-semibold text-xl mb-2">Unlimited rewards</h3>
+                        <p class="leading-relaxed" style="color:var(--mute)">5× points on travel, 3× on dining, 2× on
+                            everything else. No caps, no blackout dates, no expiry.</p>
+                    </div>
+                    <div class="pt-6 border-t-2" style="border-color:var(--ink)">
+                        <h3 class="font-semibold text-xl mb-2">Global concierge</h3>
+                        <p class="leading-relaxed" style="color:var(--mute)">A dedicated advisor handles reservations,
+                            sourcing, and access. Available in 32 languages, around the clock.</p>
+                    </div>
+                    <div class="pt-6 border-t-2" style="border-color:var(--ink)">
+                        <h3 class="font-semibold text-xl mb-2">Prestige status</h3>
+                        <p class="leading-relaxed" style="color:var(--mute)">Automatic elite tier with 23 airline and
+                            hotel partners. Upgrades, priority access, and private check-in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REWARDS -->
+        <section id="rewards" class="px-6 py-20">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-extrabold text-3xl md:text-4xl tracking-tight max-w-lg">What you get on day one.</h2>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="panel p-6 md:col-span-2" style="background:var(--accent-soft);border-color:#D5DCF6">
+                        <p class="text-sm" style="color:var(--mute)">Welcome bonus</p>
+                        <p class="display font-extrabold text-6xl md:text-7xl mt-2 mb-1" style="color:var(--accent)">
+                            200K</p>
+                        <p class="text-sm" style="color:var(--mute)">points, worth $5,000</p>
+                    </div>
+                    <div class="panel p-6">
+                        <p class="text-sm" style="color:var(--mute)">Annual travel</p>
+                        <p class="display font-extrabold text-3xl mt-2 mb-1" style="color:var(--ink)">$600</p>
+                        <p class="text-sm" style="color:var(--mute)">statement credit</p>
+                    </div>
+                    <div class="panel p-6">
+                        <p class="text-sm" style="color:var(--mute)">Lounge network</p>
+                        <p class="display font-extrabold text-3xl mt-2 mb-1" style="color:var(--ink)">1,400+</p>
+                        <p class="text-sm" style="color:var(--mute)">premium properties</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECURITY -->
+        <section id="security" class="px-6 py-20" style="background:var(--surface);border-block:1px solid var(--line)">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="font-extrabold text-3xl md:text-4xl tracking-tight leading-tight">Security so advanced,
+                        you will never think about it.</h2>
+                </div>
+                <dl class="md:col-span-8 grid sm:grid-cols-2 gap-8">
+                    <div class="flex gap-4">
+                        <span class="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center"
+                            style="background:var(--accent-soft);color:var(--accent)">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <dt class="font-semibold mb-1">Secure chip</dt>
+                            <dd class="text-sm leading-relaxed" style="color:var(--mute)">Embedded chip verification
+                                that makes the card extremely hard to clone.</dd>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center"
+                            style="background:var(--accent-soft);color:var(--accent)">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <dt class="font-semibold mb-1">Behavioral AI</dt>
+                            <dd class="text-sm leading-relaxed" style="color:var(--mute)">4M signals per second. Fraud
+                                detected before your card leaves the terminal.</dd>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center"
+                            style="background:var(--accent-soft);color:var(--accent)">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <dt class="font-semibold mb-1">Biometric access</dt>
+                            <dd class="text-sm leading-relaxed" style="color:var(--mute)">Face ID and fingerprint
+                                required for high-value authorizations.</dd>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center"
+                            style="background:var(--accent-soft);color:var(--accent)">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <dt class="font-semibold mb-1">$0 liability</dt>
+                            <dd class="text-sm leading-relaxed" style="color:var(--mute)">Unauthorized charges covered
+                                globally, resolved in hours, not days.</dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="px-6 py-24">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-12 items-center gap-8">
+                <h2 class="md:col-span-8 font-extrabold text-4xl md:text-6xl leading-[1.05] tracking-tight">
+                    Some things are only available to those who <span class="accent">know to ask.</span>
+                </h2>
+                <div class="md:col-span-4 flex flex-col gap-3">
+                    <button class="btn px-6 py-3.5 rounded-full font-semibold transition">Request an invitation</button>
+                    <p class="text-sm text-center" style="color:var(--mute)">By invitation only. Limited slots.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="px-6 pt-12 pb-10" style="background:var(--surface);border-top:1px solid var(--line)">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-3"><span class="w-5 h-5 rounded-md btn"></span><span
+                            class="display font-extrabold">Spectrum</span></div>
+                    <p class="text-sm leading-relaxed max-w-[16rem]" style="color:var(--mute)">The future of premium
+                        financial experiences.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-sm mb-3">Product</p>
+                    <ul class="space-y-2 text-sm" style="color:var(--mute)">
+                        <li><a href="#" class="hover:text-[var(--ink)]">Infinite Card</a></li>
+                        <li><a href="#benefits" class="hover:text-[var(--ink)]">Benefits</a></li>
+                        <li><a href="#rewards" class="hover:text-[var(--ink)]">Rewards</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Compare</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-sm mb-3">Company</p>
+                    <ul class="space-y-2 text-sm" style="color:var(--mute)">
+                        <li><a href="#" class="hover:text-[var(--ink)]">About</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Careers</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Press</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-sm mb-3">Legal</p>
+                    <ul class="space-y-2 text-sm" style="color:var(--mute)">
+                        <li><a href="#" class="hover:text-[var(--ink)]">Privacy</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Terms</a></li>
+                        <li><a href="#security" class="hover:text-[var(--ink)]">Security</a></li>
+                        <li><a href="#" class="hover:text-[var(--ink)]">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 border-t flex flex-col md:flex-row justify-between gap-2 text-xs"
+                style="border-color:var(--line);color:var(--mute)">
+                <p>© 2026 Spectrum Financial. All rights reserved.</p>
+                <p>Member FDIC · Equal Housing Lender</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

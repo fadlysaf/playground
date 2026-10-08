@@ -1,370 +1,609 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kartu Kredit OCBC Nyala Platinum Edisi Mickey Mouse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kartu Kredit OCBC Nyala Platinum Edisi Mickey Mouse</title>
+    <meta name="description"
+        content="Nyala Global Debit dan Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse. Cashback hingga 10% dan beli 1 bonus 1 tiket film Disney.">
+    <link rel="alternate" hreflang="en" href="https://www.ocbc.id/en/program/kartu-nyala-edisi-mickey-mouse">
+    <link rel="alternate" hreflang="id" href="https://www.ocbc.id/id/program/kartu-nyala-edisi-mickey-mouse">
+    <link rel="shortcut icon" href="https://www.ocbc.id/asset/media/Project/OCBC/OCBCID/ICO/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #14151F;
+            --ink-2: #2A2C3B;
+            --red: #D8262C;
+            --yellow: #FFCB2E;
+            --mist: #F1F2F8;
+            --white: #fff;
+            --muted: #5A5D70;
+            --radius: 20px;
+            --head: 'Fredoka', 'Trebuchet MS', sans-serif;
+            --body: 'Nunito Sans', system-ui, sans-serif;
+        }
 
-  <link rel="alternate" hreflang="en" href="https://www.ocbc.id/en/program/kartu-nyala-edisi-mickey-mouse">
-  <link rel="alternate" hreflang="id" href="https://www.ocbc.id/id/program/kartu-nyala-edisi-mickey-mouse">
-  <link rel="shortcut icon" href="https://www.ocbc.id/asset/media/Project/OCBC/OCBCID/ICO/favicon.png">
+        * {
+            box-sizing: border-box;
+            margin: 0
+        }
 
-  <!-- Tailwind CSS (CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        html {
+            scroll-behavior: smooth
+        }
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        body {
+            font-family: var(--body);
+            color: var(--ink);
+            background: var(--white);
+            line-height: 1.6;
+            padding-bottom: 76px
+        }
 
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
+        img {
+            max-width: 100%;
+            display: block
+        }
 
-    .card-glow {
-      position: absolute;
-      inset: -40px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(201,168,255,.55), rgba(125,232,216,.25) 45%, transparent 70%);
-      filter: blur(30px);
-    }
-    .card-img { position: relative; z-index: 2; }
-  </style>
+        a {
+            color: inherit
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--red);
+            outline-offset: 3px
+        }
+
+        .wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--yellow);
+            color: var(--ink);
+            font: 700 1rem var(--body);
+            padding: 14px 30px;
+            border-radius: 999px;
+            text-decoration: none;
+            border: 2px solid var(--ink);
+            box-shadow: 0 4px 0 var(--ink);
+            transition: transform .15s, box-shadow .15s
+        }
+
+        .btn:hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 var(--ink)
+        }
+
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow: none
+        }
+
+        .btn.red {
+            background: var(--red);
+            color: #fff
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--head);
+            line-height: 1.15;
+            letter-spacing: -.01em
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            background: var(--ink);
+            color: #fff;
+            overflow: hidden
+        }
+
+        .hero picture,
+        .hero picture img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(20, 21, 31, .92), rgba(20, 21, 31, .55) 55%, rgba(20, 21, 31, .1))
+        }
+
+        .hero .wrap {
+            position: relative;
+            z-index: 2;
+            min-height: min(86vh, 720px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 96px;
+            padding-bottom: 64px
+        }
+
+        .logo {
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            z-index: 3
+        }
+
+        .logo img {
+            height: 34px;
+            width: auto
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 7vw, 4.6rem);
+            font-weight: 700;
+            max-width: 11ch
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--yellow)
+        }
+
+        .hero p {
+            max-width: 34rem;
+            margin: 20px 0 32px;
+            font-size: 1.1rem;
+            color: #E6E7F0
+        }
+
+        .hero p strong {
+            color: var(--yellow)
+        }
+
+        .copy {
+            position: absolute;
+            right: 16px;
+            bottom: 10px;
+            z-index: 3;
+            font-size: .75rem;
+            color: rgba(255, 255, 255, .75)
+        }
+
+        @media(max-width:700px) {
+            .hero::after {
+                background: linear-gradient(180deg, rgba(20, 21, 31, .15), rgba(20, 21, 31, .9) 70%)
+            }
+
+            .hero .wrap {
+                justify-content: flex-end
+            }
+        }
+
+        /* PRIVILEGES */
+        .priv {
+            background: var(--mist);
+            padding: 72px 0
+        }
+
+        .sec-title {
+            text-align: center;
+            font-size: clamp(1.9rem, 5vw, 3rem);
+            margin-bottom: 12px
+        }
+
+        .sec-sub {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 48px
+        }
+
+        .cols {
+            display: grid;
+            gap: 28px;
+            grid-template-columns: 1fr
+        }
+
+        @media(min-width:900px) {
+            .cols {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        .col {
+            background: #fff;
+            border-radius: 28px;
+            padding: 32px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid var(--ink)
+        }
+
+        .col h3 {
+            font-size: 1.5rem
+        }
+
+        .limited {
+            display: inline-block;
+            margin-top: 8px;
+            background: var(--red);
+            color: #fff;
+            font-size: .85rem;
+            font-weight: 700;
+            padding: 3px 14px;
+            border-radius: 999px
+        }
+
+        .card-link {
+            display: block;
+            margin: 28px 0 24px;
+            text-decoration: none
+        }
+
+        .card-link img {
+            width: min(380px, 100%);
+            border-radius: 18px;
+            box-shadow: 0 18px 36px -12px rgba(20, 21, 31, .45);
+            animation: float 4s ease-in-out infinite
+        }
+
+        @keyframes float {
+            50% {
+                transform: translateY(-10px) rotate(-1deg)
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            .card-link img {
+                animation: none
+            }
+
+            html {
+                scroll-behavior: auto
+            }
+        }
+
+        .perk {
+            width: 100%;
+            text-align: left;
+            display: grid;
+            gap: 14px;
+            margin-bottom: 24px
+        }
+
+        .perk div {
+            background: var(--mist);
+            border-radius: 16px;
+            padding: 16px 18px
+        }
+
+        .perk h4 {
+            font: 600 1.15rem var(--head)
+        }
+
+        .perk p {
+            font-size: .95rem;
+            color: var(--ink-2)
+        }
+
+        .cta-note {
+            font-size: .95rem;
+            color: var(--ink-2);
+            margin-top: auto;
+            margin-bottom: 14px
+        }
+
+        .cta-note b {
+            display: block
+        }
+
+        /* PROMO */
+        .promo {
+            padding: 72px 0 88px
+        }
+
+        .grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        @media(min-width:800px) {
+            .grid {
+                grid-template-columns: repeat(4, 1fr)
+            }
+        }
+
+        .tile {
+            display: block;
+            text-decoration: none;
+            border: 2px solid var(--ink);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: #fff;
+            transition: transform .2s
+        }
+
+        .tile:hover {
+            transform: translateY(-4px)
+        }
+
+        .tile img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover
+        }
+
+        .tile div {
+            padding: 14px 16px
+        }
+
+        .tile h3 {
+            font-size: 1.1rem
+        }
+
+        .tile span {
+            font-size: .88rem;
+            color: var(--muted)
+        }
+
+        .more {
+            text-align: center;
+            margin-top: 40px
+        }
+
+        /* FOOTER + FLOATING CTA */
+        footer {
+            background: var(--ink);
+            color: #C9CBDA;
+            padding: 28px 0;
+            font-size: .85rem
+        }
+
+        .float {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+            background: #fff;
+            border-top: 2px solid var(--ink);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            transform: translateY(100%);
+            transition: transform .35s
+        }
+
+        .float.show {
+            transform: none
+        }
+
+        .float div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0
+        }
+
+        .float img {
+            width: 52px;
+            height: 33px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex: none
+        }
+
+        .float strong {
+            font: 600 1rem var(--head);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .float .btn {
+            padding: 9px 18px;
+            font-size: .88rem;
+            white-space: nowrap
+        }
+    </style>
 </head>
 
-<body class="bg-[#0B0A14]">
+<body>
 
-  <!-- HEADER -->
-  <header class="absolute inset-x-0 top-0 z-50">
-    <div class="mx-auto flex max-w-7xl items-center justify-end px-4 py-6 lg:px-12">
-      <a href="https://www.ocbc.id/id" target="_blank" rel="noopener" class="shrink-0">
-        <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-white.png?h=392&w=1452&rev=31388dd61e9a4ea0a80496439349020b"
-             alt="OCBC" class="h-8 w-auto sm:h-10">
-      </a>
-    </div>
-  </header>
-
-  <div class="overflow-x-hidden">
-
-    <!-- HERO -->
-    <section class="relative w-full h-[90vh] lg:h-auto overflow-hidden">
-
-      <!-- Background desktop -->
-      <div class="absolute inset-0 -z-10 hidden lg:block">
-        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Dion_Home_Page_1536x751_Px_d4c1a75498.webp"
-             alt="Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse - Double the magic"
-             class="h-full w-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0B0A14]/95 via-[#0B0A14]/60 to-transparent"></div>
-      </div>
-
-      <!-- Mobile -->
-      <div class="flex flex-col w-full lg:hidden min-h-screen bg-[#0B0A14]">
-        <div class="relative w-full h-[45vh] shrink-0">
-          <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Dion_Home_Page_430x351_Px_dc8858a28f.webp"
-               alt="Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse - Double the magic"
-               class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0A14]"></div>
-          <p class="absolute bottom-3 right-4 z-20 text-white/80 text-xs font-medium drop-shadow-md">© Disney</p>
-        </div>
-
-        <div class="flex-1 flex flex-col justify-start px-6 pt-6 pb-12 relative z-10 bg-[#0B0A14]">
-          <div class="max-w-2xl mx-auto w-full">
-            <h1 class="text-white text-3xl sm:text-4xl font-bold tracking-tight leading-tight mb-4">
-              Double <span class="text-[#F2DFA0]">the magic <br>in one step</span>
-            </h1>
-            <p class="text-gray-300 text-justify sm:text-lg leading-relaxed mb-8">
-              Petualangan seru dimulai dari sini! Wujudkan lebih banyak momen istimewa bersama
-              <strong class="text-[#F2DFA0]">Nyala Global Debit</strong> dan
-              <strong class="text-[#F2DFA0]">Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse.</strong>
-            </p>
-            <div class="flex justify-start mb-4">
-              <a href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
-                 target="_blank" rel="noopener noreferrer"
-                 class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] px-8 py-3 text-sm sm:text-base font-semibold text-[#1B140A] shadow-lg hover:opacity-90 transition-all hover:scale-105 w-full sm:w-auto">
-                Unlock the magic now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desktop content -->
-      <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 hidden lg:flex flex-col justify-center min-h-screen">
-        <div class="w-full max-w-2xl text-left">
-          <h1 class="text-white text-4xl w-[550px] sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 drop-shadow-lg">
-            Double <span class="text-[#F2DFA0]">the magic <br>in one step</span>
-          </h1>
-          <p class="text-gray-200 text-lg tracking-normal lg:text-xl leading-relaxed drop-shadow-md max-w-xl mb-8">
-            Petualangan seru dimulai dari sini! Wujudkan lebih banyak momen istimewa bersama
-            <strong class="text-[#F2DFA0]">Nyala Global Debit</strong> dan <br>
-            <strong class="text-[#F2DFA0]">Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse.</strong>
-          </p>
-          <div class="flex justify-start">
-            <a href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
-               target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] px-8 py-4 text-base font-semibold text-[#1B140A] shadow-lg hover:opacity-90 transition-all hover:scale-105">
-              Unlock the magic now
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="absolute bottom-4 right-6 z-20 hidden lg:block">
-        <p class="text-white/60 text-xs sm:text-sm font-medium drop-shadow-md">© Disney</p>
-      </div>
-    </section>
-
-    <!-- PRIVILEGES -->
-    <section class="relative bg-[#0B0A14] px-6 py-12 lg:px-8 lg:py-24">
-      <div class="pointer-events-none bg-cover absolute inset-0 z-0"
-           style="background-image: url('https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Microsite_Mickey_1180_x_640_Px_Mickey_CC_DC_84b43aef62.webp');"></div>
-
-      <div class="relative z-10 mx-auto max-w-6xl">
-        <h2 class="text-zinc-700 font-bold text-center text-4xl tracking-tight sm:text-6xl">
-          Discover Your Privileges
-        </h2>
-
-        <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
-
-          <!-- Debit -->
-          <div class="flex flex-col items-center text-center w-full">
-            <a href="https://www.ocbc.id/id/individu/kartu-transaksi/kartu-debit/ocbc-debit" target="_blank" rel="noopener noreferrer"
-               class="group flex flex-col items-center text-center w-full" aria-label="Lihat detail Kartu OCBC Nyala Global Debit">
-              <p class="text-lg font-semibold text-zinc-700 sm:text-xl group-hover:text-[#202940] transition-colors duration-300">
-                Kartu OCBC<br>Nyala Global Debit
-              </p>
-              <div class="card-wrap relative mt-10 group-hover:scale-105 transition-transform duration-300 ease-out">
-                <div class="card-glow"></div>
-                <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Nyala_x_Disney_Card_Mickey_8_5x5_4cm_R1_02_34439833a9.png"
-                     alt="Kartu OCBC Nyala Global Debit" width="420" height="420" fetchpriority="high" decoding="async"
-                     class="card-img w-[350px] sm:w-[420px] rounded-3xl shadow-2xl shadow-[#C9A8FF]/30 pointer-events-none">
-              </div>
-            </a>
-
-            <div class="mt-8 w-full max-w-sm rounded-2xl border border-white/10 bg-white/50 p-6 backdrop-blur-sm">
-              <p class="text-2xl font-semibold text-zinc-700">Bawa magic ke setiap perjalanan</p>
-              <p class="mt-2 text-sm text-gray-900">
-                Belanja dan tarik tunai di luar negeri langsung debit dari rekening valas, tanpa konversi.
-              </p>
-            </div>
-
-            <div class="flex flex-col items-center justify-center mt-8 space-y-4 text-center">
-              <p class="text-sm text-zinc-700">
-                <span class="font-bold">Belum menjadi Nasabah OCBC?</span><br>
-                Dapatkan OCBC Nyala Global Debit<br>
-                dan kesempatan memiliki Kartu Kredit OCBC<br>
-                Nyala Platinum edisi Mickey Mouse
-              </p>
-              <a href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
-                 target="_blank" rel="noopener noreferrer"
-                 class="mt-2 inline-block rounded-full bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] px-8 py-3 text-sm font-semibold text-[#1B140A] shadow-md hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E8C468]">
-                Join Nyala Now!
-              </a>
-            </div>
-          </div>
-
-          <!-- Credit -->
-          <div class="flex flex-col items-center text-center w-full">
-            <a href="https://www.ocbc.id/id/individu/kartu-transaksi/kartu-kredit/ocbc-nyala-platinum" target="_blank" rel="noopener noreferrer"
-               class="group flex flex-col items-center text-center w-full" aria-label="Lihat detail Kartu Kredit OCBC Nyala Platinum">
-              <p class="text-lg font-semibold text-zinc-700 sm:text-xl group-hover:text-[#202940] transition-colors duration-300">
-                Kartu Kredit OCBC<br>Nyala Platinum edisi Mickey Mouse
-              </p>
-              <span class="text-sm font-thin italic">Edisi spesial hanya untuk 2.000 Nasabah</span>
-              <div class="card-wrap relative mt-4 group-hover:scale-105 transition-transform duration-300 ease-out">
-                <div class="card-glow"></div>
-                <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Disney_Credit_Card_Mickey_blank_335x209pxl_FRONT_8b3add1f96.png"
-                     alt="Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse" width="420" height="420" fetchpriority="high" decoding="async"
-                     class="card-img w-[350px] sm:w-[420px] rounded-3xl shadow-2xl shadow-[#C9A8FF]/30 pointer-events-none">
-              </div>
-            </a>
-
-            <div class="mt-8 w-full max-w-[750px] mx-auto rounded-2xl border border-white/10 bg-white/50 p-6 backdrop-blur-sm">
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 px-2 py-2">
-                <div class="flex flex-col items-center text-center border-b lg:border-b-0 lg:border-r lg:pr-4 pb-4 lg:pb-0">
-                  <h3 class="text-2xl font-semibold text-zinc-800 leading-tight">Magical Moments</h3>
-                  <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                    <strong>Cashback hingga 10%</strong> untuk setiap momen favoritmu, mulai dari
-                    liburan impian, belanja kebutuhan, hingga subscription Disney+
-                  </p>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                  <h3 class="text-2xl font-semibold text-zinc-800 leading-tight">Magical Entertainment</h3>
-                  <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                    <strong>Beli 1 bonus 1</strong> tiket film Disney pilihan via m.tix
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-col items-center justify-center mt-4 space-y-4 text-center">
-              <p class="text-sm text-zinc-700">
-                <span class="font-bold">Sudah menjadi Nasabah OCBC?</span><br>
-                Lengkapi pengalaman Nyala-mu dengan Kartu Kredit OCBC<br>
-                Nyala Platinum edisi Mickey Mouse
-              </p>
-              <a href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBCDISNEYRUNJKT&utm_campaign=WEBSITEMICKEY_DISNEYRUNJKT26_20260724&promo_referal=OCBCDISNEYRUNJKT"
-                 target="_blank" rel="noopener noreferrer"
-                 class="mt-2 inline-block rounded-full bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] px-8 py-3 text-sm font-semibold text-[#1B140A] shadow-md hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E8C468]">
-                Pre-Book Now
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROMO -->
-    <section id="promo" class="relative px-2 py-20 lg:px-8 lg:py-6 pb-32">
-      <div class="pointer-events-none absolute inset-0 z-0 bg-cover"
-           style="background-image: url('https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Microsite_Mickey_1180_x_640_Promo_67e0378b80.webp');"></div>
-
-      <div class="relative z-10 mx-auto max-w-6xl">
-        <div class="mb-14 flex flex-col items-center gap-3 text-center">
-          <h2 class="text-zinc-700 text-3xl font-semibold tracking-tight sm:text-5xl">Unlock more magical offers</h2>
-        </div>
-
-        <div class="max-w-7xl mx-auto p-0">
-
-          <div class="flex flex-wrap justify-center gap-2 mb-6">
-            <a href="https://www.ocbc.id/id/promo/2026/07/30/arabica" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/30/hero-promo-arabica.webp"
-                   alt="Promo %Arabica Special Bundle Rp99 Ribu Untuk Nasabah OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">%Arabica</h3>
-                <span class="text-sm text-[#1B140A]">Special bundle Rp99 Ribu</span>
-              </div>
-            </a>
-
-            <a href="https://www.ocbc.id/id/promo/2022/10/05/astro" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/10/06/hero-promo-astro.webp"
-                   alt="Promo Astro Rp25 Ribu dan Cicilan 0% hingga 12 Bulan dengan OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">ASTRO</h3>
-                <span class="text-sm text-[#1B140A]">Hemat Rp25 Ribu</span>
-              </div>
-            </a>
-
-            <a href="https://www.ocbc.id/id/promo/2020/11/05/Blibli" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/09/14/hero-promo-blibli.webp"
-                   alt="Promo Blibli hemat Rp125 Ribu dan Cicilan 0% hingga 12 Bulan dengan OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">Blibli</h3>
-                <span class="text-sm text-[#1B140A]">Hemat Rp125 Ribu |<br>Cicilan 0% hingga 12 bulan</span>
-              </div>
-            </a>
-
-            <a href="https://www.ocbc.id/id/promo/2026/07/17/chon-matcha" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/17/hero-promo-chonmatcha.webp"
-                   alt="Promo Chon Matcha Hemat 10% dan Gratis Warabi Mochi dengan OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">Chon Matcha</h3>
-                <span class="text-sm text-[#1B140A]">Hemat 10% | Complimentary<br>Warabi Mochi</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="flex flex-wrap justify-center gap-4 -mt-2">
-            <a href="https://www.ocbc.id/id/promo/2021/04/15/klook" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2021/04/15/hero-promo-klook.webp"
-                   alt="Promo Klook Hemat hingga Rp500 Ribu untuk nasabah OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">Klook</h3>
-                <span class="text-sm text-[#1B140A]">Hemat hingga Rp500 Ribu</span>
-              </div>
-            </a>
-
-            <a href="https://www.ocbc.id/id/promo/2026/07/21/salad-stop" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/21/hero-promo-saladstop.webp"
-                   alt="Promo Salad Stop Gratis Smoothie untuk Nasabah OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">Salad Stop</h3>
-                <span class="text-sm text-[#1B140A]">Complimentary Smoothie</span>
-              </div>
-            </a>
-
-            <a href="https://www.ocbc.id/id/promo/2020/11/05/shopee" target="_blank" rel="noopener noreferrer"
-               class="block w-[calc(50%-1rem)] md:w-[calc(25%-0.5rem)] max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-white transition-colors duration-300 hover:border-[#7DE8D8]/40">
-              <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/08/23/hero-promo-shopee.jpg"
-                   alt="Promo Shopee Hemat hingga Rp200 Ribu dan Cicilan 0% hingga 24 Bulan dengan OCBC" class="w-full h-48 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-medium text-zinc-700 mb-4">Shopee</h3>
-                <span class="text-sm text-[#1B140A]">Hemat hingga Rp200 Ribu |<br>Cicilan 0% hingga 24 Bulan</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="mt-12 flex justify-center">
-          <a href="https://www.ocbc.id/id/promo/" target="_blank" rel="noopener noreferrer"
-             class="rounded-full bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] px-7 py-2.5 text-sm font-semibold text-[#1B140A] shadow-xs transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E8C468]">
-            Lihat Promo Lainnya
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <section id="site-footer-section" class="relative bg-[#0B0A14] px-6 py-8 lg:px-8 pb-24">
-      <div class="max-w-7xl mx-auto text-center lg:text-left">
-        <p class="text-xs sm:text-sm text-white leading-relaxed">
-          PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan &amp; Bank Indonesia,
-          serta merupakan peserta penjaminan LPS.
-        </p>
-      </div>
-    </section>
-
-    <!-- FLOATING CTA -->
-    <section id="floating-footer"
-             class="fixed bottom-0 left-0 w-full bg-white/95 p-3 sm:p-4 flex items-center justify-between transition-all duration-500 ease-in-out z-50 border-t border-gray-100">
-      <div class="flex items-center space-x-2 sm:space-x-3 flex-1 min-w-0 overflow-hidden">
-        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Microsite_Mickey_64_x_40_Card_1a06b0b8bd.png"
-             alt="Kartu Kredit OCBC Mickey Nyala Platinum"
-             class="block w-12 h-8 sm:w-18 sm:h-12 object-cover rounded-md shadow-sm shrink-0">
-        <h2 class="font-bold text-[#1B140A] text-xs sm:text-2xl leading-tight truncate">Unlock the magic now!</h2>
-      </div>
-      <div class="shrink-0 ml-2">
-        <a href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
-           target="_blank" rel="noopener noreferrer"
-           class="bg-gradient-to-r from-[#F2DFA0] to-[#E8C468] text-[#1B140A] px-3 py-2 sm:px-6 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-md hover:opacity-90 transition-transform active:scale-95 whitespace-nowrap">
-          Join Nyala Now!
+    <header class="hero">
+        <a class="logo" href="https://www.ocbc.id/id" target="_blank" rel="noopener" aria-label="OCBC">
+            <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-white.png?h=392&w=1452&rev=31388dd61e9a4ea0a80496439349020b"
+                alt="OCBC">
         </a>
-      </div>
-    </section>
+        <picture>
+            <source media="(min-width:701px)"
+                srcset="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Dion_Home_Page_1536x751_Px_d4c1a75498.webp">
+            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Dion_Home_Page_430x351_Px_dc8858a28f.webp"
+                alt="Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse - Double the magic" fetchpriority="high">
+        </picture>
+        <div class="wrap">
+            <h1>Double <em>the magic in one step</em></h1>
+            <p>Petualangan seru dimulai dari sini! Wujudkan lebih banyak momen istimewa bersama <strong>Nyala Global
+                    Debit</strong> dan <strong>Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse.</strong></p>
+            <div><a class="btn"
+                    href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
+                    target="_blank" rel="noopener noreferrer">Unlock the magic now</a></div>
+        </div>
+        <span class="copy">© Disney</span>
+    </header>
 
-  </div>
+    <main>
+        <section class="priv" id="privileges">
+            <div class="wrap">
+                <h2 class="sec-title">Discover Your Privileges</h2>
+                <p class="sec-sub">Dua kartu, satu paket keistimewaan.</p>
+                <div class="cols">
 
-  <!-- Animasi kartu melayang -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
-  <script>
-    document.querySelectorAll('.card-wrap').forEach(function (wrap) {
-      anime({
-        targets: wrap.querySelector('.card-img'),
-        translateY: [
-          { value: -10, duration: 1800, easing: 'easeInOutSine' },
-          { value: 0, duration: 1800, easing: 'easeInOutSine' }
-        ],
-        loop: true
-      });
-    });
+                    <article class="col">
+                        <h3>Kartu OCBC<br>Nyala Global Debit</h3>
+                        <a class="card-link"
+                            href="https://www.ocbc.id/id/individu/kartu-transaksi/kartu-debit/ocbc-debit"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Lihat detail Kartu OCBC Nyala Global Debit">
+                            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Nyala_x_Disney_Card_Mickey_8_5x5_4cm_R1_02_34439833a9.png"
+                                alt="Kartu OCBC Nyala Global Debit" width="420" height="420" loading="lazy"
+                                decoding="async">
+                        </a>
+                        <div class="perk">
+                            <div>
+                                <h4>Bawa magic ke setiap perjalanan</h4>
+                                <p>Belanja dan tarik tunai di luar negeri langsung debit dari rekening valas, tanpa
+                                    konversi.</p>
+                            </div>
+                        </div>
+                        <p class="cta-note"><b>Belum menjadi Nasabah OCBC?</b>Dapatkan OCBC Nyala Global Debit dan
+                            kesempatan memiliki Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse.</p>
+                        <a class="btn"
+                            href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
+                            target="_blank" rel="noopener noreferrer">Join Nyala Now!</a>
+                    </article>
 
-    // Floating CTA: muncul setelah scroll > 200px
-    var floatingFooter = document.getElementById('floating-footer');
-    function toggleFloatingFooter() {
-      var show = window.scrollY > 200;
-      floatingFooter.classList.toggle('translate-y-0', show);
-      floatingFooter.classList.toggle('opacity-100', show);
-      floatingFooter.classList.toggle('translate-y-full', !show);
-      floatingFooter.classList.toggle('opacity-0', !show);
-    }
-    window.addEventListener('scroll', toggleFloatingFooter);
-    toggleFloatingFooter();
-  </script>
+                    <article class="col">
+                        <h3>Kartu Kredit OCBC<br>Nyala Platinum edisi Mickey Mouse</h3>
+                        <span class="limited">Edisi spesial hanya untuk 2.000 Nasabah</span>
+                        <a class="card-link"
+                            href="https://www.ocbc.id/id/individu/kartu-transaksi/kartu-kredit/ocbc-nyala-platinum"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Lihat detail Kartu Kredit OCBC Nyala Platinum">
+                            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Disney_Credit_Card_Mickey_blank_335x209pxl_FRONT_8b3add1f96.png"
+                                alt="Kartu Kredit OCBC Nyala Platinum edisi Mickey Mouse" width="420" height="262"
+                                loading="lazy" decoding="async">
+                        </a>
+                        <div class="perk">
+                            <div>
+                                <h4>Magical Moments</h4>
+                                <p><strong>Cashback hingga 10%</strong> untuk setiap momen favoritmu, mulai dari liburan
+                                    impian, belanja kebutuhan, hingga subscription Disney+.</p>
+                            </div>
+                            <div>
+                                <h4>Magical Entertainment</h4>
+                                <p><strong>Beli 1 bonus 1</strong> tiket film Disney pilihan via m.tix.</p>
+                            </div>
+                        </div>
+                        <p class="cta-note"><b>Sudah menjadi Nasabah OCBC?</b>Lengkapi pengalaman Nyala-mu dengan Kartu
+                            Kredit OCBC Nyala Platinum edisi Mickey Mouse.</p>
+                        <a class="btn red"
+                            href="https://onboarding.ocbc.id/product/kartu-kredit-monoline?utm_source=OCBCDISNEYRUNJKT&utm_campaign=WEBSITEMICKEY_DISNEYRUNJKT26_20260724&promo_referal=OCBCDISNEYRUNJKT"
+                            target="_blank" rel="noopener noreferrer">Pre-Book Now</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="promo" id="promo">
+            <div class="wrap">
+                <h2 class="sec-title">Unlock more magical offers</h2>
+                <p class="sec-sub">Promo pilihan untuk Nasabah OCBC.</p>
+                <div class="grid">
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2026/07/30/arabica" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/30/hero-promo-arabica.webp"
+                            alt="Promo %Arabica Special Bundle Rp99 Ribu Untuk Nasabah OCBC" loading="lazy">
+                        <div>
+                            <h3>%Arabica</h3><span>Special bundle Rp99 Ribu</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2022/10/05/astro" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/10/06/hero-promo-astro.webp"
+                            alt="Promo Astro Rp25 Ribu dan Cicilan 0% hingga 12 Bulan dengan OCBC" loading="lazy">
+                        <div>
+                            <h3>Astro</h3><span>Hemat Rp25 Ribu</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2020/11/05/Blibli" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2022/09/14/hero-promo-blibli.webp"
+                            alt="Promo Blibli hemat Rp125 Ribu dan Cicilan 0% hingga 12 Bulan dengan OCBC"
+                            loading="lazy">
+                        <div>
+                            <h3>Blibli</h3><span>Hemat Rp125 Ribu | Cicilan 0% hingga 12 bulan</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2026/07/17/chon-matcha" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/17/hero-promo-chonmatcha.webp"
+                            alt="Promo Chon Matcha Hemat 10% dan Gratis Warabi Mochi dengan OCBC" loading="lazy">
+                        <div>
+                            <h3>Chon Matcha</h3><span>Hemat 10% | Complimentary Warabi Mochi</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2021/04/15/klook" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2021/04/15/hero-promo-klook.webp"
+                            alt="Promo Klook Hemat hingga Rp500 Ribu untuk nasabah OCBC" loading="lazy">
+                        <div>
+                            <h3>Klook</h3><span>Hemat hingga Rp500 Ribu</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2026/07/21/salad-stop" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2026/07/21/hero-promo-saladstop.webp"
+                            alt="Promo Salad Stop Gratis Smoothie untuk Nasabah OCBC" loading="lazy">
+                        <div>
+                            <h3>Salad Stop</h3><span>Complimentary Smoothie</span>
+                        </div>
+                    </a>
+                    <a class="tile" href="https://www.ocbc.id/id/promo/2020/11/05/shopee" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.ocbc.id/asset/media/Feature/Promo/Promo-Landing/2024/08/23/hero-promo-shopee.jpg"
+                            alt="Promo Shopee Hemat hingga Rp200 Ribu dan Cicilan 0% hingga 24 Bulan dengan OCBC"
+                            loading="lazy">
+                        <div>
+                            <h3>Shopee</h3><span>Hemat hingga Rp200 Ribu | Cicilan 0% hingga 24 Bulan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="more"><a class="btn" href="https://www.ocbc.id/id/promo/" target="_blank"
+                        rel="noopener noreferrer">Lihat Promo Lainnya</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan &amp; Bank Indonesia,
+            serta merupakan peserta penjaminan LPS.</div>
+    </footer>
+
+    <div class="float" id="float">
+        <div>
+            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Microsite_Mickey_64_x_40_Card_1a06b0b8bd.png"
+                alt="">
+            <strong>Unlock the magic now!</strong>
+        </div>
+        <a class="btn"
+            href="https://onboarding.ocbc.id/product/nyala?utm_source=OCBC_WebCorp-Other&utm_medium=owned_channel&utm_campaign=FallbackOnelink&force=TRUE"
+            target="_blank" rel="noopener noreferrer">Join Nyala Now!</a>
+    </div>
+
+    <script>
+        (function () {
+            var f = document.getElementById('float');
+            function t() { f.classList.toggle('show', window.scrollY > 200) }
+            window.addEventListener('scroll', t, { passive: true }); t();
+        })();
+    </script>
 </body>
+
 </html>

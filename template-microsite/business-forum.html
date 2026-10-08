@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCBC Outlook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "system-ui", "sans-serif"], display: ["Fraunces", "Georgia", "serif"] }, colors: { primary: { DEFAULT: "#DA291C", hover: "#B91F14", light: "#FDECEA" }, ink: "#1B1416" } } } };
+    </script>
+    <style type="text/tailwindcss">
+        @layer components{
+  .nav-link{@apply text-sm font-semibold text-gray-800 px-4 py-2 rounded-full hover:text-primary hover:bg-gray-50 transition-all duration-200;}
+  .mobile-link{@apply block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50 hover:text-primary;}
+  .countdown-box{@apply min-w-0 bg-white rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-sm border border-gray-100;}
+  .h-sec{@apply font-display text-3xl sm:text-5xl font-bold text-ink tracking-tight;}
+  .social-btn{@apply w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-primary hover:text-white transition-colors;}
+}
+</style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            --header-h: 64px
+        }
+
+        .hero-min-h {
+            min-height: calc(100dvh - var(--header-h, 0px))
+        }
+
+        section[id] {
+            scroll-margin-top: var(--header-h)
+        }
+
+        .city {
+            display: none
+        }
+
+        #agenda-section:has(#c-jkt:checked) [data-city="jkt"] {
+            display: block
+        }
+
+        #agenda-section:has(#c-jkt:checked) label[for="c-jkt"] {
+            background: #fff;
+            color: #DA291C;
+            box-shadow: 0 1px 2px rgb(0 0 0/.08)
+        }
+
+        #agenda-section:has(#c-jkt:focus-visible) label[for="c-jkt"] {
+            outline: 2px solid #DA291C
+        }
+
+        #agenda-section:has(#c-sby:checked) [data-city="sby"] {
+            display: block
+        }
+
+        #agenda-section:has(#c-sby:checked) label[for="c-sby"] {
+            background: #fff;
+            color: #DA291C;
+            box-shadow: 0 1px 2px rgb(0 0 0/.08)
+        }
+
+        #agenda-section:has(#c-sby:focus-visible) label[for="c-sby"] {
+            outline: 2px solid #DA291C
+        }
+
+        #agenda-section:has(#c-bdg:checked) [data-city="bdg"] {
+            display: block
+        }
+
+        #agenda-section:has(#c-bdg:checked) label[for="c-bdg"] {
+            background: #fff;
+            color: #DA291C;
+            box-shadow: 0 1px 2px rgb(0 0 0/.08)
+        }
+
+        #agenda-section:has(#c-bdg:focus-visible) label[for="c-bdg"] {
+            outline: 2px solid #DA291C
+        }
+
+        #agenda-section:has(#c-bali:checked) [data-city="bali"] {
+            display: block
+        }
+
+        #agenda-section:has(#c-bali:checked) label[for="c-bali"] {
+            background: #fff;
+            color: #DA291C;
+            box-shadow: 0 1px 2px rgb(0 0 0/.08)
+        }
+
+        #agenda-section:has(#c-bali:focus-visible) label[for="c-bali"] {
+            outline: 2px solid #DA291C
+        }
+
+        .spk {
+            scroll-margin-top: calc(var(--header-h, 64px) + 16px)
+        }
+
+        .spk:target {
+            outline: 3px solid #DA291C;
+            outline-offset: 4px
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans text-ink antialiased">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white text-gray-900 shadow-sm">
+        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between py-3.5 px-6 lg:px-8">
+            <div class="flex lg:flex-1">
+                <a href="#hero-section" class="-m-1.5 p-1.5 hover:opacity-90"><span class="sr-only">OCBC
+                        Indonesia</span>
+                    <img src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
+                        alt="OCBC Logo" class="h-8 w-auto" /></a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="menu-open"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-500 hover:text-primary"><span
+                        class="sr-only">Open main menu</span><i class="fa-solid fa-bars fa-lg"></i></button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-1">
+                <a href="#event-highlights" class="nav-link">Event Highlights</a>
+                <a href="#agenda-section" class="nav-link">Agenda</a>
+                <a href="#speakers" class="nav-link">Speakers</a>
+                <a href="#benefits" class="nav-link">Premium Lounge</a>
+                <a href="#sponsored" class="nav-link">Sponsors</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+            </div>
+        </nav>
+        <dialog id="mobile-menu"
+            class="backdrop:bg-transparent lg:hidden p-0 m-0 max-w-none max-h-none w-full h-full bg-transparent border-0">
+            <div class="fixed inset-0 z-50 flex justify-end">
+                <div class="fixed inset-0 bg-black/40 backdrop-blur-sm" data-close-menu></div>
+                <div class="relative w-full max-w-sm bg-white p-6 shadow-2xl flex flex-col h-full z-10">
+                    <div class="flex items-center justify-between">
+                        <a href="#hero-section" data-close-menu class="-m-1.5 p-1.5"><img
+                                src="https://cdn1.ocbc.id/asset/media/Project/OCBC/OCBCID/V1/Header/Logo-Menu/ocbc-red.png?h=392&w=1452&rev=3fff324a594d4b888ba96558560945ae"
+                                alt="OCBC Logo" class="h-8 w-auto" /></a>
+                        <button type="button" data-close-menu
+                            class="-m-2.5 rounded-md p-2.5 text-gray-500 hover:text-primary"><span class="sr-only">Close
+                                menu</span><i class="fa-solid fa-xmark fa-lg"></i></button>
+                    </div>
+                    <div class="mt-8 space-y-1.5">
+                        <a href="#hero-section" data-close-menu class="mobile-link">Home</a>
+                        <a href="#event-highlights" data-close-menu class="mobile-link">Event Highlights</a>
+                        <a href="#agenda-section" data-close-menu class="mobile-link">Agenda</a>
+                        <a href="#speakers" data-close-menu class="mobile-link">Speakers</a>
+                        <a href="#benefits" data-close-menu class="mobile-link">Premium Lounge</a>
+                        <a href="#sponsored" data-close-menu class="mobile-link">Sponsors</a>
+                        <a href="#gallery" data-close-menu class="mobile-link">Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </header>
+
+    <main>
+        <!-- ============ HERO (TIDAK DIUBAH) ============ -->
+        <section id="hero-section" class="bg-white overflow-hidden">
+            <div class="hero-min-h max-w-[100rem] mx-auto px-6 lg:px-5 flex flex-col items-center py-6 lg:py-8">
+                <div class="flex-1 w-full flex items-center justify-center">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+                        <div class="flex flex-col gap-6">
+                            <div
+                                class="bg-primary rounded-3xl px-6 md:px-8 py-6 md:py-8 min-h-[220px] sm:min-h-[260px] md:min-h-[320px] flex flex-col justify-between text-white">
+                                <div class="flex flex-col gap-3">
+                                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">OCBC
+                                        <br />Outlook</h2>
+                                    <p class="text-white/80 text-sm leading-snug max-w-md">Embark on the ultimate test
+                                        of endurance and determination with marathons, where each stride is a journey of
+                                        self-discovery.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#"
+                                        class="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold text-sm px-5 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200">Register
+                                        Here <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                                <div
+                                    class="bg-gray-100 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <div class="mb-4">
+                                        <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-snug">Building
+                                            Scalable Enterprise Solutions with Modern Architecture</h3>
+                                        <p class="text-xs text-gray-500 mt-1 line-clamp-2">Membahas tuntas strategi
+                                            migrasi sistem, integrasi database, hingga optimasi performa backend.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-gray-100 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <div id="countdown" data-target="2026-10-27T08:45:00+07:00"
+                                        class="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-2 content-center place-items-center text-center">
+                                        <div class="countdown-box">
+                                            <p data-unit="days" class="text-lg font-bold text-gray-900 truncate">0</p>
+                                            <p class="text-[10px] uppercase text-gray-400 tracking-wide">Days</p>
+                                        </div>
+                                        <div class="countdown-box">
+                                            <p data-unit="hours" class="text-lg font-bold text-gray-900 truncate">0</p>
+                                            <p class="text-[10px] uppercase text-gray-400 tracking-wide">Hours</p>
+                                        </div>
+                                        <div class="countdown-box">
+                                            <p data-unit="mins" class="text-lg font-bold text-gray-900 truncate">0</p>
+                                            <p class="text-[10px] uppercase text-gray-400 tracking-wide">Mins</p>
+                                        </div>
+                                        <div class="countdown-box">
+                                            <p data-unit="secs" class="text-lg font-bold text-gray-900 truncate">0</p>
+                                            <p class="text-[10px] uppercase text-gray-400 tracking-wide">Secs</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-t border-gray-200/60 pt-3 text-[11px] sm:text-xs text-gray-500 leading-relaxed">
+                                        October 27th, 2026 <br />At 8:45 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative rounded-3xl overflow-hidden min-h-[300px] sm:min-h-[400px] lg:min-h-0">
+                            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1470&auto=format&fit=crop"
+                                alt="Runner ready at start line" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-2 text-gray-400 pt-6">
+                    <span class="text-xs uppercase tracking-widest">Scroll More</span>
+                    <a href="#event-highlights" class="animate-bounce" aria-label="Scroll down"><i
+                            class="fa-solid fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EVENT HIGHLIGHTS ============ -->
+        <section id="event-highlights" class="bg-[#F7F4F2] py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-6 items-end mb-12">
+                    <h2 class="h-sec">Tiga momen yang membuat Outlook layak diingat</h2>
+                    <p class="text-gray-600 max-w-md lg:justify-self-end">Dari pembukaan hingga sesi jejaring, inilah
+                        bagian acara yang paling sering dibicarakan peserta.</p>
+                </div>
+                <div class="grid lg:grid-cols-5 gap-5">
+                    <a href="#gallery"
+                        class="group relative lg:col-span-3 lg:row-span-2 rounded-3xl overflow-hidden min-h-[420px]">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
+                            alt="Opening Ceremony"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 p-6 sm:p-8 text-white max-w-lg">
+                            <h3 class="font-display text-2xl sm:text-3xl font-bold">Opening Ceremony</h3>
+                            <p class="text-sm text-white/80 mt-2">Sambutan inspiratif dan penampilan pembuka yang
+                                membangun semangat seluruh peserta sejak awal.</p>
+                        </div>
+                    </a>
+                    <a href="#gallery"
+                        class="group flex gap-4 lg:col-span-2 bg-white rounded-3xl p-3 hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&auto=format&fit=crop"
+                            alt="Keynote Session" class="w-32 sm:w-40 rounded-2xl object-cover shrink-0" />
+                        <div class="py-2 pr-2">
+                            <h3 class="font-display text-xl font-bold">Keynote Session</h3>
+                            <p class="text-sm text-gray-600 mt-2">Wawasan terbaru tentang tren industri, inovasi, dan
+                                strategi menghadapi tantangan ke depan.</p>
+                        </div>
+                    </a>
+                    <a href="#gallery"
+                        class="group flex gap-4 lg:col-span-2 bg-white rounded-3xl p-3 hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=600&auto=format&fit=crop"
+                            alt="Networking Session" class="w-32 sm:w-40 rounded-2xl object-cover shrink-0" />
+                        <div class="py-2 pr-2">
+                            <h3 class="font-display text-xl font-bold">Networking Session</h3>
+                            <p class="text-sm text-gray-600 mt-2">Bertukar pengalaman dan berdiskusi langsung dengan
+                                profesional dari berbagai bidang.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ AGENDA ============ -->
+        <section id="agenda-section" class="bg-white py-20 lg:py-28">
+            <input type="radio" name="city" id="c-jkt" class="sr-only" checked />
+            <input type="radio" name="city" id="c-sby" class="sr-only" />
+            <input type="radio" name="city" id="c-bdg" class="sr-only" />
+            <input type="radio" name="city" id="c-bali" class="sr-only" />
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+                    <div>
+                        <h2 class="h-sec">Agenda</h2>
+                        <p class="text-gray-600 mt-3">Pilih kota untuk melihat jadwal dan lokasi acara.</p>
+                    </div>
+                    <div class="flex bg-gray-100 p-1 rounded-xl w-full md:w-auto">
+                        <label for="c-jkt"
+                            class="tab-l flex-1 md:flex-none text-center text-xs font-semibold px-4 py-2 rounded-lg cursor-pointer text-gray-500 hover:text-gray-900 transition-colors">Jakarta</label>
+                        <label for="c-sby"
+                            class="tab-l flex-1 md:flex-none text-center text-xs font-semibold px-4 py-2 rounded-lg cursor-pointer text-gray-500 hover:text-gray-900 transition-colors">Surabaya</label>
+                        <label for="c-bdg"
+                            class="tab-l flex-1 md:flex-none text-center text-xs font-semibold px-4 py-2 rounded-lg cursor-pointer text-gray-500 hover:text-gray-900 transition-colors">Bandung</label>
+                        <label for="c-bali"
+                            class="tab-l flex-1 md:flex-none text-center text-xs font-semibold px-4 py-2 rounded-lg cursor-pointer text-gray-500 hover:text-gray-900 transition-colors">Bali</label>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8 items-start">
+                    <div class="order-2 lg:order-1 lg:col-span-2">
+                        <ol data-city="jkt" class="city border-l-2 border-gray-200 ml-2">
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">08:30–09:00</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Lobi
+                                        Utama</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Registration &amp; Morning Coffee</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-primary"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:00–09:50</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary text-white">Keynote</span><span>Grand
+                                        Ballroom</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Opening Keynote: The Future
+                                    of Distributed Systems</h3><a href="#spk-sarah-chen"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-primary font-medium hover:underline"><i
+                                        class="ti ti-user"></i>Sarah Chen — CTO, Vercel</a>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Bagaimana arsitektur terdistribusi
+                                    membentuk ulang fondasi perangkat lunak modern.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:50–10:25</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-ink text-white">Talk</span><span>Grand
+                                        Ballroom</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Rethinking Infrastructure
+                                    at Scale</h3><a href="#spk-marcus-webb"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-gray-500 hover:text-primary hover:underline"><i
+                                        class="ti ti-user"></i>Marcus Webb — VP Engineering, Linear</a>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:25–10:45</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Foyer
+                                        Ballroom</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Networking Break</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:45–11:30</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary-light text-primary">Workshop</span><span>Ruang
+                                        Studio B</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Building Real-Time
+                                    Collaborative Tools</h3><a href="#spk-priya-nair"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-gray-500 hover:text-primary hover:underline"><i
+                                        class="ti ti-user"></i>Priya Nair — Staff Engineer, Figma</a>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Sesi praktik tentang operational
+                                    transform dan CRDT untuk sinkronisasi real-time.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">11:30–12:15</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-emerald-800 text-white">Panel</span><span>Grand
+                                        Ballroom</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Panel: AI-Augmented
+                                    Developer Workflows</h3>
+                                <p class="text-sm text-gray-500 mt-1">Chen · Webb · Nair · Liu</p>
+                            </li>
+                        </ol>
+                        <ol data-city="sby" class="city border-l-2 border-gray-200 ml-2">
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">08:30–09:00</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Lobi
+                                        Convex</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Registration &amp; Networking Breakfast</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-primary"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:00–09:50</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary text-white">Keynote</span><span>Hall
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Keynote: High-Frequency
+                                    Systems &amp; FinTech Architecture</h3><a href="#spk-alexander-wright"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-primary font-medium hover:underline"><i
+                                        class="ti ti-user"></i>Alexander Wright — Managing Director, Goldman Sachs</a>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Pola latensi rendah, penskalaan dinamis,
+                                    dan praktik keandalan di pusat keuangan bervolume tinggi.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:50–10:25</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-ink text-white">Talk</span><span>Hall
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Building Resilient
+                                    Multi-Cloud Banking Platforms</h3>
+                                <p class="text-sm text-gray-500 mt-1">Devorah Goldstein — Principal Architect, MongoDB
+                                </p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:25–10:45</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Teras
+                                        Taman</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Coffee &amp; Networking</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:45–11:30</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary-light text-primary">Workshop</span><span>Ruang
+                                        Meeting 3</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Securing Real-Time
+                                    Enterprise Pipelines</h3>
+                                <p class="text-sm text-gray-500 mt-1">Liam O'Connor — Head of DevSecOps, Snyk</p>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Workshop interaktif: threat modeling,
+                                    deteksi kerentanan, dan otomasi keamanan CI/CD.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">11:30–12:15</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-emerald-800 text-white">Panel</span><span>Hall
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Panel: The Next Decade of
+                                    Fintech Infrastructure</h3>
+                                <p class="text-sm text-gray-500 mt-1">Wright · Goldstein · O'Connor · Martinez</p>
+                            </li>
+                        </ol>
+                        <ol data-city="bdg" class="city border-l-2 border-gray-200 ml-2">
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">08:30–09:00</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Lobi
+                                        Sabuga</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Registration &amp; Morning Pastries</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-primary"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:00–09:50</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary text-white">Keynote</span><span>Auditorium
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Keynote: Decentralized Web
+                                    &amp; Sovereign Data</h3><a href="#spk-emily-watson"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-primary font-medium hover:underline"><i
+                                        class="ti ti-user"></i>Emily Watson — Professor, Oxford &amp; W3C Lead</a>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Identitas terdesentralisasi, arsitektur
+                                    privasi, dan standar W3C untuk kendali data pengguna.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:50–10:25</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-ink text-white">Talk</span><span>Auditorium
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Scale &amp; Performance
+                                    with Modern Edge Networks</h3>
+                                <p class="text-sm text-gray-500 mt-1">Alistair Vance — Director of Edge, Cloudflare</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:25–10:45</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Selasar
+                                        Taman</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Morning Tea Break</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:45–11:30</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary-light text-primary">Workshop</span><span>Ruang
+                                        Seminar 2</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Designing Offline-First Web
+                                    Applications</h3>
+                                <p class="text-sm text-gray-500 mt-1">Katherine Brooks — Core Maintainer, Yjs</p>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Praktik CRDT dan IndexedDB untuk
+                                    penyimpanan lokal dan sinkronisasi antar-perangkat.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">11:30–12:15</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-emerald-800 text-white">Panel</span><span>Auditorium
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Panel: Privacy, Regulations
+                                    &amp; The Future of Data</h3>
+                                <p class="text-sm text-gray-500 mt-1">Watson · Vance · Brooks · Henderson</p>
+                            </li>
+                        </ol>
+                        <ol data-city="bali" class="city border-l-2 border-gray-200 ml-2">
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">08:30–09:00</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Lobi
+                                        Nusa Dua</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Registration &amp; Green Tea Reception</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-primary"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:00–09:50</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary text-white">Keynote</span><span>Ballroom
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Keynote: Humanoid Robotics
+                                    &amp; Edge AI Integration</h3><a href="#spk-kenji-sato"
+                                    class="inline-flex items-center gap-1.5 text-sm mt-1 text-primary font-medium hover:underline"><i
+                                        class="ti ti-user"></i>Kenji Sato — Lead Researcher, Sony Robotics</a>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Menjembatani perangkat lunak embedded
+                                    real-time, model visual-spasial, dan platform robotik interaktif.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">09:50–10:25</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-ink text-white">Talk</span><span>Ballroom
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Designing Developer
+                                    Experience at Scale</h3>
+                                <p class="text-sm text-gray-500 mt-1">Yoko Takahashi — Engineering Lead, Mercari</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-3">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-gray-300"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:25–10:45</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-gray-100 text-gray-600">Break</span><span>Taman
+                                        Terbuka</span></div>
+                                <h3 class="text-sm text-gray-500 mt-1">Interactive Demo &amp; Break</h3>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">10:45–11:30</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-primary-light text-primary">Workshop</span><span>Ruang
+                                        Workshop 1</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">WebAssembly: Bringing
+                                    Native Performance to Web</h3>
+                                <p class="text-sm text-gray-500 mt-1">Hiroto Tanaka — Core Engineer, Fastly</p>
+                                <p class="text-sm text-gray-600 mt-2 max-w-xl">Menjalankan modul Rust dan C++ di runtime
+                                    edge dan browser lewat WASI.</p>
+                            </li>
+                            <li class="relative pl-6 sm:pl-8 py-5">
+                                <span
+                                    class="absolute -left-[7px] top-6 w-3 h-3 rounded-full ring-4 ring-white bg-ink"></span>
+                                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500"><span
+                                        class="font-semibold text-ink tabular-nums">11:30–12:15</span><span
+                                        class="px-2 py-0.5 rounded font-semibold bg-emerald-800 text-white">Panel</span><span>Ballroom
+                                        Utama</span></div>
+                                <h3 class="font-display text-lg sm:text-xl font-bold mt-1.5">Panel: AI &amp; Automation
+                                    in East Asian Tech Hubs</h3>
+                                <p class="text-sm text-gray-500 mt-1">Sato · Takahashi · Tanaka · Nakamura</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <aside class="order-1 lg:order-2 lg:sticky lg:top-24 rounded-3xl bg-ink text-white overflow-hidden">
+                        <div data-city="jkt" class="city">
+                            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?q=80&w=900&auto=format&fit=crop"
+                                alt="Venue Jakarta" class="h-44 w-full object-cover" />
+                            <div class="p-6">
+                                <p class="text-xs text-white/50">Lokasi</p>
+                                <h3 class="font-display text-2xl font-bold">The Ritz-Carlton Jakarta, Pacific Place</h3>
+                                <p class="text-sm text-white/70 mt-1 flex gap-2"><i class="ti ti-map-pin mt-0.5"></i>Jl.
+                                    Jenderal Sudirman Kav. 52-53, SCBD, Jakarta Selatan 12190</p>
+                                <dl class="grid grid-cols-2 gap-px bg-white/10 rounded-xl overflow-hidden mt-5">
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Kapasitas</dt>
+                                        <dd class="font-semibold text-sm">1.200</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ruangan</dt>
+                                        <dd class="font-semibold text-sm">8 ruang</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ke halte</dt>
+                                        <dd class="font-semibold text-sm">3 menit</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Parkir</dt>
+                                        <dd class="font-semibold text-sm">300 slot</dd>
+                                    </div>
+                                </dl>
+                                <div class="flex gap-2 mt-5"><a href="#"
+                                        class="flex-1 text-center bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full py-2.5 transition-colors">Lihat
+                                        venue</a><a href="#"
+                                        class="text-center border border-white/20 hover:bg-white/10 text-sm font-semibold rounded-full py-2.5 px-4 transition-colors">Petunjuk
+                                        arah</a></div>
+                            </div>
+                        </div>
+                        <div data-city="sby" class="city">
+                            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=900&auto=format&fit=crop"
+                                alt="Venue Surabaya" class="h-44 w-full object-cover" />
+                            <div class="p-6">
+                                <p class="text-xs text-white/50">Lokasi</p>
+                                <h3 class="font-display text-2xl font-bold">Grand City Convention & Exhibition</h3>
+                                <p class="text-sm text-white/70 mt-1 flex gap-2"><i class="ti ti-map-pin mt-0.5"></i>Jl.
+                                    Walikota Mustajab No. 1, Ketabang, Surabaya 60272</p>
+                                <dl class="grid grid-cols-2 gap-px bg-white/10 rounded-xl overflow-hidden mt-5">
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Kapasitas</dt>
+                                        <dd class="font-semibold text-sm">1.000</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ruangan</dt>
+                                        <dd class="font-semibold text-sm">6 ruang</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ke halte</dt>
+                                        <dd class="font-semibold text-sm">5 menit</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Parkir</dt>
+                                        <dd class="font-semibold text-sm">250 slot</dd>
+                                    </div>
+                                </dl>
+                                <div class="flex gap-2 mt-5"><a href="#"
+                                        class="flex-1 text-center bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full py-2.5 transition-colors">Lihat
+                                        venue</a><a href="#"
+                                        class="text-center border border-white/20 hover:bg-white/10 text-sm font-semibold rounded-full py-2.5 px-4 transition-colors">Petunjuk
+                                        arah</a></div>
+                            </div>
+                        </div>
+                        <div data-city="bdg" class="city">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=900&auto=format&fit=crop"
+                                alt="Venue Bandung" class="h-44 w-full object-cover" />
+                            <div class="p-6">
+                                <p class="text-xs text-white/50">Lokasi</p>
+                                <h3 class="font-display text-2xl font-bold">Sasana Budaya Ganesha (Sabuga)</h3>
+                                <p class="text-sm text-white/70 mt-1 flex gap-2"><i class="ti ti-map-pin mt-0.5"></i>Jl.
+                                    Tamansari No. 73, Lebak Siliwangi, Bandung 40132</p>
+                                <dl class="grid grid-cols-2 gap-px bg-white/10 rounded-xl overflow-hidden mt-5">
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Kapasitas</dt>
+                                        <dd class="font-semibold text-sm">900</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ruangan</dt>
+                                        <dd class="font-semibold text-sm">5 ruang</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ke halte</dt>
+                                        <dd class="font-semibold text-sm">6 menit</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Parkir</dt>
+                                        <dd class="font-semibold text-sm">200 slot</dd>
+                                    </div>
+                                </dl>
+                                <div class="flex gap-2 mt-5"><a href="#"
+                                        class="flex-1 text-center bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full py-2.5 transition-colors">Lihat
+                                        venue</a><a href="#"
+                                        class="text-center border border-white/20 hover:bg-white/10 text-sm font-semibold rounded-full py-2.5 px-4 transition-colors">Petunjuk
+                                        arah</a></div>
+                            </div>
+                        </div>
+                        <div data-city="bali" class="city">
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=900&auto=format&fit=crop"
+                                alt="Venue Bali" class="h-44 w-full object-cover" />
+                            <div class="p-6">
+                                <p class="text-xs text-white/50">Lokasi</p>
+                                <h3 class="font-display text-2xl font-bold">Bali Nusa Dua Convention Center</h3>
+                                <p class="text-sm text-white/70 mt-1 flex gap-2"><i
+                                        class="ti ti-map-pin mt-0.5"></i>Kawasan ITDC, Nusa Dua, Kuta Selatan, Badung,
+                                    Bali 80363</p>
+                                <dl class="grid grid-cols-2 gap-px bg-white/10 rounded-xl overflow-hidden mt-5">
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Kapasitas</dt>
+                                        <dd class="font-semibold text-sm">1.100</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ruangan</dt>
+                                        <dd class="font-semibold text-sm">7 ruang</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Ke bandara</dt>
+                                        <dd class="font-semibold text-sm">25 menit</dd>
+                                    </div>
+                                    <div class="bg-ink p-3">
+                                        <dt class="text-[11px] text-white/50">Parkir</dt>
+                                        <dd class="font-semibold text-sm">400 slot</dd>
+                                    </div>
+                                </dl>
+                                <div class="flex gap-2 mt-5"><a href="#"
+                                        class="flex-1 text-center bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full py-2.5 transition-colors">Lihat
+                                        venue</a><a href="#"
+                                        class="text-center border border-white/20 hover:bg-white/10 text-sm font-semibold rounded-full py-2.5 px-4 transition-colors">Petunjuk
+                                        arah</a></div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SPEAKERS ============ -->
+        <section id="speakers" class="bg-[#F7F4F2] py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <h2 class="h-sec mb-12">Pembicara utama</h2>
+                <div id="speaker-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+                    <article id="spk-sarah-chen" class="spk rounded-3xl">
+                        <div class="bg-primary aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">SC</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Sarah Chen</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">CTO, Vercel</p>
+                        <p class="text-sm text-gray-600 mt-2">Memimpin pengembangan platform dan arsitektur
+                            terdistribusi di Vercel.</p>
+                    </article>
+                    <article id="spk-marcus-webb" class="spk rounded-3xl">
+                        <div class="bg-ink aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">MW</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Marcus Webb</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">VP Engineering, Linear</p>
+                        <p class="text-sm text-gray-600 mt-2">Berfokus pada infrastruktur tangguh dan sistem berskala
+                            besar.</p>
+                    </article>
+                    <article id="spk-priya-nair" class="spk rounded-3xl">
+                        <div class="bg-emerald-800 aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">PN</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Priya Nair</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">Staff Engineer, Figma</p>
+                        <p class="text-sm text-gray-600 mt-2">Membangun pengalaman kolaboratif real-time untuk produk
+                            digital.</p>
+                    </article>
+                    <article id="spk-alexander-wright" class="spk rounded-3xl">
+                        <div class="bg-amber-700 aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">AW</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Alexander Wright</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">Managing Director, Goldman Sachs</p>
+                        <p class="text-sm text-gray-600 mt-2">Mendalami arsitektur FinTech berperforma tinggi dan andal.
+                        </p>
+                    </article>
+                    <article id="spk-emily-watson" class="spk rounded-3xl">
+                        <div class="bg-sky-800 aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">EW</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Emily Watson</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">Professor, Oxford &amp; W3C Lead</p>
+                        <p class="text-sm text-gray-600 mt-2">Meneliti identitas terdesentralisasi, privasi, dan standar
+                            web terbuka.</p>
+                    </article>
+                    <article id="spk-kenji-sato" class="spk rounded-3xl">
+                        <div class="bg-fuchsia-900 aspect-[4/3] rounded-3xl flex items-end p-6"><span
+                                class="font-display text-7xl font-bold text-white/90 leading-none">KS</span></div>
+                        <h3 class="font-display text-xl font-bold mt-4">Kenji Sato</h3>
+                        <p class="text-sm font-medium text-primary mt-0.5">Lead Researcher, Sony Robotics</p>
+                        <p class="text-sm text-gray-600 mt-2">Mengembangkan integrasi robotika humanoid dan AI edge
+                            real-time.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="bg-white py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-5 gap-10 lg:gap-16 items-center">
+                <div class="lg:col-span-2">
+                    <h2 class="h-sec">Premium Lounge</h2>
+                    <p class="text-gray-600 mt-4 max-w-md">Ruang istirahat eksklusif untuk peserta Premium, tempat Anda
+                        bisa rehat, bekerja, dan berbincang di sela sesi.</p>
+                    <a href="#"
+                        class="mt-6 inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors">Daftar
+                        sebagai peserta Premium <i class="ti ti-arrow-up-right"></i></a>
+                </div>
+                <ul
+                    class="lg:col-span-3 grid sm:grid-cols-2 gap-px bg-gray-200 rounded-3xl overflow-hidden border border-gray-200">
+                    <li class="bg-white p-6"><i class="ti ti-armchair text-2xl text-primary"></i>
+                        <h3 class="font-semibold mt-3">Area eksklusif</h3>
+                        <p class="text-sm text-gray-600 mt-1">Kursi nyaman dan suasana tenang, terpisah dari keramaian
+                            ruang utama.</p>
+                    </li>
+                    <li class="bg-white p-6"><i class="ti ti-coffee text-2xl text-primary"></i>
+                        <h3 class="font-semibold mt-3">Kopi dan hidangan ringan</h3>
+                        <p class="text-sm text-gray-600 mt-1">Minuman dan camilan tersedia sepanjang acara.</p>
+                    </li>
+                    <li class="bg-white p-6"><i class="ti ti-plug-connected text-2xl text-primary"></i>
+                        <h3 class="font-semibold mt-3">Charging dan Wi-Fi</h3>
+                        <p class="text-sm text-gray-600 mt-1">Stasiun pengisian daya dan koneksi internet khusus lounge.
+                        </p>
+                    </li>
+                    <li class="bg-white p-6"><i class="ti ti-users text-2xl text-primary"></i>
+                        <h3 class="font-semibold mt-3">Meeting corner</h3>
+                        <p class="text-sm text-gray-600 mt-1">Sudut pertemuan untuk obrolan satu lawan satu dengan rekan
+                            dan pembicara.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ FEEDBACK ============ -->
+        <section id="feedback" class="bg-ink text-white py-20 lg:py-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight leading-tight">Bagaimana
+                        pengalaman Anda di OCBC Outlook?</h2>
+                    <p class="text-white/70 mt-5 max-w-md">Masukan Anda membantu kami menghadirkan sesi dan pembicara
+                        yang lebih baik di penyelenggaraan berikutnya.</p>
+                </div>
+                <div class="rounded-3xl bg-white/5 border border-white/10 p-6 sm:p-8">
+                    <h3 class="font-semibold text-lg">Survei kepuasan peserta</h3>
+                    <ul class="mt-4 space-y-3 text-sm text-white/70">
+                        <li class="flex gap-3"><i class="ti ti-clock text-lg text-white/40"></i>Isi dalam 2–3 menit</li>
+                        <li class="flex gap-3"><i class="ti ti-calendar-event text-lg text-white/40"></i>Dibuka hingga 7
+                            hari setelah acara</li>
+                        <li class="flex gap-3"><i class="ti ti-shield-lock text-lg text-white/40"></i>Jawaban anonim,
+                            dibaca langsung oleh tim penyelenggara</li>
+                    </ul>
+                    <!-- Ganti href dengan link survei -->
+                    <a href="#"
+                        class="mt-6 inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors">Isi
+                        survei <i class="ti ti-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SPONSORS ============ -->
+        <section id="sponsored" class="bg-white py-16 lg:py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <h2 class="text-center text-sm font-semibold text-gray-500 mb-8">Didukung oleh mitra dan sponsor kami
+                </h2>
+                <!-- Ganti path gambar sesuai aset Anda -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 border-y border-gray-200 divide-x divide-gray-200">
+                    <div class="h-24 flex items-center justify-center p-4"><img
+                            src="assets/images/sponsors/sponsor-1.png" alt="Sponsor 1"
+                            class="max-h-9 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition" />
+                    </div>
+                    <div class="h-24 flex items-center justify-center p-4"><img
+                            src="assets/images/sponsors/sponsor-2.png" alt="Sponsor 2"
+                            class="max-h-9 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition" />
+                    </div>
+                    <div class="h-24 flex items-center justify-center p-4"><img
+                            src="assets/images/sponsors/sponsor-3.png" alt="Sponsor 3"
+                            class="max-h-9 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition" />
+                    </div>
+                    <div class="h-24 flex items-center justify-center p-4"><img
+                            src="assets/images/sponsors/sponsor-4.png" alt="Sponsor 4"
+                            class="max-h-9 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition" />
+                    </div>
+                    <div class="h-24 flex items-center justify-center p-4"><img
+                            src="assets/images/sponsors/sponsor-5.png" alt="Sponsor 5"
+                            class="max-h-9 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GALLERY ============ -->
+        <section id="gallery" class="bg-[#F7F4F2] py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <h2 class="h-sec mb-12">Galeri</h2>
+                <div id="gallery-grid"
+                    class="columns-2 md:columns-4 gap-4 [&>img]:mb-4 [&>img]:w-full [&>img]:rounded-2xl">
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="Gallery 1"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="Gallery 2"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="Gallery 3"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="Gallery 4"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="Gallery 5"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="Gallery 6"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="Gallery 7"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="Gallery 8"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="Gallery 9"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="Gallery 10"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="Gallery 11"
+                        loading="lazy" />
+                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="Gallery 12"
+                        loading="lazy" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 border-t border-gray-800 text-gray-400">
+        <div
+            class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <div class="text-center md:text-left space-y-2">
+                <p class="text-sm font-semibold text-gray-200">2026 © All Rights Reserved by OCBC Indonesia</p>
+                <p class="text-xs max-w-xl leading-relaxed">PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa
+                    Keuangan &amp; Bank Indonesia, serta merupakan peserta penjaminan LPS.</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-3">
+                <span class="text-sm font-medium text-gray-300">Follow us:</span>
+                <div class="flex items-center gap-3">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+                        class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="social-btn"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+                        class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                        class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header height, menu, countdown (sama seperti sebelumnya)
+        function setHeaderHeight() { const h = document.querySelector("header"); if (h) document.documentElement.style.setProperty("--header-h", h.offsetHeight + "px") }
+        setHeaderHeight(); addEventListener("resize", setHeaderHeight);
+        const mm = document.getElementById("mobile-menu");
+        document.getElementById("menu-open").addEventListener("click", () => mm.showModal());
+        document.querySelectorAll("[data-close-menu]").forEach(e => e.addEventListener("click", () => mm.close()));
+        (function () {
+            const r = document.getElementById("countdown"), t = new Date(r.dataset.target).getTime(), q = u => r.querySelector(`[data-unit="${u}"]`);
+            function tick() { const d = Math.max(0, Math.floor((t - Date.now()) / 1000)); q("days").textContent = Math.floor(d / 86400); q("hours").textContent = Math.floor(d % 86400 / 3600); q("mins").textContent = Math.floor(d % 3600 / 60); q("secs").textContent = d % 60 }
+            tick(); setInterval(tick, 1000)
+        })();
+
+    </script>
+</body>
+
+</html>
