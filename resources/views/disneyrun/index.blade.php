@@ -248,8 +248,7 @@
                         </div>
                     </div>
                     <!-- 3. VIDEO — landscape on desktop, portrait on mobile -->
-                    <div
-                        class="video-wrap video-wrap--normal rounded-3xl overflow-hidden shadow-lg relative z-10">
+                    <div class="video-wrap video-wrap--normal rounded-3xl overflow-hidden shadow-lg relative z-10">
                         <iframe class="js-lazy-video w-full aspect-video rounded-3xl"
                             data-src="https://www.youtube.com/embed/hA3FB-YAmhI?rel=0" loading="lazy"
                             title="Disney Run Jakarta 2026 Youtube"
@@ -316,6 +315,418 @@
                 </div>
             </div>
         </section>
+        <!-- ============================================================
+             VERSI 1: 3 peta ditampilkan sekaligus (1K, 5K, 10K)
+             Ganti src gambar & isi data bertanda TODO sesuai data resmi.
+             ============================================================ -->
+        <section id="rute-lari" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div
+                    class="bg-white rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-red-100/60 relative overflow-hidden">
+
+                    <!-- Heading -->
+                    <div class="text-center max-w-3xl mx-auto mb-8">
+                        <h2 class="text-black text-xl md:text-2xl font-medium mb-2 leading-tight">
+                            Rute Lari Disney Run Jakarta 2026
+                        </h2>
+                        <p class="text-slate-500 text-base">
+                            Kenali rute dan lokasi water station sebelum hari-H
+                        </p>
+                    </div>
+
+                    <!-- Grid 3 kategori -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                        <!-- ========== 1K ========== -->
+                        <article
+                            class="flex flex-col rounded-2xl border border-slate-200 shadow-md overflow-hidden bg-white">
+                            <div class="bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 1K -->
+                                <img loading="lazy" decoding="async" src="https://placehold.co/800x600?text=Peta+Rute+1K"
+                                    alt="Peta rute lari 1K Disney Run Jakarta 2026"
+                                    class="w-full aspect-[4/3] object-cover">
+                            </div>
+                            <div class="p-5 flex flex-col gap-4 flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-bold text-black">1K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Child
+                                        / Adult / Family</span>
+                                </div>
+
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">06.30 WIB</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">30 menit</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd> <!-- TODO -->
+                                    </div>
+                                </dl>
+
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Fasilitas di rute</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 text-xs">💧</span>
+                                            Water station: Finish area <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-xs">✚</span>
+                                            Medis: Start &amp; Finish <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ========== 5K ========== -->
+                        <article
+                            class="flex flex-col rounded-2xl border border-slate-200 shadow-md overflow-hidden bg-white">
+                            <div class="bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 5K -->
+                                <img loading="lazy" decoding="async" src="https://placehold.co/800x600?text=Peta+Rute+5K"
+                                    alt="Peta rute lari 5K Disney Run Jakarta 2026"
+                                    class="w-full aspect-[4/3] object-cover">
+                            </div>
+                            <div class="p-5 flex flex-col gap-4 flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-bold text-black">5K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Run</span>
+                                </div>
+
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">05.45 WIB</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">1 jam 15 menit</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd> <!-- TODO -->
+                                    </div>
+                                </dl>
+
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Fasilitas di rute</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 text-xs">💧</span>
+                                            Water station: KM 2,5 &amp; Finish <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-xs">✚</span>
+                                            Medis: KM 2,5, Start &amp; Finish <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ========== 10K ========== -->
+                        <article
+                            class="flex flex-col rounded-2xl border border-slate-200 shadow-md overflow-hidden bg-white">
+                            <div class="bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 10K -->
+                                <img loading="lazy" decoding="async"
+                                    src="https://placehold.co/800x600?text=Peta+Rute+10K"
+                                    alt="Peta rute lari 10K Disney Run Jakarta 2026"
+                                    class="w-full aspect-[4/3] object-cover">
+                            </div>
+                            <div class="p-5 flex flex-col gap-4 flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-bold text-black">10K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Run</span>
+                                </div>
+
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">05.15 WIB</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">2 jam 30 menit</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd> <!-- TODO -->
+                                    </div>
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd> <!-- TODO -->
+                                    </div>
+                                </dl>
+
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Fasilitas di rute</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 text-xs">💧</span>
+                                            Water station: KM 2,5 · KM 5 · KM 7,5 · Finish <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span
+                                                class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-xs">✚</span>
+                                            Medis: KM 5, Start &amp; Finish <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Legenda & catatan umum -->
+                    <div class="mt-8 rounded-2xl bg-slate-50 border border-slate-200 p-5 md:p-6">
+                        <p class="text-sm font-semibold text-slate-800 mb-3">Keterangan &amp; catatan</p>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-700 list-disc ml-5">
+                            <li>💧 Water station menyediakan air minum &amp; minuman isotonik.</li> <!-- TODO -->
+                            <li>✚ Tim medis &amp; ambulans siaga di sepanjang rute.</li>
+                            <li>Peserta wajib mengikuti jalur yang sudah ditandai panitia.</li>
+                            <li>Rute dapat berubah sewaktu-waktu sesuai kondisi lapangan &amp; arahan panitia.</li>
+                            <li>Gunakan bib resmi dan tetap berada di sisi jalur lari.</li>
+                            <li>Toilet tersedia di area Start/Finish.</li> <!-- TODO -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================================
+         VERSI 2: Switch 1K / 5K / 10K, peta & keterangan berganti
+         Ganti src gambar & isi data bertanda TODO sesuai data resmi.
+         ============================================================ -->
+        <section id="rute-lari" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div
+                    class="bg-white rounded-3xl p-6 md:p-10 max-w-5xl mx-auto shadow-xl border border-red-100/60 relative overflow-hidden">
+
+                    <!-- Heading -->
+                    <div class="text-center max-w-3xl mx-auto mb-6">
+                        <h2 class="text-black text-xl md:text-2xl font-medium mb-2 leading-tight">
+                            Rute Lari Disney Run Jakarta 2026
+                        </h2>
+                        <p class="text-slate-500 text-base">
+                            Pilih kategori untuk melihat peta rute &amp; lokasi water station
+                        </p>
+                    </div>
+
+                    <!-- Switch -->
+                    <div class="flex justify-center mb-8">
+                        <div id="route-switch" role="tablist" aria-label="Pilih kategori rute"
+                            class="inline-flex rounded-full bg-slate-100 p-1 gap-1">
+                            <button type="button" role="tab" data-route="1k" aria-selected="true"
+                                class="route-btn rounded-full px-6 py-2 text-sm md:text-base font-semibold transition-all duration-300 bg-[#ea0a2a] text-white shadow">
+                                1K
+                            </button>
+                            <button type="button" role="tab" data-route="5k" aria-selected="false"
+                                class="route-btn rounded-full px-6 py-2 text-sm md:text-base font-semibold transition-all duration-300 text-slate-600 hover:text-[#ea0a2a]">
+                                5K
+                            </button>
+                            <button type="button" role="tab" data-route="10k" aria-selected="false"
+                                class="route-btn rounded-full px-6 py-2 text-sm md:text-base font-semibold transition-all duration-300 text-slate-600 hover:text-[#ea0a2a]">
+                                10K
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Panels -->
+                    <div id="route-panels">
+
+                        <!-- ========== 1K ========== -->
+                        <div class="route-panel grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
+                            data-panel="1k">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 1K -->
+                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+1K"
+                                    alt="Peta rute lari 1K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-2xl font-bold text-black">1K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Child
+                                        / Adult / Family</span>
+                                </div>
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">06.30 WIB</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">30 menit</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd>
+                                    </div> <!-- TODO -->
+                                </dl>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Titik fasilitas</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-sm">💧</span>
+                                            <span class="flex-1">Water station</span><span
+                                                class="font-semibold">Finish</span> <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-sm">✚</span>
+                                            <span class="flex-1">Medis</span><span class="font-semibold">Start &amp;
+                                                Finish</span> <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========== 5K ========== -->
+                        <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
+                            data-panel="5k">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 5K -->
+                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+5K"
+                                    alt="Peta rute lari 5K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-2xl font-bold text-black">5K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Run</span>
+                                </div>
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">05.45 WIB</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">1 jam 15 menit</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd>
+                                    </div> <!-- TODO -->
+                                </dl>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Titik fasilitas</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-sm">💧</span>
+                                            <span class="flex-1">Water station</span><span class="font-semibold">KM 2,5 ·
+                                                Finish</span> <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-sm">✚</span>
+                                            <span class="flex-1">Medis</span><span class="font-semibold">KM 2,5 · Start ·
+                                                Finish</span> <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========== 10K ========== -->
+                        <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
+                            data-panel="10k">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                                <!-- TODO: ganti dengan gambar peta 10K -->
+                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+10K"
+                                    alt="Peta rute lari 10K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-2xl font-bold text-black">10K</h3>
+                                    <span
+                                        class="text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-3 py-1">Run</span>
+                                </div>
+                                <dl class="grid grid-cols-2 gap-3 text-sm">
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Waktu Start</dt>
+                                        <dd class="font-semibold text-slate-800">05.15 WIB</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Cut Off</dt>
+                                        <dd class="font-semibold text-slate-800">2 jam 30 menit</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Start</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Start</dd>
+                                    </div> <!-- TODO -->
+                                    <div class="rounded-xl bg-slate-50 p-3">
+                                        <dt class="text-slate-500 text-xs">Finish</dt>
+                                        <dd class="font-semibold text-slate-800">Lokasi Finish</dd>
+                                    </div> <!-- TODO -->
+                                </dl>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-800 mb-2">Titik fasilitas</p>
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-sm">💧</span>
+                                            <span class="flex-1">Water station</span><span class="font-semibold">KM 2,5 ·
+                                                5 · 7,5 · Finish</span> <!-- TODO -->
+                                        </li>
+                                        <li class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2">
+                                            <span
+                                                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-100 text-[#ea0a2a] text-sm">✚</span>
+                                            <span class="flex-1">Medis</span><span class="font-semibold">KM 5 · Start ·
+                                                Finish</span> <!-- TODO -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catatan umum (tetap tampil untuk semua kategori) -->
+                    <div class="mt-8 rounded-2xl bg-slate-50 border border-slate-200 p-5 md:p-6">
+                        <p class="text-sm font-semibold text-slate-800 mb-3">Catatan penting</p>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-700 list-disc ml-5">
+                            <li>Water station menyediakan air minum &amp; minuman isotonik.</li> <!-- TODO -->
+                            <li>Tim medis &amp; ambulans siaga di sepanjang rute.</li>
+                            <li>Ikuti jalur yang sudah ditandai panitia.</li>
+                            <li>Rute dapat berubah sesuai kondisi lapangan &amp; arahan panitia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="info-lanjut" class="py-4 px-4 md:px-8">
             <div class="p-6 md:p-12 medal-wrap mt-8 mb-8 relative z-10">
                 <!-- Heading -->
@@ -514,3 +925,39 @@
         </section>
     </div>
 @endsection
+
+@push('script')
+
+    <script>
+        (function() {
+            var root = document.getElementById('route-switch');
+            if (!root) return;
+            var btns = root.querySelectorAll('.route-btn');
+            var panels = document.querySelectorAll('#route-panels .route-panel');
+            var ON = ['bg-[#ea0a2a]', 'text-white', 'shadow'];
+            var OFF = ['text-slate-600', 'hover:text-[#ea0a2a]'];
+
+            function show(key) {
+                btns.forEach(function(b) {
+                    var active = b.dataset.route === key;
+                    b.setAttribute('aria-selected', active);
+                    ON.forEach(function(c) {
+                        b.classList.toggle(c, active);
+                    });
+                    OFF.forEach(function(c) {
+                        b.classList.toggle(c, !active);
+                    });
+                });
+                panels.forEach(function(p) {
+                    p.classList.toggle('hidden', p.dataset.panel !== key);
+                });
+            }
+            btns.forEach(function(b) {
+                b.addEventListener('click', function() {
+                    show(b.dataset.route);
+                });
+            });
+        })();
+    </script>
+@endpush
+
