@@ -558,10 +558,18 @@
                         <!-- ========== 1K ========== -->
                         <div class="route-panel grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="1k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 1K -->
-                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+1K"
-                                    alt="Peta rute lari 1K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                                <img decoding="async" src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 1K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                        </svg>
+                                        Klik untuk memperbesar
+                                    </span>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-5">
                                 <div class="flex items-center gap-3">
@@ -611,10 +619,18 @@
                         <!-- ========== 5K ========== -->
                         <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="5k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 5K -->
-                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+5K"
-                                    alt="Peta rute lari 5K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                                <img decoding="async" src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 5K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                        </svg>
+                                        Klik untuk memperbesar
+                                    </span>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-5">
                                 <div class="flex items-center gap-3">
@@ -663,10 +679,18 @@
                         <!-- ========== 10K ========== -->
                         <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="10k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50">
+                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 10K -->
-                                <img decoding="async" src="https://placehold.co/1000x750?text=Peta+Rute+10K"
-                                    alt="Peta rute lari 10K Disney Run Jakarta 2026" class="w-full h-auto object-cover">
+                                <img decoding="async" src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 10K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                        </svg>
+                                        Klik untuk memperbesar
+                                    </span>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-5">
                                 <div class="flex items-center gap-3">
@@ -928,6 +952,56 @@
 
 @push('script')
 
+    <!-- Modal Popup Peta Rute dengan Animasi Tailwind -->
+    <div id="route-map-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-4 overflow-y-auto"
+        role="dialog" aria-modal="true" aria-labelledby="route-map-modal-title">
+        <!-- Backdrop with Tailwind fade & blur animation -->
+        <div id="route-map-modal-backdrop"
+            class="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity duration-300 ease-out opacity-0"
+            aria-hidden="true"></div>
+
+        <!-- Modal Dialog Card with Tailwind zoom-in, slide-up & fade animation -->
+        <div id="route-map-modal-dialog"
+            class="relative z-10 max-h-[calc(100vh-1.5rem)] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-black/5 sm:max-h-[calc(100vh-2rem)] sm:p-5 md:p-6 transform transition-all duration-300 ease-out opacity-0 scale-95 translate-y-4">
+            <!-- Tombol Tutup -->
+            <button type="button" id="route-map-modal-close"
+                class="absolute right-3 top-3 z-20 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer sm:right-4 sm:top-4 sm:h-10 sm:w-10"
+                aria-label="Tutup peta rute">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Judul & Kategori -->
+            <div class="mb-3 pr-10 sm:mb-4 sm:pr-12">
+                <span class="inline-block text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-2.5 py-0.5 mb-1">
+                    Peta Interaktif
+                </span>
+                <h2 id="route-map-modal-title" class="text-base font-bold leading-6 text-slate-900 sm:text-lg md:text-xl"></h2>
+            </div>
+
+            <!-- Gambar Peta -->
+            <div class="relative overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50">
+                <div class="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-lg bg-white/95 p-1 shadow-md sm:hidden"
+                    aria-label="Kontrol zoom peta">
+                    <button type="button" id="route-map-zoom-out"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+                        aria-label="Perkecil peta" disabled>&minus;</button>
+                    <button type="button" id="route-map-zoom-reset"
+                        class="inline-flex h-8 min-w-8 items-center justify-center rounded-md px-1 text-xs font-semibold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95"
+                        aria-label="Reset zoom peta">100%</button>
+                    <button type="button" id="route-map-zoom-in"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+                        aria-label="Perbesar peta">+</button>
+                </div>
+                <div id="route-map-image-scroll" class="max-h-[calc(100vh-9rem)] overflow-auto sm:max-h-[75vh]">
+                    <img id="route-map-modal-image" src="" alt=""
+                        class="block max-h-[calc(100vh-9rem)] w-full origin-top-left rounded-xl object-contain transition-transform duration-200 sm:max-h-[75vh]">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         (function() {
             var root = document.getElementById('route-switch');
@@ -958,6 +1032,147 @@
                 });
             });
         })();
+
+        (function() {
+            var modal = document.getElementById('route-map-modal');
+            var backdrop = document.getElementById('route-map-modal-backdrop');
+            var dialog = document.getElementById('route-map-modal-dialog');
+            var modalImage = document.getElementById('route-map-modal-image');
+            var modalTitle = document.getElementById('route-map-modal-title');
+            var closeButton = document.getElementById('route-map-modal-close');
+            var imageScroll = document.getElementById('route-map-image-scroll');
+            var zoomOutButton = document.getElementById('route-map-zoom-out');
+            var zoomResetButton = document.getElementById('route-map-zoom-reset');
+            var zoomInButton = document.getElementById('route-map-zoom-in');
+            var mapImages = document.querySelectorAll('img[alt*="Peta rute"]');
+
+            if (!modal || !backdrop || !dialog || !modalImage || !modalTitle || !closeButton ||
+                !imageScroll || !zoomOutButton || !zoomResetButton || !zoomInButton || !mapImages.length) return;
+
+            var isTransitioning = false;
+            var closeTimer = null;
+            var zoom = 1;
+            var minZoom = 1;
+            var maxZoom = 3;
+            var zoomStep = 0.5;
+
+            function updateZoom() {
+                modalImage.style.transform = 'none';
+                modalImage.style.width = (zoom * 100) + '%';
+                modalImage.style.maxHeight = zoom > minZoom ? 'none' : '';
+                zoomResetButton.textContent = Math.round(zoom * 100) + '%';
+                zoomOutButton.disabled = zoom <= minZoom;
+                zoomInButton.disabled = zoom >= maxZoom;
+            }
+
+            function setZoom(value) {
+                zoom = Math.min(maxZoom, Math.max(minZoom, value));
+                updateZoom();
+            }
+
+            function openModal(image) {
+                if (closeTimer) {
+                    clearTimeout(closeTimer);
+                    closeTimer = null;
+                }
+
+                var routeName = image.alt.match(/\b(1K|5K|10K)\b/);
+                var route = routeName ? routeName[1] : 'rute';
+
+                modalTitle.textContent = 'Peta Rute Disney Run Jakarta 2026 - ' + route;
+                modalImage.src = image.dataset.fullSrc || image.currentSrc || image.src;
+                modalImage.alt = image.alt || ('Peta rute lari ' + route + ' Disney Run Jakarta 2026');
+                setZoom(minZoom);
+                imageScroll.scrollTop = 0;
+                imageScroll.scrollLeft = 0;
+
+                // Tampilkan wrapper container
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+
+                // Paksa reflow layout agar transisi CSS Tailwind terbaca oleh browser
+                modal.offsetHeight;
+
+                // Mulai animasi masuk (Tailwind enter animation: fade in + scale up + slide up)
+                requestAnimationFrame(function() {
+                    backdrop.classList.remove('opacity-0');
+                    backdrop.classList.add('opacity-100');
+
+                    dialog.classList.remove('opacity-0', 'scale-95', 'translate-y-4');
+                    dialog.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+                });
+
+                closeButton.focus();
+            }
+
+            function closeModal() {
+                if (modal.classList.contains('hidden') || isTransitioning) return;
+                isTransitioning = true;
+
+                // Animasi keluar (Tailwind leave animation: fade out + scale down + slide down)
+                backdrop.classList.remove('opacity-100');
+                backdrop.classList.add('opacity-0');
+
+                dialog.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+                dialog.classList.add('opacity-0', 'scale-95', 'translate-y-4');
+
+                closeTimer = setTimeout(function() {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    document.body.classList.remove('overflow-hidden');
+                    isTransitioning = false;
+                    closeTimer = null;
+                }, 300); // Durasi 300ms sesuai duration-300 Tailwind
+            }
+
+            mapImages.forEach(function(image) {
+                image.classList.add('cursor-zoom-in');
+                image.setAttribute('tabindex', '0');
+                image.setAttribute('role', 'button');
+
+                var card = image.closest('.route-panel') ? image.closest('.route-panel').querySelector('.rounded-2xl') : null;
+                if (card) {
+                    card.addEventListener('click', function() {
+                        openModal(image);
+                    });
+                } else {
+                    image.addEventListener('click', function() {
+                        openModal(image);
+                    });
+                }
+
+                image.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        openModal(image);
+                    }
+                });
+            });
+
+            closeButton.addEventListener('click', closeModal);
+            backdrop.addEventListener('click', closeModal);
+            zoomOutButton.addEventListener('click', function() {
+                setZoom(zoom - zoomStep);
+            });
+            zoomResetButton.addEventListener('click', function() {
+                setZoom(minZoom);
+                imageScroll.scrollTop = 0;
+                imageScroll.scrollLeft = 0;
+            });
+            zoomInButton.addEventListener('click', function() {
+                setZoom(zoom + zoomStep);
+            });
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) closeModal();
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        })();
     </script>
 @endpush
-
