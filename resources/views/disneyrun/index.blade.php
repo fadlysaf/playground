@@ -316,9 +316,9 @@
             </div>
         </section>
         <!-- ============================================================
-             VERSI 1: 3 peta ditampilkan sekaligus (1K, 5K, 10K)
-             Ganti src gambar & isi data bertanda TODO sesuai data resmi.
-             ============================================================ -->
+                                                     VERSI 1: 3 peta ditampilkan sekaligus (1K, 5K, 10K)
+                                                     Ganti src gambar & isi data bertanda TODO sesuai data resmi.
+                                                     ============================================================ -->
         <section id="rute-lari" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
             <div class="max-w-6xl mx-auto relative z-10">
                 <div
@@ -515,9 +515,9 @@
             </div>
         </section>
         <!-- ============================================================
-         VERSI 2: Switch 1K / 5K / 10K, peta & keterangan berganti
-         Ganti src gambar & isi data bertanda TODO sesuai data resmi.
-         ============================================================ -->
+                                                 VERSI 2: Switch 1K / 5K / 10K, peta & keterangan berganti
+                                                 Ganti src gambar & isi data bertanda TODO sesuai data resmi.
+                                                 ============================================================ -->
         <section id="rute-lari" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
             <div class="max-w-6xl mx-auto relative z-10">
                 <div
@@ -558,14 +558,21 @@
                         <!-- ========== 1K ========== -->
                         <div class="route-panel grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="1k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
+                            <div
+                                class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 1K -->
-                                <img decoding="async" src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Peta rute lari 1K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
-                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                <img decoding="async"
+                                    src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 1K Disney Run Jakarta 2026"
+                                    class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div
+                                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                                         </svg>
                                         Klik untuk memperbesar
                                     </span>
@@ -619,14 +626,21 @@
                         <!-- ========== 5K ========== -->
                         <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="5k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
+                            <div
+                                class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 5K -->
-                                <img decoding="async" src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Peta rute lari 5K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
-                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                <img decoding="async"
+                                    src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 5K Disney Run Jakarta 2026"
+                                    class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div
+                                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                                         </svg>
                                         Klik untuk memperbesar
                                     </span>
@@ -679,14 +693,21 @@
                         <!-- ========== 10K ========== -->
                         <div class="route-panel hidden grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-start"
                             data-panel="10k">
-                            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
+                            <div
+                                class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-50 group relative cursor-pointer">
                                 <!-- TODO: ganti dengan gambar peta 10K -->
-                                <img decoding="async" src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Peta rute lari 10K Disney Run Jakarta 2026" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
-                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                <img decoding="async"
+                                    src="https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Peta rute lari 10K Disney Run Jakarta 2026"
+                                    class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03]">
+                                <div
+                                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 text-white text-xs font-medium backdrop-blur-xs shadow-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                                         </svg>
                                         Klik untuk memperbesar
                                     </span>
@@ -951,81 +972,142 @@
 @endsection
 
 @push('script')
-
     <!-- Modal Popup Peta Rute dengan Animasi Tailwind -->
-    <div id="route-map-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-4 overflow-y-auto"
+
+    <!-- Route Map Modal -->
+    <div id="route-map-modal" class="fixed inset-0 z-[100] hidden items-center justify-center overflow-y-auto p-3 sm:p-4"
         role="dialog" aria-modal="true" aria-labelledby="route-map-modal-title">
-        <!-- Backdrop with Tailwind fade & blur animation -->
+        <!-- Backdrop -->
         <div id="route-map-modal-backdrop"
-            class="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity duration-300 ease-out opacity-0"
+            class="fixed inset-0 bg-black/75 backdrop-blur-sm opacity-0 transition-opacity duration-300 ease-out"
             aria-hidden="true"></div>
 
-        <!-- Modal Dialog Card with Tailwind zoom-in, slide-up & fade animation -->
-        <div id="route-map-modal-dialog"
-            class="relative z-10 max-h-[calc(100vh-1.5rem)] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-black/5 sm:max-h-[calc(100vh-2rem)] sm:p-5 md:p-6 transform transition-all duration-300 ease-out opacity-0 scale-95 translate-y-4">
-            <!-- Tombol Tutup -->
-            <button type="button" id="route-map-modal-close"
-                class="absolute right-3 top-3 z-20 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer sm:right-4 sm:top-4 sm:h-10 sm:w-10"
+        <!-- ========================= -->
+        <!-- DESKTOP MODAL             -->
+        <!-- ========================= -->
+        <div id="route-map-modal-desktop"
+            class="relative z-10 hidden w-full max-w-4xl max-h-[calc(100vh-2rem)] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:block">
+            <!-- Close Button -->
+            <button type="button" id="route-map-modal-close-desktop"
+                class="absolute right-4 top-4 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer"
                 aria-label="Tutup peta rute">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
 
-            <!-- Judul & Kategori -->
-            <div class="mb-3 pr-10 sm:mb-4 sm:pr-12">
-                <span class="inline-block text-xs font-semibold text-[#ea0a2a] bg-red-50 rounded-full px-2.5 py-0.5 mb-1">
+            <!-- Desktop Title -->
+            <div class="mb-4 pr-12">
+                <span class="mb-1 inline-block rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-semibold text-[#ea0a2a]">
                     Peta Interaktif
                 </span>
-                <h2 id="route-map-modal-title" class="text-base font-bold leading-6 text-slate-900 sm:text-lg md:text-xl"></h2>
+
+                <h2 id="route-map-modal-title-desktop" class="text-xl font-bold leading-7 text-slate-900"></h2>
             </div>
 
-            <!-- Gambar Peta -->
+            <!-- Desktop Map -->
             <div class="relative overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50">
-                <div class="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-lg bg-white/95 p-1 shadow-md sm:hidden"
-                    aria-label="Kontrol zoom peta">
-                    <button type="button" id="route-map-zoom-out"
-                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-                        aria-label="Perkecil peta" disabled>&minus;</button>
-                    <button type="button" id="route-map-zoom-reset"
-                        class="inline-flex h-8 min-w-8 items-center justify-center rounded-md px-1 text-xs font-semibold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95"
-                        aria-label="Reset zoom peta">100%</button>
-                    <button type="button" id="route-map-zoom-in"
-                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-                        aria-label="Perbesar peta">+</button>
+                <div id="route-map-image-scroll-desktop" class="max-h-[75vh] overflow-auto">
+                    <img id="route-map-modal-image-desktop" src="" alt=""
+                        class="block w-full origin-top-left rounded-xl object-contain">
                 </div>
-                <div id="route-map-image-scroll" class="max-h-[calc(100vh-9rem)] overflow-auto sm:max-h-[75vh]">
-                    <img id="route-map-modal-image" src="" alt=""
-                        class="block max-h-[calc(100vh-9rem)] w-full origin-top-left rounded-xl object-contain transition-transform duration-200 sm:max-h-[75vh]">
+            </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- MOBILE MODAL              -->
+        <!-- ========================= -->
+        <div id="route-map-modal-mobile"
+            class="relative z-10 block w-full max-h-[calc(100dvh-1.5rem)] overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:hidden">
+            <!-- Close Button -->
+            <button type="button" id="route-map-modal-close-mobile"
+                class="absolute right-3 top-3 z-20 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer"
+                aria-label="Tutup peta rute">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Mobile Title -->
+            <div class="mb-3 pr-10">
+                <span class="mb-1 inline-block rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-semibold text-[#ea0a2a]">
+                    Peta Interaktif
+                </span>
+
+                <h2 id="route-map-modal-title-mobile" class="text-base font-bold leading-6 text-slate-900"></h2>
+            </div>
+
+            <!-- Mobile Map -->
+            <div class="relative overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50">
+                <!-- Mobile Zoom Controls -->
+                <div class="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-lg bg-white/95 p-1 shadow-md"
+                    aria-label="Kontrol zoom peta">
+                    <button type="button" id="route-map-zoom-out-mobile"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+                        aria-label="Perkecil peta" disabled>
+                        &minus;
+                    </button>
+
+                    <button type="button" id="route-map-zoom-reset-mobile"
+                        class="inline-flex h-8 min-w-8 items-center justify-center rounded-md px-1 text-xs font-semibold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95"
+                        aria-label="Reset zoom peta">
+                        100%
+                    </button>
+
+                    <button type="button" id="route-map-zoom-in-mobile"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+                        aria-label="Perbesar peta">
+                        +
+                    </button>
+                </div>
+
+                <!-- Scrollable Map Image -->
+                <div id="route-map-image-scroll-mobile" class="max-h-[calc(100dvh-9rem)] overflow-auto">
+                    <img id="route-map-modal-image-mobile" src="" alt=""
+                        class="block w-full origin-top-left rounded-xl object-contain transition-transform duration-200">
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <script>
+        // ==========================================
+        // ROUTE SWITCH
+        // ==========================================
         (function() {
             var root = document.getElementById('route-switch');
             if (!root) return;
+
             var btns = root.querySelectorAll('.route-btn');
             var panels = document.querySelectorAll('#route-panels .route-panel');
+
             var ON = ['bg-[#ea0a2a]', 'text-white', 'shadow'];
             var OFF = ['text-slate-600', 'hover:text-[#ea0a2a]'];
 
             function show(key) {
                 btns.forEach(function(b) {
                     var active = b.dataset.route === key;
-                    b.setAttribute('aria-selected', active);
+
+                    b.setAttribute('aria-selected', String(active));
+
                     ON.forEach(function(c) {
                         b.classList.toggle(c, active);
                     });
+
                     OFF.forEach(function(c) {
                         b.classList.toggle(c, !active);
                     });
                 });
+
                 panels.forEach(function(p) {
                     p.classList.toggle('hidden', p.dataset.panel !== key);
                 });
             }
+
             btns.forEach(function(b) {
                 b.addEventListener('click', function() {
                     show(b.dataset.route);
@@ -1033,108 +1115,425 @@
             });
         })();
 
+
+        // ==========================================
+        // ROUTE MAP MODAL
+        // ==========================================
         (function() {
+            // --------------------------------------
+            // SHARED ELEMENTS
+            // --------------------------------------
             var modal = document.getElementById('route-map-modal');
             var backdrop = document.getElementById('route-map-modal-backdrop');
-            var dialog = document.getElementById('route-map-modal-dialog');
-            var modalImage = document.getElementById('route-map-modal-image');
-            var modalTitle = document.getElementById('route-map-modal-title');
-            var closeButton = document.getElementById('route-map-modal-close');
-            var imageScroll = document.getElementById('route-map-image-scroll');
-            var zoomOutButton = document.getElementById('route-map-zoom-out');
-            var zoomResetButton = document.getElementById('route-map-zoom-reset');
-            var zoomInButton = document.getElementById('route-map-zoom-in');
-            var mapImages = document.querySelectorAll('img[alt*="Peta rute"]');
 
-            if (!modal || !backdrop || !dialog || !modalImage || !modalTitle || !closeButton ||
-                !imageScroll || !zoomOutButton || !zoomResetButton || !zoomInButton || !mapImages.length) return;
+            if (!modal || !backdrop) return;
 
+            // --------------------------------------
+            // DESKTOP ELEMENTS
+            // --------------------------------------
+            var desktopDialog = document.getElementById(
+                'route-map-modal-desktop'
+            );
+
+            var desktopImage = document.getElementById(
+                'route-map-modal-image-desktop'
+            );
+
+            var desktopTitle = document.getElementById(
+                'route-map-modal-title-desktop'
+            );
+
+            var desktopCloseButton = document.getElementById(
+                'route-map-modal-close-desktop'
+            );
+
+            var desktopImageScroll = document.getElementById(
+                'route-map-image-scroll-desktop'
+            );
+
+            // --------------------------------------
+            // MOBILE ELEMENTS
+            // --------------------------------------
+            var mobileDialog = document.getElementById(
+                'route-map-modal-mobile'
+            );
+
+            var mobileImage = document.getElementById(
+                'route-map-modal-image-mobile'
+            );
+
+            var mobileTitle = document.getElementById(
+                'route-map-modal-title-mobile'
+            );
+
+            var mobileCloseButton = document.getElementById(
+                'route-map-modal-close-mobile'
+            );
+
+            var mobileImageScroll = document.getElementById(
+                'route-map-image-scroll-mobile'
+            );
+
+            var zoomOutButton = document.getElementById(
+                'route-map-zoom-out-mobile'
+            );
+
+            var zoomResetButton = document.getElementById(
+                'route-map-zoom-reset-mobile'
+            );
+
+            var zoomInButton = document.getElementById(
+                'route-map-zoom-in-mobile'
+            );
+
+            // --------------------------------------
+            // SOURCE MAP IMAGES
+            // --------------------------------------
+            var mapImages = document.querySelectorAll(
+                'img[alt*="Peta rute"]'
+            );
+
+            // Pastikan semua elemen modal tersedia.
+            if (
+                !desktopDialog ||
+                !desktopImage ||
+                !desktopTitle ||
+                !desktopCloseButton ||
+                !desktopImageScroll ||
+                !mobileDialog ||
+                !mobileImage ||
+                !mobileTitle ||
+                !mobileCloseButton ||
+                !mobileImageScroll ||
+                !zoomOutButton ||
+                !zoomResetButton ||
+                !zoomInButton ||
+                !mapImages.length
+            ) {
+                return;
+            }
+
+            // --------------------------------------
+            // STATE
+            // --------------------------------------
             var isTransitioning = false;
             var closeTimer = null;
             var zoom = 1;
+
             var minZoom = 1;
             var maxZoom = 3;
             var zoomStep = 0.5;
 
+            var desktopMedia = window.matchMedia(
+                '(min-width: 768px)'
+            );
+
+            // --------------------------------------
+            // RESPONSIVE HELPERS
+            // --------------------------------------
+            function isDesktop() {
+                return desktopMedia.matches;
+            }
+
+            function getActiveDialog() {
+                return isDesktop() ? desktopDialog : mobileDialog;
+            }
+
+            function getActiveCloseButton() {
+                return isDesktop() ?
+                    desktopCloseButton :
+                    mobileCloseButton;
+            }
+
+            // --------------------------------------
+            // ZOOM FUNCTIONS
+            // Zoom hanya diterapkan ke gambar mobile.
+            // --------------------------------------
             function updateZoom() {
-                modalImage.style.transform = 'none';
-                modalImage.style.width = (zoom * 100) + '%';
-                modalImage.style.maxHeight = zoom > minZoom ? 'none' : '';
-                zoomResetButton.textContent = Math.round(zoom * 100) + '%';
+                var percentage = Math.round(zoom * 100);
+
+                mobileImage.style.width = percentage + '%';
+                mobileImage.style.maxWidth = 'none';
+
+                zoomResetButton.textContent = percentage + '%';
+
                 zoomOutButton.disabled = zoom <= minZoom;
                 zoomInButton.disabled = zoom >= maxZoom;
             }
 
             function setZoom(value) {
-                zoom = Math.min(maxZoom, Math.max(minZoom, value));
+                zoom = Math.min(
+                    maxZoom,
+                    Math.max(minZoom, value)
+                );
+
                 updateZoom();
             }
 
+            function resetZoom() {
+                zoom = minZoom;
+
+                mobileImage.style.width = '100%';
+                mobileImage.style.maxWidth = '';
+
+                mobileImageScroll.scrollTop = 0;
+                mobileImageScroll.scrollLeft = 0;
+
+                updateZoom();
+            }
+
+            zoomOutButton.addEventListener('click', function() {
+                setZoom(zoom - zoomStep);
+            });
+
+            zoomResetButton.addEventListener('click', function() {
+                resetZoom();
+            });
+
+            zoomInButton.addEventListener('click', function() {
+                setZoom(zoom + zoomStep);
+            });
+
+            // --------------------------------------
+            // ANIMATION HELPERS
+            // --------------------------------------
+            function animateIn(dialog) {
+                backdrop.classList.remove('opacity-0');
+                backdrop.classList.add('opacity-100');
+
+                dialog.classList.remove(
+                    'opacity-0',
+                    'scale-95',
+                    'translate-y-4'
+                );
+
+                dialog.classList.add(
+                    'opacity-100',
+                    'scale-100',
+                    'translate-y-0'
+                );
+            }
+
+            function animateOut(dialog) {
+                backdrop.classList.remove('opacity-100');
+                backdrop.classList.add('opacity-0');
+
+                dialog.classList.remove(
+                    'opacity-100',
+                    'scale-100',
+                    'translate-y-0'
+                );
+
+                dialog.classList.add(
+                    'opacity-0',
+                    'scale-95',
+                    'translate-y-4'
+                );
+            }
+
+            function resetDialogAnimation(dialog) {
+                dialog.classList.remove(
+                    'opacity-100',
+                    'scale-100',
+                    'translate-y-0'
+                );
+
+                dialog.classList.add(
+                    'opacity-0',
+                    'scale-95',
+                    'translate-y-4'
+                );
+            }
+
+            // --------------------------------------
+            // OPEN MODAL
+            // --------------------------------------
             function openModal(image) {
                 if (closeTimer) {
                     clearTimeout(closeTimer);
                     closeTimer = null;
                 }
 
+                isTransitioning = false;
+
+                // Ambil informasi rute dari alt gambar.
                 var routeName = image.alt.match(/\b(1K|5K|10K)\b/);
                 var route = routeName ? routeName[1] : 'rute';
 
-                modalTitle.textContent = 'Peta Rute Disney Run Jakarta 2026 - ' + route;
-                modalImage.src = image.dataset.fullSrc || image.currentSrc || image.src;
-                modalImage.alt = image.alt || ('Peta rute lari ' + route + ' Disney Run Jakarta 2026');
-                setZoom(minZoom);
-                imageScroll.scrollTop = 0;
-                imageScroll.scrollLeft = 0;
+                var title =
+                    'Peta Rute Disney Run Jakarta 2026 - ' + route;
 
-                // Tampilkan wrapper container
+                var imageSrc =
+                    image.dataset.fullSrc ||
+                    image.currentSrc ||
+                    image.src;
+
+                var imageAlt =
+                    image.alt ||
+                    ('Peta rute lari ' + route + ' Disney Run Jakarta 2026');
+
+                // Sinkronisasi judul desktop dan mobile.
+                desktopTitle.textContent = title;
+                mobileTitle.textContent = title;
+
+                // Sinkronisasi gambar desktop dan mobile.
+                desktopImage.src = imageSrc;
+                mobileImage.src = imageSrc;
+
+                desktopImage.alt = imageAlt;
+                mobileImage.alt = imageAlt;
+
+                // Reset posisi gambar.
+                desktopImageScroll.scrollTop = 0;
+                desktopImageScroll.scrollLeft = 0;
+
+                resetZoom();
+
+                // Reset animasi kedua dialog.
+                resetDialogAnimation(desktopDialog);
+                resetDialogAnimation(mobileDialog);
+
+                // Tampilkan parent modal.
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');
+
+                // Kunci scrolling halaman.
                 document.body.classList.add('overflow-hidden');
 
-                // Paksa reflow layout agar transisi CSS Tailwind terbaca oleh browser
+                // Paksa browser membaca perubahan layout.
                 modal.offsetHeight;
 
-                // Mulai animasi masuk (Tailwind enter animation: fade in + scale up + slide up)
+                // Jalankan animasi pada dialog aktif.
                 requestAnimationFrame(function() {
-                    backdrop.classList.remove('opacity-0');
-                    backdrop.classList.add('opacity-100');
-
-                    dialog.classList.remove('opacity-0', 'scale-95', 'translate-y-4');
-                    dialog.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+                    animateIn(getActiveDialog());
+                    getActiveCloseButton().focus();
                 });
-
-                closeButton.focus();
             }
 
+            // --------------------------------------
+            // CLOSE MODAL
+            // --------------------------------------
             function closeModal() {
-                if (modal.classList.contains('hidden') || isTransitioning) return;
+                if (
+                    modal.classList.contains('hidden') ||
+                    isTransitioning
+                ) {
+                    return;
+                }
+
                 isTransitioning = true;
 
-                // Animasi keluar (Tailwind leave animation: fade out + scale down + slide down)
-                backdrop.classList.remove('opacity-100');
-                backdrop.classList.add('opacity-0');
-
-                dialog.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
-                dialog.classList.add('opacity-0', 'scale-95', 'translate-y-4');
+                // Animasikan backdrop dan kedua dialog.
+                // Ini juga mencegah dialog lama tertinggal
+                // jika ukuran viewport berubah.
+                animateOut(desktopDialog);
+                animateOut(mobileDialog);
 
                 closeTimer = setTimeout(function() {
                     modal.classList.add('hidden');
                     modal.classList.remove('flex');
+
                     document.body.classList.remove('overflow-hidden');
+
                     isTransitioning = false;
                     closeTimer = null;
-                }, 300); // Durasi 300ms sesuai duration-300 Tailwind
+                }, 300);
             }
 
+            // --------------------------------------
+            // CLOSE BUTTONS
+            // --------------------------------------
+            desktopCloseButton.addEventListener(
+                'click',
+                closeModal
+            );
+
+            mobileCloseButton.addEventListener(
+                'click',
+                closeModal
+            );
+
+            backdrop.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // --------------------------------------
+            // KEYBOARD EVENTS
+            // --------------------------------------
+            document.addEventListener('keydown', function(event) {
+                if (modal.classList.contains('hidden')) {
+                    return;
+                }
+
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            });
+
+            // --------------------------------------
+            // RESPONSIVE CHANGE
+            // --------------------------------------
+            function handleViewportChange() {
+                if (modal.classList.contains('hidden')) {
+                    return;
+                }
+
+                // Sembunyikan status animasi kedua dialog.
+                resetDialogAnimation(desktopDialog);
+                resetDialogAnimation(mobileDialog);
+
+                // Jalankan animasi pada versi yang aktif.
+                requestAnimationFrame(function() {
+                    animateIn(getActiveDialog());
+                });
+            }
+
+            if (desktopMedia.addEventListener) {
+                desktopMedia.addEventListener(
+                    'change',
+                    handleViewportChange
+                );
+            } else {
+                // Fallback untuk browser lama.
+                desktopMedia.addListener(handleViewportChange);
+            }
+
+            // --------------------------------------
+            // MAP IMAGE CLICK EVENTS
+            // --------------------------------------
             mapImages.forEach(function(image) {
                 image.classList.add('cursor-zoom-in');
+
                 image.setAttribute('tabindex', '0');
                 image.setAttribute('role', 'button');
 
-                var card = image.closest('.route-panel') ? image.closest('.route-panel').querySelector('.rounded-2xl') : null;
+                if (!image.hasAttribute('aria-label')) {
+                    image.setAttribute(
+                        'aria-label',
+                        'Buka peta rute ' + image.alt
+                    );
+                }
+
+                // Pertahankan mekanisme klik card lama.
+                var panel = image.closest('.route-panel');
+
+                var card = panel ?
+                    panel.querySelector('.rounded-2xl') :
+                    null;
+
                 if (card) {
-                    card.addEventListener('click', function() {
-                        openModal(image);
+                    card.addEventListener('click', function(event) {
+                        // Hindari membuka modal dua kali saat
+                        // gambar memiliki handler keyboard sendiri.
+                        if (event.target === image) {
+                            openModal(image);
+                        } else {
+                            openModal(image);
+                        }
                     });
                 } else {
                     image.addEventListener('click', function() {
@@ -1142,37 +1541,27 @@
                     });
                 }
 
+                // Dukungan keyboard untuk gambar peta.
                 image.addEventListener('keydown', function(event) {
-                    if (event.key === 'Enter' || event.key === ' ') {
+                    if (
+                        event.key === 'Enter' ||
+                        event.key === ' '
+                    ) {
                         event.preventDefault();
                         openModal(image);
                     }
                 });
             });
 
-            closeButton.addEventListener('click', closeModal);
-            backdrop.addEventListener('click', closeModal);
-            zoomOutButton.addEventListener('click', function() {
-                setZoom(zoom - zoomStep);
-            });
-            zoomResetButton.addEventListener('click', function() {
-                setZoom(minZoom);
-                imageScroll.scrollTop = 0;
-                imageScroll.scrollLeft = 0;
-            });
-            zoomInButton.addEventListener('click', function() {
-                setZoom(zoom + zoomStep);
-            });
+            // --------------------------------------
+            // INITIAL STATE
+            // --------------------------------------
+            updateZoom();
 
-            modal.addEventListener('click', function(event) {
-                if (event.target === modal) closeModal();
-            });
-
-            document.addEventListener('keydown', function(event) {
-                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
-                    closeModal();
-                }
-            });
+            // Opsional: memungkinkan modal dibuka
+            // dari tombol atau script lain.
+            window.openRouteMap = openModal;
+            window.closeRouteMap = closeModal;
         })();
     </script>
 @endpush
