@@ -976,7 +976,7 @@
 
     <!-- Route Map Modal -->
     <div id="route-map-modal" class="fixed inset-0 z-[100] hidden items-center justify-center overflow-y-auto p-3 sm:p-4"
-        role="dialog" aria-modal="true" aria-labelledby="route-map-modal-title">
+        role="dialog" aria-modal="true" aria-labelledby="route-map-modal-title-desktop">
         <!-- Backdrop -->
         <div id="route-map-modal-backdrop"
             class="fixed inset-0 bg-black/75 backdrop-blur-sm opacity-0 transition-opacity duration-300 ease-out"
@@ -986,7 +986,7 @@
         <!-- DESKTOP MODAL             -->
         <!-- ========================= -->
         <div id="route-map-modal-desktop"
-            class="relative z-10 hidden w-full max-w-4xl max-h-[calc(100vh-2rem)] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:block">
+            class="relative z-10 hidden w-[min(92vw,80rem)] max-h-[calc(100dvh-2rem)] overflow-hidden rounded-2xl bg-white p-5 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:block lg:p-6">
             <!-- Close Button -->
             <button type="button" id="route-map-modal-close-desktop"
                 class="absolute right-4 top-4 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer"
@@ -1008,9 +1008,9 @@
 
             <!-- Desktop Map -->
             <div class="relative overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50">
-                <div id="route-map-image-scroll-desktop" class="max-h-[75vh] overflow-auto">
+                <div id="route-map-image-scroll-desktop" class="max-h-[72dvh] overflow-auto">
                     <img id="route-map-modal-image-desktop" src="" alt=""
-                        class="block w-full origin-top-left rounded-xl object-contain">
+                        class="mx-auto block max-h-[72dvh] w-full rounded-xl object-contain">
                 </div>
             </div>
         </div>
@@ -1019,7 +1019,7 @@
         <!-- MOBILE MODAL              -->
         <!-- ========================= -->
         <div id="route-map-modal-mobile"
-            class="relative z-10 block w-full max-h-[calc(100dvh-1.5rem)] overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:hidden">
+            class="relative z-10 block w-full max-w-md max-h-[calc(100dvh-1rem)] overflow-hidden rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-black/5 opacity-0 scale-95 translate-y-4 transition-all duration-300 ease-out md:hidden">
             <!-- Close Button -->
             <button type="button" id="route-map-modal-close-mobile"
                 class="absolute right-3 top-3 z-20 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-[#ea0a2a] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#ea0a2a]/40 cursor-pointer"
@@ -1041,32 +1041,18 @@
 
             <!-- Mobile Map -->
             <div class="relative overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50">
-                <!-- Mobile Zoom Controls -->
-                <div class="absolute right-2 top-2 z-10 flex items-center gap-1 rounded-lg bg-white/95 p-1 shadow-md"
-                    aria-label="Kontrol zoom peta">
-                    <button type="button" id="route-map-zoom-out-mobile"
-                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-                        aria-label="Perkecil peta" disabled>
-                        &minus;
-                    </button>
-
-                    <button type="button" id="route-map-zoom-reset-mobile"
-                        class="inline-flex h-8 min-w-8 items-center justify-center rounded-md px-1 text-xs font-semibold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95"
-                        aria-label="Reset zoom peta">
-                        100%
-                    </button>
-
-                    <button type="button" id="route-map-zoom-in-mobile"
-                        class="inline-flex h-8 w-8 items-center justify-center rounded-md text-lg font-bold text-slate-700 transition hover:bg-red-50 hover:text-[#ea0a2a] active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-                        aria-label="Perbesar peta">
-                        +
-                    </button>
+                <div class="pointer-events-none absolute inset-x-0 bottom-2 z-10 text-center">
+                    <span class="rounded-full bg-white/90 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm">
+                        Geser untuk melihat peta &middot; cubit untuk memperbesar
+                    </span>
                 </div>
 
-                <!-- Scrollable Map Image -->
-                <div id="route-map-image-scroll-mobile" class="max-h-[calc(100dvh-9rem)] overflow-auto">
+                <!-- Touch-enabled map viewport -->
+                <div id="route-map-image-scroll-mobile"
+                    class="flex h-[calc(100dvh-9rem)] max-h-[calc(100dvh-9rem)] items-center justify-center overflow-hidden overscroll-contain bg-slate-50 touch-none">
                     <img id="route-map-modal-image-mobile" src="" alt=""
-                        class="block w-full origin-top-left rounded-xl object-contain transition-transform duration-200">
+                        class="block w-full max-w-none select-none rounded-xl object-contain"
+                        draggable="false">
                 </div>
             </div>
         </div>
@@ -1174,18 +1160,6 @@
                 'route-map-image-scroll-mobile'
             );
 
-            var zoomOutButton = document.getElementById(
-                'route-map-zoom-out-mobile'
-            );
-
-            var zoomResetButton = document.getElementById(
-                'route-map-zoom-reset-mobile'
-            );
-
-            var zoomInButton = document.getElementById(
-                'route-map-zoom-in-mobile'
-            );
-
             // --------------------------------------
             // SOURCE MAP IMAGES
             // --------------------------------------
@@ -1205,9 +1179,6 @@
                 !mobileTitle ||
                 !mobileCloseButton ||
                 !mobileImageScroll ||
-                !zoomOutButton ||
-                !zoomResetButton ||
-                !zoomInButton ||
                 !mapImages.length
             ) {
                 return;
@@ -1219,10 +1190,13 @@
             var isTransitioning = false;
             var closeTimer = null;
             var zoom = 1;
-
+            var panX = 0;
+            var panY = 0;
+            var pointers = {};
+            var dragStart = null;
+            var pinchStart = null;
             var minZoom = 1;
-            var maxZoom = 3;
-            var zoomStep = 0.5;
+            var maxZoom = 4;
 
             var desktopMedia = window.matchMedia(
                 '(min-width: 768px)'
@@ -1246,52 +1220,160 @@
             }
 
             // --------------------------------------
-            // ZOOM FUNCTIONS
-            // Zoom hanya diterapkan ke gambar mobile.
+            // TOUCH GESTURES
+            // Drag satu jari dan pinch dua jari hanya
+            // digunakan pada peta versi mobile.
             // --------------------------------------
-            function updateZoom() {
-                var percentage = Math.round(zoom * 100);
-
-                mobileImage.style.width = percentage + '%';
-                mobileImage.style.maxWidth = 'none';
-
-                zoomResetButton.textContent = percentage + '%';
-
-                zoomOutButton.disabled = zoom <= minZoom;
-                zoomInButton.disabled = zoom >= maxZoom;
+            function distance(first, second) {
+                return Math.hypot(
+                    first.clientX - second.clientX,
+                    first.clientY - second.clientY
+                );
             }
 
-            function setZoom(value) {
-                zoom = Math.min(
-                    maxZoom,
-                    Math.max(minZoom, value)
+            function clampPan() {
+                var maxX = Math.max(
+                    0,
+                    (mobileImage.offsetWidth * zoom -
+                        mobileImageScroll.clientWidth) / 2
+                );
+                var maxY = Math.max(
+                    0,
+                    (mobileImage.offsetHeight * zoom -
+                        mobileImageScroll.clientHeight) / 2
                 );
 
-                updateZoom();
+                panX = Math.min(maxX, Math.max(-maxX, panX));
+                panY = Math.min(maxY, Math.max(-maxY, panY));
+            }
+
+            function updateTouchTransform() {
+                clampPan();
+                mobileImage.style.transform =
+                    'translate3d(' + panX + 'px, ' + panY + 'px, 0) scale(' +
+                    zoom + ')';
             }
 
             function resetZoom() {
-                zoom = minZoom;
-
-                mobileImage.style.width = '100%';
-                mobileImage.style.maxWidth = '';
-
-                mobileImageScroll.scrollTop = 0;
-                mobileImageScroll.scrollLeft = 0;
-
-                updateZoom();
+                zoom = 1;
+                panX = 0;
+                panY = 0;
+                pointers = {};
+                dragStart = null;
+                pinchStart = null;
+                updateTouchTransform();
             }
 
-            zoomOutButton.addEventListener('click', function() {
-                setZoom(zoom - zoomStep);
+            mobileImage.addEventListener('pointerdown', function(event) {
+                event.preventDefault();
+                mobileImage.setPointerCapture(event.pointerId);
+                pointers[event.pointerId] = {
+                    clientX: event.clientX,
+                    clientY: event.clientY
+                };
+
+                var pointerIds = Object.keys(pointers);
+                if (pointerIds.length === 1) {
+                    dragStart = {
+                        clientX: event.clientX,
+                        clientY: event.clientY,
+                        panX: panX,
+                        panY: panY
+                    };
+                } else if (pointerIds.length === 2) {
+                    var first = pointers[pointerIds[0]];
+                    var second = pointers[pointerIds[1]];
+                    pinchStart = {
+                        distance: distance(first, second),
+                        zoom: zoom,
+                        panX: panX,
+                        panY: panY
+                    };
+                    dragStart = null;
+                }
             });
 
-            zoomResetButton.addEventListener('click', function() {
-                resetZoom();
+            mobileImage.addEventListener('pointermove', function(event) {
+                if (!pointers[event.pointerId]) {
+                    return;
+                }
+
+                event.preventDefault();
+                pointers[event.pointerId].clientX = event.clientX;
+                pointers[event.pointerId].clientY = event.clientY;
+
+                var pointerIds = Object.keys(pointers);
+                if (pointerIds.length === 2 && pinchStart) {
+                    var first = pointers[pointerIds[0]];
+                    var second = pointers[pointerIds[1]];
+                    var currentDistance = distance(first, second);
+
+                    zoom = Math.min(
+                        maxZoom,
+                        Math.max(minZoom, pinchStart.zoom *
+                            currentDistance / pinchStart.distance)
+                    );
+                    panX = pinchStart.panX;
+                    panY = pinchStart.panY;
+                } else if (pointerIds.length === 1 && dragStart) {
+                    panX = dragStart.panX + event.clientX - dragStart.clientX;
+                    panY = dragStart.panY + event.clientY - dragStart.clientY;
+                }
+
+                updateTouchTransform();
             });
 
-            zoomInButton.addEventListener('click', function() {
-                setZoom(zoom + zoomStep);
+            function endPointer(event) {
+                delete pointers[event.pointerId];
+                dragStart = null;
+                pinchStart = null;
+
+                var remainingIds = Object.keys(pointers);
+                if (remainingIds.length === 1) {
+                    var remaining = pointers[remainingIds[0]];
+                    dragStart = {
+                        clientX: remaining.clientX,
+                        clientY: remaining.clientY,
+                        panX: panX,
+                        panY: panY
+                    };
+                }
+            }
+
+            mobileImage.addEventListener('pointerup', endPointer);
+            mobileImage.addEventListener('pointercancel', endPointer);
+            mobileImage.addEventListener('lostpointercapture', endPointer);
+
+            function fitMobileImage() {
+                if (
+                    !mobileImage.naturalWidth ||
+                    !mobileImage.naturalHeight ||
+                    !mobileImage.offsetWidth ||
+                    !mobileImage.offsetHeight ||
+                    !mobileImageScroll.clientWidth ||
+                    !mobileImageScroll.clientHeight
+                ) {
+                    return;
+                }
+
+                var widthScale =
+                    mobileImageScroll.clientWidth / mobileImage.offsetWidth;
+                var heightScale =
+                    mobileImageScroll.clientHeight / mobileImage.offsetHeight;
+
+                minZoom = Math.max(widthScale, heightScale);
+                maxZoom = minZoom * 4;
+                zoom = minZoom;
+                panX = 0;
+                panY = 0;
+                updateTouchTransform();
+            }
+
+            mobileImage.addEventListener('load', fitMobileImage);
+            window.addEventListener('resize', function() {
+                if (!modal.classList.contains('hidden')) {
+                    fitMobileImage();
+                }
             });
 
             // --------------------------------------
@@ -1405,6 +1487,7 @@
 
                 // Jalankan animasi pada dialog aktif.
                 requestAnimationFrame(function() {
+                    fitMobileImage();
                     animateIn(getActiveDialog());
                     getActiveCloseButton().focus();
                 });
@@ -1556,7 +1639,7 @@
             // --------------------------------------
             // INITIAL STATE
             // --------------------------------------
-            updateZoom();
+            resetZoom();
 
             // Opsional: memungkinkan modal dibuka
             // dari tombol atau script lain.
