@@ -10,120 +10,105 @@
       linear-gradient(to top right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
       linear-gradient(to bottom right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
       #f1f5f9; }
-  section, footer { position: relative; }
-  [data-section]::before {
-    content: attr(data-section); position: absolute; top: 0; left: 0; z-index: 5;
-    background: #334155; color: #fff; padding: 4px 8px;
-    font: 600 11px/1 ui-sans-serif, system-ui, sans-serif;
-  }
-  [data-role]::before {
-    content: attr(data-role); display: inline-block; margin-right: .5rem; vertical-align: middle;
-    background: #e2e8f0; color: #475569; border: 1px solid #94a3b8; padding: 3px 6px;
-    font: 600 10px/1 ui-sans-serif, system-ui, sans-serif; font-style: normal; letter-spacing: 0;
-  }
-  footer [data-role]::before { background: #475569; color: #e2e8f0; }
-  .hide-labels [data-section]::before, .hide-labels [data-role]::before { display: none; }
 </style>
 </head>
 <body class="bg-white text-slate-700 font-sans antialiased">
-
-<button id="toggle" class="fixed bottom-4 right-4 z-20 bg-slate-700 text-white text-xs px-3 py-2 font-semibold">Sembunyikan label</button>
 
 <!-- 0. NAVBAR -->
 <header class="border-b-2 border-slate-300 sticky top-0 bg-white z-10">
   <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
     <div class="flex items-center gap-2">
       <div class="w-8 h-8 border-2 border-slate-400 rounded-full"></div>
-      <span class="font-bold" data-role="Logo">Logo bank</span>
+      <span class="font-bold">Logo bank</span>
     </div>
-    <nav class="hidden md:flex gap-6 text-sm" data-role="Menu">
+    <nav class="hidden md:flex gap-6 text-sm">
       <a href="#keunggulan">Keunggulan</a><a href="#varian">Varian</a><a href="#promo">Promo</a>
       <a href="#biaya">Biaya</a><a href="#faq">FAQ</a>
     </nav>
-    <a href="#ajukan" class="border-2 border-slate-700 px-4 py-2 text-sm font-semibold" data-role="Button">Ajukan sekarang</a>
+    <a href="#ajukan" class="border-2 border-slate-700 px-4 py-2 text-sm font-semibold">Ajukan sekarang</a>
   </div>
 </header>
 
 <!-- 1. HERO -->
-<section class="bg-slate-100 border-b-2 border-slate-300" data-section="1 · Hero | tujuan: memperkenalkan kartu baru dan mengajak mengajukan">
-  <div class="max-w-6xl mx-auto px-4 pt-20 pb-16 grid md:grid-cols-2 gap-10 items-center">
+<section class="bg-slate-100 border-b-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
     <div>
-      <p class="text-sm text-slate-500" data-role="Badge">Baru diluncurkan • Tanggal peluncuran</p>
-      <h1 class="text-3xl md:text-5xl font-extrabold mt-3 leading-tight" data-role="Heading H1">Nama kartu: manfaat utama dalam satu kalimat</h1>
-      <p class="mt-4 max-w-md" data-role="Description">Dua kalimat: untuk siapa kartu ini dan masalah apa yang diselesaikannya.</p>
+      <p class="text-sm text-slate-500">Baru diluncurkan • Tanggal peluncuran</p>
+      <h1 class="text-3xl md:text-5xl font-extrabold mt-3 leading-tight">Nama Kartu, manfaat utama untuk Anda</h1>
+      <p class="mt-4 max-w-md">Deskripsi singkat tentang untuk siapa kartu ini dan manfaat utamanya.</p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#ajukan" class="bg-slate-700 text-white px-6 py-3 font-semibold" data-role="Button utama">Ajukan sekarang</a>
-        <a href="#varian" class="border-2 border-slate-700 px-6 py-3 font-semibold" data-role="Button sekunder">Bandingkan varian</a>
+        <a href="#ajukan" class="bg-slate-700 text-white px-6 py-3 font-semibold">Ajukan sekarang</a>
+        <a href="#varian" class="border-2 border-slate-700 px-6 py-3 font-semibold">Bandingkan varian</a>
       </div>
-      <p class="mt-4 text-xs text-slate-500" data-role="Text">Syarat dan ketentuan berlaku.</p>
+      <p class="mt-4 text-xs text-slate-500">Syarat dan ketentuan berlaku.</p>
     </div>
     <div class="flex justify-center">
-      <div class="ph w-72 md:w-96 aspect-[1.586/1] border-2 border-slate-400 rounded-xl flex items-center justify-center text-slate-500 text-sm" data-role="Image">Visual kartu (rasio 1.586 : 1)</div>
+      <div class="ph w-72 md:w-96 aspect-[1.586/1] border-2 border-slate-400 rounded-xl flex items-center justify-center text-slate-500 text-sm">Visual kartu (rasio 1.586 : 1)</div>
     </div>
   </div>
 </section>
 
 <!-- 2. KEUNGGULAN -->
-<section id="keunggulan" class="max-w-6xl mx-auto px-4 pt-20 pb-16" data-section="2 · Keunggulan | tujuan: menjelaskan alasan memilih kartu ini">
-  <h2 class="text-2xl font-bold text-center" data-role="Heading H2">Judul section: Mengapa kartu ini</h2>
-  <p class="mt-1 text-center text-slate-500 text-sm" data-role="Description">Satu kalimat pengantar keunggulan utama.</p>
+<section id="keunggulan" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold text-center">Mengapa kartu ini</h2>
+  <p class="mt-1 text-center text-slate-500 text-sm">Pengantar singkat tentang keunggulan kartu.</p>
   <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full" data-role="Ikon"></div><h3 class="mt-3 font-bold" data-role="Heading H3">Cashback</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat manfaat konkret.</p></article>
-    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full" data-role="Ikon"></div><h3 class="mt-3 font-bold" data-role="Heading H3">Poin reward</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat manfaat konkret.</p></article>
-    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full" data-role="Ikon"></div><h3 class="mt-3 font-bold" data-role="Heading H3">Cicilan 0%</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat manfaat konkret.</p></article>
-    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full" data-role="Ikon"></div><h3 class="mt-3 font-bold" data-role="Heading H3">Keamanan</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat manfaat konkret.</p></article>
+    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full"></div><h3 class="mt-3 font-bold">Cashback</h3><p class="mt-1 text-sm">Penjelasan singkat tentang manfaat ini.</p></article>
+    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full"></div><h3 class="mt-3 font-bold">Poin reward</h3><p class="mt-1 text-sm">Penjelasan singkat tentang manfaat ini.</p></article>
+    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full"></div><h3 class="mt-3 font-bold">Cicilan 0%</h3><p class="mt-1 text-sm">Penjelasan singkat tentang manfaat ini.</p></article>
+    <article class="border-2 border-slate-300 p-5 text-center"><div class="w-12 h-12 mx-auto border-2 border-slate-400 rounded-full"></div><h3 class="mt-3 font-bold">Keamanan</h3><p class="mt-1 text-sm">Penjelasan singkat tentang manfaat ini.</p></article>
   </div>
 </section>
 
 <!-- 3. VARIAN -->
-<section id="varian" class="bg-slate-100 border-y-2 border-slate-300" data-section="3 · Varian kartu | tujuan: membantu memilih jenis kartu">
-  <div class="max-w-6xl mx-auto px-4 pt-20 pb-16">
-    <h2 class="text-2xl font-bold text-center" data-role="Heading H2">Judul section: Pilih varian kartu</h2>
-    <div class="mt-4 flex justify-center gap-2 text-sm" data-role="Tab">
+<section id="varian" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-center">Pilih varian kartu</h2>
+    <div class="mt-4 flex justify-center gap-2 text-sm">
       <button class="border-2 border-slate-700 bg-slate-700 text-white px-4 py-1">Semua</button>
       <button class="border-2 border-slate-400 px-4 py-1">Kartu debit</button>
       <button class="border-2 border-slate-400 px-4 py-1">Kartu kredit</button>
     </div>
     <div class="mt-8 grid md:grid-cols-3 gap-6">
       <article class="border-2 border-slate-300 bg-white p-6 flex flex-col">
-        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4" data-role="Image kartu"></div>
-        <h3 class="text-xl font-bold" data-role="Heading H3">Nama varian 1</h3>
-        <p class="text-xs text-slate-500" data-role="Label">Debit</p>
-        <ul class="mt-3 text-sm space-y-2 grow" data-role="Daftar fitur"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
-        <p class="mt-4 text-sm" data-role="Text">Biaya tahunan: Rp 000.000</p>
-        <a href="#ajukan" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold" data-role="Button">Pilih kartu ini</a>
+        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold">Nama varian 1</h3>
+        <p class="text-xs text-slate-500">Debit</p>
+        <ul class="mt-3 text-sm space-y-2 grow"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
+        <p class="mt-4 text-sm">Biaya tahunan: Rp 000.000</p>
+        <a href="#ajukan" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih kartu ini</a>
       </article>
       <article class="border-2 border-slate-700 bg-white p-6 flex flex-col">
-        <div class="inline-block self-start text-xs border border-slate-500 px-2 py-0.5 mb-2" data-role="Badge">Direkomendasikan</div>
-        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4" data-role="Image kartu"></div>
-        <h3 class="text-xl font-bold" data-role="Heading H3">Nama varian 2</h3>
-        <p class="text-xs text-slate-500" data-role="Label">Kredit</p>
-        <ul class="mt-3 text-sm space-y-2 grow" data-role="Daftar fitur"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
-        <p class="mt-4 text-sm" data-role="Text">Biaya tahunan: Rp 000.000</p>
-        <a href="#ajukan" class="mt-3 block text-center bg-slate-700 text-white py-2 font-semibold" data-role="Button utama">Pilih kartu ini</a>
+        <div class="inline-block self-start text-xs border border-slate-500 px-2 py-0.5 mb-2">Direkomendasikan</div>
+        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold">Nama varian 2</h3>
+        <p class="text-xs text-slate-500">Kredit</p>
+        <ul class="mt-3 text-sm space-y-2 grow"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
+        <p class="mt-4 text-sm">Biaya tahunan: Rp 000.000</p>
+        <a href="#ajukan" class="mt-3 block text-center bg-slate-700 text-white py-2 font-semibold">Pilih kartu ini</a>
       </article>
       <article class="border-2 border-slate-300 bg-white p-6 flex flex-col">
-        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4" data-role="Image kartu"></div>
-        <h3 class="text-xl font-bold" data-role="Heading H3">Nama varian 3</h3>
-        <p class="text-xs text-slate-500" data-role="Label">Kredit</p>
-        <ul class="mt-3 text-sm space-y-2 grow" data-role="Daftar fitur"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
-        <p class="mt-4 text-sm" data-role="Text">Biaya tahunan: Rp 000.000</p>
-        <a href="#ajukan" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold" data-role="Button">Pilih kartu ini</a>
+        <div class="ph aspect-[1.586/1] border-2 border-slate-300 rounded-lg mb-4"></div>
+        <h3 class="text-xl font-bold">Nama varian 3</h3>
+        <p class="text-xs text-slate-500">Kredit</p>
+        <ul class="mt-3 text-sm space-y-2 grow"><li>Fitur unggulan 1</li><li>Fitur unggulan 2</li><li>Fitur unggulan 3</li></ul>
+        <p class="mt-4 text-sm">Biaya tahunan: Rp 000.000</p>
+        <a href="#ajukan" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih kartu ini</a>
       </article>
     </div>
   </div>
 </section>
 
 <!-- 4. PROMO LAUNCHING -->
-<section id="promo" class="max-w-6xl mx-auto px-4 pt-20 pb-16" data-section="4 · Promo launching | tujuan: memberi alasan mengajukan sekarang">
+<section id="promo" class="max-w-6xl mx-auto px-4 py-16">
   <div class="border-2 border-slate-700 p-8 grid md:grid-cols-2 gap-8 items-center">
     <div>
-      <p class="text-sm text-slate-500" data-role="Label">Periode promo: tanggal mulai – selesai</p>
-      <h2 class="text-2xl font-bold mt-2" data-role="Heading H2">Judul promo: hadiah atau keuntungan launching</h2>
-      <p class="mt-3 text-sm" data-role="Description">Satu sampai dua kalimat: apa yang didapat dan syarat singkatnya.</p>
-      <a href="#ajukan" class="mt-5 inline-block bg-slate-700 text-white px-6 py-3 font-semibold" data-role="Button utama">Klaim promo</a>
+      <p class="text-sm text-slate-500">Periode promo: tanggal mulai – selesai</p>
+      <h2 class="text-2xl font-bold mt-2">Hadiah atau keuntungan khusus launching</h2>
+      <p class="mt-3 text-sm">Penjelasan singkat tentang promo dan syarat singkatnya.</p>
+      <a href="#ajukan" class="mt-5 inline-block bg-slate-700 text-white px-6 py-3 font-semibold">Klaim promo</a>
     </div>
-    <div class="flex md:justify-end gap-3" data-role="Countdown">
+    <div class="flex md:justify-end gap-3">
       <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Hari</div></div>
       <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Jam</div></div>
       <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Menit</div></div>
@@ -132,36 +117,36 @@
 </section>
 
 <!-- 5. CARA MENDAPATKAN -->
-<section class="bg-slate-100 border-y-2 border-slate-300" data-section="5 · Cara mendapatkan | tujuan: menunjukkan prosesnya mudah">
-  <div class="max-w-6xl mx-auto px-4 pt-20 pb-16">
-    <h2 class="text-2xl font-bold text-center" data-role="Heading H2">Judul section: Cara mendapatkan kartu</h2>
+<section class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-center">Cara mendapatkan kartu</h2>
     <ol class="mt-8 grid md:grid-cols-4 gap-6">
-      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">1</div><h3 class="mt-3 font-bold" data-role="Heading H3">Isi pengajuan</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat langkah.</p></li>
-      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">2</div><h3 class="mt-3 font-bold" data-role="Heading H3">Verifikasi data</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat langkah.</p></li>
-      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">3</div><h3 class="mt-3 font-bold" data-role="Heading H3">Persetujuan</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat langkah.</p></li>
-      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">4</div><h3 class="mt-3 font-bold" data-role="Heading H3">Kartu dikirim</h3><p class="mt-1 text-sm" data-role="Description">Satu kalimat langkah.</p></li>
+      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">1</div><h3 class="mt-3 font-bold">Isi pengajuan</h3><p class="mt-1 text-sm">Penjelasan singkat langkah ini.</p></li>
+      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">2</div><h3 class="mt-3 font-bold">Verifikasi data</h3><p class="mt-1 text-sm">Penjelasan singkat langkah ini.</p></li>
+      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">3</div><h3 class="mt-3 font-bold">Persetujuan</h3><p class="mt-1 text-sm">Penjelasan singkat langkah ini.</p></li>
+      <li class="border-2 border-slate-300 bg-white p-5"><div class="w-8 h-8 border-2 border-slate-500 rounded-full text-center font-bold leading-7">4</div><h3 class="mt-3 font-bold">Kartu dikirim</h3><p class="mt-1 text-sm">Penjelasan singkat langkah ini.</p></li>
     </ol>
   </div>
 </section>
 
 <!-- 6. FITUR & KEAMANAN -->
-<section class="max-w-6xl mx-auto px-4 pt-20 pb-16 grid md:grid-cols-2 gap-10 items-center" data-section="6 · Fitur dan keamanan | tujuan: membangun rasa aman">
-  <div class="mt-4">
-    <h2 class="text-2xl font-bold" data-role="Heading H2">Judul section: Transaksi aman dan terkendali</h2>
-    <p class="mt-3 text-sm leading-relaxed" data-role="Description">Dua kalimat tentang perlindungan transaksi dan kontrol kartu lewat aplikasi.</p>
-    <ul class="mt-5 space-y-3 text-sm" data-role="Daftar fitur">
+<section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <h2 class="text-2xl font-bold">Transaksi aman dan terkendali</h2>
+    <p class="mt-3 text-sm leading-relaxed">Penjelasan singkat tentang perlindungan transaksi dan kontrol kartu lewat aplikasi.</p>
+    <ul class="mt-5 space-y-3 text-sm">
       <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Aktifkan atau blokir kartu dari aplikasi</li>
       <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Notifikasi setiap transaksi</li>
       <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Autentikasi tambahan untuk transaksi online</li>
     </ul>
   </div>
-  <div class="ph h-72 border-2 border-slate-300 flex items-center justify-center text-slate-500 text-sm mt-4" data-role="Image">Tampilan aplikasi mobile banking</div>
+  <div class="ph h-72 border-2 border-slate-300 flex items-center justify-center text-slate-500 text-sm">Tampilan aplikasi mobile banking</div>
 </section>
 
 <!-- 7. BIAYA & SYARAT -->
-<section id="biaya" class="bg-slate-100 border-y-2 border-slate-300" data-section="7 · Biaya dan syarat | tujuan: transparansi biaya dan kelayakan">
-  <div class="max-w-4xl mx-auto px-4 pt-20 pb-16">
-    <h2 class="text-2xl font-bold" data-role="Heading H2">Judul section: Biaya dan persyaratan</h2>
+<section id="biaya" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Biaya dan persyaratan</h2>
     <div class="mt-6 border-2 border-slate-300 bg-white overflow-x-auto">
       <table class="w-full text-sm text-left min-w-[480px]">
         <thead class="bg-slate-100 border-b-2 border-slate-300"><tr><th class="p-3">Ketentuan</th><th class="p-3">Varian 1</th><th class="p-3">Varian 2</th><th class="p-3">Varian 3</th></tr></thead>
@@ -173,55 +158,48 @@
         </tbody>
       </table>
     </div>
-    <p class="mt-3 text-xs text-slate-500" data-role="Text">Catatan: biaya dan ketentuan dapat berubah sesuai kebijakan bank.</p>
+    <p class="mt-3 text-xs text-slate-500">Catatan: biaya dan ketentuan dapat berubah sesuai kebijakan bank.</p>
   </div>
 </section>
 
 <!-- 8. FORM PENGAJUAN -->
-<section id="ajukan" class="max-w-3xl mx-auto px-4 pt-20 pb-16" data-section="8 · Form pengajuan | tujuan: mengumpulkan data calon nasabah">
-  <h2 class="text-2xl font-bold text-center" data-role="Heading H2">Judul section: Ajukan kartu sekarang</h2>
-  <p class="mt-1 text-center text-slate-500 text-sm" data-role="Description">Satu kalimat: isi data singkat, tim kami akan menghubungi Anda.</p>
+<section id="ajukan" class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold text-center">Ajukan kartu sekarang</h2>
+  <p class="mt-1 text-center text-slate-500 text-sm">Isi data singkat, tim kami akan menghubungi Anda.</p>
   <form class="mt-8 border-2 border-slate-300 p-6 grid sm:grid-cols-2 gap-4" onsubmit="return false">
-    <label class="block text-sm" data-role="Input">Nama lengkap<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="Sesuai KTP"></label>
-    <label class="block text-sm" data-role="Input">Email<input type="email" class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="nama@email.com"></label>
-    <label class="block text-sm" data-role="Input">Nomor ponsel<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="08xxxxxxxxxx"></label>
-    <label class="block text-sm" data-role="Pilihan">Varian kartu
+    <label class="block text-sm">Nama lengkap<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="Sesuai KTP"></label>
+    <label class="block text-sm">Email<input type="email" class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="nama@email.com"></label>
+    <label class="block text-sm">Nomor ponsel<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="08xxxxxxxxxx"></label>
+    <label class="block text-sm">Varian kartu
       <select class="mt-1 w-full border-2 border-slate-300 px-3 py-2 bg-white"><option>Varian 1 (debit)</option><option>Varian 2 (kredit)</option><option>Varian 3 (kredit)</option></select>
     </label>
-    <label class="sm:col-span-2 flex gap-2 text-sm" data-role="Persetujuan"><input type="checkbox" class="mt-1">Saya setuju data saya digunakan untuk proses pengajuan sesuai kebijakan privasi.</label>
-    <button class="sm:col-span-2 bg-slate-700 text-white py-3 font-semibold" data-role="Button utama">Kirim pengajuan</button>
+    <label class="sm:col-span-2 flex gap-2 text-sm"><input type="checkbox" class="mt-1">Saya setuju data saya digunakan untuk proses pengajuan sesuai kebijakan privasi.</label>
+    <button class="sm:col-span-2 bg-slate-700 text-white py-3 font-semibold">Kirim pengajuan</button>
   </form>
 </section>
 
 <!-- 9. FAQ -->
-<section id="faq" class="bg-slate-100 border-y-2 border-slate-300" data-section="9 · FAQ | tujuan: menjawab keraguan sebelum mengajukan">
-  <div class="max-w-3xl mx-auto px-4 pt-20 pb-16">
-    <h2 class="text-2xl font-bold" data-role="Heading H2">Judul section: Pertanyaan yang sering diajukan</h2>
+<section id="faq" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Pertanyaan yang sering diajukan</h2>
     <div class="mt-6 space-y-3">
-      <details class="border-2 border-slate-300 bg-white p-4" open><summary class="font-semibold cursor-pointer" data-role="Pertanyaan">Berapa lama proses persetujuan?</summary><p class="mt-2 text-sm" data-role="Jawaban">Jawaban singkat dan jelas, maks. 2 kalimat.</p></details>
-      <details class="border-2 border-slate-300 bg-white p-4"><summary class="font-semibold cursor-pointer" data-role="Pertanyaan">Apakah promo berlaku untuk semua varian?</summary><p class="mt-2 text-sm" data-role="Jawaban">Jawaban singkat dan jelas, maks. 2 kalimat.</p></details>
-      <details class="border-2 border-slate-300 bg-white p-4"><summary class="font-semibold cursor-pointer" data-role="Pertanyaan">Bagaimana jika kartu hilang?</summary><p class="mt-2 text-sm" data-role="Jawaban">Jawaban singkat dan jelas, maks. 2 kalimat.</p></details>
+      <details class="border-2 border-slate-300 bg-white p-4" open><summary class="font-semibold cursor-pointer">Berapa lama proses persetujuan?</summary><p class="mt-2 text-sm">Jawaban singkat dan jelas.</p></details>
+      <details class="border-2 border-slate-300 bg-white p-4"><summary class="font-semibold cursor-pointer">Apakah promo berlaku untuk semua varian?</summary><p class="mt-2 text-sm">Jawaban singkat dan jelas.</p></details>
+      <details class="border-2 border-slate-300 bg-white p-4"><summary class="font-semibold cursor-pointer">Bagaimana jika kartu hilang?</summary><p class="mt-2 text-sm">Jawaban singkat dan jelas.</p></details>
     </div>
   </div>
 </section>
 
 <!-- 10. FOOTER -->
-<footer class="bg-slate-700 text-slate-200" data-section="10 · Footer | tujuan: kontak, tautan, dan informasi regulasi">
-  <div class="max-w-6xl mx-auto px-4 pt-14 pb-8 grid md:grid-cols-3 gap-6 text-sm">
-    <div><div class="font-bold text-white" data-role="Logo">Logo bank</div><p class="mt-2" data-role="Description">Deskripsi singkat bank.</p></div>
-    <div><div class="font-semibold text-white" data-role="Heading H4">Hubungi kami</div><p class="mt-2" data-role="Text">Call center • Email • Cabang terdekat</p></div>
-    <div><div class="font-semibold text-white" data-role="Heading H4">Tautan</div><p class="mt-2" data-role="Link">Kebijakan privasi • Syarat dan ketentuan</p></div>
+<footer class="bg-slate-700 text-slate-200">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+    <div><div class="font-bold text-white">Logo bank</div><p class="mt-2">Deskripsi singkat bank.</p></div>
+    <div><div class="font-semibold text-white">Hubungi kami</div><p class="mt-2">Call center • Email • Cabang terdekat</p></div>
+    <div><div class="font-semibold text-white">Tautan</div><p class="mt-2">Kebijakan privasi • Syarat dan ketentuan</p></div>
   </div>
-  <p class="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-300" data-role="Disclaimer">Teks regulasi: nama bank terdaftar dan diawasi oleh otoritas terkait, serta peserta penjaminan simpanan.</p>
-  <div class="text-center text-xs py-4 border-t border-slate-500" data-role="Text">© Tahun Nama bank</div>
+  <p class="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-300">Nama bank terdaftar dan diawasi oleh otoritas terkait, serta peserta penjaminan simpanan.</p>
+  <div class="text-center text-xs py-4 border-t border-slate-500">© Tahun Nama bank</div>
 </footer>
 
-<script>
-  var b = document.getElementById('toggle');
-  b.addEventListener('click', function () {
-    var hidden = document.body.classList.toggle('hide-labels');
-    b.textContent = hidden ? 'Tampilkan label' : 'Sembunyikan label';
-  });
-</script>
 </body>
 </html>
