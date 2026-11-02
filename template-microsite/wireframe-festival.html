@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe – Festival</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  .ph { background:
+      linear-gradient(to top right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
+      #f1f5f9; }
+</style>
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased">
+
+<!-- NAVBAR -->
+<header class="border-b-2 border-slate-300 sticky top-0 bg-white z-10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 border-2 border-slate-400 rounded-full"></div>
+      <span class="font-bold">LOGO FESTIVAL</span>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#tentang">Tentang</a><a href="#lineup">Line-up</a><a href="#jadwal">Jadwal</a>
+      <a href="#venue">Lokasi</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="#tiket" class="border-2 border-slate-700 px-4 py-2 text-sm font-semibold">Beli tiket</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-slate-100 border-b-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+    <p class="text-sm text-slate-500">[Tanggal mulai – selesai] • [Nama venue, Kota]</p>
+    <h1 class="text-4xl md:text-6xl font-extrabold mt-3 leading-tight">[NAMA FESTIVAL] [TAHUN]</h1>
+    <p class="mt-4 max-w-xl mx-auto">[Tagline satu kalimat tentang pengalaman yang ditawarkan festival.]</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#tiket" class="bg-slate-700 text-white px-6 py-3 font-semibold">Beli tiket</a>
+      <a href="#lineup" class="border-2 border-slate-700 px-6 py-3 font-semibold">Lihat line-up</a>
+    </div>
+    <div class="mt-10 flex justify-center gap-3" aria-label="Hitung mundur">
+      <div class="border-2 border-slate-400 w-16 py-2"><div class="text-xl font-bold">00</div><div class="text-xs">Hari</div></div>
+      <div class="border-2 border-slate-400 w-16 py-2"><div class="text-xl font-bold">00</div><div class="text-xs">Jam</div></div>
+      <div class="border-2 border-slate-400 w-16 py-2"><div class="text-xl font-bold">00</div><div class="text-xs">Menit</div></div>
+    </div>
+    <div class="ph h-64 md:h-80 border-2 border-slate-300 mt-12 flex items-center justify-center text-slate-400 text-sm">Visual utama (foto suasana / ilustrasi festival)</div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <div class="ph h-72 border-2 border-slate-300 flex items-center justify-center text-slate-400 text-sm">Foto festival tahun lalu</div>
+  <div>
+    <h2 class="text-2xl font-bold">Tentang festival</h2>
+    <p class="mt-3 text-sm leading-relaxed">[Dua sampai tiga kalimat: apa festival ini, untuk siapa, dan apa yang membuatnya berbeda.]</p>
+    <div class="mt-6 grid grid-cols-3 gap-4 text-center">
+      <div class="border-2 border-slate-300 py-4"><div class="text-2xl font-bold">0</div><div class="text-xs">Hari</div></div>
+      <div class="border-2 border-slate-300 py-4"><div class="text-2xl font-bold">00</div><div class="text-xs">Penampil</div></div>
+      <div class="border-2 border-slate-300 py-4"><div class="text-2xl font-bold">0.000</div><div class="text-xs">Pengunjung</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LINE-UP -->
+<section id="lineup" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Line-up</h2>
+    <p class="mt-1 text-slate-500 text-sm">Penampil, pembicara, atau seniman utama.</p>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div><div class="ph h-48 border-2 border-slate-300"></div><p class="mt-2 font-semibold">[Nama penampil]</p><p class="text-xs text-slate-500">[Hari • Panggung]</p></div>
+      <div><div class="ph h-48 border-2 border-slate-300"></div><p class="mt-2 font-semibold">[Nama penampil]</p><p class="text-xs text-slate-500">[Hari • Panggung]</p></div>
+      <div><div class="ph h-48 border-2 border-slate-300"></div><p class="mt-2 font-semibold">[Nama penampil]</p><p class="text-xs text-slate-500">[Hari • Panggung]</p></div>
+      <div><div class="ph h-48 border-2 border-slate-300"></div><p class="mt-2 font-semibold">[Nama penampil]</p><p class="text-xs text-slate-500">[Hari • Panggung]</p></div>
+    </div>
+    <div class="mt-8 text-center"><a href="#" class="inline-block border-2 border-slate-700 px-5 py-2 text-sm font-semibold">Lihat semua penampil</a></div>
+  </div>
+</section>
+
+<!-- JADWAL -->
+<section id="jadwal" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Jadwal acara</h2>
+  <div class="mt-4 flex gap-2 text-sm">
+    <button class="border-2 border-slate-700 bg-slate-700 text-white px-4 py-1">Hari 1</button>
+    <button class="border-2 border-slate-400 px-4 py-1">Hari 2</button>
+    <button class="border-2 border-slate-400 px-4 py-1">Hari 3</button>
+  </div>
+  <div class="mt-6 border-2 border-slate-300 overflow-x-auto">
+    <table class="w-full text-sm text-left min-w-[520px]">
+      <thead class="bg-slate-100 border-b-2 border-slate-300">
+        <tr><th class="p-3 w-28">Waktu</th><th class="p-3">Panggung utama</th><th class="p-3">Panggung kedua</th><th class="p-3">Area workshop</th></tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-slate-200"><td class="p-3 font-semibold">00.00</td><td class="p-3">[Acara]</td><td class="p-3">[Acara]</td><td class="p-3">[Sesi]</td></tr>
+        <tr class="border-b border-slate-200"><td class="p-3 font-semibold">00.00</td><td class="p-3">[Acara]</td><td class="p-3">[Acara]</td><td class="p-3">[Sesi]</td></tr>
+        <tr class="border-b border-slate-200"><td class="p-3 font-semibold">00.00</td><td class="p-3">[Acara]</td><td class="p-3">[Acara]</td><td class="p-3">[Sesi]</td></tr>
+        <tr><td class="p-3 font-semibold">00.00</td><td class="p-3">[Penutup]</td><td class="p-3">–</td><td class="p-3">–</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- PENGALAMAN -->
+<section class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Yang bisa dinikmati</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="border-2 border-slate-300 bg-white p-5"><div class="ph h-32 mb-4 border border-slate-300"></div><h3 class="font-bold">Pertunjukan</h3><p class="mt-1 text-sm">[Deskripsi satu kalimat.]</p></article>
+      <article class="border-2 border-slate-300 bg-white p-5"><div class="ph h-32 mb-4 border border-slate-300"></div><h3 class="font-bold">Kuliner</h3><p class="mt-1 text-sm">[Deskripsi satu kalimat.]</p></article>
+      <article class="border-2 border-slate-300 bg-white p-5"><div class="ph h-32 mb-4 border border-slate-300"></div><h3 class="font-bold">Pasar kreatif</h3><p class="mt-1 text-sm">[Deskripsi satu kalimat.]</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TIKET -->
+<section id="tiket" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold text-center">Pilih tiket</h2>
+  <div class="mt-8 grid md:grid-cols-3 gap-6">
+    <article class="border-2 border-slate-300 p-6 flex flex-col">
+      <h3 class="text-xl font-bold">Reguler</h3>
+      <p class="mt-2 text-3xl font-extrabold">Rp 000.000</p>
+      <ul class="mt-4 text-sm space-y-2 grow"><li>Akses 1 hari</li><li>Akses semua panggung</li><li>[Fasilitas lain]</li></ul>
+      <a href="#" class="mt-6 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih Reguler</a>
+    </article>
+    <article class="border-2 border-slate-700 p-6 flex flex-col">
+      <div class="inline-block self-start text-xs border border-slate-500 px-2 py-0.5 mb-2">Paling diminati</div>
+      <h3 class="text-xl font-bold">Terusan 3 hari</h3>
+      <p class="mt-2 text-3xl font-extrabold">Rp 000.000</p>
+      <ul class="mt-4 text-sm space-y-2 grow"><li>Akses semua hari</li><li>Jalur masuk prioritas</li><li>[Merchandise]</li></ul>
+      <a href="#" class="mt-6 block text-center bg-slate-700 text-white py-2 font-semibold">Pilih Terusan</a>
+    </article>
+    <article class="border-2 border-slate-300 p-6 flex flex-col">
+      <h3 class="text-xl font-bold">VIP</h3>
+      <p class="mt-2 text-3xl font-extrabold">Rp 000.000</p>
+      <ul class="mt-4 text-sm space-y-2 grow"><li>Akses semua hari</li><li>Area VIP & lounge</li><li>[Fasilitas lain]</li></ul>
+      <a href="#" class="mt-6 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih VIP</a>
+    </article>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-5 gap-8">
+    <div class="md:col-span-3 ph h-72 border-2 border-slate-300 flex items-center justify-center text-slate-400 text-sm">Denah area festival / peta lokasi</div>
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-bold">Lokasi & akses</h2>
+      <p class="mt-3 text-sm">[Nama venue]<br>[Alamat lengkap]</p>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Transportasi umum: [stasiun / halte terdekat]</li>
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Parkir: [lokasi dan kapasitas]</li>
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Fasilitas: toilet, medis, musala, area istirahat</li>
+      </ul>
+      <a href="#" class="mt-6 inline-block underline text-sm">Buka di peta</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Galeri</h2>
+  <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+    <div class="ph h-40 border border-slate-300 md:col-span-2 md:row-span-2 md:h-full"></div>
+    <div class="ph h-40 border border-slate-300"></div>
+    <div class="ph h-40 border border-slate-300"></div>
+    <div class="ph h-40 border border-slate-300"></div>
+    <div class="ph h-40 border border-slate-300"></div>
+  </div>
+</section>
+
+<!-- SPONSOR -->
+<section class="border-y-2 border-slate-300 bg-slate-100">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-center font-semibold">Didukung oleh</h2>
+    <div class="mt-6 grid grid-cols-3 md:grid-cols-6 gap-4">
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Pertanyaan yang sering diajukan</h2>
+  <div class="mt-6 space-y-3">
+    <details class="border-2 border-slate-300 p-4" open><summary class="font-semibold cursor-pointer">Apakah anak-anak boleh masuk?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+    <details class="border-2 border-slate-300 p-4"><summary class="font-semibold cursor-pointer">Apakah tiket bisa dikembalikan?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+    <details class="border-2 border-slate-300 p-4"><summary class="font-semibold cursor-pointer">Barang apa yang dilarang dibawa?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="bg-slate-100 border-t-2 border-slate-300">
+  <div class="max-w-xl mx-auto px-4 py-12 text-center">
+    <h2 class="text-xl font-bold">Dapatkan kabar terbaru</h2>
+    <form class="mt-4 flex gap-2" onsubmit="return false">
+      <input type="email" class="grow border-2 border-slate-300 px-3 py-2 text-sm" placeholder="Alamat email Anda" aria-label="Email">
+      <button class="bg-slate-700 text-white px-5 text-sm font-semibold">Berlangganan</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-700 text-slate-200">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+    <div><div class="font-bold text-white">LOGO FESTIVAL</div><p class="mt-2">[Deskripsi singkat penyelenggara]</p></div>
+    <div><div class="font-semibold text-white">Kontak</div><p class="mt-2">[email] • [WhatsApp]</p></div>
+    <div><div class="font-semibold text-white">Ikuti kami</div><p class="mt-2">[Instagram] • [TikTok] • [YouTube]</p></div>
+  </div>
+  <div class="text-center text-xs py-4 border-t border-slate-500">© [Tahun] [Nama Penyelenggara]</div>
+</footer>
+
+</body>
+</html>

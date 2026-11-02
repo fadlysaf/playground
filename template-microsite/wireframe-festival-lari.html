@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe – Festival Lari</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  /* Kotak placeholder gambar: diagonal silang khas wireframe */
+  .ph { background:
+      linear-gradient(to top right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #cbd5e1 50%, transparent calc(50% + 1px)),
+      #f1f5f9; }
+</style>
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased">
+
+<!-- NAVBAR -->
+<header class="border-b-2 border-slate-300 sticky top-0 bg-white z-10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 border-2 border-slate-400 rounded-full"></div>
+      <span class="font-bold">LOGO EVENT</span>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#kategori">Kategori</a><a href="#rute">Rute</a><a href="#jadwal">Jadwal</a>
+      <a href="#racepack">Race Pack</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="#daftar" class="border-2 border-slate-700 px-4 py-2 text-sm font-semibold">Daftar</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-slate-100 border-b-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="text-sm text-slate-500">[Tanggal] • [Lokasi / Kota]</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">[NAMA FESTIVAL LARI] [TAHUN]</h1>
+      <p class="mt-4 max-w-md">[Tagline singkat: satu kalimat tentang pengalaman yang ditawarkan event.]</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#daftar" class="bg-slate-700 text-white px-6 py-3 font-semibold">Daftar sekarang</a>
+        <a href="#rute" class="border-2 border-slate-700 px-6 py-3 font-semibold">Lihat rute</a>
+      </div>
+      <!-- Countdown -->
+      <div class="mt-8 flex gap-3" aria-label="Hitung mundur">
+        <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Hari</div></div>
+        <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Jam</div></div>
+        <div class="border-2 border-slate-400 w-16 py-2 text-center"><div class="text-xl font-bold">00</div><div class="text-xs">Menit</div></div>
+      </div>
+    </div>
+    <div class="ph h-72 md:h-96 border-2 border-slate-300 flex items-center justify-center text-slate-400 text-sm">Foto / ilustrasi hero (pelari, garis start)</div>
+  </div>
+</section>
+
+<!-- STATISTIK -->
+<section class="border-b-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+    <div><div class="text-3xl font-bold">0.000</div><div class="text-sm">Peserta</div></div>
+    <div><div class="text-3xl font-bold">3</div><div class="text-sm">Kategori jarak</div></div>
+    <div><div class="text-3xl font-bold">00</div><div class="text-sm">Water station</div></div>
+    <div><div class="text-3xl font-bold">00</div><div class="text-sm">Tenant & sponsor</div></div>
+  </div>
+</section>
+
+<!-- KATEGORI -->
+<section id="kategori" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Pilih kategori lari</h2>
+  <p class="mt-1 text-slate-500">Satu baris penjelasan tentang cara memilih jarak.</p>
+  <div class="mt-8 grid md:grid-cols-3 gap-6">
+    <article class="border-2 border-slate-300 p-6">
+      <div class="ph h-32 mb-4 border border-slate-300"></div>
+      <h3 class="text-xl font-bold">5K Fun Run</h3>
+      <ul class="mt-3 text-sm space-y-1"><li>Start: 00.00 WIB</li><li>Cut off: 00 menit</li><li>Kuota: 000 pelari</li></ul>
+      <p class="mt-4 font-semibold">Rp 000.000</p>
+      <a href="#daftar" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih 5K</a>
+    </article>
+    <article class="border-2 border-slate-700 p-6">
+      <div class="ph h-32 mb-4 border border-slate-300"></div>
+      <div class="inline-block text-xs border border-slate-500 px-2 py-0.5 mb-2">Paling diminati</div>
+      <h3 class="text-xl font-bold">10K</h3>
+      <ul class="mt-3 text-sm space-y-1"><li>Start: 00.00 WIB</li><li>Cut off: 00 menit</li><li>Kuota: 000 pelari</li></ul>
+      <p class="mt-4 font-semibold">Rp 000.000</p>
+      <a href="#daftar" class="mt-3 block text-center bg-slate-700 text-white py-2 font-semibold">Pilih 10K</a>
+    </article>
+    <article class="border-2 border-slate-300 p-6">
+      <div class="ph h-32 mb-4 border border-slate-300"></div>
+      <h3 class="text-xl font-bold">Half Marathon 21K</h3>
+      <ul class="mt-3 text-sm space-y-1"><li>Start: 00.00 WIB</li><li>Cut off: 0 jam 00 menit</li><li>Kuota: 000 pelari</li></ul>
+      <p class="mt-4 font-semibold">Rp 000.000</p>
+      <a href="#daftar" class="mt-3 block text-center border-2 border-slate-700 py-2 font-semibold">Pilih 21K</a>
+    </article>
+  </div>
+</section>
+
+<!-- RUTE -->
+<section id="rute" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-5 gap-8">
+    <div class="md:col-span-3 ph h-80 border-2 border-slate-300 flex items-center justify-center text-slate-400 text-sm">Peta rute (SVG / embed peta)</div>
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-bold">Rute & titik layanan</h2>
+      <div class="mt-4 flex gap-2 text-sm">
+        <button class="border-2 border-slate-700 bg-slate-700 text-white px-3 py-1">5K</button>
+        <button class="border-2 border-slate-400 px-3 py-1">10K</button>
+        <button class="border-2 border-slate-400 px-3 py-1">21K</button>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm">
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 rounded-full shrink-0"></span>Start / Finish – [nama lokasi]</li>
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 shrink-0"></span>Water station – KM 0, 0, 0</li>
+        <li class="flex gap-3"><span class="w-4 h-4 mt-0.5 border-2 border-slate-500 rotate-45 shrink-0"></span>Medis & toilet – [titik]</li>
+      </ul>
+      <a href="#" class="mt-6 inline-block underline text-sm">Unduh peta rute (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- JADWAL -->
+<section id="jadwal" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Jadwal acara</h2>
+  <div class="mt-8 grid md:grid-cols-2 gap-8">
+    <div>
+      <h3 class="font-semibold border-b-2 border-slate-300 pb-2">Hari 1 – Race pack collection & expo</h3>
+      <ol class="mt-4 space-y-3 text-sm">
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Pembukaan expo</li>
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Pengambilan race pack</li>
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Technical meeting</li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="font-semibold border-b-2 border-slate-300 pb-2">Hari 2 – Hari lomba</h3>
+      <ol class="mt-4 space-y-3 text-sm">
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Flag off 21K</li>
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Flag off 10K</li>
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Flag off 5K & penutupan</li>
+        <li class="flex gap-4"><span class="w-20 font-semibold">00.00</span>Pengumuman pemenang & hiburan</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- RACE PACK -->
+<section id="racepack" class="bg-slate-100 border-y-2 border-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold">Isi race pack</h2>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div><div class="ph h-32 border-2 border-slate-300"></div><p class="mt-2 text-sm font-semibold">Jersey</p></div>
+      <div><div class="ph h-32 border-2 border-slate-300"></div><p class="mt-2 text-sm font-semibold">BIB + chip</p></div>
+      <div><div class="ph h-32 border-2 border-slate-300"></div><p class="mt-2 text-sm font-semibold">Medali finisher</p></div>
+      <div><div class="ph h-32 border-2 border-slate-300"></div><p class="mt-2 text-sm font-semibold">Goodie bag</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM PENDAFTARAN -->
+<section id="daftar" class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold text-center">Daftar sebagai peserta</h2>
+  <form class="mt-8 border-2 border-slate-300 p-6 grid sm:grid-cols-2 gap-4" onsubmit="return false">
+    <label class="block text-sm">Nama lengkap<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="Sesuai KTP"></label>
+    <label class="block text-sm">Email<input type="email" class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="nama@email.com"></label>
+    <label class="block text-sm">Nomor WhatsApp<input class="mt-1 w-full border-2 border-slate-300 px-3 py-2" placeholder="08xxxxxxxxxx"></label>
+    <label class="block text-sm">Tanggal lahir<input type="date" class="mt-1 w-full border-2 border-slate-300 px-3 py-2"></label>
+    <label class="block text-sm">Kategori
+      <select class="mt-1 w-full border-2 border-slate-300 px-3 py-2 bg-white"><option>5K Fun Run</option><option>10K</option><option>Half Marathon 21K</option></select>
+    </label>
+    <label class="block text-sm">Ukuran jersey
+      <select class="mt-1 w-full border-2 border-slate-300 px-3 py-2 bg-white"><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+    </label>
+    <label class="sm:col-span-2 flex gap-2 text-sm"><input type="checkbox" class="mt-1">Saya setuju dengan syarat & ketentuan serta menyatakan sehat untuk berlari.</label>
+    <button class="sm:col-span-2 bg-slate-700 text-white py-3 font-semibold">Lanjut ke pembayaran</button>
+  </form>
+</section>
+
+<!-- SPONSOR -->
+<section class="border-y-2 border-slate-300 bg-slate-100">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-center font-semibold">Didukung oleh</h2>
+    <div class="mt-6 grid grid-cols-3 md:grid-cols-6 gap-4">
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+      <div class="ph h-14 border border-slate-300"></div><div class="ph h-14 border border-slate-300"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold">Pertanyaan yang sering diajukan</h2>
+  <div class="mt-6 space-y-3">
+    <details class="border-2 border-slate-300 p-4" open><summary class="font-semibold cursor-pointer">Apakah tiket bisa dipindahtangankan?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+    <details class="border-2 border-slate-300 p-4"><summary class="font-semibold cursor-pointer">Bagaimana jika saya berhalangan hadir?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+    <details class="border-2 border-slate-300 p-4"><summary class="font-semibold cursor-pointer">Di mana pengambilan race pack?</summary><p class="mt-2 text-sm">[Jawaban singkat dan jelas.]</p></details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-700 text-slate-200">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+    <div><div class="font-bold text-white">LOGO EVENT</div><p class="mt-2">[Deskripsi singkat penyelenggara]</p></div>
+    <div><div class="font-semibold text-white">Kontak</div><p class="mt-2">[email] • [WhatsApp]</p></div>
+    <div><div class="font-semibold text-white">Ikuti kami</div><p class="mt-2">[Instagram] • [TikTok] • [YouTube]</p></div>
+  </div>
+  <div class="text-center text-xs py-4 border-t border-slate-500">© [Tahun] [Nama Penyelenggara]</div>
+</footer>
+
+</body>
+</html>
