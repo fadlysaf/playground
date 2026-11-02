@@ -114,6 +114,10 @@ Route::get('/disneyrun', function () {
     ]);
 });
 
+Route::get('/disneyrun-countdown', function () {
+    return response()->file(public_path('disneyrun-countdown.html'));
+});
+
 Route::get('/disneyrun-blob', function () {
     return view('disneyrun.blob-route', [
         'pageCSS' => 'assets/disneyrun/style.css',
@@ -122,3 +126,9 @@ Route::get('/disneyrun-blob', function () {
     ]);
 });
 
+Route::get('/kompas-tonala', function () {
+    return view('kompas-tonala.index', [
+        'title' => 'Kompas Tonala',
+        'isTailwindV4' => true,
+    ]);
+});
