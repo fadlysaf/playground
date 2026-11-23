@@ -4,253 +4,658 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Promo untukmu</title>
+    <title>Lippo Mall Puri - Frozen Fest</title>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 </head>
 
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
-    <section id="promo-t2" class="py-14 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto" data-tabs>
+    <div class="relative z-10 min-h-screen flex flex-col bg-cover on-element--stacked"
+        style="background-image: url('https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/FA_Banner_Microsite_Disney_Run_73766ef43b.jpg');">
+        <section id="hero2" class="w-full flex flex-col items-center relative">
+            <picture class="w-full">
+                <source media="(min-width: 500px)"
+                    srcset="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/new_main_kv_4ccac64805.jpg">
 
-            <h2 class="text-2xl md:text-3xl font-bold text-stone-900 mb-4">Promo untukmu</h2>
+                <img src="https://cdn1.ocbc.id/asset/media/Feature/Banner/Banner%20Nyala/disney-run-mobile.jpeg"
+                    alt="Disney Run 2026 Jakarta" class="w-full h-auto block object-cover">
+            </picture>
+        </section>
 
-            <!-- Tab -->
-            <div role="tablist" aria-label="Pilih promo"
-                class="flex gap-6 overflow-x-auto border-b border-stone-300 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                <button type="button" role="tab" data-tab="0" aria-selected="true"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Cashback
-                    20%</button>
-                <button type="button" role="tab" data-tab="1" aria-selected="false"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Beli
-                    2 Gratis 1</button>
-                <button type="button" role="tab" data-tab="2" aria-selected="false"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Paket
-                    Hemat</button>
-                <button type="button" role="tab" data-tab="3" aria-selected="false"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Gratis
-                    Ongkir</button>
-                <button type="button" role="tab" data-tab="4" aria-selected="false"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Diskon
-                    Member 15%</button>
-                <button type="button" role="tab" data-tab="5" aria-selected="false"
-                    class="shrink-0 pb-3 -mb-px border-b-2 border-transparent text-stone-500 font-medium transition aria-selected:border-rose-600 aria-selected:text-rose-600">Flash
-                    Sale 12.12</button>
+        <!-- Promo Disney Run: setiap kartu membuka detail promo dalam popup statis. -->
+        <section id="promo" class="relative overflow-hidden py-16">
+            <div class="max-w-[90rem] mx-auto px-4 lg:px-0">
+
+                <!-- Header -->
+                <div class="flex flex-col items-center text-center gap-6 mb-10">
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+                            Promo Disneyrun
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Event Highlights -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8 md:px-[6.5rem]">
+
+                    <div data-promo="promo-1" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_Cashback_0e0e81c52c.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_Cashback_14f9b4024e.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+                    <div data-promo="promo-2" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_ec09d0545c.png"
+                            alt="Promo Disney Run: klaim es krim seharga Rp1 dengan aktivasi contactless OCBC mobile"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_Ice_Cream_c068df77f5.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+                    <div data-promo="promo-3" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_Embroidery_2390ab5e94.png"
+                            alt="Promo Disney Run Giordano: complimentary embroidery untuk race category, nama, dan desain pilihan"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_Embroidery_b638c1b501.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+                    <div data-promo="promo-4" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_GRAB_a4775a8e41.png"
+                            alt="Promo Disney Run GrabCar: hemat 20 persen untuk perjalanan dari dan ke The Breeze BSD"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_GRAB_57bd28cae6.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+
+                    <div data-promo="promo-5" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_YOUNG_NYALA_8e20dc7184.png"
+                            alt="Promo Disney Run: buka Tanda Junior atau Young Nyala dan dapatkan tumbler"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_YOUNG_NYALA_07c06f9990.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+
+                    <div data-promo="promo-6" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_KOPER_a153ac95cd.png"
+                            alt="Promo Disney Run: dapatkan koper atau hadiah lain dengan membuka Nyala by OCBC"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_KOPER_d6c5d6f73a.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+
+                    <div data-promo="promo-7" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_CC_1ed93eec17.png"
+                            alt="Promo Disney Run: ajukan Kartu Kredit OCBC dan dapatkan pouch, tumbler, atau welcome bonus"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_CC_114225de3b.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+
+                    <div data-promo="promo-8" role="button" tabindex="0"
+                        class="group flex justify-center items-center rounded-xl w-full h-[6.5rem] md:h-[15rem] overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_451_x_240_Desktop_KTA_67dff95034.png"
+                            alt="Promo Disney Run KTA Cashloan: limit hingga Rp200 juta, cashback hingga Rp2 juta, dan tenor hingga 36 bulan"
+                            class="md:h-[15rem] hidden md:block object-cover">
+                        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Program_Booth_212_x_160_Mobile_KTA_79f885ae7a.png"
+                            alt="Promo Disney Run: cashback hingga Rp25 ribu dengan Kartu OCBC Global Debit atau QRIS OCBC mobile"
+                            class="h-[9rem] block md:hidden object-cover">
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <!-- Panel -->
-            <div class="mt-8">
-
-                <!-- 0: Cashback 20% -->
-                <article data-panel="0">
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/cashback.jpg" alt="Banner Cashback 20%" onerror="this.remove()"
-                            class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Cashback 20%</h3>
-                                <p class="text-white/80 mt-1">Dapat kembali hingga Rp100.000 untuk setiap transaksi.</p>
-                            </div>
-                        </div>
-                        <div class="h-60 md:h-80 absolute inset-0 -z-0 pointer-events-none"></div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">1 - 31 Des 2026</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Min. transaksi</p>
-                            <p class="font-semibold mt-1">Rp250.000</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">500 pemenang</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Ikut
-                                program</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 1: Beli 2 Gratis 1 -->
-                <article data-panel="1" hidden>
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/beli-2-gratis-1.jpg" alt="Banner Beli 2 Gratis 1"
-                            onerror="this.remove()" class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Beli 2 Gratis 1</h3>
-                                <p class="text-white/80 mt-1">Berlaku untuk produk pilihan, khusus hari Jumat.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">Setiap Jumat</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Min. transaksi</p>
-                            <p class="font-semibold mt-1">Tidak ada</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">Selama stok ada</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Lihat
-                                produk</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 2: Paket Hemat -->
-                <article data-panel="2" hidden>
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/paket-hemat.jpg" alt="Banner Paket Hemat" onerror="this.remove()"
-                            class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Paket Hemat</h3>
-                                <p class="text-white/80 mt-1">Tiga produk favorit dalam satu paket dengan harga spesial.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">Hingga 15 Des</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Harga paket</p>
-                            <p class="font-semibold mt-1">Rp199.000</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">200 paket</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Beli
-                                paket</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 3: Gratis Ongkir -->
-                <article data-panel="3" hidden>
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/gratis-ongkir.jpg" alt="Banner Gratis Ongkir" onerror="this.remove()"
-                            class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Gratis Ongkir</h3>
-                                <p class="text-white/80 mt-1">Gratis ongkir ke seluruh Jawa untuk pembelian minimum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">Sepanjang Des</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Min. transaksi</p>
-                            <p class="font-semibold mt-1">Rp100.000</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">Tanpa batas</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Belanja</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 4: Diskon Member 15% -->
-                <article data-panel="4" hidden>
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/diskon-member.jpg" alt="Banner Diskon Member 15%"
-                            onerror="this.remove()" class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Diskon Member 15%</h3>
-                                <p class="text-white/80 mt-1">Member aktif mendapat potongan harga di semua produk.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">Khusus member</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Min. transaksi</p>
-                            <p class="font-semibold mt-1">Tidak ada</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">Tanpa batas</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Daftar
-                                member</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 5: Flash Sale 12.12 -->
-                <article data-panel="5" hidden>
-                    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-700 to-rose-900">
-                        <img src="/images/promo/flash-sale.jpg" alt="Banner Flash Sale 12.12" onerror="this.remove()"
-                            class="w-full h-60 md:h-80 object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:p-10">
-                            <div>
-                                <h3 class="text-white text-2xl md:text-4xl font-bold">Flash Sale 12.12</h3>
-                                <p class="text-white/80 mt-1">Potongan hingga 50% selama empat jam, stok terbatas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-px bg-stone-300 mt-6 rounded-2xl overflow-hidden">
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Periode</p>
-                            <p class="font-semibold mt-1">12 Des, 10.00 - 14.00 WIB</p>
-                        </div>
-                        <div class="bg-white p-5">
-                            <p class="text-xs text-stone-500">Min. transaksi</p>
-                            <p class="font-semibold mt-1">Tidak ada</p>
-                        </div>
-                        <div class="bg-white p-5 flex items-center justify-between gap-3">
-                            <div>
-                                <p class="text-xs text-stone-500">Kuota</p>
-                                <p class="font-semibold mt-1">100 produk</p>
-                            </div>
-                            <a href="#"
-                                class="rounded-lg bg-rose-600 text-white text-sm font-semibold px-4 py-2 hover:bg-rose-700">Ingatkan
-                                saya</a>
-                        </div>
-                    </div>
-                </article>
-
+        <section id="booklet-disneyrun" class="flex py-12 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
+            <div
+                class="max-w-5xl bg-white mx-auto relative z-10 rounded-2xl transform group-hover:scale-110 transition-transform duration-500">
+                <a href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/11/10/cdn1-fa-e-booklet-disneyrun-2026"
+                    target="_blank" rel="noopener">
+                    <img class="w-max-screen rounded-tl-2xl rounded-2xl shadow-md block object-cover hidden md:block"
+                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Website_1077x488_E_Booklet_Disney_Run_197d01c94f.jpg"
+                        alt="Disneyrun Jakarta 26" loading="lazy">
+                    <img class="w-max-screen rounded-tl-2xl rounded-2xl shadow-md block bg-cover md:hidden"
+                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Website_360x540_E_Booklet_Disney_Run_5a992f9be0.jpg"
+                        alt="Disneyrun Jakarta 26" loading="lazy">
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="merchandise" class="flex py-4 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
+            <div
+                class="max-w-5xl bg-white mx-auto relative z-10 rounded-2xl transform group-hover:scale-110 transition-transform duration-500">
+                <a href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/10/15/cdn1-catalog-merchandise-disney-run-jakarta-2026"
+                    target="_blank" rel="noopener">
+                    <img class="w-max-screen rounded-tl-2xl rounded-2xl shadow-md block object-cover hidden md:block"
+                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Website_1077x488_Merch_Disney_Run_1_f9c52b24a7.jpg"
+                        alt="Koleksi merchandise resmi Disney Run 2026 â€” jersey, topi, tas, dan medali dengan karakter Disney"
+                        loading="lazy">
+                    <img class="w-max-screen rounded-tl-2xl rounded-2xl shadow-md block bg-cover md:hidden"
+                        src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Website_360_x_540_px_MOBILE_Merch_Disney_Run_1_658d07b7a7.jpg"
+                        alt="Koleksi merchandise resmi Disney Run 2026 â€” jersey, topi, tas, dan medali dengan karakter Disney"
+                        loading="lazy">
+                </a>
+            </div>
+        </section>
+
+        <section id="medal" class="rt-bg-host medal-section py-12 px-4 md:px-8 mt-0 mb-0 relative z-10 overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <!-- Outer section container with soft gradient background -->
+                <div
+                    class="bg-white rounded-3xl p-2 md:p-10 max-w-5xl mx-auto shadow-xl border border-slate-200/80 relative">
+                    <!-- 1. TEXT â€” top of section (outside white card) -->
+                    <div class="text-center max-w-2xl mx-auto p-2 md:p-0 mb-8 mt-4 md:mt-0 pt-2 relative z-10">
+                        <h2 class="text-xl md:text-2xl font-medium text-black leading-tight">
+                            A Medal to Celebrate your Magical Moment
+                        </h2>
+                    </div>
+                    <!-- 2. WHITE MEDAL CARD â€” container for the 3 medals -->
+                    <div class="bg-white rounded-3xl p-6 md:p-10 mb-8 relative z-10">
+                        <div class="medal-list-container !bg-transparent !p-0">
+                            <div class="medal-list">
+                                <div class="medal-item">
+                                    <div class="medal-img-wrapper">
+                                        <img loading="lazy" decoding="async"
+                                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/1_d948a2fec8.png"
+                                            alt="Kategori lari 1k Disney Run Jakarta 2026">
+                                    </div>
+                                    <div class="medal-details">
+                                        <span class="medal-name">1K Child / Adult <br>
+                                            Family Package</span>
+                                    </div>
+                                </div>
+                                <div class="medal-item">
+                                    <div class="medal-img-wrapper">
+                                        <img loading="lazy" decoding="async"
+                                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/2_ef67896188.png"
+                                            alt="Kategori lari 5k Disney Run Jakarta 2026">
+                                    </div>
+                                    <div class="medal-details">
+                                        <span class="medal-name">5K Run</span>
+                                    </div>
+                                </div>
+                                <div class="medal-item">
+                                    <div class="medal-img-wrapper">
+                                        <img loading="lazy" decoding="async"
+                                            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/3_882abd921e.png"
+                                            alt="Kategori lari 10k Disney Run Jakarta 2026">
+                                    </div>
+                                    <div class="medal-details">
+                                        <span class="medal-name">10K Run</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3. VIDEO â€” landscape on desktop, portrait on mobile -->
+                    <div class="video-wrap video-wrap--normal rounded-3xl overflow-hidden shadow-lg relative z-10">
+                        <iframe class="js-lazy-video w-full aspect-video rounded-3xl"
+                            data-src="https://www.youtube.com/embed/hA3FB-YAmhI?rel=0" loading="lazy"
+                            title="Disney Run Jakarta 2026 Youtube"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            src="https://www.youtube.com/embed/hA3FB-YAmhI?rel=0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promo-jersey" class="rt-bg-host py-8 px-4 md:px-8 relative z-10 overflow-hidden">
+            <!-- Background blur blobs (section level background) -->
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div
+                    class="bg-white rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative max-w-5xl mx-auto shadow-xl">
+                    <div class="text-content flex-1 z-10 w-full">
+                        <h2
+                            class="text-xl md:text-left md:text-3xl font-medium black mb-4 md:mb-8 leading-tight text-center">
+                            Official Disney Run Jakarta 2026 Race Jersey
+                        </h2>
+                        <div class="text-left">
+                            <p class="black text-sm md:text-base leading-relaxed mb-2">
+                                Setiap peserta akan mendapatkan jersey dengan size yang dapat dipilih untuk child/adult
+                                saat registrasi.
+                                Size jersey tidak dapat ditukar.<br>
+                                Lihat ukuran <a class="text-[#ea0a2a]"
+                                    href="https://www.ocbc.id/asset/media/Feature/PDF/adhoc/2026/09/01/20250831-jersey-disney-run"
+                                    target="_blank" rel="noopener noreferrer">di sini</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex justify-start md:justify-center items-start relative z-10 w-full">
+                        <div
+                            class="image-wrapper bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-0 w-full max-w-md md:max-w-lg">
+                            <div class="w-full">
+                                <img loading="lazy" decoding="async"
+                                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Jersey_Disney_Run_2026_251c277eeb.webp"
+                                    alt="Jersey Disney Run Jakarta 2026" class="w-full h-auto object-cover rounded-2xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="disney-run-card" class="flex py-4 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <img class="w-max-screen h-[28rem] mt-8 rounded-2xl shadow-md block object-cover hidden md:block"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_DEBIT_DISNEY_RUN_DESKTOP_d1130c8807.webp"
+                    alt="Debit Card Edisi Disney Run 2026 Jakarta" loading="lazy">
+                <img class="w-max-screen h-[34rem] mt-8 rounded-2xl shadow-md block bg-cover md:hidden"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/WEBSITE_BANNER_DISNEY_RUN_GLOBAL_DEBIT_CARD_RACE_PACK_and_RACE_DAY_DEBIT_DISNEY_RUN_MOBILE_10552efa06.webp"
+                    alt="Debit Card Edisi Disney Run 2026 Jakarta" loading="lazy">
+                <div class="absolute top-10 md:top-[3.5rem] left-[4.5rem] md:left-6 z-10">
+                    <p
+                        class="text-black text-base w-[14rem] sm:w-auto sm:text-base text-center sm:text-left md:text-lg bg-white/70 rounded-lg px-2 py-2">
+                        Masukan kode promo berikut
+                        melalui OCBC mobile
+                        <span
+                            class="text-white p-1 pl-2 pr-2 rounded font-medium leading-[1.5rem] bg-[#ea0a2a]">DEBITDISNEYRUN</span>
+                    </p>
+                </div>
+                <div
+                    class="w-full flex justify-end px-4 py-3 absolute bottom-2 right-0 z-10 md:bottom-3 md:left-[-15px] md:right-auto md:py-0">
+                    <a href="http://web.ocbc.id/globaldebit" class="primary-btn-apply" target="_blank">
+                        Info lengkap
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kategori" class="py-8 px-4 md:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-10 reveal-element reveal-up is-visible">
+                    <h2 class="text-xl text-black md:text-2xl font-bold mb-3">
+                        Kategori &amp; harga tiket Disney Run Jakarta 2026
+                    </h2>
+                </div>
+                <div class="disney-table-wrapper overflow-x-auto reveal-element reveal-up delay-200 is-visible">
+                    <table class="disney-table">
+                        <thead>
+                            <tr>
+                                <th style="background-color: gray;"><span class="font-bold">Kategori</span></th>
+                                <th style="background-color: gray;" class=""><span class="font-bold">Pre-sale
+                                        ticket <br> <span class="text-red-600">Sold Out</span></span></th>
+                                <th style="background-color: gray;"><span class="font-bold">General Sale <br><span
+                                            class="text-red-600">Sold
+                                            Out</span></span>
+                                </th>
+                                <th><span class="font-bold">Late Bird Registration</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1K (Child / Adult)</td>
+                                <td>Rp349.000</td>
+                                <td>Rp449.000</td>
+                                <td class="pink-bg"><span class="font-bold text-base md:text-lg">Rp499.000</span></td>
+                            </tr>
+                            <tr>
+                                <td>1K Family package: (1 Child + 1 Adult)</td>
+                                <td>Rp649.000</td>
+                                <td>Rp749.000</td>
+                                <td><span class="text-red-600 font-bold text-xs uppercase tracking-wider">Sold
+                                        Out</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5K</td>
+                                <td>Rp449.000</td>
+                                <td>Rp549.000</td>
+                                <td class="pink-bg"><span class="font-bold text-base md:text-lg">Rp599.000</span></td>
+                            </tr>
+                            <tr>
+                                <td>10K</td>
+                                <td>Rp499.000</td>
+                                <td>Rp599.000</td>
+                                <td class="pink-bg"><span class="font-bold text-base lg:text-lg">Rp649.000</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="pt-4 mb-5 italic"><small>
+                        *Harga tertera belum termasuk pajak, biaya layanan, maupun biaya admin transaksi. <br></small>
+                </p>
+            </div>
+        </section>
+
+        <section id="hotel-disney-run" class="flex py-4 px-6 md:px-8 relative z-10 justify-center overflow-hidden">
+            <a href="https://www.ocbc.id/program/promo-gabungan-hotel-disneyrun" target="_blank" rel="noopener"
+                class="max-w-6xl mx-auto relative z-10 transform group-hover:scale-110 transition-transform duration-500">
+                <img class="w-max-screen h-[28rem] mt-8 rounded-2xl shadow-md block object-cover hidden md:block "
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Banner_Website_1077x488_Disney_Run_Hotel_2_b8b1c20daa.jpg"
+                    alt="Promo gabungan booking hotel dan paket Disney Run dari OCBC â€” diskon khusus pemegang kartu"
+                    loading="lazy">
+                <img class="w-max-screen h-[34rem] mt-8 rounded-2xl shadow-md block bg-cover md:hidden"
+                    src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/2_SLIDING_BANNER_360_x_540_px_MOBILE_Disney_Run_Hotel_1_cc4c8c0029.jpg"
+                    alt="Promo gabungan booking hotel dan paket Disney Run dari OCBC â€” diskon khusus pemegang kartu"
+                    loading="lazy">
+            </a>
+        </section>
+
+        <section id="info-lanjut" class="py-4 px-4 md:px-8">
+            <div class="p-6 md:p-12 medal-wrap mt-8 mb-8 relative z-10">
+                <!-- Heading -->
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-2xl font-medium text-black mb-2">
+                        Informasi Selengkapnya
+                    </h2>
+                    <p class="text-slate-500 text-base md:text-base">
+                        <!-- TODO: ganti subheading sesuai produk -->
+                        Informasi terkait Disney Run Jakarta 2026
+                    </p>
+                </div>
+                <!-- Tabs + Content -->
+                <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 md:gap-12">
+                    <!-- Tab list (kiri) -->
+                    <div class="border-t border-slate-200" id="info-tab-list">
+                        <button type="button" data-tab="faq"
+                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-[#ea0a2a] transition-colors">
+                            FAQ
+                            <em class="fa-solid fa-chevron-right text-sm"></em>
+                        </button>
+                        <button type="button" data-tab="suratkuasa"
+                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
+                            Surat Kuasa Race Pack Collection
+                            <em class="fa-solid fa-chevron-right text-sm"></em>
+                        </button>
+                        <button type="button" data-tab="suratpenyataan"
+                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
+                            Surat Pernyataan Peserta
+                            <em class="fa-solid fa-chevron-right text-sm"></em>
+                        </button>
+                        <button type="button" data-tab="contact-person"
+                            class="info-tab-btn w-full flex items-center justify-between py-4 border-b border-slate-200 text-left font-semibold text-slate-700 hover:text-[#ea0a2a] transition-colors">
+                            Kontak Resmi
+                            <em class="fa-solid fa-chevron-right text-sm"></em>
+                        </button>
+                    </div>
+                    <!-- Tab content (kanan) -->
+                    <div id="info-tab-content">
+                        <!-- Persyaratan -->
+                        <div class="info-tab-panel active" data-panel="faq">
+                            <!-- Container untuk link agar ada padding di sekitarnya jika diperlukan, atau bisa langsung menggunakan link sebagai block element -->
+                            <div class="space-y-4">
+                                <!-- Link Tombol Mudharabah Personal -->
+                                <a href="https://cdn1.ocbc.id/asset/media/Feature/PDF/adhoc/2026/08/31/faq-ocbc-disney-run-jakarta-2026-id-version"
+                                    target="_blank" rel="noopener"
+                                    class="group flex items-center justify-between w-full p-4 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 ease-in-out shadow-sm hover:shadow">
+                                    <!-- Bagian Kiri: Ikon & Teks -->
+                                    <div class="flex items-center space-x-3">
+                                        <!-- Ikon File -->
+                                        <div
+                                            class="flex items-center justify-center w-8 h-8 rounded-md bg-slate-100 group-hover:bg-slate-200 transition-colors duration-300">
+                                            <em class="far fa-file-pdf"></em>
+                                        </div>
+                                        <!-- Teks -->
+                                        <span
+                                            class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                            Pertanyaan Umum - Bahasa Indonesia
+                                        </span>
+                                    </div>
+                                    <!-- Bagian Kanan: Ikon Panah -->
+                                    <div
+                                        class="text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-tab-panel hidden" data-panel="suratkuasa">
+                            <!-- Container untuk link agar ada padding di sekitarnya jika diperlukan, atau bisa langsung menggunakan link sebagai block element -->
+                            <div class="space-y-4">
+                                <!-- Link Tombol Mudharabah Personal -->
+                                <a href="https://cdn1.ocbc.id/asset/media/Feature/PDF/adhoc/2026/08/31/ocbc-disney-run-jakarta-2026-authorization-letter-id"
+                                    target="_blank" rel="noopener"
+                                    class="group flex items-center justify-between w-full p-4 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 ease-in-out shadow-sm hover:shadow">
+                                    <!-- Bagian Kiri: Ikon & Teks -->
+                                    <div class="flex items-center space-x-3">
+                                        <!-- Ikon File -->
+                                        <div
+                                            class="flex items-center justify-center w-8 h-8 rounded-md bg-slate-100 group-hover:bg-slate-200 transition-colors duration-300">
+                                            <em class="far fa-file-pdf"></em>
+                                        </div>
+                                        <!-- Teks -->
+                                        <span
+                                            class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                            Template Surat Kuasa - Bahasa Indonesia
+                                        </span>
+                                    </div>
+                                    <!-- Bagian Kanan: Ikon Panah -->
+                                    <div
+                                        class="text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-tab-panel hidden" data-panel="suratpenyataan">
+                            <!-- Container untuk link agar ada padding di sekitarnya jika diperlukan, atau bisa langsung menggunakan link sebagai block element -->
+                            <div class="space-y-4">
+                                <!-- Link Tombol Mudharabah Personal -->
+                                <a href="https://cdn1.ocbc.id/asset/media/Feature/PDF/adhoc/2026/11/09/cdn1-surat-pernyataan-peserta-disney-run-jakarta-2026-id"
+                                    target="_blank" rel="noopener"
+                                    class="group flex items-center justify-between w-full p-4 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 ease-in-out shadow-sm hover:shadow">
+                                    <!-- Bagian Kiri: Ikon & Teks -->
+                                    <div class="flex items-center space-x-3">
+                                        <!-- Ikon File -->
+                                        <div
+                                            class="flex items-center justify-center w-8 h-8 rounded-md bg-slate-100 group-hover:bg-slate-200 transition-colors duration-300">
+                                            <em class="far fa-file-pdf"></em>
+                                        </div>
+                                        <!-- Teks -->
+                                        <span
+                                            class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                            Surat Pernyataan Peserta - Bahasa Indonesia
+                                        </span>
+                                    </div>
+                                    <!-- Bagian Kanan: Ikon Panah -->
+                                    <div
+                                        class="text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-tab-panel hidden bg-white rounded-xl" data-panel="contact-person">
+                            <!-- Container untuk link agar ada padding di sekitarnya jika diperlukan, atau bisa langsung menggunakan link sebagai block element -->
+                            <div class="space-y-4">
+                                <!-- Link Tombol Mudharabah Personal -->
+                                <div
+                                    class="flex flex-col mt-4 gap-2 px-5 py-5 mx-2 mb-[3rem] reveal-element reveal-up relative is-visible">
+                                    <h2
+                                        class="text-black text-3xl text-center sm:text-center md:text-2xl font-bold mb-3 leading-tight">
+                                        Kontak Resmi Disney Run Jakarta
+                                    </h2>
+                                    <p
+                                        class="text-base font-normal text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        Waspada akan penipuan yang mengatasnamakan OCBC dan Disney Run Jakarta 2026
+                                        <br>
+                                        Pastikan beberapa hal berikut ini:
+                                    </p>
+                                    <ul
+                                        class="text-base font-normal ml-6 text-slate-800 group-hover:text-slate-900 transition-colors list-disc">
+                                        <li>Pembelian tiket Disney Run Jakarta 2026 hanya melalui kanal resmi OCBC di
+                                            ocbc.id/disneyrunjkt26
+                                        </li>
+                                        <li>Pembayaran dilakukan hanya melalui platform website ocbc.id/disneyrunjkt26
+                                            tanpa harus
+                                            melakukan transfer ke akun
+                                            tertentu</li>
+                                        <li>
+                                            Hindari pembelian tiket melalui
+                                            pihak atau
+                                            kanal tidak resmi/calo/jastip untuk menghindari
+                                            risiko penipuan.
+                                        </li>
+                                    </ul>
+                                    <p
+                                        class="text-base font-normal text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        Untuk informasi lebih lanjut tentang OCBC Disney Run Jakarta,
+                                        silakan
+                                        hubungi kami melalui
+                                        pilihan di bawah ini:
+                                    </p>
+                                    <p
+                                        class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        Tanya OCBC <br>
+                                        <span class="general-red-text font-normal">Dalam negeri : 1500-999</span><br>
+                                        <span class="general-red-text font-normal">Luar negeri : +62 21-26506-300</span>
+                                    </p>
+                                    <p
+                                        class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        WhatsApp Tanya OCBC <br>
+                                        <span class="general-red-text font-normal">+62 812-1500-999</span>
+                                    </p>
+                                    <p
+                                        class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        Tanya Call &amp; Tanya Chat OCBC<br>
+                                        <span class="general-red-text font-normal">Dapat diakses melalui OCBC
+                                            mobileâ€‹</span>
+                                    </p>
+                                    <p
+                                        class="text-base font-medium text-slate-800 group-hover:text-slate-900 transition-colors">
+                                        Email Tanya OCBC<br>
+                                        <span class="general-red-text font-normal">tanya@ocbc.idâ€‹</span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sponosred" class="w-full flex flex-col items-center relative mb-8">
+            <img alt="Sponsor dan mitra OCBC Disney Run Jakarta 2026: VISA, J&amp;T Express, Giordano, Wuling, UBS Gold, Royal by Belfoods, Great Eastern, Karihome, dan Gosh."
+                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/LOGO_SPONSOR_DISNEY_RUN_3_473fc6c8c7.png"
+                class="w-[80%] h-auto">
+        </section>
+        <section class="site-footer-section">
+            <div class="site-footer-grid">
+                <div class="site-footer-content">
+                    <p>
+                        PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa
+                        Keuangan &amp; Bank Indonesia, serta merupakan peserta penjaminan
+                        LPS.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script>
+        function activateInfoTab(tabName, options = {}) {
+            const tabButton = document.querySelector(`.info-tab-btn[data-tab="${tabName}"]`);
+            const tabPanel = document.querySelector(`.info-tab-panel[data-panel="${tabName}"]`);
+            if (!tabButton || !tabPanel) return false;
+
+            document.querySelectorAll(".info-tab-btn").forEach(function (button) {
+                const isActive = button === tabButton;
+                button.classList.toggle("text-[#ea0a2a]", isActive);
+                button.classList.toggle("text-slate-700", !isActive);
+            });
+
+            document.querySelectorAll(".info-tab-panel").forEach(function (panel) {
+                const isActive = panel === tabPanel;
+                panel.classList.toggle("active", isActive);
+                panel.classList.toggle("hidden", !isActive);
+            });
+
+            if (options.scroll) {
+                document.getElementById("info-lanjut")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+
+            return true;
+        }
+
+        function handleSectionHash(force = false) {
+            const hash = window.location.hash.toLowerCase();
+            if (!hash) return;
+
+            const sectionAliases = {
+                "#promodaily": "promo",
+                "#promoeveryday": "promo",
+                "#promopayday": "promo",
+                "#regionkorea": "kategori",
+                "#regionsingapore": "kategori",
+                "#regionthailand": "kategori",
+                "#regionjapan": "kategori"
+            };
+
+            const infoTabMap = {
+                "#faq": "faq",
+                "#suratkuasa": "suratkuasa",
+                "#suratpenyataan": "suratpenyataan",
+                "#contact-person": "contact-person"
+            };
+
+            const infoTab = infoTabMap[hash];
+            if (infoTab) {
+                activateInfoTab(infoTab, { scroll: true });
+                return;
+            }
+
+            const sectionId = sectionAliases[hash] || decodeURIComponent(hash.slice(1));
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+
+        function handlePromoHash(force = false) {
+            handleSectionHash(force);
+        }
+
+        function handleRegionHash(force = false) {
+            handleSectionHash(force);
+        }
+
+        document.querySelectorAll(".info-tab-btn").forEach(function (button) {
+            button.addEventListener("click", function () {
+                const tabName = button.dataset.tab;
+                if (!tabName) return;
+
+                activateInfoTab(tabName);
+                history.replaceState(null, "", `#${tabName}`);
+            });
+        });
+
         document.querySelectorAll('[data-tabs]').forEach(function (root) {
             var tabs = root.querySelectorAll('[role="tab"]');
             var panels = root.querySelectorAll('[data-panel]');
@@ -262,6 +667,14 @@
                     tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 });
             });
+        });
+
+        window.addEventListener("load", function () {
+            setTimeout(function () { handleSectionHash(true); }, 300);
+        });
+
+        window.addEventListener("hashchange", function () {
+            handleSectionHash(true);
         });
     </script>
 
